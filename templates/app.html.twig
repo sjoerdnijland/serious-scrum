@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div id="root" data-preload="{{ data|json_encode }}"></div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('build/runtime.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('build/app.js') }}"></script>
+{% endblock %}

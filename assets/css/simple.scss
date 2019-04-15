@@ -1,0 +1,45 @@
+//short handles for margins and paddings
+
+$types: 0;
+
+@while $types < 21 {
+
+  ._mt#{$types * 5}{
+      margin-top: ($types * 5px);
+  }
+  ._mr#{$types * 5}{
+    margin-right: ($types * 5px);
+  }
+  ._mb#{$types * 5}{
+    margin-bottom: ($types * 5px);
+  }
+  ._ml#{$types * 5}{
+    margin-left: ($types * 5px);
+  }
+  ._pt#{$types * 5}{
+    padding-top: ($types * 5px);
+  }
+  ._pr#{$types * 5}{
+    padding-right: ($types * 5px);
+  }
+  ._pb#{$types * 5}{
+    padding-bottom: ($types * 5px);
+  }
+  ._pl#{$types * 5}{
+    padding-left: ($types * 5px);
+  }
+  $types: $types + 1
+}
+
+._ar{
+  text-align: right;
+}
+
+._fr{
+  float-align: right;
+}
+
+.hidden {
+  display:none;
+}
+

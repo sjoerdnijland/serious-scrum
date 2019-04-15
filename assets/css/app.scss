@@ -1,0 +1,39 @@
+@import 'swatches';
+@import 'fonts';
+@import 'normalize';
+@import 'skeleton';
+@import 'simple';
+
+body{
+  font-family: merriweatherblack, sans-serif;
+}
+
+.header{
+  background-color: $seriousblue;
+  height: 100px;
+  img{
+    width: 400px;
+  }
+}
+
+.home{
+  color: $white;
+  h1{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    i{
+      color: $orange;
+    }
+  }
+  line-height: 100px;
+  font-family: 'Crimson Text', serif;
+
+
+}
+
+.build{
+  background-color: $white;
+  font-family: 'Crimson Text', serif;
+  font-size: 9px;
+}
+//bg-border-font
