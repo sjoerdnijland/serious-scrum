@@ -15,7 +15,7 @@ class Build extends React.Component {
         return (
             <div className={ContainerClassName}>
                 <div className="_ml40">
-                    build: 1.0.0
+                    build: 1.0.1
                 </div>
             </div>
 
