@@ -15,7 +15,7 @@ class Build extends React.Component {
         return (
             <div className={ContainerClassName}>
                 <div className="one-half-fixed column _pl40">
-                    build: 1.1.3
+                    build: 1.1.4
                 </div>
                 <div className="one-half-fixed column right _pr40">
                     :)
