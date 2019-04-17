@@ -3,9 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}Serious Scrum{% endblock %}</title>
-    {% block stylesheets %}
-        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
-    {% endblock %}
     <meta property="og:title" content="Serious Scrum" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://www.seriousscrum.com/images/serious-scrum.png" />
@@ -18,6 +15,10 @@
 
         gtag('config', 'UA-138489927-1');
     </script>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    {% endblock %}
+
 </head>
 <body>
 {% block body %}
@@ -25,7 +26,4 @@
 {% block javascripts %}
 {% endblock %}
 </body>
-
-
-
 </html>
