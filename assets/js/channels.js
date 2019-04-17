@@ -18,7 +18,7 @@ class Channels extends React.Component {
                     <h1>a tsunami of sense</h1>
                 </div>
                 <div className="row _ml40 _mr40">
-                    <p>We are a professional community committed to <i>helping eachother</i> in environments in which Scrum is not yet fully adopted and understood.</p>
+                    <p>We are a professional community committed to <i>helping each other</i> in environments in which Scrum is not yet fully adopted and understood.</p>
                 </div>
                 <div className="row _ml40">
                     <div className="one-half column">
