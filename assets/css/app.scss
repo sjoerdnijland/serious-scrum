@@ -4,30 +4,79 @@
 @import 'skeleton';
 @import 'simple';
 
+/* for mobile #mobilefirst */
 body{
   font-family: merriweatherblack, sans-serif;
 }
 
 .header{
   background-color: $seriousblue;
+  min-width: 400px;
   img{
     width: 400px;
+  }
+}
+
+.divider{
+  background-color: $seriousblue;
+  height: 20px;
+}
+
+.channels{
+  background-color: $problue;
+  min-width: 400px;
+  h1{
+    color: $turquoise;
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    color: $white;
+    font-style: italic;
+    letter-spacing: 0.1em;
+  }
+  i{
+    color: $turquoise;
   }
 }
 
 .home{
   color: $white;
   h1{
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 0.1em;
+    margin-bottom: 0px;
     i{
       color: $orange;
     }
   }
   line-height: 100px;
   font-family: 'Crimson Text', serif;
+}
 
+.medium{
+  img{
+    width:200px;
+  }
+  p{
+    font-style: normal;
+    margin-bottom:0px;
+    letter-spacing: normal;
+  }
+  .metric{
+    font-size: 32px;
+  }
+}
 
+.button{
+  background-color: $orange;
+  color:$white;
+  font-weight: bold;
+  font-size: 32px;
+  border: 0px;
 }
 
 .build{
@@ -35,4 +84,20 @@ body{
   font-family: 'Crimson Text', serif;
   font-size: 9px;
 }
-//bg-border-font
+
+.logo-min-width{
+  min-width: 210px;
+}
+
+.right{
+  text-align: right;
+}
+
+/* for desktop: */
+@media only screen and (min-device-width : 780px) {
+  .home{
+    h1{
+      font-size: 18px;
+    }
+  }
+}
