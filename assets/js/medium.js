@@ -10,7 +10,7 @@ class Medium extends React.Component {
 
     render() {
 
-        var ContainerClassName = "medium container _mt20";
+        var ContainerClassName = "medium container _mt40";
         var mediumLogo = "images/medium-logo.svg";
 
         return (
@@ -20,10 +20,10 @@ class Medium extends React.Component {
                         <img src={mediumLogo}/>
                     </div>
                     <div className="two-thirds column">
-                        <p>Follow and join us and other Scrum practitioners on <i>Medium</i>.</p>
+                        <p>Follow and join us and other Scrum practitioners on <a href="https://medium.com/serious-scrum" target="_blank">Medium</a>.</p>
                         <p>over <span className="metric">111k</span> <span>minutes read /month</span></p>
                         <p>over <span className="metric">70k</span> <span>views /month</span></p>
-                        <p className="_mt20"><a href="https://medium.com/serious-scrum" target="_blank" className="button">Tune in!</a></p>
+                        <p className="_pt20 buttonContainer"><a href="https://medium.com/serious-scrum" target="_blank" className="button">Tune in!</a></p>
                     </div>
                 </div>
             </div>

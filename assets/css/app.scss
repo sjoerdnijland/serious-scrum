@@ -15,6 +15,9 @@ body{
   img{
     width: 400px;
   }
+  a{
+    color: $orange;
+  }
 }
 
 .divider{
@@ -26,7 +29,7 @@ body{
   background-color: $problue;
   min-width: 400px;
   h1{
-    color: $lightblue;
+    color: $white;
     font-size: 24px;
     font-family: 'Crimson Text', serif;
     text-transform: uppercase;
@@ -38,7 +41,7 @@ body{
     font-style: italic;
     letter-spacing: 0.1em;
   }
-  i{
+  a{
     color: $lightblue;
   }
   .tsunami{
@@ -74,12 +77,22 @@ body{
   }
 }
 
+.buttonContainer{
+  a{
+    color: $white;
+    font-style: normal;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
 .button{
   background-color: $orange;
   color:$white;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 18px;
   border: 0px;
+  padding: 5px 15px;
 }
 
 .build{
@@ -89,11 +102,18 @@ body{
 }
 
 .logo-min-width{
-  min-width: 210px;
+  min-width: 220px;
 }
 
 .right{
   text-align: right;
+}
+
+a{
+  font-style: italic;
+}
+a:hover{
+  text-decoration:underline;
 }
 
 /* for desktop: */

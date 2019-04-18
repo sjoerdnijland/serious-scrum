@@ -20,7 +20,7 @@ class Header extends React.Component {
                     <img className={LogoClassName} src={src}/>
                 </div>
                 <div className="one-half column home right _pr40">
-                    <h1> a <i>home</i> for serious scrum practitioners. </h1>
+                    <h1> a <i>home</i>  for serious scrum practitioners. </h1>
 
                 </div>
             </div>
