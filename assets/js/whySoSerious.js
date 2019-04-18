@@ -52,7 +52,7 @@ class WhySoSerious extends React.Component {
                         <Editor name='Adrian Kerry' picture="adrian"/>
                     </div>
                     <div className=" ">
-                        <Editor name='John Clopton' picture="sjoerd"/>
+                        <Editor name='John Clopton' picture="john"/>
                     </div>
                     <div className=" ">
                         <Editor name='Justin Bériot' picture="justin"/>

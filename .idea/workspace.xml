@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/adrian.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/john.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/justin.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/maarten.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/marty.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/max.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/paddy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/raymond.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/rebel.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/roland.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/sjoerd.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editors/wj.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/dod.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/dod.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/whySoSerious.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/whySoSerious.js" afterDir="false" />
@@ -100,8 +84,8 @@
       <file leaf-file-name="whySoSerious.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/whySoSerious.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="558">
+              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -118,8 +102,8 @@
       <file leaf-file-name="dod.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/dod.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="15">
+              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -165,10 +149,10 @@
         <option value="$PROJECT_DIR$/assets/js/channels.js" />
         <option value="$PROJECT_DIR$/assets/js/medium.js" />
         <option value="$PROJECT_DIR$/assets/js/content.js" />
-        <option value="$PROJECT_DIR$/assets/js/dod.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/assets/js/editor.js" />
         <option value="$PROJECT_DIR$/assets/css/app.scss" />
+        <option value="$PROJECT_DIR$/assets/js/dod.js" />
         <option value="$PROJECT_DIR$/assets/js/whySoSerious.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
@@ -357,12 +341,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554312840260</updated>
       <workItem from="1554312841906" duration="12768000" />
-      <workItem from="1555437931908" duration="27570000" />
+      <workItem from="1555437931908" duration="27905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40338000" />
+    <option name="totallyTimeSpent" value="40673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
@@ -540,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/dod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/channels.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -589,10 +566,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/dod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/whySoSerious.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        <state relative-caret-position="558">
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
         </state>
       </provider>
     </entry>
