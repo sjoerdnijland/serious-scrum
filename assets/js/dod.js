@@ -15,7 +15,7 @@ class DoD extends React.Component {
         return (
             <div className={ContainerClassName}>
                 <div className="row">
-                    <h1>Definitions of "Done"</h1>
+                    <h1>Definition of "Done"</h1>
                 </div>
                 <div className="row">
                     <p> We’re an open community, yet content published through our channel is reviewed and only considered publishable when:  </p>

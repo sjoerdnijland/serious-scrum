@@ -108,6 +108,7 @@ body{
     text-decoration: none;
   }
 }
+
 .button{
   background-color: $orange;
   color:$white;
@@ -115,6 +116,25 @@ body{
   font-size: 18px;
   border: 0px;
   padding: 5px 15px;
+}
+
+.editorContainer{
+  display: flex;
+}
+
+.editor{
+  margin-bottom: 20px;
+  color: $yellow;
+  font-size: 12px;
+  text-align: center;
+  width:140px;
+  min-width: 120px;
+  float: left;
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
 }
 
 .build{

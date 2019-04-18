@@ -32,7 +32,47 @@ class WhySoSerious extends React.Component {
                         If you wish to publish your awesome Scrum article at Serious Scrum, please share it in the #writing channel in <a href="https://serious-scrum.slack.com/" target="_blank">Serious Scrum Slack</a> and ask for a review.
                     </p>
                 </div>
-
+                <div className="row _mt40">
+                    <h1>Our team of Writers and Editors</h1>
+                </div>
+                <div className="row _mt20">
+                    <div className="">
+                        <Editor name='Willem-Jan Ageling' picture="wj"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Sjoerd Nijland' picture="sjoerd"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Paddy Corry' picture="paddy"/>
+                    </div>
+                    <div className="">
+                        <Editor name='Maarten Dalmijn' picture="maarten"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Adrian Kerry' picture="adrian"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='John Clopton' picture="sjoerd"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Justin Bériot' picture="justin"/>
+                    </div>
+                    <div className="">
+                        <Editor name='Marty de Jonge' picture="marty"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Max Heiliger' picture="max"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Raymon Lagonda' picture="raymond"/>
+                    </div>
+                    <div className=" ">
+                        <Editor name='Scrum Rebel' picture="rebel"/>
+                    </div>
+                    <div className="">
+                        <Editor name='Roland Flemm' picture="roland"/>
+                    </div>
+                </div>
             </div>
         );
     }

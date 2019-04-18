@@ -5,6 +5,7 @@ import '../js/medium.js';
 import '../js/slack.js';
 import '../js/content.js';
 import '../js/whySoSerious.js';
+import '../js/editor.js';
 import '../js/dod.js';
 import '../js/divider.js';
 import '../js/build.js';
