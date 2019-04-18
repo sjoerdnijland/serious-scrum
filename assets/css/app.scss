@@ -49,6 +49,27 @@ body{
   }
 }
 
+.content{
+  background-color: $navyblue;
+  min-width: 400px;
+  h1{
+    color: $white;
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    color: $white;
+    font-style: italic;
+    letter-spacing: 0.1em;
+  }
+  a{
+    color: $lightblue;
+  }
+}
+
 .home{
   color: $white;
   h1{
@@ -63,7 +84,7 @@ body{
   font-family: 'Crimson Text', serif;
 }
 
-.medium{
+.medium, .article{
   img{
     width:200px;
   }
@@ -75,6 +96,7 @@ body{
   .metric{
     font-size: 32px;
   }
+
 }
 
 .buttonContainer{
@@ -107,6 +129,11 @@ body{
 
 .right{
   text-align: right;
+}
+
+.pBoxDark{
+  background-color: $problue;
+  padding:20px;
 }
 
 a{
