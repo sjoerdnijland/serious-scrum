@@ -10,7 +10,7 @@ class WhySoSerious extends React.Component {
 
     render() {
 
-        var ContainerClassName = "article container _mt20 _pr60";
+        const ContainerClassName = "article container _mt20 _pr60";
 
         return (
             <div className={ContainerClassName}>
@@ -37,40 +37,40 @@ class WhySoSerious extends React.Component {
                 </div>
                 <div className="row _mt20">
                     <div className="">
-                        <Editor name='Willem-Jan Ageling' picture="wj"/>
+                        <Editor name='Willem-Jan Ageling' picture="wj" handle="@WJAgeling"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Sjoerd Nijland' picture="sjoerd"/>
+                        <Editor name='Sjoerd Nijland' picture="sjoerd" handle="@sjoerdnijland"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Paddy Corry' picture="paddy"/>
+                        <Editor name='Paddy Corry' picture="paddy" handle="@paddycorry"/>
                     </div>
                     <div className="">
-                        <Editor name='Maarten Dalmijn' picture="maarten"/>
+                        <Editor name='Maarten Dalmijn' picture="maarten" handle="@mdalmijn"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Adrian Kerry' picture="adrian"/>
+                        <Editor name='Adrian Kerry' picture="adrian" handle="@adrian.kerry"/>
                     </div>
                     <div className=" ">
-                        <Editor name='John Clopton' picture="john"/>
+                        <Editor name='John Clopton' picture="john" handle="@jookieSTL"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Justin Bériot' picture="justin"/>
+                        <Editor name='Justin Bériot' picture="justin" handle="@JustinBeriot"/>
                     </div>
                     <div className="">
-                        <Editor name='Marty de Jonge' picture="marty"/>
+                        <Editor name='Marty de Jonge' picture="marty" handle="@mdj_22623"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Max Heiliger' picture="max"/>
+                        <Editor name='Max Heiliger' picture="max" handle="@heiliger.maximilian"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Raymon Lagonda' picture="raymond"/>
+                        <Editor name='Raymon Lagonda' picture="raymond" handle="@raymond.lagonda"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Scrum Rebel' picture="rebel"/>
+                        <Editor name='Scrum Rebel' picture="rebel" handle="@scrumrebel"/>
                     </div>
                     <div className="">
-                        <Editor name='Roland Flemm' picture="roland"/>
+                        <Editor name='Roland Flemm' picture="roland" handle="@roland.flemm"/>
                     </div>
                 </div>
             </div>

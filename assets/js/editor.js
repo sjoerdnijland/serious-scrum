@@ -10,17 +10,19 @@ class Editor extends React.Component {
 
     render() {
 
-        var ContainerClassName = "editor container";
+        const ContainerClassName = "editor container";
 
-        var pictureSrc = "images/editors/"+this.props.picture+".jpeg";
+        const pictureSrc = "images/editors/"+this.props.picture+".jpeg";
+
+        const editorUrl = "https://medium.com/"+this.props.handle;
 
         return (
             <div className={ContainerClassName}>
                 <div className="row">
-                    <img src={pictureSrc}/>
+                    <a href={editorUrl} target="_blank"> <img src={pictureSrc}/> </a>
                 </div>
                 <div className="row">
-                    {this.props.name}
+                    <a href={editorUrl} target="_blank"> {this.props.name} </a>
                 </div>
             </div>
         );

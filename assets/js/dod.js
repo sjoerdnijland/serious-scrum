@@ -10,7 +10,7 @@ class DoD extends React.Component {
 
     render() {
 
-        var ContainerClassName = "article container _mt20 _pr60 _mb20";
+        const ContainerClassName = "article container _mt20 _pr60 _mb20";
 
         return (
             <div className={ContainerClassName}>

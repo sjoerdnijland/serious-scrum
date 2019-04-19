@@ -10,7 +10,7 @@ class Divider extends React.Component {
 
     render() {
 
-        var ContainerClassName = "divider row";
+        const ContainerClassName = "divider row";
 
         return (
             <div className={ContainerClassName}/>

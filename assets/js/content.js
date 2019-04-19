@@ -10,7 +10,7 @@ class Content extends React.Component {
 
     render() {
 
-        var ContainerClassName = "content row _pt20 _pb20 _pl40";
+        const ContainerClassName = "content row _pt20 _pb20 _pl40";
 
         return (
             <div className={ContainerClassName}>

@@ -124,7 +124,11 @@ body{
 
 .editor{
   margin-bottom: 20px;
-  color: $yellow;
+  a{
+    color: $yellow;
+    font-style: normal;
+  }
+
   font-size: 12px;
   text-align: center;
   width:140px;

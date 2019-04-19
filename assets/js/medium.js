@@ -10,8 +10,8 @@ class Medium extends React.Component {
 
     render() {
 
-        var ContainerClassName = "medium container _mt40";
-        var mediumLogo = "images/medium-logo.svg";
+        const ContainerClassName = "medium container _mt40";
+        const mediumLogo = "images/medium-logo.svg";
 
         return (
             <div className={ContainerClassName}>

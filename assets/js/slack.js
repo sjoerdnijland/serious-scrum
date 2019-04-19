@@ -10,8 +10,8 @@ class Slack extends React.Component {
 
     render() {
 
-        var ContainerClassName = "medium container _mt40";
-        var slackLogo = "images/slack-logo.svg";
+        const ContainerClassName = "medium container _mt40";
+        const slackLogo = "images/slack-logo.svg";
 
         return (
             <div className={ContainerClassName}>
