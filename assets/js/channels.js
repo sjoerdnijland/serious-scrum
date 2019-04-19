@@ -15,7 +15,7 @@ class Channels extends React.Component {
 
         return (
             <div className={ContainerClassName}>
-                <div className="row intro _ml40 _mr80">
+                <div className="row intro _ml40 _mr80 _pl20 _pr20">
                     <p>We are a professional community committed to helping each other in environments in which Scrum is not yet fully adopted and understood.</p>
                 </div>
                 <div className="row _ml40 _mb40">
