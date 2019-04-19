@@ -10,12 +10,12 @@ class Build extends React.Component {
 
     render() {
 
-        const ContainerClassName = "build row _mt10";
+        const ContainerClassName = "build row";
 
         return (
             <div className={ContainerClassName}>
-                <div className="one-half-fixed column _pl40">
-                    build: 1.2.3
+                <div className="one-half-fixed column _pl80">
+                    build: 1.2.4
                 </div>
                 <div className="one-half-fixed column right _pr40">
                     :)

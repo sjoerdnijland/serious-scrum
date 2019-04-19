@@ -1,5 +1,6 @@
 import '../css/app.scss';
 import '../js/header.js';
+import '../js/tsunami.js';
 import '../js/channels.js';
 import '../js/medium.js';
 import '../js/slack.js';
@@ -32,9 +33,9 @@ class App extends React.Component {
         return (
             <div>
                 <Header/>
+                <Tsunami/>
                 <Channels/>
                 <Content/>
-                <Divider/>
                 <Build/>
             </div>
         )

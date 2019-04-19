@@ -15,13 +15,10 @@ class Channels extends React.Component {
 
         return (
             <div className={ContainerClassName}>
-                <div className="row _ml40">
-                    <h1>a tsunami of sense <img className='tsunami' src={tsunamiLogo}/> </h1>
-                </div>
-                <div className="row _ml40 _mr40">
+                <div className="row intro _ml40 _mr80">
                     <p>We are a professional community committed to helping each other in environments in which Scrum is not yet fully adopted and understood.</p>
                 </div>
-                <div className="row _ml40">
+                <div className="row _ml40 _mb40">
                     <div className="one-half column">
                         <Medium/>
                     </div>
