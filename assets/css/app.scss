@@ -27,7 +27,7 @@ body{
   height:200px;
   text-align: center;
   h1{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Permanent Marker', cursive;
     color: $seriousblue;
     font-size: 42px;
     line-height: 200px;
@@ -64,15 +64,14 @@ body{
   h1{
     color: $white;
     font-size: 24px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'gothamlightregular', serif;
     text-transform: uppercase;
   }
   p{
-    font-size: 18px;
-    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     color: $white;
     font-style: italic;
-    letter-spacing: 0.1em;
   }
   a{
     color: $lightblue;
@@ -85,15 +84,15 @@ body{
   h1{
     color: $white;
     font-size: 24px;
-    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-family: 'gothamlightregular', serif;
     text-transform: uppercase;
   }
   p{
-    font-size: 18px;
-    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
     color: $white;
     font-style: italic;
-    letter-spacing: 0.1em;
   }
   a{
     color: $lightblue;
@@ -116,13 +115,14 @@ body{
 }
 
 .medium, .article{
+  font-family: 'Open Sans', sans-serif;
   img{
-    width:200px;
+    width:150px;
   }
   p{
     font-style: normal;
     margin-bottom:0px;
-    letter-spacing: normal;
+    letter-spacing: 0.02em;
   }
   .metric{
     font-size: 32px;
@@ -172,17 +172,19 @@ body{
   }
 }
 
+
+
 .build{
   background-color: $seriousblue;
   height: 20px;
   font-family: 'Crimson Text', serif;
-  font-size: 9px;
+  font-size: 11px;
   color: $white;
   line-height: 20px;
 }
 
 .logo-min-width{
-  min-width: 220px;
+  min-width: 180px;
 }
 
 .right{
@@ -192,6 +194,9 @@ body{
 .pBoxDark{
   background-color: $problue;
   padding:20px;
+  span{
+    line-height: 2.5;
+  }
 }
 
 a{

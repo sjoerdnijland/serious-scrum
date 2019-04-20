@@ -11,7 +11,7 @@ class Header extends React.Component {
     render() {
 
         const ContainerClassName = "header row";
-        const LogoClassName = "_mt20 _ml80";
+        const LogoClassName = "_mt30 _ml80 _mb20";
         const src = "images/serious-scrum-logo.svg";
 
         return (
@@ -20,7 +20,7 @@ class Header extends React.Component {
                     <img className={LogoClassName} src={src}/>
                 </div>
                 <div className="one-half column home _pl80 _pr80">
-                    <h1> a <i>home</i>  for serious scrum practitioners. </h1>
+
                 </div>
             </div>
 
