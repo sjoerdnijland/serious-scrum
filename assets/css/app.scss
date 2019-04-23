@@ -89,7 +89,7 @@ body{
     font-weight: bold;
     font-family: 'gothamlightregular', serif;
     text-transform: uppercase;
-    margin-top:40px
+    margin-top:38px
   }
   p{
     font-size: 32px;
@@ -120,7 +120,7 @@ body{
 .medium, .article{
   font-family: 'Open Sans', sans-serif;
   img{
-    width:150px;
+    width:214px;
   }
   p{
     font-style: normal;
@@ -149,7 +149,7 @@ body{
   font-weight: bold;
   font-size: 32px;
   border: 0px;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 .button:hover{
@@ -177,6 +177,14 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+  }
+  img:hover{
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 }
 
@@ -270,6 +278,11 @@ a:hover{
     height: 20px;
     font-size: 11px;
     line-height: 20px;
+  }
+  .medium{
+    img{
+      width: 150px;
+    }
   }
 }
 
