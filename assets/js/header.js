@@ -11,13 +11,12 @@ class Header extends React.Component {
     render() {
 
         const ContainerClassName = "header row";
-        const LogoClassName = "_mt30 _ml80 _mb20";
         const src = "images/serious-scrum-logo.svg";
 
         return (
             <div className={ContainerClassName}>
-                <div className="one-half column">
-                    <img className={LogoClassName} src={src}/>
+                <div className="one-half column logo">
+                    <img  src={src}/>
                 </div>
                 <div className="one-half column home _pl80 _pr80">
 
