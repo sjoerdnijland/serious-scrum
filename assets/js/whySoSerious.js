@@ -27,7 +27,7 @@ class WhySoSerious extends React.Component {
                     </p>
 
                 </div>
-                <div className="row _mt20">
+                <div className="row _mt40">
                     <h1>Our team of Writers and Editors</h1>
                 </div>
                 <div className="row _mt20">

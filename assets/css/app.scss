@@ -219,6 +219,20 @@ body{
   }
 }
 
+ol{
+  margin-left: 40px;
+  list-style-type: decimal;
+  list-style-position: outside;
+  li{
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-bottom:20px;
+  }
+  li:last-child {
+    padding-bottom:0px;
+  }
+}
+
 a{
   font-style: italic;
 }
@@ -279,10 +293,13 @@ a:hover{
     font-size: 11px;
     line-height: 20px;
   }
-  .medium{
-    img{
+  .medium {
+    img {
       width: 150px;
     }
+  }
+  ol {
+    margin-left: 20px;
   }
 }
 
