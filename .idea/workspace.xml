@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/swatches.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/swatches.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +19,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="243" column="3" selection-start-line="243" selection-start-column="3" selection-end-line="243" selection-end-column="3" />
+            <state relative-caret-position="149">
+              <caret line="156" column="52" lean-forward="true" selection-start-line="156" selection-start-column="52" selection-end-line="156" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -68,8 +64,8 @@
       <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -128,7 +124,6 @@
       <find>container</find>
       <find>three columns</find>
       <find>editorContainer</find>
-      <find>editor</find>
       <find>tsunami</find>
       <find>round</find>
       <find>home</find>
@@ -145,6 +140,7 @@
       <find>button</find>
       <find>hover</find>
       <find>Dar</find>
+      <find>editor</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -361,12 +357,12 @@
       <workItem from="1554312841906" duration="12768000" />
       <workItem from="1555437931908" duration="39929000" />
       <workItem from="1555835204123" duration="707000" />
-      <workItem from="1556006301805" duration="3794000" />
+      <workItem from="1556006301805" duration="4272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57198000" />
+    <option name="totallyTimeSpent" value="57676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
@@ -734,15 +730,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="243" column="3" selection-start-line="243" selection-start-column="3" selection-end-line="243" selection-end-column="3" />
+        <state relative-caret-position="149">
+          <caret line="156" column="52" lean-forward="true" selection-start-line="156" selection-start-column="52" selection-end-line="156" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -31,7 +31,7 @@ body{
   h1{
     font-family: 'Permanent Marker', cursive;
     color: $seriousblue;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 200px;
     background-color: rgba(221, 197, 162, 0.78);
     display: inline;
@@ -168,7 +168,7 @@ body{
     font-style: normal;
   }
 
-  font-size: 12px;
+  font-size: 28px;
   text-align: center;
   width:140px;
   min-width: 120px;
@@ -262,6 +262,9 @@ a:hover{
   }
   .pBoxDark{
     padding: 20px;
+  }
+  .editor{
+    font-size:12px;
   }
 }
 
