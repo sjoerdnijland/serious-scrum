@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="156" column="52" lean-forward="true" selection-start-line="156" selection-start-column="52" selection-end-line="156" selection-end-column="52" />
+            <state relative-caret-position="433">
+              <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -135,12 +136,12 @@
       <find>letter</find>
       <find>&lt;br/&gt;</find>
       <find>&lt;/p&gt;</find>
-      <find>build</find>
       <find>logo</find>
       <find>button</find>
       <find>hover</find>
       <find>Dar</find>
       <find>editor</find>
+      <find>build</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -357,12 +358,12 @@
       <workItem from="1554312841906" duration="12768000" />
       <workItem from="1555437931908" duration="39929000" />
       <workItem from="1555835204123" duration="707000" />
-      <workItem from="1556006301805" duration="4272000" />
+      <workItem from="1556006301805" duration="4557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57676000" />
+    <option name="totallyTimeSpent" value="57961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
@@ -730,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="156" column="52" lean-forward="true" selection-start-line="156" selection-start-column="52" selection-end-line="156" selection-end-column="52" />
+        <state relative-caret-position="433">
+          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
         </state>
       </provider>
     </entry>
