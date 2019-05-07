@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/dod.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/dod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/whySoSerious.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/whySoSerious.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +21,7 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="3555">
               <caret line="237" column="1" selection-start-line="237" selection-start-column="1" selection-end-line="237" selection-end-column="1" />
             </state>
           </provider>
@@ -58,7 +57,7 @@
       <file leaf-file-name="whySoSerious.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/whySoSerious.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
+            <state relative-caret-position="885">
               <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
             </state>
           </provider>
@@ -76,8 +75,8 @@
       <file leaf-file-name="dod.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/dod.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="405">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -94,7 +93,7 @@
       <file leaf-file-name="skeleton.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/skeleton.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2679">
+            <state relative-caret-position="3045">
               <caret line="203" column="7" selection-start-line="203" selection-start-column="7" selection-end-line="203" selection-end-column="7" />
             </state>
           </provider>
@@ -103,7 +102,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="345">
               <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -180,9 +179,9 @@
         <option value="$PROJECT_DIR$/assets/css/fonts.scss" />
         <option value="$PROJECT_DIR$/assets/js/header.js" />
         <option value="$PROJECT_DIR$/assets/css/swatches.scss" />
-        <option value="$PROJECT_DIR$/assets/js/dod.js" />
         <option value="$PROJECT_DIR$/assets/css/app.scss" />
         <option value="$PROJECT_DIR$/assets/js/whySoSerious.js" />
+        <option value="$PROJECT_DIR$/assets/js/dod.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
     </option>
@@ -236,17 +235,16 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="802" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,6 +318,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,18 +364,21 @@
       <workItem from="1554312841906" duration="12768000" />
       <workItem from="1555437931908" duration="39929000" />
       <workItem from="1555835204123" duration="707000" />
-      <workItem from="1556006301805" duration="6357000" />
+      <workItem from="1556006301805" duration="7662000" />
+      <workItem from="1556366032793" duration="208000" />
+      <workItem from="1556544715281" duration="513000" />
+      <workItem from="1556700351905" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59761000" />
+    <option name="totallyTimeSpent" value="62398000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29930556" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3986111" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -679,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="345">
           <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -708,16 +710,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/dod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/skeleton.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2679">
+        <state relative-caret-position="3045">
           <caret line="203" column="7" selection-start-line="203" selection-start-column="7" selection-end-line="203" selection-end-column="7" />
         </state>
       </provider>
@@ -729,17 +724,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/whySoSerious.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="3555">
           <caret line="237" column="1" selection-start-line="237" selection-start-column="1" selection-end-line="237" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/whySoSerious.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/dod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        <state relative-caret-position="405">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
         </state>
       </provider>
     </entry>

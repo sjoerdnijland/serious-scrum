@@ -25,7 +25,7 @@ class DoD extends React.Component {
                         <ol type="1">
                             <li>It is primarily about Scrum.</li>
                             <li>It conforms to the most recent version of the Scrum Guide.</li>
-                            <li>Opinions are not presented as such.</li>
+                            <li>Opinions are presented as such.</li>
                             <li>Complementary practices to the Scrum are presented as such.</li>
                             <li>The author is an experienced practitioner of Scrum.</li>
                             <li>It conforms to Scrum's values.</li>
