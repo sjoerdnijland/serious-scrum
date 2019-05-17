@@ -7,6 +7,7 @@
 /* for mobile #mobilefirst */
 body{
   font-family: merriweatherblack, sans-serif;
+  background-color: $seriousblue;
 }
 
 .header{
@@ -58,6 +59,33 @@ body{
 .divider{
   background-color: $seriousblue;
   height: 20px;
+}
+
+.meetup{
+  background-color: $navyblue;
+  min-width: 400px;
+  h1{
+    color: $white;
+    font-size: 24px;
+    font-family: 'gothamlightregular', serif;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+    font-style: italic;
+  }
+  a{
+    color: $lightblue;
+  }
+  img{
+    width:375px;
+    display:none;
+  }
+  .buttonContainer{
+    margin-top:60px;
+  }
 }
 
 .channels{
@@ -271,6 +299,18 @@ a:hover{
     }
     p{
       font-size:16px;
+    }
+  }
+  .meetup{
+    padding-bottom: 20px;
+    p{
+      font-size: 14px;
+    }
+    img{
+      display: block;
+    }
+    .buttonContainer{
+      margin-top:0px;
     }
   }
   .channels{

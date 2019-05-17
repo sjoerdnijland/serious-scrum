@@ -1,6 +1,7 @@
 import '../css/app.scss';
 import '../js/header.js';
 import '../js/tsunami.js';
+import '../js/meetup.js';
 import '../js/channels.js';
 import '../js/medium.js';
 import '../js/slack.js';
@@ -34,6 +35,7 @@ class App extends React.Component {
             <div>
                 <Header/>
                 <Tsunami/>
+                <Meetup/>
                 <Channels/>
                 <Content/>
                 <Build/>
