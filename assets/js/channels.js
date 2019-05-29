@@ -10,7 +10,7 @@ class Channels extends React.Component {
 
     render() {
 
-        const ContainerClassName = "channels row _pt20 _pb20 _pl40";
+        const ContainerClassName = "channels row _pt20 _pl40";
         const tsunamiLogo = "images/tsunami-of-sense.svg";
 
         return (

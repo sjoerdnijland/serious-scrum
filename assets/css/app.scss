@@ -247,6 +247,13 @@ body{
   }
 }
 
+.error p{
+  color: $red;
+}
+.success p{
+  color: $turquoise;
+}
+
 ol{
   margin-left: 40px;
   list-style-type: decimal;
