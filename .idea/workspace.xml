@@ -37,7 +37,7 @@
       <file leaf-file-name="SubscribeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SubscribeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
+            <state relative-caret-position="273">
               <caret line="37" column="101" selection-start-line="37" selection-start-column="101" selection-end-line="37" selection-end-column="101" />
               <folding>
                 <element signature="e#40#97#0#PHP" expanded="true" />
@@ -364,12 +364,12 @@
       <workItem from="1556544715281" duration="513000" />
       <workItem from="1556700351905" duration="817000" />
       <workItem from="1557992428600" duration="3828000" />
-      <workItem from="1558514193583" duration="8753000" />
+      <workItem from="1558514193583" duration="9139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75185000" />
+    <option name="totallyTimeSpent" value="75571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -739,7 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SubscribeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="273">
           <caret line="37" column="101" selection-start-line="37" selection-start-column="101" selection-end-line="37" selection-end-column="101" />
           <folding>
             <element signature="e#40#97#0#PHP" expanded="true" />
