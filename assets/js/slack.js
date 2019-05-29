@@ -75,17 +75,11 @@ class Slack extends React.Component {
                         <img src={slackLogo}/>
                     </div>
                     <div className="two-thirds column">
-                        <p>Let’s have a serious chat at <a href="https://join.slack.com/t/serious-scrum/shared_invite/enQtMzcxNDQ4NTM4MzI1LTI0ZGU0NjFkZGM2ZDM2MTlhMDQyMjVlMTJkZjk5OTZlZDhkNDczZTIzOTUxYjMyYTk4ZGNhOTNjM2EwZWIyMTc" target="_blank">Slack</a> about Scrum. </p>
+                        <p>Let’s have a serious chat at <a href="https://join.slack.com/t/serious-scrum/shared_invite/enQtNjQ5MDY0NTg5OTg0LWExYmZkZjZhOTQ4ZGNkMTU2OTgxODY3ZjZjZDA5OTI2NDY4N2ZiYTUxOTMxM2RlNDRlMTJkYTUwMDMwZjgzNTg" target="_blank">Slack</a> about Scrum. </p>
                         <p>over <span className="metric">1.800</span> <span>members</span></p>
-                        <input type="email" value={this.state.emailValue} onChange={evt => this.updateEmailValue(evt)} className="_mt10" name="email" id="requestInvite_input" placeholder="E-mail" required/>
-                        <div className={sentMessageClass} id="requestInvite_confirmed">
-                            <p>The invite is sent!</p>
-                        </div>
-                        <div className={errorMessageClass} id="requestInvite_error">
-                            <p id='errorMessage'>{this.state.errorMessage}</p>
-                        </div>
-                        <p className="_pt10 buttonContainer">
-                            <a className="button" id="requestInvite_button" onClick={() => this.sendInvite(this.state.emailValue)}>invite me!</a>
+                        <p>over <span className="metric">20.000</span> <span>messages / month</span></p>
+                        <p className="_pt20 buttonContainer">
+                            <a className="button" id="requestInvite_button" href="https://join.slack.com/t/serious-scrum/shared_invite/enQtNjQ5MDY0NTg5OTg0LWExYmZkZjZhOTQ4ZGNkMTU2OTgxODY3ZjZjZDA5OTI2NDY4N2ZiYTUxOTMxM2RlNDRlMTJkYTUwMDMwZjgzNTg" target="_blank">invite me!</a>
                         </p>
                     </div>
                 </div>
@@ -95,3 +89,14 @@ class Slack extends React.Component {
     }
 }
 window.Slack = Slack;
+
+/*<input type="email" value={this.state.emailValue} onChange={evt => this.updateEmailValue(evt)} className="_mt10" name="email" id="requestInvite_input" placeholder="E-mail" required/>
+                        <div className={sentMessageClass} id="requestInvite_confirmed">
+                            <p>The invite is sent!</p>
+                        </div>
+                        <div className={errorMessageClass} id="requestInvite_error">
+                            <p id='errorMessage'>{this.state.errorMessage}</p>
+                        </div>
+                        */
+
+/*<a className="button" id="requestInvite_button" onClick={() => this.sendInvite(this.state.emailValue)}>invite me!</a>*/
