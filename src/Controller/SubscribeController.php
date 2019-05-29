@@ -35,7 +35,7 @@ class SubscribeController extends Controller
         //$slackAutoJoinChannels='C7USNE9AB';
 
         $slackHostName='serious-scrum';
-        $slackAuthToken='xoxp-339336174519-338194545539-650919247143-e35ddf6ca0f1fa1c384a5fb3acb17cc2';
+        $slackAuthToken='xoxp-339336174519-338194545539-637754954962-5bd6d5369bb48d608e14febb85b17ac5';
         $slackInviteUrl='https://'.$slackHostName.'.slack.com/api/users.admin.invite?t='.time();
         //$slackAutoJoinChannels='C7USNE9AB';
 
