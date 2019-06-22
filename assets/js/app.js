@@ -2,9 +2,11 @@ import '../css/app.scss';
 import '../js/header.js';
 import '../js/tsunami.js';
 import '../js/meetup.js';
+import '../js/meetup-past.js';
 import '../js/channels.js';
 import '../js/medium.js';
 import '../js/slack.js';
+import '../js/scrumbut.js';
 import '../js/content.js';
 import '../js/whySoSerious.js';
 import '../js/editor.js';
@@ -35,8 +37,9 @@ class App extends React.Component {
             <div>
                 <Header/>
                 <Tsunami/>
-                <Meetup/>
+                <MeetupPast/>
                 <Channels/>
+                <ScrumBut/>
                 <Content/>
                 <Build/>
             </div>

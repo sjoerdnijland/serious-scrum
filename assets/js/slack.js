@@ -90,13 +90,7 @@ class Slack extends React.Component {
 }
 window.Slack = Slack;
 
-/*<input type="email" value={this.state.emailValue} onChange={evt => this.updateEmailValue(evt)} className="_mt10" name="email" id="requestInvite_input" placeholder="E-mail" required/>
-                        <div className={sentMessageClass} id="requestInvite_confirmed">
-                            <p>The invite is sent!</p>
-                        </div>
-                        <div className={errorMessageClass} id="requestInvite_error">
-                            <p id='errorMessage'>{this.state.errorMessage}</p>
-                        </div>
+/*
                         */
 
 /*<a className="button" id="requestInvite_button" onClick={() => this.sendInvite(this.state.emailValue)}>invite me!</a>*/
