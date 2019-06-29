@@ -28,7 +28,7 @@ class WhySoSerious extends React.Component {
 
                 </div>
                 <div className="row _mt40">
-                    <h1>Our team of Writers and Editors</h1>
+                    <h1>Our team of Editors</h1>
                 </div>
                 <div className="row _mt20">
                     <div className="">
@@ -43,15 +43,6 @@ class WhySoSerious extends React.Component {
                     <div className="">
                         <Editor name='Maarten Dalmijn' picture="maarten" handle="@mdalmijn"/>
                     </div>
-                    <div className=" ">
-                        <Editor name='Adrian Kerry' picture="adrian" handle="@adrian.kerry"/>
-                    </div>
-                    <div className=" ">
-                        <Editor name='John Clopton' picture="john" handle="@jookieSTL"/>
-                    </div>
-                    <div className=" ">
-                        <Editor name='Justin Bériot' picture="justin" handle="@JustinBeriot"/>
-                    </div>
                     <div className="">
                         <Editor name='Marty de Jonge' picture="marty" handle="@mdj_22623"/>
                     </div>
@@ -59,13 +50,10 @@ class WhySoSerious extends React.Component {
                         <Editor name='Max Heiliger' picture="max" handle="@heiliger.maximilian"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Raymon Lagonda' picture="raymond" handle="@raymond.lagonda"/>
+                        <Editor name='Adrian Kerry' picture="adrian" handle="@adrian.kerry"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Scrum Rebel' picture="rebel" handle="@scrumrebel"/>
-                    </div>
-                    <div className="">
-                        <Editor name='Roland Flemm' picture="roland" handle="@roland.flemm"/>
+                        <Editor name='John Clopton' picture="john" handle="@jookieSTL"/>
                     </div>
                 </div>
                 <p className='pBoxDark _mt25'>

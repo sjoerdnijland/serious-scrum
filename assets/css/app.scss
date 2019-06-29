@@ -322,9 +322,10 @@ a:hover{
   }
   .scrumbut{
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
     p{
       font-size: 14px;
+      color: $white;
     }
     img{
       display: block;

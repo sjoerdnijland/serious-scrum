@@ -37,8 +37,8 @@ class App extends React.Component {
             <div>
                 <Header/>
                 <Tsunami/>
-                <MeetupPast/>
                 <Channels/>
+                <MeetupPast/>
                 <ScrumBut/>
                 <Content/>
                 <Build/>
