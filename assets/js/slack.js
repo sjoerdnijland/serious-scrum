@@ -79,7 +79,7 @@ class Slack extends React.Component {
                         <p>over <span className="metric">2.000</span> <span>members</span></p>
                         <p>over <span className="metric">20.000</span> <span>messages / month</span></p>
                         <p className="_pt20 buttonContainer">
-                            <a className="button" id="requestInvite_button" href="https://join.slack.com/t/serious-scrum/shared_invite/enQtNjQ5MDY0NTg5OTg0LWExYmZkZjZhOTQ4ZGNkMTU2OTgxODY3ZjZjZDA5OTI2NDY4N2ZiYTUxOTMxM2RlNDRlMTJkYTUwMDMwZjgzNTg" target="_blank">invite me!</a>
+                            <a className="button" id="requestInvite_button" href="https://join.slack.com/t/serious-scrum/shared_invite/enQtNjQ5MDY0NTg5OTg0LWExYmZkZjZhOTQ4ZGNkMTU2OTgxODY3ZjZjZDA5OTI2NDY4N2ZiYTUxOTMxM2RlNDRlMTJkYTUwMDMwZjgzNTg" target="_blank">Invite me!</a>
                         </p>
                     </div>
                 </div>
