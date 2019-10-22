@@ -50,9 +50,6 @@ class WhySoSerious extends React.Component {
                         <Editor name='Max Heiliger' picture="max" handle="@heiliger.maximilian"/>
                     </div>
                     <div className=" ">
-                        <Editor name='Adrian Kerry' picture="adrian" handle="@adrian.kerry"/>
-                    </div>
-                    <div className=" ">
                         <Editor name='John Clopton' picture="john" handle="@jookieSTL"/>
                     </div>
                 </div>
