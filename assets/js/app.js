@@ -38,8 +38,8 @@ class App extends React.Component {
                 <Header/>
                 <Tsunami/>
                 <Channels/>
-                <MeetupPast/>
                 <Content/>
+                <MeetupPast/>
                 <Build/>
             </div>
         )
