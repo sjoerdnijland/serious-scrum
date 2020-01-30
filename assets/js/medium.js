@@ -21,8 +21,8 @@ class Medium extends React.Component {
                     </div>
                     <div className="two-thirds column">
                         <p>Content by and for Scrum practitioners at <a href="https://medium.com/serious-scrum" target="_blank">Medium</a>.</p>
-                        <p><span className="metric">5.000</span> <span>followers</span></p>
-                        <p><span className="metric">100.000</span> <span>reads /month</span></p>
+                        <p><span className="metric">6.500</span> <span>followers</span></p>
+                        <p><span className="metric">200.000</span> <span>reads /month</span></p>
                         <p className="_pt20 buttonContainer"><a href="https://medium.com/serious-scrum" target="_blank" className="button">Tune in!</a></p>
                     </div>
                 </div>
