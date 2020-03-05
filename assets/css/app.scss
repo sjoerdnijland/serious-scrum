@@ -156,6 +156,19 @@ body{
     letter-spacing: 0.02em;
     color: $white;
   }
+  h1{
+    font-family: 'Permanent Marker', cursive;
+    color: $white;
+    font-size: 32px;
+    line-height: 200px;
+    background-color: rgba(221, 197, 162, 0.78);
+    display: inline;
+    padding: 5px 20px 10px 20px;
+    border-radius: 20px;
+    white-space: nowrap;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
   .metric{
     font-size: 32px;
   }
@@ -225,7 +238,7 @@ body{
 
 
 .build{
-  background-color: $seriousblue;
+  background-color: $problue;
   height: 40px;
   font-family: 'Crimson Text', serif;
   font-size: 24px;
