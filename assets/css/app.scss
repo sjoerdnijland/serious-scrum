@@ -154,6 +154,7 @@ body{
     font-style: normal;
     margin-bottom:0px;
     letter-spacing: 0.02em;
+    color: $white;
   }
   .metric{
     font-size: 32px;
@@ -169,10 +170,15 @@ body{
   a:hover {
     text-decoration: none;
   }
+
+}
+
+.center{
+  text-align: center;
 }
 
 .button{
-  background-color: $marineblue;
+  background-color: $seriouslySweet;
   color:$white;
   font-weight: bold;
   font-size: 32px;
