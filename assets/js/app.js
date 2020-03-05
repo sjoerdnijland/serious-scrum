@@ -13,6 +13,7 @@ import '../js/editor.js';
 import '../js/dod.js';
 import '../js/divider.js';
 import '../js/build.js';
+import '../js/handbook.js';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
