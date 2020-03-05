@@ -14,7 +14,7 @@ class Handbook extends React.Component {
 
         return (
             <div className={ContainerClassName}>
-                <div className="row center">
+                <div className="row center _mb40">
                     <h1>Explore The Serious Scrum Handbook</h1>
 
                     <div className="row _mt40">
@@ -25,7 +25,7 @@ class Handbook extends React.Component {
 
                     </div>
                     <p className="_pt20 buttonContainer center"><a href="https://medium.com/serious-scrum" target="_blank" className="button">Serious Scrum: Handbook</a></p>
-            </div>
+                </div>
             </div>
 
         );
