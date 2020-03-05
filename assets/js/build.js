@@ -14,10 +14,10 @@ class Build extends React.Component {
 
         return (
             <div className={ContainerClassName}>
-                <div className="one-half-fixed column _pl80">
-                    build: 1.4.7 - AGNC - Serious Scrum is a Registered Trademark - KVK: 58970037 - BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
+                <div className="two-thirds column _pl80">
+                    build: 1.4.8 - AGNC - Serious Scrum is a Registered Trademark - KVK: 58970037 - BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
                 </div>
-                <div className="one-half-fixed column right _pr40">
+                <div className="one-third column right _pr40">
                     :)
                 </div>
             </div>
