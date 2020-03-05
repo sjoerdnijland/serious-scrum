@@ -24,7 +24,7 @@ class Handbook extends React.Component {
                         </p>
 
                     </div>
-                    <p className="_pt20 buttonContainer center"><a href="https://medium.com/serious-scrum" target="_blank" className="button">Serious Scrum: Handbook</a></p>
+                    <p className="_pt20 buttonContainer center"><a href="https://app.gitbook.com/@sjoerd-nijland/s/serious-scrum/" target="_blank" className="button">Serious Scrum: Handbook</a></p>
                 </div>
             </div>
 
