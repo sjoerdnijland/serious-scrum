@@ -19,8 +19,7 @@ class Handbook extends React.Component {
 
                     <div className="row _mt40">
                         <p>
-                            Our handbook is to all those involved in the Serious Scrum community.
-                            It covers our purpose, values, ambitions, brand guidelines, how to write for Serious Scrum, legal info, and if and how to approach us for commercial activities and promotions.
+                            Our handbook covers our purpose, values, ambitions, brand guidelines, how to write for Serious Scrum, legal info, and if and how to approach us for commercial activities and promotions.
                         </p>
 
                     </div>

@@ -14,6 +14,7 @@ import '../js/dod.js';
 import '../js/divider.js';
 import '../js/build.js';
 import '../js/handbook.js';
+import '../js/training.js';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -40,6 +41,7 @@ class App extends React.Component {
                 <Tsunami/>
                 <Channels/>
                 <Handbook/>
+                <Training/>
                 <Build/>
             </div>
         )
