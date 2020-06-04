@@ -1,0 +1,27 @@
+.loginContainer{
+  float:right;
+
+  a{
+    font-style:normal;
+    color: $white;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  div:hover{
+    text-decoration: underline;
+  }
+  img{
+    width: 40px;
+    border-radius: 50%;
+    vertical-align:middle;
+    margin-left:10px;
+  }
+}
+
+/* for even smaller desktop: */
+@media only screen and (max-width: 780px) {
+  .avatar {
+    display:none;
+  }
+}

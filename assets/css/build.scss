@@ -1,0 +1,16 @@
+.build{
+  background-color: $seriousblue;
+  height: 20px;
+  font-family: 'Crimson Text', serif;
+  font-size: 11px;
+  color: $white;
+  line-height: 20px;
+  padding-left: 40px;
+}
+@media only screen and (max-width: 780px) {
+  .build {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+

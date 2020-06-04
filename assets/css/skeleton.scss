@@ -41,8 +41,8 @@
   float: left;
   box-sizing: border-box; }
 
-.one-half.column                { width: 100%; }
-.one-half-fixed.column          { width: 48%; }
+.one-half.column                { width: 50%; }
+.one-half-fixed.column          { width: 50%; }
 
 .one-third.column               { width: 30.6666666667%; }
 .two-thirds.column              { width: 65.3333333333%; }
@@ -79,8 +79,8 @@
 
   .one-fifth.column              { width: 16%; }
 
-  .one-half.column                { width: 48%; }
-  .one-half-fixed.column          { width: 48%; }
+  .one-half.column                { width: 50%; }
+  .one-half-fixed.column          { width: 50%; }
 
   /* Offsets */
   .offset-by-one.column,

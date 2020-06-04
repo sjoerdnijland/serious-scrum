@@ -3,6 +3,7 @@ var Encore = require('@symfony/webpack-encore');
 Encore
 // directory where compiled assets will be stored
     .setOutputPath('public/build/')
+
     // public path used by the web server to access the output path
     .setPublicPath('/build')
     // only needed for CDN's or sub-directory deploy
@@ -25,22 +26,36 @@ Encore
     // but, you probably want this, unless you're building a single-page app
     .enableSingleRuntimeChunk()
 
-    .cleanupOutputBeforeBuild()
-    .enableSourceMaps(!Encore.isProduction())
+
     // enables hashed filenames (e.g. app.abc123.css)
-    .enableVersioning(Encore.isProduction())
+    //.enableVersioning(Encore.isProduction())
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
-    // uncomment if you use Sass/SCSS files
-    .enableSassLoader()
-
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+    /*
+    .addLoader({
+        test: /\.(png|jpg|svg)$/,
+        loader: 'file-loader',
+        options: {
+            name: '/[name].[hash:7].[ext]',
+            publicPath: '/build',
+            outputPath: 'images'
+        }
+    })
+    */
+    .cleanupOutputBeforeBuild()
+
+    .enableVersioning()
+
+    // uncomment if you use Sass/SCSS files
+    .enableSassLoader()
 
 
     .enableReactPreset()
 ;
+
 
 module.exports = Encore.getWebpackConfig();

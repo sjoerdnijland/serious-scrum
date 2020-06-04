@@ -1,0 +1,19 @@
+.library{
+  width:100%;
+  background-color: $white;
+  padding:40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  a{
+    font-style: normal;
+    color: $black;
+  }
+}
+/* for even smaller desktop: */
+@media only screen and (max-width: 780px) {
+  .library {
+    justify-content: space-around;
+  }
+}

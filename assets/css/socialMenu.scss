@@ -1,0 +1,48 @@
+.socialMenuContainer{
+
+  margin-top:2px;
+
+  .slackLogo{
+    margin-top:7px;
+  }
+  a{
+    margin-right:10px;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+}
+.socialfooter{
+  text-align: center;
+  padding: 20px 0;
+  background-color: $seriouslySweet;
+  a{
+    margin: 0 20px;
+  }
+}
+
+.socialheader{
+  float:right;
+  margin-right: 5px;
+}
+
+/* for width less than 1000: */
+@media only screen and (max-width: 1100px) {
+  .socialheader{
+    display:none;
+  }
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  /* Styles */
+  .socialheader{
+    display:none;
+  }
+}
+
+

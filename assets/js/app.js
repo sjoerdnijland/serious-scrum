@@ -1,5 +1,28 @@
 import '../css/app.scss';
 import '../js/header.js';
+import '../js/banner.js';
+import '../js/search.js';
+import '../js/socialMenu.js';
+import '../js/login.js';
+import '../js/categoryMenu.js';
+import '../js/publishButton.js';
+import '../js/submitButton.js';
+import '../js/categories.js';
+import '../js/category.js';
+import '../js/subCategory.js';
+import '../js/menu.js';
+import '../js/menuItem.js';
+import '../js/editorial.js';
+import '../js/mastery.js';
+import '../js/events.js';
+import '../js/library.js';
+import '../js/article.js';
+import '../js/submitForm.js';
+import '../js/reviewForm.js';
+import '../js/formInputLink.js';
+import '../js/categorySelect.js';
+import '../js/reviewSelect.js';
+import '../js/reviewButton';
 import '../js/tsunami.js';
 import '../js/meetup.js';
 import '../js/meetup-past.js';
@@ -16,8 +39,11 @@ import '../js/build.js';
 import '../js/handbook.js';
 import '../js/training.js';
 
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import 'react-dropdown/style.css';
 
 class App extends React.Component {
 
@@ -25,23 +51,335 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-
+            expanded: false,
+            category: false,
+            search: false,
+            active: 'latest',
+            editorial: false,
+            submitForm: false,
+            reviewForm: false,
+            submitResponse: false,
+            loadResponse: false,
+            articles: this.props.data.articles,
+            categories: this.props.data.categories,
+            user: this.props.data.user,
+            submitData: '',
+            submitUrl: '',
+            submitCategory: 1,
+            reviewCategory: false,
+            reviewOption: 'isApproved',
         };
+
+        this.getArticles = this.getArticles.bind(this);
+        this.getCategories = this.getCategories.bind(this);
+        this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
+        this.setCategory = this.setCategory.bind(this);
+        this.setSearch = this.setSearch.bind(this);
+        this.setActive = this.setActive.bind(this);
+        this.toggleSubmitForm = this.toggleSubmitForm.bind(this);
+        this.toggleReviewForm = this.toggleReviewForm.bind(this);
+        this.submitArticle = this.submitArticle.bind(this);
+        this.reviewArticle = this.reviewArticle.bind(this);
+        this.setSubmitCategory = this.setSubmitCategory.bind(this);
+        this.setReviewCategory = this.setReviewCategory.bind(this);
+        this.setReviewOption = this.setReviewOption.bind(this);
+        this.setSubmitUrl = this.setSubmitUrl.bind(this);
+    }
+
+    getArticles(){
+        const api = "/articles";
+        fetch(api, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                this.setState({
+                    loadResponse: 'error'
+                });
+            }else{
+                this.setState({
+                    loadResponse: 'success'
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            this.setState({
+                articles: data
+            });
+
+        })
+        .catch((error) => {
+            this.setState({
+                loadResponse: 'error'
+            });
+        });
+    }
+
+    getCategories(){
+        const api = "/categories";
+        fetch(api, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        })
+            .then(response => {
+                if (!response.ok) {
+                    this.setState({
+                        loadResponse: 'error'
+                    });
+                }else{
+                    this.setState({
+                        loadResponse: 'success'
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                this.setState({
+                    categories: data
+                });
+
+            })
+            .catch((error) => {
+                this.setState({
+                    loadResponse: 'error'
+                });
+            });
+    }
+
+    toggleCategoryMenu() {
+        this.setState({
+            expanded: !this.state.expanded
+        });
+    }
+
+    setCategory(category) {
+        this.setState({
+            category: category,
+            search: false
+        });
+    }
+
+    setSearch(value) {
+        this.setState({
+            category: false,
+            active: false,
+            search: value
+        });
+    }
+
+    toggleSubmitForm() {
+        this.setState({
+            submitForm: !this.state.submitForm
+        });
+    }
+
+    toggleReviewForm(articleId) {
+        if(this.state.reviewForm == articleId){
+            articleId = false;
+        }
+        this.setState({
+            reviewForm: articleId
+        });
+    }
+
+    setSubmitUrl(submitUrl) {
+        this.setState({
+            submitUrl: submitUrl
+        });
+    }
+
+    setSubmitCategory(submitCategory) {
+        this.setState({
+            submitCategory: submitCategory
+        });
+    }
+
+    setReviewCategory(reviewCategory) {
+        this.setState({
+            reviewCategory: reviewCategory
+        });
+    }
+
+    setReviewOption(reviewOption) {
+        this.setState({
+            reviewOption: reviewOption
+        });
+    }
+
+    setActive(active) {
+        if(active=="editorial" || active=="mastery" || active=="events"){
+            if(this.state.editorial==active){
+                active = false;
+            }
+            this.setState({
+                editorial: active
+            });
+            return;
+        }
+        this.setState({
+            active: active,
+            category: false,
+            search: false
+        });
+    }
+
+    submitArticle(){
+
+        const api = "/article/new";
+        const article = {};
+        article['url'] =  this.state.submitUrl;
+        article['category'] =  this.state.submitCategory;
+        if(this.state.user.roles.includes("ROLE_EDITOR") || this.state.user.roles.includes("ROLE_AMBASSADOR") || this.state.user.roles.includes("ROLE_ADMIN")){
+            article['option'] =  this.state.reviewOption;
+        }
+
+        const appData = JSON.stringify(article);
+        fetch(api, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: appData
+        })
+        .then(response => {
+            if (!response.ok) {
+                this.setState({
+                    submitResponse: 'error'
+                });
+            }else{
+                this.setState({
+                    submitResponse: 'success'
+                });
+
+                this.getArticles();
+
+                setTimeout(function() { //Start the timer
+                    this.setState({
+                        submitForm: false,
+                        submitResponse: false,
+                        submitData: '',
+                        submitUrl: '',
+                        submitCategory: 'History',
+                    }) //After 3 second, set render to true
+                }.bind(this), 3000)
+            }
+
+            return response.json();
+        })
+        .then(data => {
+            this.setState({
+                submitData: data
+            });
+
+        })
+        .catch((error) => {
+            this.setState({
+                submitResponse: 'error',
+                submitData: data
+            });
+        });
+    }
+
+    reviewArticle(articleId){
+
+        const api = "/article/review";
+        const article = {};
+        article['id'] =  articleId;
+        article['category'] =  this.state.reviewCategory;
+        article['option'] =  this.state.reviewOption;
+        const appData = JSON.stringify(article);
+        fetch(api, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: appData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    this.setState({
+                        submitResponse: 'error'
+                    });
+                }else{
+                    this.setState({
+                        submitResponse: 'success'
+                    });
+                    this.getArticles();
+
+                    this.setState({
+                        reviewForm: false,
+                        submitResponse: false,
+                        submitData: '',
+                        reviewCategory: false,
+                        reviewOption: false,
+                    })
+
+                }
+                return response.json();
+            })
+            .then(data => {
+                this.setState({
+                    submitData: data
+                });
+
+            })
+            .catch((error) => {
+                this.setState({
+                    submitResponse: 'error',
+                    submitData: data
+                });
+            });
     }
 
     render() {
 
         const functions = {};
 
-        console.log(this.props.data);
+        functions['toggleCategoryMenu'] = this.toggleCategoryMenu;
+        functions['setCategory'] = this.setCategory;
+        functions['setSearch'] = this.setSearch;
+        functions['setActive'] = this.setActive;
+        functions['toggleSubmitForm'] = this.toggleSubmitForm;
+        functions['toggleReviewForm'] = this.toggleReviewForm;
+        functions['submitArticle'] = this.submitArticle;
+        functions['reviewArticle'] = this.reviewArticle;
+        functions['setSubmitUrl'] = this.setSubmitUrl;
+        functions['setSubmitCategory'] = this.setSubmitCategory;
+        functions['setReviewCategory'] = this.setReviewCategory;
+        functions['setReviewOption'] = this.setReviewOption;
+
+        const appContainerClassName = "appContainer";
+
+        const bannerText1 = "Community by and for Scrum Practitioners";
+        const bannerText2 = "We seriously need your help! please support us on Patreon!";
+        const bannerUrl2 = "https://www.patreon.com/seriousscrum";
 
         return (
-            <div>
-                <Header/>
+            <div className={appContainerClassName}>
+                <Header functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
+                <SubmitForm functions={functions} submitUrl={this.state.submitUrl} active={this.state.submitForm} submitResponse={this.state.submitResponse} submitData={this.state.submitData} category={this.state.submitCategory} categories={this.state.categories} roles={this.state.user.roles} form="submit"/>
+                <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>
+                <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
+                <Mastery active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
+
                 <Tsunami/>
+                <Search functions={functions} value={this.state.search} type="mobile"/>
+                <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} />
+
+                <Library articles={this.state.articles} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
+                <SocialMenu type="footer"/>
                 <Channels/>
-                <Handbook/>
-                <Training/>
+                <Banner bannerText={bannerText2} url={bannerUrl2}/>
                 <Build/>
             </div>
         )
@@ -53,3 +391,4 @@ const root = document.getElementById('root');
 const data =  JSON.parse(root.dataset.preload);
 
 ReactDOM.render(<App data={data} />, root);
+/*<Banner bannerText={bannerText1}/>*/

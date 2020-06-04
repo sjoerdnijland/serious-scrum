@@ -32,11 +32,11 @@ $types: 0;
 }
 
 ._ar{
-  text-align: right;
+  text-align: right !important;
 }
 
 ._fr{
-  float-align: right;
+  float: right !important;
 }
 
 .hidden {

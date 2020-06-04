@@ -1,0 +1,59 @@
+.searchContainer{
+  float:right;
+  margin-right:20px;
+}
+
+.mobile{
+  .search{
+    display:none;
+  }
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  /* Styles */
+  .searchContainer{
+    text-align: center;
+    float: none;
+    margin-right: 0;
+  }
+  .mobile{
+    .search{
+      display: initial;
+      width:50%;
+      margin: 20px 0px;
+    }
+  }
+  .desktop{
+    .search{
+      display:none;
+    }
+  }
+}
+
+
+/* for width less than 1000: */
+@media only screen and (max-width: 1100px) {
+  .searchContainer{
+    text-align: center;
+    float: none;
+    margin-right: 0;
+  }
+  .mobile{
+    .search{
+      display: initial;
+      width:50%;
+      margin: 20px 0px;
+    }
+  }
+  .desktop{
+    .search{
+      display:none;
+    }
+  }
+}
+

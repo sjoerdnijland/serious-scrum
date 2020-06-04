@@ -3,6 +3,8 @@
         "@babel/preset-react": "^7.0.0",
         "@symfony/webpack-encore": "^0.26.0",
         "core-js": "^3.0.0",
+        "node-sass": "^4.14.0",
+        "sass-loader": "^8.0.2",
         "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
@@ -14,8 +16,11 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "fsevents": "2.0",
         "prop-types": "^15.7.2",
         "react": "^16.8.6",
-        "react-dom": "^16.8.6"
+        "react-dom": "^16.8.6",
+        "react-dropdown": "^1.7.0",
+        "react-native-elements": "^2.0.0"
     }
 }

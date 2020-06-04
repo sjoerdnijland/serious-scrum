@@ -1,0 +1,74 @@
+.article{
+  box-sizing: border-box;
+  margin: 10px;
+  padding:10px;
+  .thumbnail{
+    width: 300px;
+    height: 200px;
+  }
+  .title{
+    font-family: "Gotham Bold", sans-serif;
+    color: $seriousblue;
+    font-size: 20px;
+    line-height: 32px;
+    width: 300px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .intro{
+    width: 300px;
+    max-height: 130px;
+    font-family: "Georgia", serif;
+    color: $grey;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .author{
+    width: 300px;
+    padding-bottom:10px;
+    border-bottom: 1px dashed $problue;
+    .avatar{
+      float: left;
+      margin-right:10px;
+      img{
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .name{
+      font-family: "Georgia", serif;
+      color: $problue;
+      font-size: 16px;
+    }
+    .role{
+      font-family: "Georgia", serif;
+      color: $grey;
+      font-size: 12px;
+    }
+    .rank img{
+      height: 14px;
+    }
+  }
+  a:hover{
+    text-decoration:underline;
+  }
+}
+.curated{
+  border: 5px solid $seriouslySweet;
+  margin: 5px;
+}
+.curatedText{
+  background-color: $seriouslySweet;
+  color: $white;
+  bottom: 0;
+  position: relative;
+  text-align: center;
+  text-decoration:none !important;
+  border-bottom: 1px dashed $problue;
+}
+

@@ -1,0 +1,66 @@
+.submitFormContainer, .reviewFormContainer{
+  position: absolute;
+  z-index: 2;
+  background-color: $seriouslySweet;
+  width:340px;
+  margin-top: -25px;
+  border-radius: 4px;
+  .inputContainer{
+    float:left;
+  }
+  .label{
+    margin: 0 0 5px 2px;
+    float:left;
+    width:100%;
+    color: $white;
+    font-family: "Gotham Bold";
+    font-size: 11px;
+  }
+  .link{
+    float:left;
+    width:300px;
+
+  }
+  .select{
+    width:300px;
+
+
+  }
+  .selectControl{
+    height: 38px;
+    border-radius: 4px;
+  }
+  .errorMessage{
+    color: $white;
+    padding: 20px 0 0 20px;
+  }
+  .submitMessage{
+    color: $white;
+    padding: 20px;
+  }
+
+}
+
+.submitFormContainer{
+  right: 500px;
+}
+
+.reviewFormContainer{
+  margin-top: 45px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .submitFormContainer {
+    right: 100px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .submitFormContainer {
+    right: 50px;
+  }
+}
+
+
