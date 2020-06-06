@@ -268,7 +268,7 @@ class App extends React.Component {
                         submitResponse: false,
                         submitData: '',
                         submitUrl: '',
-                        submitCategory: 'History',
+                        submitCategory: 1,
                     }) //After 3 second, set render to true
                 }.bind(this), 3000)
             }

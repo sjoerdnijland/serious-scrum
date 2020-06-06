@@ -27,6 +27,16 @@ class ArticleRepository extends ServiceEntityRepository
             ->getResult();
     }
 
+    public function findArticleByUrl($url)
+    {
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.url = :val')
+            ->setParameter('val', $url)
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getResult();
+    }
+
     // /**
     //  * @return Article[] Returns an array of Article objects
     //  */

@@ -57,6 +57,13 @@ class ArticleController extends AbstractController
             return new JsonResponse('invalid url format! ', 400); #bad request
         }
 
+        $urlAlreadyExists = $em->getRepository(Article::class)
+            ->findArticleByUrl($data['url']);
+
+        if($urlAlreadyExists){
+            return new JsonResponse('url already submitted', 200); #bad request
+        }
+
         $client = HttpClient::create();
 
         $response = $client->request('GET', $data['url']);

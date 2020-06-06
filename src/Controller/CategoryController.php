@@ -33,17 +33,6 @@ class CategoryController extends AbstractController
 
     /**
      * @param Request $request
-     * @Route("/categories/reload", name="reload_categories")
-     * @Method("GET")
-     * * @return JsonResponse
-     */
-    public function reloadCategories(){
-        $categories = $this->reloadCategories(false, true);
-        return new JsonResponse($categories, 200);
-    }
-
-    /**
-     * @param Request $request
      * @Route("/categories", name="categories")
      * @Method("GET")
      * * @return JsonResponse

@@ -79,7 +79,6 @@ class DefaultController extends AbstractController
             'categories' => $categories
         ];
 
-
         //return new JsonResponse($output);
         return $this->render('app.html.twig', $output);
     }
