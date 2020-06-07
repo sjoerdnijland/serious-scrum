@@ -70,6 +70,7 @@ class App extends React.Component {
             reviewOption: 'isApproved',
         };
 
+        this.closeMenus = this.closeMenus.bind(this);
         this.getArticles = this.getArticles.bind(this);
         this.getCategories = this.getCategories.bind(this);
         this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
@@ -84,6 +85,14 @@ class App extends React.Component {
         this.setReviewCategory = this.setReviewCategory.bind(this);
         this.setReviewOption = this.setReviewOption.bind(this);
         this.setSubmitUrl = this.setSubmitUrl.bind(this);
+    }
+
+    closeMenus(){
+        if(this.state.editorial){
+            this.setState({
+                editorial: false
+            })
+        }
     }
 
     getArticles(){
@@ -365,7 +374,7 @@ class App extends React.Component {
         const bannerUrl2 = "https://www.patreon.com/seriousscrum";
 
         return (
-            <div className={appContainerClassName}>
+            <div className={appContainerClassName} onClick={this.closeMenus}>
                 <Header functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
                 <SubmitForm functions={functions} submitUrl={this.state.submitUrl} active={this.state.submitForm} submitResponse={this.state.submitResponse} submitData={this.state.submitData} category={this.state.submitCategory} categories={this.state.categories} roles={this.state.user.roles} form="submit"/>
                 <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>
