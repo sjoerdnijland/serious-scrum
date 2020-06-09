@@ -41,6 +41,11 @@ class Category
     private $subCategories;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isSeries = false;
+
+    /**
      * @ORM\OneToMany(
      *     targetEntity="Article",
      *     mappedBy="category",
@@ -139,6 +144,16 @@ class Category
         $this->articles->removeElement($article);
         // needed to update the owning side of the relationship!
         $article->setCatgegory(null);
+    }
+
+    public function getIsSeries()
+    {
+        return $this->isSeries;
+    }
+
+    public function setIsSeries($isSeries)
+    {
+        $this->isSeries = $isSeries;
     }
 
 }

@@ -42,9 +42,12 @@ class ArticleController extends AbstractController
      */
     public function newArticle(Request $request, $response = true)
     {
-        #
         # get doctrine manager
         $em = $this->em;
+
+        # get cache manager
+        $cm = $this->cm;
+
 
         $data = $request->getContent();
         $data = json_decode($data, 1);
@@ -82,6 +85,7 @@ class ArticleController extends AbstractController
 
         $meta = $this->getMetaTags($content); //gets all meta tags, including those without name attribute
 
+
         //$meta = get_meta_tags( $data['url']); //gets only the meta tags with name attribute
 
         $data['author'] = '';
@@ -101,10 +105,17 @@ class ArticleController extends AbstractController
             return new JsonResponse('could not fetch required OG data!', 400); #bad request
         }
 
+
+
         $data['title'] = $meta['og:title'];
         $data['url'] = $meta['og:url'];
         $data['intro'] = substr($meta['og:description'], 0, 255);
-        $data['thumbnail'] = $meta['og:image'];
+
+        if(isset($meta['og:image'])){
+            $data['thumbnail'] = $cm->storyImageFromUrl('thumbnails', $meta['og:image']);
+        }else{
+            $data['thumbnail'] = "";
+        }
 
         if(isset($meta['og:author'])) {
             $data['author'] = $meta['og:author'];
@@ -316,6 +327,48 @@ class ArticleController extends AbstractController
 
     }
 
+    /**
+     * @param Request $request
+     * @Route("/articles/images", name="article_images")
+     * @Method("POST")
+     * @IsGranted("ROLE_ADMIN")
+     * @return JsonResponse
+     */
+    public function replaceImages(Request $request, $jsonResponse = true)
+    {
+
+        # get managers
+        $em = $this->em;
+        $cm = $this->cm;
+
+        $articles = $em->getRepository(Article::class)
+            ->findAll();
+
+        foreach($articles as $article){
+           $thumbnail = $article->getThumbnail();
+            if(substr($thumbnail, 0,4) != "http"){
+                continue;
+           }
+
+           $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail);
+           if(!$thumbnail) {
+            continue;
+           }
+
+           $article->setThumbnail($thumbnail);
+           $em->persist($article);
+        }
+        $em->flush();
+
+        if($jsonResponse){
+            return new JsonResponse(true, 200);
+        }
+
+        return(true);
+
+
+    }
+
     function getMetaTags($str)
     {
         $pattern = '
@@ -340,6 +393,8 @@ class ArticleController extends AbstractController
             return array_combine($out[1], $out[2]);
         return array();
     }
+
+
 
 
 }

@@ -24,7 +24,7 @@ class Category extends React.Component {
             });
         }
 
-        let categoryClassName = "category _pl20 ";
+        let categoryClassName = "category _pl10 ";
 
         return (
             <ul className={categoryClassName}>

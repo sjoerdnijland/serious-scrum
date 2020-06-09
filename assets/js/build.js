@@ -16,7 +16,7 @@ class Build extends React.Component {
         return (
             <div className={ContainerClassName}>
                 <div className="two-thirds column ">
-                    build: 2.0 - AGNC - <a href={trademarkUrl} target="_blank">Serious Scrum is a Registered Trademark</a> - KVK: 58970037 - BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
+                    build: 2.3 - AGNC - <a href={trademarkUrl} target="_blank">Serious Scrum is a Registered Trademark</a> - KVK: 58970037 - BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
                 </div>
                 <div className="one-third column right _pr40">
                     :)

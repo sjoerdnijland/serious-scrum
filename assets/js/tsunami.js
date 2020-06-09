@@ -13,9 +13,11 @@ class Tsunami extends React.Component {
         const ContainerClassName = "tsunami row";
 
         return (
-            <div className={ContainerClassName}>
-                <h1>a tsunami of sense</h1>
-            </div>
+            <a href="https://medium.com/serious-scrum/serious-scrums-mission-and-hokusai-s-wave-86bb7f32267d" target="_blank">
+                <div className={ContainerClassName}>
+                    <h1>a tsunami of sense</h1>
+                </div>
+            </a>
 
         );
     }

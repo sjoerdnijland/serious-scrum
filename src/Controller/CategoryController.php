@@ -66,6 +66,7 @@ class CategoryController extends AbstractController
                 $data[$category->getId()] = [
                     'id' => $category->getId(),
                     'name' => $category->getName(),
+                    'isSeries' => $category->getIsSeries(),
                     'subCategories' => []
                 ];
                 continue;
@@ -74,6 +75,7 @@ class CategoryController extends AbstractController
             $data[$parent->getId()]['subCategories'][] = [
                 'id' => $category->getId(),
                 'name' => $category->getName(),
+                'isSeries' => $category->getIsSeries(),
                 'parentId' => $parent->getId()
             ];
         }

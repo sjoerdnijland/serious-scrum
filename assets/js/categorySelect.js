@@ -52,6 +52,9 @@ class CategorySelect extends React.Component {
 
         if(this.props.categories.length > 1){
             for (var i in categories) {
+                if(categories[i].isSeries){
+                    continue;
+                }
                 let option= [];
                 option['value'] = categories[i].id;
                 option['label'] = categories[i].name;
