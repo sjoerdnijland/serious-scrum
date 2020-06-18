@@ -403,7 +403,7 @@ class App extends React.Component {
                 <Channels/>
                 <Banner bannerText={bannerText2} url={bannerUrl2}/>
                 <Build/>
-                <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={2000} />
+                <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />
             </div>
         )
     }
