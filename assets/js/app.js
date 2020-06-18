@@ -167,6 +167,7 @@ class App extends React.Component {
     }
 
     toggleCategoryMenu() {
+        window.scrollTo(0, 0);
         this.setState({
             expanded: !this.state.expanded
         });
