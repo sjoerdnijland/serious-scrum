@@ -15,7 +15,7 @@ class Tsunami extends React.Component {
         const bannerClassName = "homeBanner";
 
         return (
-            <a href="https://medium.com/serious-scrum/serious-scrums-mission-and-hokusai-s-wave-86bb7f32267d" target="_blank">
+
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <h1>a Tsunami<br/>of Sense!</h1>
@@ -24,7 +24,7 @@ class Tsunami extends React.Component {
 
                     </div>
                 </div>
-            </a>
+
 
         );
     }

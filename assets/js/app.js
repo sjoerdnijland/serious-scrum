@@ -42,6 +42,7 @@ import '../js/training.js';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import BottomScrollListener from 'react-bottom-scroll-listener';
 
 import 'react-dropdown/style.css';
 
@@ -57,6 +58,7 @@ class App extends React.Component {
             active: 'latest',
             editorial: false,
             submitForm: false,
+            displayArticleCount: 30,
             reviewForm: false,
             submitResponse: false,
             loadResponse: false,
@@ -85,6 +87,7 @@ class App extends React.Component {
         this.setReviewCategory = this.setReviewCategory.bind(this);
         this.setReviewOption = this.setReviewOption.bind(this);
         this.setSubmitUrl = this.setSubmitUrl.bind(this);
+        this.loadMore = this.loadMore.bind(this);
     }
 
     closeMenus(){
@@ -172,7 +175,8 @@ class App extends React.Component {
     setCategory(category) {
         this.setState({
             category: category,
-            search: false
+            search: false,
+            displayArticleCount: 30
         });
     }
 
@@ -180,9 +184,11 @@ class App extends React.Component {
         this.setState({
             category: false,
             active: false,
-            search: value
+            search: value,
+            displayArticleCount: 30
         });
     }
+
 
     toggleSubmitForm() {
         this.setState({
@@ -350,6 +356,13 @@ class App extends React.Component {
             });
     }
 
+    loadMore(){
+        console.log('loading more...');
+        this.setState({
+            displayArticleCount: this.state.displayArticleCount + 20
+        });
+    }
+
     render() {
 
         const functions = {};
@@ -385,11 +398,12 @@ class App extends React.Component {
                 <Search functions={functions} value={this.state.search} type="mobile"/>
                 <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} />
 
-                <Library articles={this.state.articles} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
+                <Library articles={this.state.articles} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
                 <SocialMenu type="footer"/>
                 <Channels/>
                 <Banner bannerText={bannerText2} url={bannerUrl2}/>
                 <Build/>
+                <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={2000} />
             </div>
         )
     }

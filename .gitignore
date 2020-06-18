@@ -6,6 +6,7 @@
 public/bundles/
 public/cache
 public/images/storage
+node_modules/
 var/
 vendor/
 ###< symfony/framework-bundle ###
@@ -18,6 +19,7 @@ phpunit.xml
 /node_modules/
 /public/build/
 /public/cache/
+/node_modules_bu/
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
