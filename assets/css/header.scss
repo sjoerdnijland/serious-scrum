@@ -4,6 +4,9 @@
   text-align: center;
   font-family: 'gothamlightregular', serif;
   overflow:hidden;
+  position: sticky;
+  top:0px;
+  z-index:3;
 }
 
 .logo{

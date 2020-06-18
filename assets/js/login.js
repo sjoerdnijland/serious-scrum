@@ -22,7 +22,7 @@ class Login extends React.Component {
 
         return (
             <div className={containerClassName}>
-                <a href={loginUrl} target="_blank" className="_mr20"><div className={loginClassName}>{trigger}</div><img className={avatarClass} referrerPolicy="no-referrer" src={this.props.user.avatar}/></a>
+                <a href={loginUrl} className="_mr20"><div className={loginClassName}>{trigger}</div><img className={avatarClass} referrerPolicy="no-referrer" src={this.props.user.avatar}/></a>
             </div>
         );
     }
