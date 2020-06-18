@@ -360,7 +360,8 @@ class App extends React.Component {
     loadMore(){
         console.log('loading more...');
         this.setState({
-            displayArticleCount: this.state.displayArticleCount + 20
+            displayArticleCount: this.state.displayArticleCount + 20,
+            expanded: false
         });
     }
 

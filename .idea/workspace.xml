@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categories.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +28,10 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="171" column="25" lean-forward="true" selection-start-line="171" selection-start-column="25" selection-end-line="171" selection-end-column="25" />
+            <state relative-caret-position="378">
+              <caret line="364" column="11" selection-start-line="364" selection-start-column="11" selection-end-line="364" selection-end-column="11" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <element signature="n#!!block;n#toggleSubmitForm#0;n#App#0" />
                 <element signature="n#!!block;n#toggleReviewForm#0;n#App#0" />
                 <element signature="n#!!block;n#setSubmitCategory#0;n#App#0" />
                 <element signature="n#!!block;n#setReviewCategory#0;n#App#0" />
@@ -1506,12 +1503,12 @@
       <workItem from="1591183099949" duration="985000" />
       <workItem from="1591209771216" duration="29484000" />
       <workItem from="1591691334385" duration="5352000" />
-      <workItem from="1592250772311" duration="14913000" />
+      <workItem from="1592250772311" duration="15083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346879000" />
+    <option name="totallyTimeSpent" value="347049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-24" y="23" width="1440" height="829" extended-state="0" />
@@ -1895,11 +1892,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="171" column="25" lean-forward="true" selection-start-line="171" selection-start-column="25" selection-end-line="171" selection-end-column="25" />
+        <state relative-caret-position="378">
+          <caret line="364" column="11" selection-start-line="364" selection-start-column="11" selection-end-line="364" selection-end-column="11" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="n#!!block;n#toggleSubmitForm#0;n#App#0" />
             <element signature="n#!!block;n#toggleReviewForm#0;n#App#0" />
             <element signature="n#!!block;n#setSubmitCategory#0;n#App#0" />
             <element signature="n#!!block;n#setReviewCategory#0;n#App#0" />
