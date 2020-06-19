@@ -16,9 +16,9 @@ class Header extends React.Component {
         const src = "images/serious-scrum-logo.svg";
 
         return (
-            <div className={ContainerClassName}>
+            <div className={ContainerClassName} onClick={this.props.functions.scrollToTop}>
                 <div className=" logo">
-                    <img  src={src}/>
+                    <img   src={src}/>
                 </div>
                 <div className="headerOptions _pr10 _pt20">
                     <CategoryMenu functions={functions} expanded={this.props.expanded}/>

@@ -73,6 +73,7 @@ class App extends React.Component {
         };
 
         this.closeMenus = this.closeMenus.bind(this);
+        this.scrollToTop = this.scrollToTop.bind(this);
         this.getArticles = this.getArticles.bind(this);
         this.getCategories = this.getCategories.bind(this);
         this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
@@ -96,6 +97,10 @@ class App extends React.Component {
                 editorial: false
             })
         }
+    }
+
+    scrollToTop(){
+        window.scrollTo(0, 0);
     }
 
     getArticles(){
@@ -370,6 +375,7 @@ class App extends React.Component {
         const functions = {};
 
         functions['toggleCategoryMenu'] = this.toggleCategoryMenu;
+        functions['scrollToTop'] = this.scrollToTop;
         functions['setCategory'] = this.setCategory;
         functions['setSearch'] = this.setSearch;
         functions['setActive'] = this.setActive;
