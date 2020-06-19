@@ -82,7 +82,7 @@
 @media only screen and (max-width: 780px) {
   .categories{
     display: grid !important;
-    position: absolute;
+    position: inherit;
     z-index:2;
   }
   .category {
