@@ -45,19 +45,16 @@
     padding: 5px 15px;
   }
 }
-@media only screen and (max-width: 780px) {
-  .publishButton .button{
-    margin-right:10px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .publishButton .button{
 
-  }
-}
-@media only screen and (min-device-width: 414px) and (max-device-width: 780px){
+
+@media only screen and (min-width: 414px) and (max-width: 780px){
   /* Styles */
   .publishButton .button{
     margin-right:20px;
+  }
+  .headerOptions{
+    .publishButton .button{
+      margin-right:0;
+    }
   }
 }
