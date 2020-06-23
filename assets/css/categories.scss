@@ -2,7 +2,7 @@
   background-color: $softblue;
   min-height: 240px;
   width: 100%;
-  font-family: 'gothamlightregular', serif;
+  font-family: 'Gotham Light', serif;
   overflow-x: auto;
   display: flex;
   flex-wrap: wrap;
@@ -33,13 +33,13 @@
   li:first-child{
     border-bottom: 1px;
     margin-left: 20px;
-    font-family: 'gothamboldregular', serif;
+    font-family: 'Gotham Bold', serif;
     list-style-type: disc;
   }
   li:hover{
     background-color: $white;
     color: $seriouslySweet;
-    font-family: 'gothamboldregular', serif;
+    font-family: 'Gotham', serif;
     cursor: pointer;
   }
 }
