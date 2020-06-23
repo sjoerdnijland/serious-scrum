@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/editorial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/editorial.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/meetup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/meetup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/fonts.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="meetup.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/meetup.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="menu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/menu.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,11 +80,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tsunami.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tsunami.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/tsunami.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="405">
               <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fonts.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -160,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/responsive.scss" />
         <option value="$PROJECT_DIR$/assets/js/search.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
@@ -211,6 +205,7 @@
         <option value="$PROJECT_DIR$/assets/css/header.scss" />
         <option value="$PROJECT_DIR$/assets/css/meetup.scss" />
         <option value="$PROJECT_DIR$/assets/css/menu.scss" />
+        <option value="$PROJECT_DIR$/assets/css/fonts.scss" />
       </list>
     </option>
   </component>
@@ -1675,12 +1670,12 @@
       <workItem from="1591209771216" duration="29484000" />
       <workItem from="1591691334385" duration="5352000" />
       <workItem from="1592250772311" duration="20479000" />
-      <workItem from="1592897080504" duration="1040000" />
+      <workItem from="1592897080504" duration="1146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353485000" />
+    <option name="totallyTimeSpent" value="353591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
@@ -1969,13 +1964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -2046,8 +2034,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/tsunami.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="405">
           <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
         </state>
       </provider>
     </entry>
