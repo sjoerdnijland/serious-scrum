@@ -327,6 +327,47 @@ class ArticleController extends AbstractController
 
     }
 
+    public function reloadActive(){
+
+        # get cache manager
+        $cm = $this->cm;
+
+        # get doctrine manager
+        $em = $this->em;
+
+
+        $articles = $em->getRepository(Article::class)
+            ->findApproved();
+
+
+        $data = [];
+
+        foreach($articles as $article){
+            $data[] = [
+            'id' => $article->getId(),
+            'url' => $article->getUrl(),
+            'thumbnail' => $article->getThumbnail(),
+            'title' => html_entity_decode($article->getTitle()),
+            'intro' => html_entity_decode($article->getIntro()),
+            'author' => $article->getAuthor(),
+            'category' => $article->getCategory()->getId(),
+            'isCurated' => $article->getIsCurated(),
+            'isApproved' => $article->getIsApproved(),
+            'submittedAt' => $article->getSubmittedAt()
+            ];
+        }
+
+        //reverse the array so latest show first
+        $data = array_reverse($data);
+
+        # reset the keys (so that React can properly load them in)
+        $data = array_values($data);
+
+        $cm->writeCache('articles', 'active', json_encode($data), 'public/');
+
+        return true;
+    }
+
     /**
      * @param Request $request
      * @Route("/articles/images", name="article_images")

@@ -23,14 +23,14 @@ class CacheManager
         $this->fs = $filesystem;
     }
 
-    public function writeCache($service, $file, $data = null){
+    public function writeCache($service, $file, $data = null, $defaultDir = ""){
             $fs = $this->fs;
 
             if(is_array($data)){
                 $data = json_encode($data);
             }
 
-            $cacheDir = $this->cacheDir.$service;
+            $cacheDir = $defaultDir.$this->cacheDir.$service;
 
             if (!$fs->exists($cacheDir)) {
                 $fs->mkdir($cacheDir);
@@ -44,9 +44,9 @@ class CacheManager
 
     }
 
-    public function getCache($service, $file){
+    public function getCache($service, $file, $defaultDir = ""){
 
-        $cacheLocation = $this->cacheDir.$service.'/'.$file.'.json';
+        $cacheLocation = $defaultDir.$this->cacheDir.$service.'/'.$file.'.json';
         if($data = @file_get_contents($cacheLocation, true)){
             return($data);
         }else{
@@ -57,11 +57,11 @@ class CacheManager
 
     }
 
-    public function storyImageFromUrl($service, $url){
+    public function storyImageFromUrl($service, $url, $defaultDir = ""){
 
         $fs = $this->fs;
 
-        $imgDir = $this->imgDir.$service;
+        $imgDir = $defaultDir.$this->imgDir.$service;
 
         if (!$fs->exists($imgDir)) {
             $fs->mkdir($imgDir);
