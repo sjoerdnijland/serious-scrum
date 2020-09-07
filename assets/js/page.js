@@ -24,14 +24,14 @@ class Page extends React.Component {
         this.state = {
             page: this.props.data.page,
             user: this.props.data.user,
-            doc: null
+            doc: this.props.data.data,
         };
 
         this.linkResolver = this.linkResolver.bind(this);
     }
 
     componentDidMount(){
-        this.getContent();
+        //this.getContent();
     }
 
     linkResolver() {
@@ -76,16 +76,18 @@ class Page extends React.Component {
         const bannerText2 = "We seriously need your help! please support us on Patreon!";
         const bannerUrl2 = "https://www.patreon.com/seriousscrum";
 
+        const title = Object.entries(this.state.doc.title);
+
         if(this.state.doc) {
             return (
                 <div className={appContainerClassName}>
-                    <PageHeader functions={functions} user={this.state.user}/>
-                    <PageTitle title={RichText.asText(this.state.doc.data.title)} introduction={RichText.asText(this.state.doc.data.introduction)}/>
-                    <PageHero url={this.state.doc.data.hero.url}/>
+                    <PageHeader functions={functions} user={this.state.user} />
+                    <PageTitle title={RichText.asText(this.state.doc.title.value)} introduction={RichText.asText(this.state.doc.introduction.value)} author={this.props.data.author}/>
+                    <PageHero url={this.state.doc.hero.value.main.url}/>
                     <div className={contentClassName}>
-                        <RichText render={this.state.doc.data.content} linkResolver={this.linkResolver} />
+                        <RichText render={this.state.doc.content.value} linkResolver={this.linkResolver} />
                         <div className={"buttonContainer _fr"}>
-                            <a href={this.state.doc.data.cta.id} className={"button  _mb10 _mt10"}>Next article...</a>
+                            <a href={this.state.doc.cta.value.document.slug} className={"button  _mb10 _mt10"}>Next article...</a>
                         </div>
                     </div>
 

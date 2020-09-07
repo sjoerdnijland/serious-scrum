@@ -92,7 +92,6 @@ class PrismicManager
                     print('updated: ');
                 }
                 print($prismicId . "\n");
-
                 $page->setSlug($slug);
                 $page->setLabels($labels);
                 $page->setData($data);

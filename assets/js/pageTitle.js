@@ -12,6 +12,7 @@ class PageTitle extends React.Component {
         return (
 
             <div className={containerClassName}>
+                <p className={"author"}>{this.props.author}</p>
                 <h1>{this.props.title}</h1>
                 <p>{this.props.introduction}</p>
             </div>

@@ -7,8 +7,12 @@
   h1{
     margin:0px;
   }
+  .author{
+    font-size: 12px !important;
+  }
   p{
-    font-size: 14px;
+    font-size: 18px;
     color: $grey;
+    margin-bottom: 0px;
   }
 }
