@@ -41,7 +41,7 @@ class RssManager
         $xml = simplexml_load_file($url,null
             , LIBXML_NOCDATA);
 
-        //print_r($xml->channel);
+        $loaded = array();
 
         foreach($xml->channel->item as $item){
             $title = $item->title;
@@ -89,12 +89,14 @@ class RssManager
                 continue;
             }
 
+            $loaded[] = $title;
+
             $em->persist($article);
 
             $em->flush();
 
         }
 
-        return 1;
+        return $loaded;
     }
 }
