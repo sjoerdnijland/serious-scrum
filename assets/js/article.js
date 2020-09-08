@@ -50,7 +50,7 @@ class Article extends React.Component {
         const avatar = "/images/avatar_placeholder.png";
         const rank = "/images/rank/founder.png";
 
-        if(typeof thumbnail !== 'undefined') {
+        if( thumbnail !== null) {
             if (!thumbnail.includes('http')) {
                 thumbnail = '/' + thumbnail;
             }
