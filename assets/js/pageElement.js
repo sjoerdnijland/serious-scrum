@@ -23,7 +23,7 @@ class PageElement extends React.Component {
         let curated = "";
 
         let thumbnail = "/images/thumbnail_placeholder.png";
-        if(typeof thumbnail !== "undefined" ) {
+        if(typeof this.props.page.thumbnail !== "undefined" ) {
             if (this.props.page.thumbnail != "") {
                 thumbnail = this.props.page.thumbnail;
             }

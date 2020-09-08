@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/pageElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pageElement.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="46" />
+            <state relative-caret-position="154">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -45,8 +43,8 @@
       <file leaf-file-name="pageElement.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/pageElement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="209">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -94,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-342">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -115,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/article.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -131,7 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sourc</find>
       <find>width</find>
       <find>min-w</find>
       <find>one-hl</find>
@@ -161,6 +158,7 @@
       <find>ender</find>
       <find>includes</find>
       <find>thumbnail</find>
+      <find>this.props.page.thumbnail</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -1737,12 +1735,12 @@
       <workItem from="1597226107182" duration="35000" />
       <workItem from="1597768933884" duration="251000" />
       <workItem from="1599124568339" duration="18101000" />
-      <workItem from="1599294821873" duration="73230000" />
+      <workItem from="1599294821873" duration="73419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="445568000" />
+    <option name="totallyTimeSpent" value="445757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
@@ -2120,7 +2118,7 @@
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -2137,14 +2135,14 @@
     <entry file="file://$PROJECT_DIR$/assets/js/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="46" />
+        <state relative-caret-position="154">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -2153,8 +2151,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/pageElement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="209">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
