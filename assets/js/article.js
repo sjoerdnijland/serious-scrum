@@ -27,12 +27,13 @@ class Article extends React.Component {
         }
 
         let thumbnail = "/images/thumbnail_placeholder.png";
+
+        console.log(this.props.article.thumbnail);
         if(typeof this.props.article.thumbnail !== 'undefined') {
             if (this.props.article.thumbnail != "" ) {
                 thumbnail = this.props.article.thumbnail;
             }
         }
-        console.log(thumbnail);
 
         let show = "";
 
