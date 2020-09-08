@@ -74,8 +74,10 @@ class Page extends React.Component {
 
         let thumbnail = this.props.data.thumbnail;
 
-        if(!thumbnail.includes('http')){
-            thumbnail = '/'+thumbnail;
+        if(typeof thumbnail !== "undefined" ){
+            if(!thumbnail.includes('http')){
+                thumbnail = '/'+thumbnail;
+            }
         }
 
         let ctaHref = "";
