@@ -38,6 +38,14 @@ class Page
     private $author;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Url(
+     *    message = "The thumbnail url '{{ value }}' is not a valid url",
+     * )
+     */
+    private $thumbnail;
+
+    /**
      * @ORM\Column(type="json")
      */
     private $data = [];
@@ -120,6 +128,18 @@ class Page
     public function setAuthor(?string $author): self
     {
         $this->author = $author;
+
+        return $this;
+    }
+
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(?string $thumbnail): self
+    {
+        $this->thumbnail = $thumbnail;
 
         return $this;
     }

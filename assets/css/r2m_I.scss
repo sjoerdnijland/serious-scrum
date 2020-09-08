@@ -1,9 +1,9 @@
-.tsunami{
+.r2m_I{
   border-top:  5px solid $problue;
-  background: url(../images/The_Great_Wave_off_Kanagawa.jpg);
+  background: url(../images/down-the-rabbit-hole.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom;
+  background-position: top;
   height:500px;
   text-align: center;
   .homeBanner{
@@ -16,13 +16,14 @@
       color: $white;
       font-size: 54px;
       text-align: left;
-      padding: 40px;
+      padding: 20px 40px;
     }
     div{
       text-align: left;
       font-size: 20px;
       margin-left:40px;
       margin-right:40px;
+      padding-top:20px;
       color: $white;
     }
   }
@@ -33,7 +34,7 @@
 
 /* for smaller desktop: */
 @media only screen and (max-width : 1024px) and (min-device-width : 780px) {
-  .tsunami{
+  .r2m_I{
     height:140px;
     text-align: right;
     h1{
@@ -45,10 +46,9 @@
 }
 
 
-
-/* for even smaller desktop:*/
+/* for even smaller desktop: */
 @media only screen and (max-width: 1100px) {
-  .tsunami {
+  .r2m_I {
     display: none;
   }
 }

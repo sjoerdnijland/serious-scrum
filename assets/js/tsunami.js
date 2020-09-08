@@ -10,7 +10,11 @@ class Tsunami extends React.Component {
 
     render() {
 
-        const ContainerClassName = "tsunami row";
+        let ContainerClassName = "tsunami row";
+
+        if(this.props.label){
+            ContainerClassName += " hidden";
+        }
 
         const bannerClassName = "homeBanner";
 

@@ -85,7 +85,6 @@ class ArticleController extends AbstractController
 
         $meta = $this->getMetaTags($content); //gets all meta tags, including those without name attribute
 
-
         //$meta = get_meta_tags( $data['url']); //gets only the meta tags with name attribute
 
         $data['author'] = '';

@@ -57,20 +57,37 @@ class CacheManager
 
     }
 
-    public function storyImageFromUrl($service, $url, $defaultDir = ""){
+    public function storyImageFromUrl($service, $url, $defaultDir = "")
+    {
 
         $fs = $this->fs;
 
-        $imgDir = $defaultDir.$this->imgDir.$service;
+        $imgDir = $defaultDir . $this->imgDir . $service;
 
         if (!$fs->exists($imgDir)) {
             $fs->mkdir($imgDir);
         }
 
         $file = file_get_contents($url); // to get file
-        $fileName = uniqid().'_'.basename($url); // to get file name
+        $fileName = uniqid() . '_' . basename($url); // to get file name
 
-        $fileLocation = $imgDir.'/'.$fileName;
+        $fileName = explode('?', $fileName);
+
+        $fileName = $fileName[0];
+
+        $fileName = explode('.', $fileName);
+
+        $ext = '';
+
+        if (isset($fileName[1])){
+            $ext = '.'.$fileName[1];
+        }
+
+        $fileName = str_replace(' ', '-', $fileName[0]); // Replaces all spaces with hyphens.
+
+        $fileName =  preg_replace('/[^A-Za-z0-9\-]/', '', $fileName); // Removes special chars.
+
+        $fileLocation = $imgDir.'/'.$fileName.$ext;
 
         $fs->dumpFile( $fileLocation, $file );
 

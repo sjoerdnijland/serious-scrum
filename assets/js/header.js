@@ -13,13 +13,14 @@ class Header extends React.Component {
         const functions = this.props.functions;
 
         const ContainerClassName = "header row";
-        const src = "images/serious-scrum-logo.svg";
+        const src = "/images/serious-scrum-logo.svg";
 
         return (
-            <div className={ContainerClassName} onClick={this.props.functions.scrollToTop}>
-                <div className=" logo">
+            <div className={ContainerClassName} >
+                <a href={"/"}><div className=" logo">
                     <img   src={src}/>
                 </div>
+                </a>
                 <div className="headerOptions _pr10 _pt20">
                     <CategoryMenu functions={functions} expanded={this.props.expanded}/>
                     <Login user={this.props.user}/>

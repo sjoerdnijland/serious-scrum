@@ -6,4 +6,25 @@
   background-color: $white;
   font-family: Georgia;
   font-size: 18px;
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Gotham Light', serif;
+  }
+  h2{
+    font-size: 32px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  h4, h5, h6{
+    font-size: 18px;
+  }
+  img{
+    max-width: 100%;
+  }
+  a{
+    color: $seriouslySweet;
+  }
+  li{
+    list-style-type: disc;
+  }
 }

@@ -14,6 +14,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Controller\ArticleController;
 use App\Controller\CategoryController;
+use App\Controller\PageController;
 
 /**
  * Improvements
@@ -31,15 +32,18 @@ use App\Controller\CategoryController;
 class DefaultController extends AbstractController
 {
     private $articleController;
+    private $pageController;
     private $categoryController;
 
     public function __construct(EntityManagerInterface $entityManager,
                                 ArticleController $articleController,
+                                PageController $pageController,
                                 CategoryController $categoryController)
     {
         $this->em = $entityManager;
         $this->articleController = $articleController;
         $this->categoryController = $categoryController;
+        $this->pageController = $pageController;
     }
 
 
@@ -49,7 +53,7 @@ class DefaultController extends AbstractController
      * @Route("/", name="index")
      * @return Response
      */
-    public function index(Request $request){
+    public function index(Request $request, $label = false){
 
         $user['username'] = '';
         $user['fullname'] = '';
@@ -70,17 +74,55 @@ class DefaultController extends AbstractController
 
         $articles = $this->articleController->getArticles(false, $cache);
 
+        $pages = $this->pageController->getPages(false, false);
+
         $categories = $this->categoryController->getCategories(false, true);
+
+        $contentPages = "hidden";
+        $library = " ";
+
+        if($label){
+            $contentPages = "";
+            $library = "hidden";
+        }
+
+        $title = 'Serious Scrum';
+        $image = 'serious-scrum.png';
+
+        if($label){
+            $title = 'Serious Scrum: '. ucwords(str_replace('-',' ',$label));
+            $image = $label.'.jpg';
+        }
 
         # sets everything we want to output to the UX
         $output['data'] = [
             'user' => $user,
             'articles' => $articles,
+            'pages' => $pages,
+            'label' => $label,
+            'contentPages' => $contentPages,
+            'library' => $library,
             'categories' => $categories
         ];
 
+        $output['title'] = $title;
+        $output['image'] = $image;
+        $output['app'] = 'app';
+
         //return new JsonResponse($output);
-        return $this->render('app.html.twig', $output);
+        return $this->render('home.html.twig', $output);
+    }
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/r2m/{label}", name="r2m")
+     * @return Response
+     */
+    public function r2m(Request $request, $label){
+
+        return $this->index( $request, $label);
+
     }
 
 }

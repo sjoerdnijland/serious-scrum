@@ -3,6 +3,7 @@ import '../css/app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Prismic from 'prismic-javascript'
+
 import { Date, Link, RichText } from 'prismic-reactjs'
 
 import 'regenerator-runtime/runtime';
@@ -24,7 +25,7 @@ class Page extends React.Component {
         this.state = {
             page: this.props.data.page,
             user: this.props.data.user,
-            doc: this.props.data.data,
+            doc: this.props.data,
         };
 
         this.linkResolver = this.linkResolver.bind(this);
@@ -34,17 +35,11 @@ class Page extends React.Component {
         //this.getContent();
     }
 
-    linkResolver() {
-        const doc = this.state.doc;
+    linkResolver(doc) {
         // Define the url depending on the document type
-        if (doc.type === 'page') {
-            return '/page/' + doc.uid;
-        } else if (doc.type === 'blog_post') {
-            return '/blog/' + doc.uid;
-        }
 
         // Default to homepage
-        return '/';
+        return '/'  + doc.slug;
     }
 
     async getContent(){
@@ -76,23 +71,39 @@ class Page extends React.Component {
         const bannerText2 = "We seriously need your help! please support us on Patreon!";
         const bannerUrl2 = "https://www.patreon.com/seriousscrum";
 
-        const title = Object.entries(this.state.doc.title);
+
+        let thumbnail = this.props.data.thumbnail;
+
+        if(!thumbnail.includes('http')){
+            thumbnail = '/'+thumbnail;
+        }
+
+        let ctaHref = "";
+        let hideCTA = " hidden";
+        if(typeof this.state.doc.cta !== "undefined"){
+            hideCTA = "";
+            ctaHref = this.state.doc.cta.value.document.slug;
+        }
+
+        console.log(this.state.doc.data.content);
+
 
         if(this.state.doc) {
             return (
                 <div className={appContainerClassName}>
                     <PageHeader functions={functions} user={this.state.user} />
-                    <PageTitle title={RichText.asText(this.state.doc.title.value)} introduction={RichText.asText(this.state.doc.introduction.value)} author={this.props.data.author}/>
-                    <PageHero url={this.state.doc.hero.value.main.url}/>
+                    <PageTitle title={RichText.asText(this.state.doc.data.title.value)} introduction={RichText.asText(this.state.doc.data.introduction.value)} author={this.props.data.author}/>
+                    <PageHero url={thumbnail}/>
                     <div className={contentClassName}>
-                        <RichText render={this.state.doc.content.value} linkResolver={this.linkResolver} />
-                        <div className={"buttonContainer _fr"}>
-                            <a href={this.state.doc.cta.value.document.slug} className={"button  _mb10 _mt10"}>Next article...</a>
+                        <RichText render={this.state.doc.data.content.value} linkResolver={this.linkResolver} />
+                        <div className={"buttonContainer _fr "+hideCTA}>
+                            <a href={ctaHref} className={"button  _mb10 _mt10"}>{RichText.asText(this.state.doc.data.cta_text.value)}</a>
                         </div>
                     </div>
 
                     <div className={"_mb20"}/>
                     <Banner bannerText={bannerText2} url={bannerUrl2}/>
+
                 </div>
             )
         }else{

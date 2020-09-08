@@ -23,12 +23,16 @@ class Editorial extends React.Component {
         return (
             <div className={containerClassName}>
                 <div className={titleClassname}>Editorial</div>
-                <a href="https://medium.com/serious-scrum/how-to-add-a-post-to-serious-scrum-b749e37c0589" target="_blank"><div className={itemClassName}>How to Submit and Publish</div></a>
-                <a href="https://sjoerd-nijland.gitbook.io/serious-scrum/#writing-for-serious-scrum" target="_blank"><div className={itemClassName}>Review and Curation</div></a>
+                <a href="/about-serious-scrum" target="_blank"><div className={itemClassName}>About Serious Scrum</div></a>
                 <a href="/invite" target="_blank"><div className={itemClassName}>Join our Slack Community</div></a>
-                <a href="https://sjoerd-nijland.gitbook.io/serious-scrum/" target="_blank"><div className={itemClassName}>About Serious Scrum</div></a>
-                <a href="https://sjoerd-nijland.gitbook.io/serious-scrum/#our-values" target="_blank"><div className={itemClassName}>Community and Brand Guidelines</div></a>
-            </div>
+                <a href="/our-editorial" target="_blank"><div className={itemClassName}>Our Editorial</div></a>
+                <a href="/our-review-process" target="_blank"><div className={itemClassName}>Our Review Process</div></a>
+                <a href="/how-to-submit" target="_blank"><div className={itemClassName}>How to submit</div></a>
+                <a href="/how-to-publish" target="_blank"><div className={itemClassName}>How to publish</div></a>
+                <a href="/brand-guidelines" target="_blank"><div className={itemClassName}>Brand Guidelines</div></a>
+                <a href="/our-sponsors" target="_blank"><div className={itemClassName}>Our Sponsors</div></a>
+                <a href="/profit-and-promotion" target="_blank"><div className={itemClassName}>Profit and Promotion</div></a>
+                 </div>
 
         );
     }

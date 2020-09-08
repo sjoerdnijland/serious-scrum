@@ -42,7 +42,7 @@ class MenuItem extends React.Component {
 
         //active
         let menuItemClassName = "menuItem";
-        let bulletSrc = "images/bullet-white.png";
+        let bulletSrc = "/images/bullet-white.png";
         let active = false;
 
         if(this.props.active && !this.props.category){
@@ -50,7 +50,7 @@ class MenuItem extends React.Component {
         }
 
         if((active || this.state.hover) && this.props.type!="editorial"){
-            bulletSrc = "images/bullet-blue.png";
+            bulletSrc = "/images/bullet-blue.png";
             menuItemClassName += " active";
         }
 
@@ -65,13 +65,13 @@ class MenuItem extends React.Component {
             menuItemClassName += " category";
         }
 
-        if(this.props.type=="category" && !this.props.category){
+        if(this.props.type=="category" && !this.props.category || this.props.hide){
             menuItemClassName += " hidden";
         }
 
         return (
             <div className={menuItemClassName}  onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} onClick={this.setActive}>
-                <img src={bulletSrc}/> {this.props.label}
+                <img src={bulletSrc}/> {this.props.filter}
             </div>
         );
     }

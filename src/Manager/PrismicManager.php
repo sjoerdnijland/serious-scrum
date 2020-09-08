@@ -11,6 +11,7 @@ namespace App\Manager;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use App\Entity\Page;
 use Doctrine\ORM\EntityManagerInterface;
+use App\Manager\CacheManager;
 
 class PrismicManager
 {
@@ -25,10 +26,16 @@ class PrismicManager
      */
     private $em;
 
-    public function __construct(HttpClientInterface $client, EntityManagerInterface $entityManager)
+    /**
+     * @var CacheManager
+     */
+    private $cm;
+
+    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
     {
         $this->client = $client;
         $this->em = $entityManager;
+        $this->cm = $cacheManager;
 
     }
 
@@ -36,6 +43,34 @@ class PrismicManager
     {
 
         $em = $this->em;
+        $cm = $this->cm;
+
+        //get the master refId
+        $response = $this->client->request(
+            'GET',
+            'https://roadtomastery.cdn.prismic.io/api/v2'
+        );
+
+        $statusCode = $response->getStatusCode();
+
+        if (!$statusCode) {
+            print('no OK 200 response...');
+            return (false);
+        }
+
+        $jsonContent = $response->getContent();
+        $content = json_decode($jsonContent, 1);
+
+        $ref = false;
+
+        foreach($content['refs'] as $ref){
+            $ref = $ref['ref'];
+        }
+
+        if(!$ref){
+            print('could not get the master ref from prismic...');
+            return (false);
+        }
 
         $pagination = 1;
         $totalPages = 1;
@@ -44,7 +79,7 @@ class PrismicManager
 
             $response = $this->client->request(
                 'GET',
-                'https://roadtomastery.prismic.io/api/v1/documents/search?ref=X1XYYxAAACUAX6ld&page=' . $pagination . '#format=json'
+                'https://roadtomastery.prismic.io/api/v1/documents/search?ref='.$ref.'&page=' . $pagination . '#format=json'
             );
             $pagination++;
 
@@ -79,6 +114,13 @@ class PrismicManager
                     $author = $result['data']['chapter']['author']['value'][0]['text'];
                 }
 
+                $thumbnail = null;
+                if (isset($result['data']['chapter']['hero']['value']['main']['url'])) {
+                    $thumbnail = $result['data']['chapter']['hero']['value']['main']['url'];
+                    $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, 'public/');
+                    $thumbnail = substr($thumbnail, 7);
+                }
+
                 $page = $em->getRepository('App:Page')
                     ->findOneBy([
                         'prismicId' => $prismicId,
@@ -96,6 +138,7 @@ class PrismicManager
                 $page->setLabels($labels);
                 $page->setData($data);
                 $page->setAuthor($author);
+                $page->setThumbnail($thumbnail);
 
                 $em->persist($page);
 

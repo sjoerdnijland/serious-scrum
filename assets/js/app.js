@@ -38,6 +38,9 @@ import '../js/divider.js';
 import '../js/build.js';
 import '../js/handbook.js';
 import '../js/training.js';
+import '../js/pages';
+import '../js/pageElement';
+import '../js/r2m_I';
 
 
 import React from 'react';
@@ -55,7 +58,10 @@ class App extends React.Component {
 
         this.state = {
             expanded: false,
+            library : this.props.data.library,
+            contentPages : this.props.data.contentPages,
             category: false,
+            label: this.props.data.label,
             search: false,
             active: 'latest',
             editorial: false,
@@ -64,8 +70,10 @@ class App extends React.Component {
             reviewForm: false,
             submitResponse: false,
             loadResponse: false,
+            pages: this.props.data.pages,
             articles: this.props.data.articles,
             categories: this.props.data.categories,
+            labels: [],
             user: this.props.data.user,
             submitData: '',
             submitUrl: '',
@@ -80,10 +88,12 @@ class App extends React.Component {
         this.getCategories = this.getCategories.bind(this);
         this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
         this.setCategory = this.setCategory.bind(this);
+        this.setLabel = this.setLabel.bind(this);
         this.setSearch = this.setSearch.bind(this);
         this.setActive = this.setActive.bind(this);
         this.toggleSubmitForm = this.toggleSubmitForm.bind(this);
         this.toggleReviewForm = this.toggleReviewForm.bind(this);
+        this.toggleLibraryPages = this.toggleLibraryPages.bind(this);
         this.submitArticle = this.submitArticle.bind(this);
         this.reviewArticle = this.reviewArticle.bind(this);
         this.setSubmitCategory = this.setSubmitCategory.bind(this);
@@ -184,8 +194,19 @@ class App extends React.Component {
         this.setState({
             category: category,
             search: false,
-            displayArticleCount: 30
+            displayArticleCount: 30,
+            contentPages: "hidden",
+            library: "",
+            label: false
         });
+    }
+
+    setLabel(label) {
+        this.setState({
+            label: label,
+            search: false
+        });
+        this.scrollToTop();
     }
 
     setSearch(value) {
@@ -196,7 +217,6 @@ class App extends React.Component {
             displayArticleCount: 30
         });
     }
-
 
     toggleSubmitForm() {
         this.setState({
@@ -252,6 +272,22 @@ class App extends React.Component {
             category: false,
             search: false
         });
+    }
+
+    toggleLibraryPages(type) {
+        if(type == 'contentPages'){
+            this.setState({
+                contentPages: "",
+                library: "hidden",
+                category: false
+            });
+        }else{
+            this.setState({
+                contentPages: "hidden",
+                library: "",
+                label: false
+            });
+        }
     }
 
     submitArticle(){
@@ -379,6 +415,7 @@ class App extends React.Component {
         functions['toggleCategoryMenu'] = this.toggleCategoryMenu;
         functions['scrollToTop'] = this.scrollToTop;
         functions['setCategory'] = this.setCategory;
+        functions['setLabel'] = this.setLabel;
         functions['setSearch'] = this.setSearch;
         functions['setActive'] = this.setActive;
         functions['toggleSubmitForm'] = this.toggleSubmitForm;
@@ -389,6 +426,7 @@ class App extends React.Component {
         functions['setSubmitCategory'] = this.setSubmitCategory;
         functions['setReviewCategory'] = this.setReviewCategory;
         functions['setReviewOption'] = this.setReviewOption;
+        functions['toggleLibraryPages'] = this.toggleLibraryPages;
 
         const appContainerClassName = "appContainer";
 
@@ -402,13 +440,13 @@ class App extends React.Component {
                 <SubmitForm functions={functions} submitUrl={this.state.submitUrl} active={this.state.submitForm} submitResponse={this.state.submitResponse} submitData={this.state.submitData} category={this.state.submitCategory} categories={this.state.categories} roles={this.state.user.roles} form="submit"/>
                 <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
-                <Mastery active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
-
-                <Tsunami/>
+                <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
+                <Tsunami label={this.state.label}/>
+                <R2MI label={this.state.label}/>
                 <Search functions={functions} value={this.state.search} type="mobile"/>
-                <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} />
-
-                <Library articles={this.state.articles} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
+                <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} />
+                <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
+                <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
                 <SocialMenu type="footer"/>
                 <Channels/>
                 <Banner bannerText={bannerText2} url={bannerUrl2}/>
@@ -425,3 +463,5 @@ const data =  JSON.parse(root.dataset.preload);
 
 ReactDOM.render(<App data={data} />, root);
 /*<Banner bannerText={bannerText1}/>*/
+/*
+                */

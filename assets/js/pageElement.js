@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Article extends React.Component {
+class PageElement extends React.Component {
     constructor(props) {
         super(props);
 
@@ -22,22 +22,22 @@ class Article extends React.Component {
         let showForm = false;
         let curated = "";
 
-        if(this.props.reviewForm == this.props.article.id){
-            showForm = true;
+        let thumbnail = "/images/thumbnail_placeholder.png";
+        if(this.props.page.thumbnail != ""){
+            thumbnail = this.props.page.thumbnail;
         }
 
-        let thumbnail = "/images/thumbnail_placeholder.png";
-        if(this.props.article.thumbnail != ""){
-            thumbnail = this.props.article.thumbnail;
+        if(!thumbnail.includes('http')){
+            thumbnail = '/'+thumbnail;
         }
 
         let show = "";
 
-        if(!this.props.article.isApproved){
+        if(!this.props.page.isApproved){
             reviewClassName = ""
         }
 
-        if(this.props.article.isCurated){
+        if(this.props.page.isCurated){
             className += " curated";
             curated = "highlighted by our editorial";
             curatedClassName = "curatedText";
@@ -46,18 +46,11 @@ class Article extends React.Component {
         const avatar = "/images/avatar_placeholder.png";
         const rank = "/images/rank/founder.png";
 
-        if(!thumbnail.includes('http')){
-            thumbnail = '/'+thumbnail;
-        }
 
         return (
 
             <div className={className}>
-                <div className={reviewClassName}>
-                    <ReviewButton key={'reviewButton'+this.props.article.id} articleId={this.props.article.id} functions={this.props.functions} category={this.props.article.category}/>
-                </div>
-                <ReviewForm key={'reviewForm'+this.props.article.id}  functions={this.props.functions} active={showForm} article={this.props.article.id} category={this.props.article.category} categories={this.props.categories} roles={this.props.roles} form="review"/>
-                <a href={this.props.article.url} target="_blank">
+                <a href={this.props.page.slug} target="_blank">
                     <div className={thumbnailClassName}
                         style={{
                             backgroundImage: "url(" + thumbnail + ")",
@@ -66,18 +59,15 @@ class Article extends React.Component {
                             backgroundRepeat: 'no-repeat'
                         }}/>
                     <div className={titleClassName}>
-                        {this.props.article.title}
+                        {this.props.page.title}
                     </div>
                     <div className={introClassName}>
-                        {this.props.article.intro}
+                        {this.props.page.intro}
                     </div>
                     <div className={authorClassName}>
                         <div className={authorNameClassName}>
-                            {this.props.article.author}
+                            {this.props.page.author}
                         </div>
-                    </div>
-                    <div className={curatedClassName}>
-                        {curated}
                     </div>
                 </a>
 
@@ -85,7 +75,7 @@ class Article extends React.Component {
         );
     }
 }
-window.Article = Article;
+window.PageElement = PageElement;
 /*
  <div className={avatarClassName}>
     <img src={avatar}/>

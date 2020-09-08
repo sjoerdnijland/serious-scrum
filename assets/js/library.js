@@ -8,7 +8,7 @@ class Library extends React.Component {
 
     render() {
 
-        const ContainerClassName = "library row";
+        const ContainerClassName = this.props.visible+" library row ";
 
         let articleNodes = "loading articles...";
 
@@ -28,13 +28,11 @@ class Library extends React.Component {
                }
 
                if(this.search){
-
                    if( (article.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) && (article.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)){
                        console.log(index);
                        articles[index] = [];
                    }
                }
-
             },{
                category: this.props.category,
                categories: this.props.categories,

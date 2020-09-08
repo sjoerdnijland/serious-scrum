@@ -12,6 +12,8 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 use App\Entity\Article;
 use App\Entity\Category;
 use Doctrine\ORM\EntityManagerInterface;
+use App\Manager\CacheManager;
+
 
 class RssManager
 {
@@ -26,9 +28,12 @@ class RssManager
      */
     private $em;
 
-    public function __construct(HttpClientInterface $client, EntityManagerInterface $entityManager)
+    private $cm;
+
+    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
     {
         $this->client = $client;
+        $this->cm = $cacheManager;
         $this->em = $entityManager;
 
     }
@@ -37,23 +42,15 @@ class RssManager
     {
 
         $em = $this->em;
+        $cm = $this->cm;
 
-        $xml = simplexml_load_file($url,null
-            , LIBXML_NOCDATA);
+        $xml = simplexml_load_file($url,null, LIBXML_NOCDATA);
 
         $loaded = array();
 
         foreach($xml->channel->item as $item){
             $title = $item->title;
             $url = explode("?source",$item->link)[0];
-
-            $parseImage = explode("src=\"", $item->description);
-            if(isset($parseImage[1])){
-                $parseImage = explode("\"", $parseImage[1]);
-                $thumbnail = $parseImage[0];
-            }else{
-                $thumbnail = "";
-            }
 
             $parseIntro = explode("medium-feed-snippet\">", $item->description);
             if(isset($parseIntro[1])){
@@ -71,7 +68,7 @@ class RssManager
 
             $article->setUrl($url);
             $article->setTitle($title);
-            $article->setThumbnail($thumbnail);
+
             $article->setIntro($intro);
             $article->setAuthor($author);
 
@@ -88,6 +85,19 @@ class RssManager
             if($urlAlreadyExists){
                 continue;
             }
+
+            $parseImage = explode("src=\"", $item->description);
+            if(isset($parseImage[1])){
+                $parseImage = explode("\"", $parseImage[1]);
+                $thumbnail = $parseImage[0];
+                $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, 'public/');
+                $thumbnail = substr($thumbnail, 7);
+
+            }else{
+                $thumbnail = "";
+            }
+
+            $article->setThumbnail($thumbnail);
 
             $loaded[] = $title;
 
