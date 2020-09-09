@@ -73,6 +73,10 @@
   .category{
     min-height: 0px !important;
   }
+  .menuTitle{
+    font-size: 12px !important;
+    padding-top:5px;
+  }
 
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 780px){
@@ -81,6 +85,7 @@
     position: sticky;
   }
   .menuTitle{
-    font-size: 12px;
+    font-size: 12px !important;
+    padding-top:3px;
   }
 }
