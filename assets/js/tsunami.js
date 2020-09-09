@@ -10,17 +10,23 @@ class Tsunami extends React.Component {
 
     render() {
 
-        let ContainerClassName = "tsunami row";
+        let containerClassName = "tsunami row";
+        let sponsorClassName = "sponsor";
 
         if(this.props.label){
-            ContainerClassName += " hidden";
+            containerClassName += " hidden";
         }
 
         const bannerClassName = "homeBanner";
 
+        const sponsorImgSrc = "/images/sponsors.png";
+
         return (
 
-                <div className={ContainerClassName}>
+                <div className={containerClassName}>
+                    <div className ={sponsorClassName}>
+                        <a href={"https://vamp.io/"} target={"_blank"}><img src={sponsorImgSrc}/></a>
+                    </div>
                     <div className={bannerClassName}>
                         <h1>a Tsunami<br/>of Sense!</h1>
                         <div>We are an open global Scrum Community of 3.5K Scrum Professionals</div>

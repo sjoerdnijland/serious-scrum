@@ -1,5 +1,5 @@
 .socialMenuContainer{
-  margin-top: 8px;
+
   img{
     width: 12px;
   }
@@ -7,6 +7,13 @@
   .slackLogo{
     margin-top:7px;
   }
+
+  .sponsorLogo{
+    top: 12px;
+    position: relative;
+    width: 160px;
+  }
+
   a{
     margin-right:10px;
   }
@@ -16,7 +23,7 @@
 }
 .socialfooter{
   text-align: center;
-  padding: 20px 0;
+  padding-bottom: 14px;
   background-color: $seriouslySweet;
   a{
     margin: 0 20px;

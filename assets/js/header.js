@@ -18,7 +18,7 @@ class Header extends React.Component {
         return (
             <div className={ContainerClassName} >
                 <a href={"/"}><div className=" logo">
-                    <img   src={src}/>
+                    <img src={src}/>
                 </div>
                 </a>
                 <div className="headerOptions _pr10 _pt20">

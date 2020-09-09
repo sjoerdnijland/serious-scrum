@@ -44,6 +44,11 @@ class SocialMenu extends React.Component {
         const meetupUrl = 'https://www.meetup.com/nl-NL/Serious-Scrum/';
         const meetupIconSrc = '/images/social/meetup-logo.png';
 
+        const sponsorAlt = "Sponsored by Vamp!";
+        const sponsorLogo = "sponsorLogo";
+        const sponsorUrl = 'https://vamp.io/';
+        const sponsorIconSrc = '/images/sponsors.png';
+
         return (
             <div className={containerClassName}>
                 <a href={slackUrl} target="_blank" className="socialMenuItem "><img className={slackLogo} src={slackIconSrc} title={slackAlt}/> </a>
@@ -53,6 +58,7 @@ class SocialMenu extends React.Component {
                 <a href={meetupUrl} target="_blank" className="socialMenuItem "><img className={meetupLogo} src={meetupIconSrc} title={meetupAlt}/> </a>
                 <a href={twitterUrl} target="_blank" className="socialMenuItem "><img className={twitterLogo} src={twitterIconSrc} title={twitterAlt}/> </a>
                 <a href={linkedInUrl} target="_blank" className="socialMenuItem "><img className={linkedInLogo} src={linkedInIconSrc} title={linkedInAlt}/> </a>
+                <a href={sponsorUrl} target="_blank" className="socialMenuItem "><img className={sponsorLogo} src={sponsorIconSrc} title={sponsorAlt}/> </a>
             </div>
         );
     }

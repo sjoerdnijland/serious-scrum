@@ -28,7 +28,6 @@ class Article extends React.Component {
 
         let thumbnail = "/images/thumbnail_placeholder.png";
 
-        console.log(this.props.article.thumbnail);
         if(typeof this.props.article.thumbnail !== 'undefined') {
             if (this.props.article.thumbnail != "" ) {
                 thumbnail = this.props.article.thumbnail;
@@ -50,7 +49,7 @@ class Article extends React.Component {
         const avatar = "/images/avatar_placeholder.png";
         const rank = "/images/rank/founder.png";
 
-        
+
         if( thumbnail !== null && thumbnail != "") {
             if (!thumbnail.includes('http')) {
                 thumbnail = '/' + thumbnail;

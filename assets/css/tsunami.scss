@@ -6,6 +6,21 @@
   background-position: bottom;
   height:500px;
   text-align: center;
+
+  .sponsor{
+    float: right;
+    right:40px;
+    position: absolute;
+    margin:20px;
+    img{
+      width: 250px;
+    }
+    img:hover{
+      cursor: pointer;
+    }
+  }
+
+
   .homeBanner{
     background-color: $seriousblue;
     height:500px;
