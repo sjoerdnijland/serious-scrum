@@ -29,9 +29,9 @@ class PageElement extends React.Component {
             }
         }
 
-        if(!thumbnail.includes('http')){
-            thumbnail = '/'+thumbnail;
-        }
+
+
+        
 
         let show = "";
 
