@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.php-version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/serious.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serious.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.php-version" beforeDir="false" afterPath="$PROJECT_DIR$/.old-php-version" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".php-version" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.php-version">
+      <file leaf-file-name=".old-php-version" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.old-php-version">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -1560,7 +1557,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
-      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
     </include_path>
@@ -1743,16 +1739,15 @@
       <workItem from="1597226107182" duration="35000" />
       <workItem from="1597768933884" duration="251000" />
       <workItem from="1599124568339" duration="18101000" />
-      <workItem from="1599294821873" duration="75298000" />
+      <workItem from="1599294821873" duration="75920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="447636000" />
+    <option name="totallyTimeSpent" value="448258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1020" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -2158,10 +2153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.php-version">
+    <entry file="file://$PROJECT_DIR$/.old-php-version">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
