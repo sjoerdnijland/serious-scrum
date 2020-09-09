@@ -6,7 +6,11 @@
   background-color: $white;
   font-family: Georgia;
   font-size: 18px;
-  h1, h2, h3, h4, h5, h6{
+  color: $black;
+  h1, h2, h3{
+    font-family: 'Gotham Bold', serif;
+  }
+  h4, h5, h6{
     font-family: 'Gotham Light', serif;
   }
   h2{
@@ -26,5 +30,6 @@
   }
   li{
     list-style-type: disc;
+    font-size: 14px;
   }
 }
