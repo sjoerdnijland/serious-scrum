@@ -122,7 +122,7 @@ class PageController extends AbstractController
         //return new JsonResponse($output);
 
         $output['title'] = ucwords(str_replace('-',' ',$slug));;
-        $output['image'] = '/'.$page->getThumbnail();
+        $output['image'] = $page->getThumbnail();
         $output['app'] = 'page';
 
 

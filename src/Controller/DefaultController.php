@@ -87,11 +87,11 @@ class DefaultController extends AbstractController
         }
 
         $title = 'Serious Scrum';
-        $image = 'serious-scrum.png';
+        $image = 'images/serious-scrum.png';
 
         if($label){
             $title = 'Serious Scrum: '. ucwords(str_replace('-',' ',$label));
-            $image = $label.'.jpg';
+            $image = 'images/'.$label.'.jpg';
         }
 
         # sets everything we want to output to the UX
