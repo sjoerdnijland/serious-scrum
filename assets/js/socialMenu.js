@@ -44,8 +44,13 @@ class SocialMenu extends React.Component {
         const meetupUrl = 'https://www.meetup.com/nl-NL/Serious-Scrum/';
         const meetupIconSrc = '/images/social/meetup-logo.png';
 
+
+
         const sponsorAlt = "Sponsored by Vamp!";
-        const sponsorLogo = "sponsorLogo";
+        let sponsorLogo = "sponsorLogo";
+        if(this.props.type == "header"){
+            sponsorLogo += " hidden";
+        }
         const sponsorUrl = 'https://vamp.io/';
         const sponsorIconSrc = '/images/sponsors.png';
 

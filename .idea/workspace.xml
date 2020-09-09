@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/sponsors.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/socialMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/socialMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/tsunami.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/tsunami.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/socialMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/socialMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/tsunami.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/tsunami.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,20 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socialMenu.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="socialMenu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+            <state relative-caret-position="516">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socialMenu.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="socialMenu.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/socialMenu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="525">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -218,8 +213,8 @@
         <option value="$PROJECT_DIR$/assets/js/header.js" />
         <option value="$PROJECT_DIR$/assets/js/tsunami.js" />
         <option value="$PROJECT_DIR$/assets/css/tsunami.scss" />
-        <option value="$PROJECT_DIR$/assets/css/socialMenu.scss" />
         <option value="$PROJECT_DIR$/assets/js/socialMenu.js" />
+        <option value="$PROJECT_DIR$/assets/css/socialMenu.scss" />
       </list>
     </option>
   </component>
@@ -1730,12 +1725,12 @@
       <workItem from="1597226107182" duration="35000" />
       <workItem from="1597768933884" duration="251000" />
       <workItem from="1599124568339" duration="18101000" />
-      <workItem from="1599294821873" duration="79082000" />
+      <workItem from="1599294821873" duration="79466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451420000" />
+    <option name="totallyTimeSpent" value="451804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1020" extended-state="0" />
@@ -2121,17 +2116,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/socialMenu.scss">
+    <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="516">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/socialMenu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+        <state relative-caret-position="525">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
         </state>
       </provider>
     </entry>
