@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/pageElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pageElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/page.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="524">
+              <caret line="99" column="131" selection-start-line="99" selection-start-column="131" selection-end-line="99" selection-end-column="131" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -110,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="780">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -228,9 +228,9 @@
         <option value="$PROJECT_DIR$/assets/js/mastery.js" />
         <option value="$PROJECT_DIR$/src/Controller/PageController.php" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
-        <option value="$PROJECT_DIR$/assets/js/page.js" />
         <option value="$PROJECT_DIR$/assets/js/pageElement.js" />
         <option value="$PROJECT_DIR$/assets/js/article.js" />
+        <option value="$PROJECT_DIR$/assets/js/page.js" />
       </list>
     </option>
   </component>
@@ -1736,12 +1736,12 @@
       <workItem from="1597226107182" duration="35000" />
       <workItem from="1597768933884" duration="251000" />
       <workItem from="1599124568339" duration="18101000" />
-      <workItem from="1599294821873" duration="74507000" />
+      <workItem from="1599294821873" duration="74903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446845000" />
+    <option name="totallyTimeSpent" value="447241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
@@ -2133,16 +2133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/pageElement.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -2152,8 +2142,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        <state relative-caret-position="780">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="99" column="131" selection-start-line="99" selection-start-column="131" selection-end-line="99" selection-end-column="131" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

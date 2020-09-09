@@ -82,12 +82,10 @@ class Page extends React.Component {
 
         let ctaHref = "";
         let hideCTA = " hidden";
-        if(typeof this.state.doc.cta !== "undefined"){
+        if(typeof this.state.doc.data.cta !== "undefined"){
             hideCTA = "";
-            ctaHref = this.state.doc.cta.value.document.slug;
+            ctaHref = this.state.doc.data.cta.value.document.slug;
         }
-
-        console.log(this.state.doc.data.content);
 
 
         if(this.state.doc) {
