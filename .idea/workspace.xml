@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/pageElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pageElement.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +44,8 @@
       <file leaf-file-name="pageElement.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/pageElement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="278">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -112,8 +113,8 @@
       <file leaf-file-name="article.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state relative-caret-position="484">
+              <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -129,8 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>width</find>
-      <find>min-w</find>
       <find>one-hl</find>
       <find>isAp</find>
       <find>min-he</find>
@@ -159,6 +158,8 @@
       <find>includes</find>
       <find>thumbnail</find>
       <find>this.props.page.thumbnail</find>
+      <find>highlighted by our editorial</find>
+      <find>&quot;/images/thumbnail_placeholder.png</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -1735,12 +1736,12 @@
       <workItem from="1597226107182" duration="35000" />
       <workItem from="1597768933884" duration="251000" />
       <workItem from="1599124568339" duration="18101000" />
-      <workItem from="1599294821873" duration="74328000" />
+      <workItem from="1599294821873" duration="74507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446666000" />
+    <option name="totallyTimeSpent" value="446845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
@@ -2132,13 +2133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/pageElement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -2149,10 +2143,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pageElement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="484">
+          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
         </state>
       </provider>
     </entry>
