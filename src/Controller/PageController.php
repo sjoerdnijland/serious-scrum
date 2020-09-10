@@ -88,6 +88,11 @@ class PageController extends AbstractController
 
                     $spandata['link_type'] = ucfirst(str_replace("Link.", "", $span['data']['type']));
 
+
+
+                    $spandata['target'] = '_blank';//always load links in new window
+
+
                     if(isset($span['data']['value']['url'])) {
                         $spandata['url'] = $span['data']['value']['url'];
                     }elseif(isset($span['data']['value']['document']['slug'])){
