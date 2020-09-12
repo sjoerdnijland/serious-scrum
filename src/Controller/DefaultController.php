@@ -116,6 +116,18 @@ class DefaultController extends AbstractController
     /**
      * @param Request
      * @param Config
+     * @Route("/editorial", name="editorial")
+     * @return Response
+     */
+    public function editorial(Request $request){
+
+        return $this->index( $request, 'editorial');
+
+    }
+
+    /**
+     * @param Request
+     * @param Config
      * @Route("/r2m/{label}", name="r2m")
      * @return Response
      */
@@ -124,6 +136,8 @@ class DefaultController extends AbstractController
         return $this->index( $request, $label);
 
     }
+
+
 
 }
 

@@ -41,6 +41,7 @@ import '../js/training.js';
 import '../js/pages';
 import '../js/pageElement';
 import '../js/r2m_I';
+import '../js/editorialHeader';
 
 
 import React from 'react';
@@ -441,8 +442,13 @@ class App extends React.Component {
                 <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
+
+                
                 <Tsunami label={this.state.label}/>
                 <R2MI label={this.state.label}/>
+                <EditorialHeader label={this.state.label}/>
+
+
                 <Search functions={functions} value={this.state.search} type="mobile"/>
                 <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} />
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
