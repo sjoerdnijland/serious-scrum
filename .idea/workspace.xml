@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/editorialHeader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/editorial.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/editorialHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/editorial.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="445" column="16" selection-start-line="445" selection-start-column="16" selection-end-line="445" selection-end-column="16" />
+              <caret line="445" selection-start-line="445" selection-end-line="445" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -1741,16 +1731,15 @@
       <workItem from="1599124568339" duration="18101000" />
       <workItem from="1599294821873" duration="81931000" />
       <workItem from="1599769904185" duration="2206000" />
-      <workItem from="1599922177707" duration="1081000" />
+      <workItem from="1599922177707" duration="1362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457556000" />
+    <option name="totallyTimeSpent" value="457837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19930555" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1830,6 +1819,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="361" column="12" selection-start-line="361" selection-start-column="12" selection-end-line="361" selection-end-column="12" />
+          <folding>
+            <element signature="e#73#96#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2107,7 +2099,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="445" column="16" selection-start-line="445" selection-start-column="16" selection-end-line="445" selection-end-column="16" />
+          <caret line="445" selection-start-line="445" selection-end-line="445" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

@@ -443,7 +443,7 @@ class App extends React.Component {
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
-                
+
                 <Tsunami label={this.state.label}/>
                 <R2MI label={this.state.label}/>
                 <EditorialHeader label={this.state.label}/>
