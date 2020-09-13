@@ -34,7 +34,7 @@
 
 /* for smaller desktop: */
 @media only screen and (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I{
+  .editorialHeader{
     height:140px;
     text-align: right;
     h1{
@@ -48,7 +48,7 @@
 
 /* for even smaller desktop: */
 @media only screen and (max-width: 1100px) {
-  .r2m_I {
+  .editorialHeader {
     display: none;
   }
 }

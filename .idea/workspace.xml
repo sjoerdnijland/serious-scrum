@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/css/editorialHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/editorialHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +22,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -49,7 +61,7 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
@@ -66,15 +78,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="76" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_I.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_I.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="122" selection-start-line="27" selection-start-column="122" selection-end-line="27" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -100,8 +103,8 @@
       <file leaf-file-name="editorialHeader.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/editorialHeader.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="17" />
+            <state relative-caret-position="542">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -210,15 +213,15 @@
         <option value="$PROJECT_DIR$/assets/css/pageContent.scss" />
         <option value="$PROJECT_DIR$/assets/css/categories.scss" />
         <option value="$PROJECT_DIR$/assets/css/menu.scss" />
-        <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/src/Controller/PageController.php" />
         <option value="$PROJECT_DIR$/assets/css/editorial.scss" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/assets/css/app.scss" />
         <option value="$PROJECT_DIR$/assets/js/editorialHeader.js" />
-        <option value="$PROJECT_DIR$/assets/css/editorialHeader.scss" />
         <option value="$PROJECT_DIR$/assets/js/menu.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/assets/css/editorialHeader.scss" />
+        <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
     </option>
   </component>
@@ -1731,15 +1734,16 @@
       <workItem from="1599124568339" duration="18101000" />
       <workItem from="1599294821873" duration="81931000" />
       <workItem from="1599769904185" duration="2206000" />
-      <workItem from="1599922177707" duration="1362000" />
+      <workItem from="1599922177707" duration="1828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457837000" />
+    <option name="totallyTimeSpent" value="458303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19930555" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -2000,13 +2004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Manager/PrismicManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
@@ -2058,20 +2055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/editorial.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/editorialHeader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/editorialHeader.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2103,6 +2090,23 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/editorial.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/editorialHeader.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
