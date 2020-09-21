@@ -9,12 +9,15 @@ use Doctrine\ORM\EntityManagerInterface;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Controller\ArticleController;
 use App\Controller\CategoryController;
 use App\Controller\PageController;
+
+use Squid\Patreon\Patreon;
 
 /**
  * Improvements
@@ -34,16 +37,19 @@ class DefaultController extends AbstractController
     private $articleController;
     private $pageController;
     private $categoryController;
+    private $session;
 
     public function __construct(EntityManagerInterface $entityManager,
                                 ArticleController $articleController,
                                 PageController $pageController,
-                                CategoryController $categoryController)
+                                CategoryController $categoryController,
+                                SessionInterface $session)
     {
         $this->em = $entityManager;
         $this->articleController = $articleController;
         $this->categoryController = $categoryController;
         $this->pageController = $pageController;
+        $this->session = $session;
     }
 
 
@@ -59,12 +65,20 @@ class DefaultController extends AbstractController
         $user['fullname'] = '';
         $user['avatar'] = '';
         $user['roles'] = ['ROLE_GUEST'];
+        $user['patreon'] = false;
+
+        if($this->session->get('patreonToken')){
+            $user['patreon'] = 'member';
+        }
 
         if ($this->isGranted('ROLE_USER')) {
             $user['username'] = $this->getUser()->getUsername();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();
+            if($this->getUser()->getIsPatreon()){
+                $user['patreon'] = 'supporter';
+            }
         }
 
         $cache = true;
@@ -112,6 +126,55 @@ class DefaultController extends AbstractController
         //return new JsonResponse($output);
         return $this->render('home.html.twig', $output);
     }
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/patreon", name="patreon")
+     * @return Response
+     */
+    public function patreon(Request $request){
+
+
+
+        $user['username'] = '';
+        $user['fullname'] = '';
+        $user['avatar'] = '';
+        $user['roles'] = ['ROLE_GUEST'];
+        $user['patreon'] = false;
+
+        if($this->session->get('patreonToken')){
+            $user['patreon'] = 'member';
+        }
+
+        if ($this->isGranted('ROLE_USER')) {
+            $user['username'] = $this->getUser()->getUsername();
+            $user['fullname'] = $this->getUser()->getFullname();
+            $user['avatar'] = $this->getUser()->getAvatar();
+            $user['roles'] = $this->getUser()->getRoles();
+            if($this->getUser()->getIsPatreon()){
+                $user['patreon'] = 'supporter';
+            }
+        }else{
+            $this->session->set('patreonLogin', true);
+        }
+
+
+        $output['data'] = [
+            'user' => $user,
+            'slug' => 'patreon'
+        ];
+
+
+        $output['title'] = 'Our Patreon Program';
+        $output['image'] = "";
+        $output['app'] = 'patreon';
+
+
+        return $this->render('patreon.html.twig', $output);
+
+    }
+
 
     /**
      * @param Request

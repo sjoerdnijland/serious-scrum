@@ -13,6 +13,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+
+
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 use App\Manager\CacheManager;
@@ -23,11 +26,13 @@ class PageController extends AbstractController
 
     private $em;
     private $cm;
+    private $session;
 
-    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager, SessionInterface $session)
     {
         $this->cm = $cacheManager;
         $this->em = $entityManager;
+        $this->session = $session;
     }
 
     /**
@@ -41,16 +46,26 @@ class PageController extends AbstractController
         # get doctrine manager
         $em = $this->em;
 
+        $this->session->set('page', $slug);
+
         $user['username'] = '';
         $user['fullname'] = '';
         $user['avatar'] = '';
         $user['roles'] = ['ROLE_GUEST'];
+        $user['patreon'] = false;
+
+        if($this->session->get('patreonToken')){
+            $user['patreon'] = 'member';
+        }
 
         if ($this->isGranted('ROLE_USER')) {
             $user['username'] = $this->getUser()->getUsername();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();
+            if($this->getUser()->getIsPatreon()){
+                $user['patreon'] = 'supporter';
+            }
         }
 
         $page = new Page();
@@ -71,7 +86,7 @@ class PageController extends AbstractController
 
         $data = json_decode($page->getData() , 1);
 
-        //resolving a link issue bug with Prismic
+        //resolving a link issue bug with Prismic #todo to a function
         foreach($data['chapter']['content'] as $i => $contentBlocks){
             if(!is_array($contentBlocks)){
                 continue;
@@ -87,8 +102,6 @@ class PageController extends AbstractController
                     }
 
                     $spandata['link_type'] = ucfirst(str_replace("Link.", "", $span['data']['type']));
-
-
 
                     $spandata['target'] = '_blank';//always load links in new window
 
@@ -113,20 +126,30 @@ class PageController extends AbstractController
         }
 
 
-
         $output['data'] = [
             'user' => $user,
             'page' => $page->getPrismicId(),
             'slug' => $slug,
+            'isSubscriberOnly' => $page->getIsSubscribersOnly(),
             'author' => $page->getAuthor(),
             'labels' => json_decode($page->getLabels(),1),
             'thumbnail' => $page->getThumbnail(),
-            'data' => $data['chapter']
+            'data' => $data['chapter'],
+            'title' => $data['chapter']['title']['value'][0]['text'],
+
         ];
 
-        //return new JsonResponse($output);
 
-        $output['title'] = ucwords(str_replace('-',' ',$slug));;
+        if($page->getIsSubscribersOnly() && $user['patreon'] != "supporter") {
+            $unauthorizedPage = $em->getRepository('App:Page')
+                ->findOneBy([
+                    'slug' => '401-unauthorized',
+                ]);
+
+            $output['data']['data'] = json_decode($unauthorizedPage->getData() , 1)['chapter'];
+        }
+
+        $output['title'] = $output['data']['title'];
         $output['image'] = $page->getThumbnail();
         $output['app'] = 'page';
 
@@ -135,12 +158,6 @@ class PageController extends AbstractController
     }
 
 
-    /**
-     * @param Request $request
-     * @Route("/pages", name="pages")
-     * @Method("GET")
-     * * @return JsonResponse
-     */
     public function getPages($jsonResponse = true, $cache = false)
     {
         # get cache manager

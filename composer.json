@@ -24,7 +24,10 @@
         "symfony/twig-bundle": "^5.0",
         "symfony/validator": "5.0.*",
         "symfony/webpack-encore-bundle": "^1.7",
-        "symfony/yaml": "^5.0"
+        "symfony/yaml": "^5.0",
+        "squid/patreon": "^1.0",
+        "php-http/guzzle6-adapter": "^1.1",
+        "league/oauth2-client": "^2.3"
     },
     "config": {
         "preferred-install": {

@@ -45,6 +45,11 @@ class User implements UserInterface
     private $roles = [];
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isPatreon = false;
+
+    /**
      * @ORM\Column(type="datetime")
      */
     private $created_at;
@@ -114,6 +119,16 @@ class User implements UserInterface
         return array_unique($roles);
     }
 
+    public function setRoles(array $roles)
+    {
+        $this->roles = $roles;
+
+        // allows for chaining
+        return $this;
+    }
+
+
+
     /**
      * Returns the password used to authenticate the user.
      *
@@ -159,4 +174,24 @@ class User implements UserInterface
     {
         return null;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getIsPatreon()
+    {
+        return $this->isPatreon;
+    }
+
+    /**
+     * @param mixed $isPatreon
+     */
+    public function setIsPatreon($isPatreon): void
+    {
+        $this->isPatreon = $isPatreon;
+    }
+
+
+
+
 }

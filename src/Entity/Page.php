@@ -51,6 +51,12 @@ class Page
     private $data = [];
 
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isSubscribersOnly = false;
+
+
     public function __construct()
     {
         $this->submittedAt = new \DateTime();
@@ -72,7 +78,6 @@ class Page
 
         return $this;
     }
-
 
 
     public function getSlug(): ?string
@@ -142,6 +147,16 @@ class Page
         $this->thumbnail = $thumbnail;
 
         return $this;
+    }
+
+    public function getIsSubscribersOnly()
+    {
+        return $this->isSubscribersOnly;
+    }
+
+    public function setIsSubscribersOnly($isSubscribersOnly): void
+    {
+        $this->isSubscribersOnly = $isSubscribersOnly;
     }
 
 

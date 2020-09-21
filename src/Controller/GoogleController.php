@@ -8,9 +8,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class GoogleController extends AbstractController
 {
+
+   private $session;
+
+    public function __construct(SessionInterface $session)
+    {
+        $this->session = $session;
+    }
+
     /**
      * Link to this controller to start the "connect" process
      *
@@ -39,6 +48,11 @@ class GoogleController extends AbstractController
         if (!$this->getUser()) {
             return new JsonResponse(array('status' => false, 'message' => "User not found!"));
         } else {
+
+            if($this->session->get('patreonLogin')){
+                $this->session->set('patreonLogin', false);
+                return $this->redirectToRoute('patreon');
+            }
             return $this->redirectToRoute('index');
         }
 

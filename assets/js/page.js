@@ -24,6 +24,7 @@ class Page extends React.Component {
 
         this.state = {
             page: this.props.data.page,
+            title: this.props.data.title,
             user: this.props.data.user,
             doc: this.props.data,
         };
@@ -82,9 +83,15 @@ class Page extends React.Component {
 
         let ctaHref = "";
         let hideCTA = " hidden";
-        if(typeof this.state.doc.data.cta !== "undefined"){
+
+        if(typeof this.state.doc.data.cta !== "undefined") {
             hideCTA = "";
-            ctaHref = this.state.doc.data.cta.value.document.slug;
+            if (typeof this.state.doc.data.cta.value.document !== "undefined"){
+                ctaHref = this.state.doc.data.cta.value.document.slug;
+            }else if(typeof this.state.doc.data.cta.value.url !== "undefined"){
+                ctaHref = this.state.doc.data.cta.value.url;
+            }
+
         }
 
 
@@ -92,8 +99,9 @@ class Page extends React.Component {
             return (
                 <div className={appContainerClassName}>
                     <PageHeader functions={functions} user={this.state.user} />
-                    <PageTitle title={RichText.asText(this.state.doc.data.title.value)} introduction={RichText.asText(this.state.doc.data.introduction.value)} author={this.props.data.author}/>
+                    <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} author={this.props.data.author}/>
                     <PageHero url={thumbnail}/>
+
                     <div className={contentClassName}>
                         <RichText render={this.state.doc.data.content.value} linkResolver={this.linkResolver} />
                         <div className={"buttonContainer _fr "+hideCTA}>
