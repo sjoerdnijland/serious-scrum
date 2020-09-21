@@ -69,8 +69,11 @@ class Page extends React.Component {
         const contentClassName = "pageContent ";
 
         const bannerText1 = "Community by and for Scrum Practitioners";
-        const bannerText2 = "We seriously need your help! please support us on Patreon!";
-        const bannerUrl2 = "https://www.patreon.com/seriousscrum";
+        let bannerText2 = "We seriously need your help! please support us on Patreon!";
+        if(this.state.user.patreon =="supporter"){
+            bannerText2 = "Yes, you're Serious! Thank you for supporting us!";
+        }
+        const bannerUrl2 = "/patreon";
 
 
         let thumbnail = this.props.data.thumbnail;

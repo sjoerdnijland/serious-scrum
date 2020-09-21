@@ -54,8 +54,11 @@ class Patreon extends React.Component {
         const contentClassName = "pageContent ";
 
         const bannerText1 = "Community by and for Scrum Practitioners";
-        const bannerText2 = "We seriously need your help! please support us on Patreon!";
-        const bannerUrl2 = "https://www.patreon.com/seriousscrum";
+        let bannerText2 = "We seriously need your help! please support us on Patreon!";
+        if(this.state.user.patreon =="supporter"){
+            bannerText2 = "Yes, you're Serious! Thank you for supporting us!";
+        }
+        const bannerUrl2 = "/patreon";
 
         let hideCTA1 = " hidden";
         let hideCTA2 = "";
@@ -68,11 +71,11 @@ class Patreon extends React.Component {
             hideCTA2 = " hidden";
             hideCTA3 = " ";
         }else if(this.state.user.patreon == "member"){
-            content = "Awesome you are a Patreon member! <br/><b>Please select a membership level to get access to exclusive content.</b><br/><br/>";
+            content = "You are a Patreon member! <br/><b>Please select a membership level to get access to exclusive content.</b><br/><br/>";
             hideCTA1 = " ";
             hideCTA2 = " hidden";
         }else if(this.state.user.patreon == "supporter"){
-            content = "Thank you for supporting us! ";
+            content = "<b>Yes, you're Serious!</b><br/> Thank you for supporting us! ";
             hideCTA2 = " hidden";
         }
 

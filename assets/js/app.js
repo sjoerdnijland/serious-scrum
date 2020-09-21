@@ -432,8 +432,13 @@ class App extends React.Component {
         const appContainerClassName = "appContainer";
 
         const bannerText1 = "Community by and for Scrum Practitioners";
-        const bannerText2 = "We seriously need your help! please support us on Patreon!";
-        const bannerUrl2 = "https://www.patreon.com/seriousscrum";
+
+
+        let bannerText2 = "We seriously need your help! please support us on Patreon!";
+        if(this.state.user.patreon =="supporter"){
+            bannerText2 = "Yes, you're Serious! Thank you for supporting us!";
+        }
+        const bannerUrl2 = "/patreon";
 
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
