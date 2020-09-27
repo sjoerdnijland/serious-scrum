@@ -1,9 +1,5 @@
-.r2m_I{
+.r2m_I, .r2m_II{
   border-top:  5px solid $problue;
-  background: url(../images/down-the-rabbit-hole.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top;
   height:500px;
   text-align: center;
   .homeBanner{
@@ -29,12 +25,22 @@
   }
 
 }
-
-
+.r2m_I {
+  background: url(../images/down-the-rabbit-hole.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.r2m_II {
+  background: url(../images/the-key-to-wonderland.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
 
 /* for smaller desktop: */
 @media only screen and (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I{
+  .r2m_I, .r2m_II{
     height:140px;
     text-align: right;
     h1{
@@ -48,7 +54,7 @@
 
 /* for even smaller desktop: */
 @media only screen and (max-width: 1100px) {
-  .r2m_I {
+  .r2m_I, .r2m_II {
     display: none;
   }
 }
