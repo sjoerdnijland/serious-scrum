@@ -34,6 +34,7 @@ class Mastery extends React.Component {
                 <a href="/Road-to-Mastery-E-Book" target="_blank"><div className={itemClassName}>Get the E-Book!</div></a>
                 <a href="/introduction-to-the-road-to-mastery" target="_blank"><div className={itemClassName}>Introduction to the Road to Mastery</div></a>
                 <a href="/r2m/down-the-rabbit-hole" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Part I: Down the Rabbit Hole</div></a>
+                <a href="/r2m/the-key-to-wonderland" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Part II: The Key to Wonderland</div></a>
                 <a href="/about-sjoerd-nijland"  target="_blank"><div className={itemClassName}>About Sjoerd Nijland</div></a>
 
             </div>
