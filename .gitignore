@@ -30,3 +30,5 @@ yarn-error.log
 ###< phpunit/phpunit ###
 .env
 .env
+public/video/Ubuntu.mov
+public/ebook/Kindle.zip
