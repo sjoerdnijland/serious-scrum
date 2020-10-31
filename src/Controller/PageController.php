@@ -46,6 +46,11 @@ class PageController extends AbstractController
         # get doctrine manager
         $em = $this->em;
 
+        # get cache manager
+        $cm = $this->cm;
+
+        $pages = [];
+
         $this->session->set('page', $slug);
 
         $user['username'] = '';
@@ -125,14 +130,42 @@ class PageController extends AbstractController
 
         }
 
+        $pages = $cm->getCache('pages', 'all');
+        $pages = json_decode($pages,1);
+
+        $labels = json_decode($page->getLabels(),1);
+
+        $pageMenu = [];
+        foreach($pages as $pageId => $pagex){
+            foreach($pagex['labels'] as $label){
+                if($label != 'road-to-mastery' && in_array($label, $labels)){
+                    $pageMenu[$pagex['id']]['title']  = $pagex['title'];
+                    $pageMenu[$pagex['id']]['slug']  = $pagex['slug'];
+                }
+            }
+        }
+
+        $series = "";
+        $seriesSlug = "";
+        foreach($labels as $label){
+            if($label == 'road-to-mastery'){
+                continue;
+            }
+            $series = ucwords(str_replace('-',' ',$label));
+            $seriesSlug = $label;
+            break;
+        }
 
         $output['data'] = [
             'user' => $user,
+            'pageMenu' => $pageMenu,
             'page' => $page->getPrismicId(),
             'slug' => $slug,
+            'series' => $series,
+            'seriesslug' => $seriesSlug,
             'isSubscriberOnly' => $page->getIsSubscribersOnly(),
             'author' => $page->getAuthor(),
-            'labels' => json_decode($page->getLabels(),1),
+            'labels' => $labels,
             'thumbnail' => $page->getThumbnail(),
             'data' => $data['chapter'],
             'title' => $data['chapter']['title']['value'][0]['text'],
@@ -167,7 +200,7 @@ class PageController extends AbstractController
 
         if($cache){
 
-            $pages = $cm->getCache('pages', 'active');
+            $pages = $cm->getCache('pages', 'all');
 
             $pages = json_decode($pages,1);
 

@@ -251,8 +251,6 @@ class DefaultController extends AbstractController
      */
     public function patreon(Request $request){
 
-
-
         $user['username'] = '';
         $user['fullname'] = '';
         $user['avatar'] = '';

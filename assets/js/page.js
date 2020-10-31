@@ -10,6 +10,8 @@ import 'regenerator-runtime/runtime';
 import 'react-dropdown/style.css';
 
 import '../js/pageHeader';
+import '../js/pageMenu';
+import '../js/pageMenuItem';
 import '../js/socialMenu';
 import '../js/login';
 import '../js/pageTitle';
@@ -27,9 +29,11 @@ class Page extends React.Component {
             title: this.props.data.title,
             user: this.props.data.user,
             doc: this.props.data,
+            expanded: false,
         };
 
         this.linkResolver = this.linkResolver.bind(this);
+        this.togglePageMenu = this.togglePageMenu.bind(this);
     }
 
     componentDidMount(){
@@ -41,6 +45,12 @@ class Page extends React.Component {
 
         // Default to homepage
         return '/'  + doc.slug;
+    }
+
+    togglePageMenu() {
+        this.setState({
+            expanded: !this.state.expanded
+        });
     }
 
     async getContent(){
@@ -64,6 +74,8 @@ class Page extends React.Component {
     render() {
 
         const functions = {};
+
+        functions['togglePageMenu'] = this.togglePageMenu;
 
         const appContainerClassName = "appContainer";
         const contentClassName = "pageContent ";
@@ -102,7 +114,8 @@ class Page extends React.Component {
             return (
                 <div className={appContainerClassName}>
                     <PageHeader functions={functions} user={this.state.user} />
-                    <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} author={this.props.data.author}/>
+                    <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug}/>
+                    <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug}/>
                     <PageHero url={thumbnail}/>
 
                     <div className={contentClassName}>

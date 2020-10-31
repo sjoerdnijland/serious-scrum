@@ -1,0 +1,53 @@
+.pageMenu{
+  background-color: $seriouslySweet;
+  color: $white;
+  top: 140px;
+  position: fixed;
+  width: 220px;
+  right: 10px;
+  max-height:500px;
+  padding:10px;
+  overflow: scroll;
+  padding-left:30px;
+
+
+  a{
+    color: white;
+  }
+
+  .toggleMenu{
+    position: fixed;
+    margin-left: -30px;
+    img{
+      width:14px;
+      padding-left:10px;
+
+    }
+  }
+  .toggleMenu:hover{
+    cursor:pointer;
+  }
+
+  .pageMenuItem{
+    border-bottom: 1px solid $white;
+    padding-left:10px;
+    line-height: 40px;
+    font-size: 12px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  .activeMenuItem{
+    font-family: 'Gotham Bold';
+  }
+}
+
+.closedPageMenu{
+  width: 40px;
+  right: -50px;
+  max-height: 20px;
+}
+

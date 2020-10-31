@@ -9,10 +9,12 @@ class PageTitle extends React.Component {
 
         let containerClassName = "pageTitle";
 
+        let href = "r2m/"+this.props.seriesslug;
+
         return (
 
             <div className={containerClassName}>
-                <p className={"author"}>{this.props.author}</p>
+                <a href={href}><p className={"author"}>{this.props.series}</p></a>
                 <h1>{this.props.title}</h1>
                 <p>{this.props.introduction}</p>
             </div>
