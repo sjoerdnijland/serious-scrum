@@ -31,8 +31,8 @@ class PageMenu extends React.Component {
 
         return (
 
-            <div className={containerClassName}>
-                <div className={'toggleMenu'}><img src={'/images/menu_active.png'} onClick={this.handleClick}/></div>
+            <div className={containerClassName} onClick={this.handleClick}>
+                <div className={'toggleMenu'}><img src={'/images/menu_active.png'} /></div>
                 <div>
                 {pages}
                 </div>
