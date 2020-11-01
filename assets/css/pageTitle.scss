@@ -4,6 +4,8 @@
   width: 60%;
   padding: 40px 60px;
   background-color: $white;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
   h1{
     margin:0px;
   }
@@ -19,4 +21,9 @@
     text-decoration: underline;
     color: $grey;
   }
+}
+
+.pageTitle::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
