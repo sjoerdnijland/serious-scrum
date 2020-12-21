@@ -57,7 +57,7 @@ class PageElement extends React.Component {
         return (
 
             <div className={className}>
-                <a href={"/"+this.props.page.slug} target="_blank">
+                <a href={"/page/"+this.props.page.slug} target="_blank">
                     <div className={thumbnailClassName}
                         style={{
                             backgroundImage: "url(" + thumbnail + ")",

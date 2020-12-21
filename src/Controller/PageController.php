@@ -38,7 +38,7 @@ class PageController extends AbstractController
     /**
      * @param Request
      * @param Config
-     * @Route("{slug}", name="page")
+     * @Route("/page/{slug}", name="page")
      * @return Response
      */
     public function getPage(Request $request, $slug){
