@@ -44,7 +44,7 @@ class Page extends React.Component {
         // Define the url depending on the document type
 
         // Default to homepage
-        return '/'  + doc.slug;
+        return '/page/'  + doc.slug;
     }
 
     togglePageMenu() {
