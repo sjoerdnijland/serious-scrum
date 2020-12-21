@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/mastery.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/mastery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_I.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_I.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_II.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_II.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1074">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pageTitle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/pageTitle.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,6 +43,15 @@
       <file leaf-file-name="categoryMenu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/categoryMenu.scss">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="editorial.js" pinned="false" current-in-tab="false">
@@ -83,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mastery.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mastery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
@@ -209,7 +207,6 @@
         <option value="$PROJECT_DIR$/assets/js/pageMenuItem.js" />
         <option value="$PROJECT_DIR$/assets/js/pageMenu.js" />
         <option value="$PROJECT_DIR$/assets/css/pageTitle.scss" />
-        <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/css/pageMenu.scss" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Controller/PageController.php" />
@@ -220,6 +217,7 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_II.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_I.js" />
         <option value="$PROJECT_DIR$/assets/js/mastery.js" />
+        <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
     </option>
   </component>
@@ -1763,12 +1761,12 @@
       <workItem from="1602658649848" duration="3965000" />
       <workItem from="1603956469378" duration="8473000" />
       <workItem from="1605345121529" duration="599000" />
-      <workItem from="1608016098915" duration="3248000" />
+      <workItem from="1608016098915" duration="3312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536119000" />
+    <option name="totallyTimeSpent" value="536183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
@@ -2045,13 +2043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/pageMenu.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -2150,6 +2141,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
