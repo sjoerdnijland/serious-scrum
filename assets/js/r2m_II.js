@@ -25,7 +25,7 @@ class R2MII extends React.Component {
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
                         <h1>Part II. <br/>The Key to Wonderland</h1>
-                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/Road-to-Mastery-E-Book" target="_blank">Get the E-Book!</a></p>
+                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/pages/Road-to-Mastery-E-Book" target="_blank">Get the E-Book!</a></p>
 
                     </div>
                 </div>
