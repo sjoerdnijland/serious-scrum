@@ -44,6 +44,7 @@ class Page extends React.Component {
         // Define the url depending on the document type
 
         // Default to homepage
+
         return '/page/'  + doc.slug;
     }
 
@@ -105,8 +106,10 @@ class Page extends React.Component {
                 ctaHref = '/page/'+this.state.doc.data.cta.value.document.slug;
             }else if(typeof this.state.doc.data.cta.value.url !== "undefined"){
                 ctaHref = '/page/'+this.state.doc.data.cta.value.url;
+                if (this.state.doc.data.cta.value.url.includes('http')) {
+                    ctaHref = this.state.doc.data.cta.value.url;
+                }
             }
-
         }
 
 
