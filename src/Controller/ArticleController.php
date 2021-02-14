@@ -471,7 +471,7 @@ class ArticleController extends AbstractController
                 continue;
             }
 
-            if($i > ($startAt+20)){
+            if($i > ($startAt+50)){
                 break;
             }
 
