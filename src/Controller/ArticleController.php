@@ -16,6 +16,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
 use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
@@ -24,12 +25,17 @@ use App\Manager\CacheManager;
 
 class ArticleController extends AbstractController
 {
+    /**
+     * @var ClientInterface
+     */
+    private $client;
 
     private $em;
     private $cm;
 
-    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
     {
+        $this->client = $client;
         $this->cm = $cacheManager;
         $this->em = $entityManager;
     }
@@ -434,7 +440,72 @@ class ArticleController extends AbstractController
         return array();
     }
 
+    /**
+     * @param Request $request
+     * @Route("/reloadThumbnails/{startAt}", name="reloadThumbnails")
+     * @Method("GET")
+     * @return JsonResponse
+     */
+    function reloadThumbnails($startAt){
 
+
+        # get cache manager
+        $cm = $this->cm;
+
+        $articles = [];
+
+        # get doctrine manager
+        $em = $this->em;
+
+
+        $articles = $em->getRepository(Article::class)
+            ->findAll();
+        $returnType = 'all';
+
+        $data = [];
+
+        $i = 0;
+        foreach($articles as $article){
+            if($i < $startAt){
+                continue;
+            }
+            if($i > $startAt+20){
+                break;
+            }
+
+            $i++;
+             //$article->getId(),
+            $response = $this->client->request('GET', $article->getUrl());
+
+            $statusCode = $response->getStatusCode();
+
+            if(!$response || $statusCode != 200){
+                continue;
+            }
+
+            $content = $response->getContent();
+
+            $meta = $this->getMetaTags($content); //gets all meta tags, including those without name attribute
+
+            if(!isset($meta['og:image'])){
+                continue;
+            }
+
+            $thumbnail = $cm->storyImageFromUrl('thumbnails', $meta['og:image']);
+
+            $article->setThumbnail($thumbnail);
+
+            $em->persist($article);
+
+            $em->flush();
+
+
+        }
+
+        $data = ["done"];
+
+        return new JsonResponse($data);
+    }
 
 
 }
