@@ -83,7 +83,7 @@ class RssManager
                 ->findArticleByUrl($url);
 
             if($urlAlreadyExists){
-                continue;
+             //   continue;
             }
 
             $parseImage = explode("src=\"", $item->description);
@@ -104,6 +104,8 @@ class RssManager
             $em->persist($article);
 
             $em->flush();
+
+            print($title . "\n");
 
         }
 
