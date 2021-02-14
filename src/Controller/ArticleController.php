@@ -466,14 +466,15 @@ class ArticleController extends AbstractController
 
         $i = 0;
         foreach($articles as $article){
+            $i++;
             if($i < $startAt){
                 continue;
             }
-            if($i > $startAt+20){
+
+            if($i > ($startAt+20)){
                 break;
             }
 
-            $i++;
              //$article->getId(),
             $response = $this->client->request('GET', $article->getUrl());
 
