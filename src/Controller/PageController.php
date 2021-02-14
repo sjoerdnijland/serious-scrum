@@ -7,6 +7,7 @@ use App\Entity\Page;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Doctrine\ORM\EntityManagerInterface;
 
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -19,6 +20,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 use App\Manager\CacheManager;
+use App\Manager\PrismicManager;
 
 
 class PageController extends AbstractController
@@ -26,13 +28,29 @@ class PageController extends AbstractController
 
     private $em;
     private $cm;
+    private $pm;
     private $session;
 
-    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager, SessionInterface $session)
+    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager, PrismicManager $prismicManager, SessionInterface $session)
     {
         $this->cm = $cacheManager;
         $this->em = $entityManager;
+        $this->pm = $prismicManager;
         $this->session = $session;
+    }
+    //
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/prismic/reload", name="prismicReload")
+     * @return JsonResponse
+     */
+    public function reloadPrismic(Request $request){
+        $this->pm->getPrismicPages();
+        $data = "finished";
+        return new JsonResponse($data, 200);
+
     }
 
     /**

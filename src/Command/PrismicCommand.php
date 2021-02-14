@@ -15,7 +15,6 @@ class PrismicCommand extends Command
     public function __construct(PrismicManager $prismicManager)
     {
         $this->prismicManager = $prismicManager;
-
         parent::__construct();
     }
 
