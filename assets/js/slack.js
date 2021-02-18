@@ -76,8 +76,8 @@ class Slack extends React.Component {
                     </div>
                     <div className="two-thirds column">
                         <p>Let’s have a serious chat at <a href="http://seriousscrum.com/invite" target="_blank">Slack</a> about Scrum. </p>
-                        <p><span className="metric">+3.750</span> <span>members</span></p>
-                        <p><span className="metric">±5.500</span> <span>messages / month</span></p>
+                        <p><span className="metric">+4.000</span> <span>members</span></p>
+                        <p><span className="metric">±5.000</span> <span>messages / month</span></p>
                         <p className="_pt20 buttonContainer">
                             <a className="button" id="requestInvite_button" href="http://seriousscrum.com/invite" target="_blank">Invite me!</a>
                         </p>
