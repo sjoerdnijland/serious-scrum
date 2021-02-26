@@ -87,13 +87,20 @@ class RssManager
             }
 
             $parseImage = explode("src=\"", $item->description);
+
+            if(!isset($parseImage[1])){
+                $parseImage = explode("src=\"", $item->children("content", true));
+            }
+
             if(isset($parseImage[1])){
+                echo('parsing...');
                 $parseImage = explode("\"", $parseImage[1]);
                 $thumbnail = $parseImage[0];
                 $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, 'public/');
                 $thumbnail = substr($thumbnail, 7);
 
             }else{
+                echo($item->description);
                 $thumbnail = "";
             }
 
