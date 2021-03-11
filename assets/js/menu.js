@@ -46,12 +46,20 @@ class Menu extends React.Component {
             }
         }
 
+        let showSearchText = true;
+        if(!this.props.search){
+            showSearchText = false;
+        }
+
 
 
         return (
             <div className={containerClassName}>
                 <div className="background"/>
                 <div className={"one-half column _pl20"}>
+
+                    <MenuItem functions={this.props.functions} filter={this.props.search} id="search" active={showSearchText} category={this.props.category} type="default" hide={hideLeftMenu}/>
+
                     <MenuItem functions={this.props.functions} filter="Latest" id="latest" active={this.props.active == "latest"} category={this.props.category} type="default" hide={hideLeftMenu}/>
                     <MenuItem functions={this.props.functions} filter="Curated" id="curated" active={this.props.active == "curated"} category={this.props.category} type="default" hide={hideLeftMenu}/>
                     <MenuItem functions={this.props.functions} filter={categoryName} id="category" active={true} category={this.props.category} type="category" hide={hideLeftMenu}/>

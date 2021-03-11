@@ -28,7 +28,10 @@ class Library extends React.Component {
                }
 
                if(this.search){
-                   if( (article.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) && (article.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)){
+                   if( (article.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
+                       (article.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
+                       (article.author.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)
+                   ){
                        console.log(index);
                        articles[index] = [];
                    }
@@ -69,7 +72,7 @@ class Library extends React.Component {
 
 
         return (
-            <div className={ContainerClassName}>
+            <div className={ContainerClassName} id="library">
                 {articleNodes}
             </div>
         );

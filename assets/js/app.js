@@ -459,7 +459,7 @@ class App extends React.Component {
 
 
                 <Search functions={functions} value={this.state.search} type="mobile"/>
-                <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} />
+                <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} search={this.state.search}/>
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
                 <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
                 <SocialMenu type="footer"/>

@@ -32,7 +32,10 @@ class Pages extends React.Component {
                 }
 
                if(this.search){
-                   if( (page.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) && (page.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)){
+                   if( (page.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
+                       (page.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
+                       (page.author.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)
+                   ){
                        console.log(index);
                        contentPages[index] = [];
                    }
@@ -71,7 +74,7 @@ class Pages extends React.Component {
 
 
         return (
-            <div className={ContainerClassName}>
+            <div className={ContainerClassName} >
                 {pageNodes}
             </div>
         );

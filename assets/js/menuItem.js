@@ -49,12 +49,13 @@ class MenuItem extends React.Component {
             active = true;
         }
 
-        if((active || this.state.hover) && this.props.type!="editorial"){
+
+        if((active || this.state.hover) && this.props.type!="editorial" && this.props.type!="search"){
             bulletSrc = "/images/bullet-blue.png";
             menuItemClassName += " active";
         }
 
-        if(this.props.type=="editorial"){
+        if(this.props.type=="editorial" || this.props.type=="search"){
             menuItemClassName += " editorial _fr";
             if(active){
                 menuItemClassName += " highlight";
@@ -65,7 +66,7 @@ class MenuItem extends React.Component {
             menuItemClassName += " category";
         }
 
-        if(this.props.type=="category" && !this.props.category || this.props.hide){
+        if(this.props.type=="category" && !this.props.category || this.props.hide || (!this.props.filter && this.props.id == 'search')){
             menuItemClassName += " hidden";
         }
 

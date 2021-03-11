@@ -3,7 +3,12 @@ import React from 'react';
 class Article extends React.Component {
     constructor(props) {
         super(props);
+        this.searchAuthor = this.searchAuthor.bind(this);
 
+    }
+
+    searchAuthor(){
+        this.props.functions.setSearch(this.props.article.author);
     }
 
     render() {
@@ -78,15 +83,16 @@ class Article extends React.Component {
                     <div className={introClassName}>
                         {this.props.article.intro}
                     </div>
+                </a>
                     <div className={authorClassName}>
-                        <div className={authorNameClassName}>
-                            {this.props.article.author}
+                        <div className={authorNameClassName} onClick={this.searchAuthor}>
+                            <a href="#library">{this.props.article.author}</a>
                         </div>
                     </div>
                     <div className={curatedClassName}>
                         {curated}
                     </div>
-                </a>
+
 
             </div>
         );
