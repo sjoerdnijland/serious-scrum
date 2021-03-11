@@ -203,7 +203,7 @@ class PageController extends AbstractController
         $output['image'] = $page->getThumbnail();
         $output['author'] = $output['data']['author'];
         $output['description'] = $output['data']['data']['introduction']['value'][0]['text'];
-        $output['url'] = 'https://www.seriousscrum.com'.$slug;
+        $output['url'] = 'https://www.seriousscrum.com/page/'.$slug;
         $output['app'] = 'page';
 
 
