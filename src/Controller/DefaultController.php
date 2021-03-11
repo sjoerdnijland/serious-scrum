@@ -124,7 +124,10 @@ class DefaultController extends AbstractController
         ];
 
         $output['title'] = $title;
+        $output['url'] = 'https://www.seriousscrum.com';
         $output['image'] = $image;
+        $output['author'] = 'Sjoerd Nijland';
+        $output['description'] = 'We are an open global Scrum Community of 5K Scrum Professionals';
         $output['app'] = 'app';
 
         //return new JsonResponse($output);

@@ -187,7 +187,6 @@ class PageController extends AbstractController
             'thumbnail' => $page->getThumbnail(),
             'data' => $data['chapter'],
             'title' => $data['chapter']['title']['value'][0]['text'],
-
         ];
 
 
@@ -202,6 +201,9 @@ class PageController extends AbstractController
 
         $output['title'] = $output['data']['title'];
         $output['image'] = $page->getThumbnail();
+        $output['author'] = $output['data']['author'];
+        $output['description'] = $output['data']['data']['introduction']['value'][0]['text'];
+        $output['url'] = 'https://www.seriousscrum.com'.$slug;
         $output['app'] = 'page';
 
 
