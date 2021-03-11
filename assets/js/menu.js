@@ -20,7 +20,7 @@ class Menu extends React.Component {
             hideLeftMenu = true;
             menuTitle = this.props.label.split("-").join(" ");
             menuTitle = menuTitle.charAt(0).toUpperCase() + menuTitle.slice(1);
-            if(this.props.label == 'editorial'){
+            if(this.props.label == 'editorial' || this.props.label == 'Marty'){
                 hideRightMenu = true;
             }
 
