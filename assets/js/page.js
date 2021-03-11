@@ -3,6 +3,7 @@ import '../css/app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Prismic from 'prismic-javascript'
+import MetaTags from 'react-meta-tags';
 
 import { Date, Link, RichText } from 'prismic-reactjs'
 
@@ -91,10 +92,15 @@ class Page extends React.Component {
 
         let thumbnail = this.props.data.thumbnail;
 
+        let ogThumbnail = "";
         if(typeof thumbnail !== "undefined" ){
+            ogThumbnail = thumbnail;
             if(!thumbnail.includes('http')){
                 thumbnail = '/'+thumbnail;
+                ogThumbnail = 'http://www.seriousscrum.com'+thumbnail;
             }
+
+
         }
 
         let ctaHref = "";
@@ -112,10 +118,23 @@ class Page extends React.Component {
             }
         }
 
+        const url = "https://www.seriousscrum.com/page/"+this.props.data.slug;
+
+
 
         if(this.state.doc) {
             return (
                 <div className={appContainerClassName}>
+                    <MetaTags>
+                        <title>{this.state.title}</title>
+                        <meta name="description" content="Some description." />
+                        <meta property="og:description" content={RichText.asText(this.state.doc.data.introduction.value)} />
+                        <meta property="og:title" content={this.state.title} />
+                        <meta property="og:url" content={url} />
+                        <meta property="og:image" content={ogThumbnail} />
+                        <meta property="og:author" content={this.props.data.author} />
+                        <meta property="article:author" content={this.props.data.author} />
+                    </MetaTags>
                     <PageHeader functions={functions} user={this.state.user} />
                     <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug}/>
                     <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug}/>

@@ -444,6 +444,7 @@ class App extends React.Component {
 
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
+
                 <Header functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
                 <SubmitForm functions={functions} submitUrl={this.state.submitUrl} active={this.state.submitForm} submitResponse={this.state.submitResponse} submitData={this.state.submitData} category={this.state.submitCategory} categories={this.state.categories} roles={this.state.user.roles} form="submit"/>
                 <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>

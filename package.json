@@ -24,6 +24,9 @@
         "react-bottom-scroll-listener": "^4.0.0",
         "react-dom": "^16.8.6",
         "react-dropdown": "^1.7.0",
-        "react-native-elements": "^2.0.0"
+        "react-meta-tags": "^1.0.1",
+        "react-native-elements": "^2.0.0",
+        "react-native-vector-icons": "^8.1.0",
+        "react-meta-tags": "^1.0.1"
     }
 }
