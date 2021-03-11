@@ -193,6 +193,18 @@ class DefaultController extends AbstractController
     /**
      * @param Request
      * @param Config
+     * @Route("/marty", name="marty")
+     * @return Response
+     */
+    public function marty(Request $request){
+
+        return $this->index( $request, 'Marty');
+
+    }
+
+    /**
+     * @param Request
+     * @param Config
      * @Route("/r2m/{label}", name="r2m")
      * @return Response
      */

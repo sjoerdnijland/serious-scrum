@@ -43,6 +43,7 @@ import '../js/pageElement';
 import '../js/r2m_I';
 import '../js/r2m_II';
 import '../js/editorialHeader';
+import '../js/martyHeader';
 
 
 import React from 'react';
@@ -454,6 +455,7 @@ class App extends React.Component {
                 <R2MI label={this.state.label}/>
                 <R2MII label={this.state.label}/>
                 <EditorialHeader label={this.state.label}/>
+                <MartyHeader label={this.state.label}/>
 
 
                 <Search functions={functions} value={this.state.search} type="mobile"/>
