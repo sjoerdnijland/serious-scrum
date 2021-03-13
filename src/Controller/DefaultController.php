@@ -17,6 +17,7 @@ use App\Controller\ArticleController;
 use App\Controller\CategoryController;
 use App\Controller\PageController;
 use App\Controller\JiraController;
+use App\Manager\PrismicManager;
 
 use Squid\Patreon\Patreon;
 
@@ -39,6 +40,7 @@ class DefaultController extends AbstractController
     private $pageController;
     private $categoryController;
     private $jiraController;
+    private $prismicManager;
     private $session;
 
     public function __construct(EntityManagerInterface $entityManager,
@@ -46,7 +48,8 @@ class DefaultController extends AbstractController
                                 PageController $pageController,
                                 CategoryController $categoryController,
                                 JiraController $jiraController,
-                                SessionInterface $session)
+                                SessionInterface $session,
+                                PrismicManager $prismicManager)
     {
         $this->em = $entityManager;
         $this->articleController = $articleController;
@@ -54,6 +57,7 @@ class DefaultController extends AbstractController
         $this->pageController = $pageController;
         $this->jiraController = $jiraController;
         $this->session = $session;
+        $this->prismicManager = $prismicManager;
     }
 
 
@@ -217,6 +221,21 @@ class DefaultController extends AbstractController
 
     }
 
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/prismic/sync", name="prismicSync")
+     * @return JsonResponse
+     */
+    public function prismicSync(Request $request){
+
+        $this->prismicManager->getPrismicPages();
+
+        $data = ["sync completed"];
+
+        return new JsonResponse($data);
+
+    }
 
 
 }

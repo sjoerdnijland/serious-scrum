@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="499">
-              <caret line="203" column="54" lean-forward="true" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
+              <caret line="203" column="54" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
               <folding>
                 <element signature="e#71#91#0#PHP" expanded="true" />
               </folding>
@@ -31,11 +31,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PrismicCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Command/PrismicCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+            <state relative-caret-position="529">
+              <caret line="507" column="39" selection-start-line="505" selection-start-column="8" selection-end-line="507" selection-end-column="39" />
               <folding>
                 <element signature="e#73#96#0#PHP" expanded="true" />
                 <element signature="e#5642#6946#0#PHP" />
@@ -43,7 +52,6 @@
                 <element signature="e#7400#9555#0#PHP" />
                 <element signature="e#9561#10736#0#PHP" />
                 <element signature="e#10929#11711#0#PHP" />
-                <element signature="e#12752#14060#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -61,11 +69,20 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="126" column="56" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="56" />
+            <state relative-caret-position="-2010">
+              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
               <folding>
-                <element signature="e#4084#5175#0#PHP" />
+                <element signature="e#73#119#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -156,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/menu.scss" />
         <option value="$PROJECT_DIR$/assets/css/editorial.scss" />
         <option value="$PROJECT_DIR$/assets/js/editorialHeader.js" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -204,9 +220,10 @@
         <option value="$PROJECT_DIR$/assets/js/page.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/templates/app.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Controller/ArticleController.php" />
         <option value="$PROJECT_DIR$/src/Controller/PageController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1548,9 +1565,8 @@
       <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="163" />
-    <option name="y" value="159" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="26" />
     <option name="width" value="1440" />
     <option name="height" value="832" />
   </component>
@@ -1749,15 +1765,15 @@
       <workItem from="1610460130375" duration="585000" />
       <workItem from="1613305160044" duration="5043000" />
       <workItem from="1613679348544" duration="3999000" />
-      <workItem from="1615486600028" duration="7655000" />
+      <workItem from="1615486600028" duration="8373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554776000" />
+    <option name="totallyTimeSpent" value="555494000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1440" height="832" extended-state="6" />
+    <frame x="0" y="26" width="1440" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.81515956" visible="true" weight="0.20347223" />
@@ -1794,17 +1810,10 @@
           <url>file://$PROJECT_DIR$/assets/js/scrumbut.js</url>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/pageMenu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/pageTitle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2070,31 +2079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/PrismicCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/page.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Manager/PrismicManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -2108,20 +2096,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="126" column="56" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="56" />
+        <state relative-caret-position="499">
+          <caret line="203" column="54" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
           <folding>
-            <element signature="e#4084#5175#0#PHP" />
+            <element signature="e#71#91#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Manager/PrismicManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        <state relative-caret-position="529">
+          <caret line="507" column="39" selection-start-line="505" selection-start-column="8" selection-end-line="507" selection-end-column="39" />
           <folding>
             <element signature="e#73#96#0#PHP" expanded="true" />
             <element signature="e#5642#6946#0#PHP" />
@@ -2129,18 +2131,31 @@
             <element signature="e#7400#9555#0#PHP" />
             <element signature="e#9561#10736#0#PHP" />
             <element signature="e#10929#11711#0#PHP" />
-            <element signature="e#12752#14060#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
+    <entry file="file://$PROJECT_DIR$/src/Command/PrismicCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="203" column="54" lean-forward="true" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2010">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
           <folding>
-            <element signature="e#71#91#0#PHP" expanded="true" />
+            <element signature="e#73#119#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>

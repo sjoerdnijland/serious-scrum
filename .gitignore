@@ -6,6 +6,9 @@
 public/bundles/
 public/cache
 public/images/storage
+public/images/storage/thumbnails
+public/images/storage/
+public/images/storage/thumbnails/
 node_modules/
 var/
 vendor/
@@ -19,6 +22,7 @@ phpunit.xml
 /node_modules/
 /public/build/
 /public/cache/
+public/images/storage/
 /node_modules_bu/
 npm-debug.log
 yarn-error.log
