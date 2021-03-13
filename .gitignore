@@ -4,6 +4,8 @@
 .env.local.php
 .env.*.local
 public/bundles/
+public/public
+public/public/
 public/cache
 public/images/storage
 public/images/storage/thumbnails
@@ -21,6 +23,7 @@ phpunit.xml
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
 /public/build/
+/public/public/
 /public/cache/
 public/images/storage/
 /node_modules_bu/
