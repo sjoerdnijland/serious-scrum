@@ -67,7 +67,8 @@ class DefaultController extends AbstractController
      * @Route("/", name="index")
      * @return Response
      */
-    public function index(Request $request, $label = false){
+    public function index(Request $request, $label = false)
+    {
 
         $user['username'] = '';
         $user['fullname'] = '';
@@ -75,7 +76,7 @@ class DefaultController extends AbstractController
         $user['roles'] = ['ROLE_GUEST'];
         $user['patreon'] = false;
 
-        if($this->session->get('patreonToken')){
+        if ($this->session->get('patreonToken')) {
             $user['patreon'] = 'member';
         }
 
@@ -84,7 +85,7 @@ class DefaultController extends AbstractController
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();
-            if($this->getUser()->getIsPatreon()){
+            if ($this->getUser()->getIsPatreon()) {
                 $user['patreon'] = 'supporter';
             }
         }
@@ -97,6 +98,10 @@ class DefaultController extends AbstractController
         $articles = $this->articleController->getArticles(false, $cache);
 
         $pages = $this->pageController->getPages(false, false);
+
+        if ($label == 'Marty'){
+            $pages = array_reverse($pages);
+        }
 
         $categories = $this->categoryController->getCategories(false, true);
 
