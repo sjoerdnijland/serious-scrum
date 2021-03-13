@@ -123,7 +123,9 @@ class PrismicManager
                     }
 
                     $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, $defaultDir);
-                    $thumbnail = substr($thumbnail, 7);
+                    if($source == 'command') {
+                        $thumbnail = substr($thumbnail, 7);
+                    }
                 }
 
                 $page = $em->getRepository('App:Page')
