@@ -63,7 +63,6 @@ class CacheManager
         $fs = $this->fs;
 
         $imgDir = $defaultDir . $this->imgDir . $service;
-        echo("-".$imgDir);
 
         if (!$fs->exists($imgDir)) {
             $fs->mkdir($imgDir);

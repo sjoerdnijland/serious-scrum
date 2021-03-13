@@ -117,11 +117,11 @@ class PrismicManager
                 $thumbnail = null;
                 if (isset($result['data']['chapter']['hero']['value']['main']['url'])) {
                     $thumbnail = $result['data']['chapter']['hero']['value']['main']['url'];
-                    $defaultDir = '../../public/';
+                    $defaultDir = '';
                     if($source == 'command'){
                         $defaultDir = 'public/';
                     }
-                  
+
                     $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, $defaultDir);
                     $thumbnail = substr($thumbnail, 7);
                 }
