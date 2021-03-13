@@ -42,7 +42,7 @@ class PrismicCommand extends Command
             '',
         ]);
 
-        $this->prismicManager->getPrismicPages();
+        $this->prismicManager->getPrismicPages('command');
 
         return 1;
 

@@ -38,20 +38,6 @@ class PageController extends AbstractController
         $this->pm = $prismicManager;
         $this->session = $session;
     }
-    //
-
-    /**
-     * @param Request
-     * @param Config
-     * @Route("/prismic/reload", name="prismicReload")
-     * @return JsonResponse
-     */
-    public function reloadPrismic(Request $request){
-        $this->pm->getPrismicPages();
-        $data = "finished";
-        return new JsonResponse($data, 200);
-
-    }
 
     /**
      * @param Request

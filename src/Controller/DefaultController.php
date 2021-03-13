@@ -229,7 +229,7 @@ class DefaultController extends AbstractController
      */
     public function prismicSync(Request $request){
 
-        $this->prismicManager->getPrismicPages();
+        $this->prismicManager->getPrismicPages('prismicSync');
 
         $data = ["sync completed"];
 

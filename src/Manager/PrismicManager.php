@@ -39,7 +39,7 @@ class PrismicManager
 
     }
 
-    public function getPrismicPages()//gets last 20 Prismic Pages
+    public function getPrismicPages($source)//gets last 20 Prismic Pages
     {
 
         $em = $this->em;
@@ -117,7 +117,12 @@ class PrismicManager
                 $thumbnail = null;
                 if (isset($result['data']['chapter']['hero']['value']['main']['url'])) {
                     $thumbnail = $result['data']['chapter']['hero']['value']['main']['url'];
-                    $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, 'public/');
+                    $defaultDir = '../../public/';
+                    if($source == 'command'){
+                        $defaultDir = 'public/';
+                    }
+                  
+                    $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, $defaultDir);
                     $thumbnail = substr($thumbnail, 7);
                 }
 
