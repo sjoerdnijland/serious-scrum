@@ -383,7 +383,7 @@ class App extends React.Component {
                         submitResponse: false,
                         submitData: '',
                         reviewCategory: false,
-                        reviewOption: false,
+                        reviewOption: 'isApproved',
                     })
 
                 }

@@ -38,7 +38,7 @@ class RssManager
 
     }
 
-    public function getRSS($url)
+    public function getRSS($url, $source)
     {
 
         $em = $this->em;
@@ -96,8 +96,16 @@ class RssManager
                 echo('parsing...');
                 $parseImage = explode("\"", $parseImage[1]);
                 $thumbnail = $parseImage[0];
-                $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, 'public/');
-                $thumbnail = substr($thumbnail, 7);
+
+                $defaultDir = '';
+                if($source == 'command'){
+                    $defaultDir = 'public/';
+                }
+
+                $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, $defaultDir);
+                if($source == 'command') {
+                    $thumbnail = substr($thumbnail, 7);
+                }
 
             }else{
                 echo($item->description);

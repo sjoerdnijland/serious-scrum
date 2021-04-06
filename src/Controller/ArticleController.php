@@ -302,9 +302,25 @@ class ArticleController extends AbstractController
         $data = [];
 
         foreach($articles as $article){
+            $src = "";
+            $url = $article->getUrl();
+            if (strpos($url, "www.scrum.org") !== false) {
+                $src = 'scrumorg';
+            }
+            if (strpos($url, "seriousscrum.com") !== false) {
+                $src = 'seriousscrum';
+            }
+            if (strpos($url, "medium.com") !== false) {
+                $src = 'medium';
+            }
+            if (strpos($url, "www.linkedin.com") !== false) {
+                $src = 'linkedin';
+            }
+
             $data[] = [
                 'id' => $article->getId(),
-                'url' => $article->getUrl(),
+                'url' => $url,
+                'src' => $src,
                 'thumbnail' => $article->getThumbnail(),
                 'title' => html_entity_decode($article->getTitle()),
                 'intro' => html_entity_decode($article->getIntro()),

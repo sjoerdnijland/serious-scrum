@@ -70,6 +70,7 @@ class Article extends React.Component {
                 </div>
                 <ReviewForm key={'reviewForm'+this.props.article.id}  functions={this.props.functions} active={showForm} article={this.props.article.id} category={this.props.article.category} categories={this.props.categories} roles={this.props.roles} form="review"/>
                 <a href={this.props.article.url} target="_blank">
+
                     <div className={thumbnailClassName}
                         style={{
                             backgroundImage: "url(" + thumbnail + ")",

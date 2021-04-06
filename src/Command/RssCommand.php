@@ -43,7 +43,7 @@ class RssCommand extends Command
             '',
         ]);
 
-        $rss = $this->rssManager->getRSS('https://medium.com/feed/serious-scrum');
+        $rss = $this->rssManager->getRSS('https://medium.com/feed/serious-scrum', 'command');
 
         return 1;
     }

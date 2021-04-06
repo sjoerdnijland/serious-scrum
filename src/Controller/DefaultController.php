@@ -18,6 +18,7 @@ use App\Controller\CategoryController;
 use App\Controller\PageController;
 use App\Controller\JiraController;
 use App\Manager\PrismicManager;
+use App\Manager\RssManager;
 
 use Squid\Patreon\Patreon;
 
@@ -41,6 +42,7 @@ class DefaultController extends AbstractController
     private $categoryController;
     private $jiraController;
     private $prismicManager;
+    private $rssManager;
     private $session;
 
     public function __construct(EntityManagerInterface $entityManager,
@@ -49,7 +51,8 @@ class DefaultController extends AbstractController
                                 CategoryController $categoryController,
                                 JiraController $jiraController,
                                 SessionInterface $session,
-                                PrismicManager $prismicManager)
+                                PrismicManager $prismicManager,
+                                RssManager $rssManager)
     {
         $this->em = $entityManager;
         $this->articleController = $articleController;
@@ -58,6 +61,7 @@ class DefaultController extends AbstractController
         $this->jiraController = $jiraController;
         $this->session = $session;
         $this->prismicManager = $prismicManager;
+        $this->rssManager = $rssManager;
     }
 
 
@@ -235,6 +239,22 @@ class DefaultController extends AbstractController
     public function prismicSync(Request $request){
 
         $this->prismicManager->getPrismicPages('prismicSync');
+
+        $data = ["sync completed"];
+
+        return new JsonResponse($data);
+
+    }
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/rss/sync", name="rss_sync")
+     * @return JsonResponse
+     */
+    public function rssSync(Request $request){
+
+        $this->rssManager->getRSS('https://medium.com/feed/serious-scrum','rssSync');
 
         $data = ["sync completed"];
 
