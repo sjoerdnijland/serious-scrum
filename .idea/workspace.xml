@@ -53,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -65,12 +65,33 @@
       <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2483">
+            <state relative-caret-position="523">
               <caret line="195" column="56" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="56" />
               <folding>
                 <element signature="e#71#91#0#PHP" expanded="true" />
                 <element signature="e#6232#7797#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roadToMastery.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/roadToMastery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="61" column="159" selection-start-line="61" selection-start-column="159" selection-end-line="61" selection-end-column="159" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="road-to-mastery.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/road-to-mastery.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -209,7 +230,6 @@
         <option value="$PROJECT_DIR$/assets/js/pageHero.js" />
         <option value="$PROJECT_DIR$/assets/css/pageHero.scss" />
         <option value="$PROJECT_DIR$/assets/js/patreon.js" />
-        <option value="$PROJECT_DIR$/assets/js/roadToMastery.js" />
         <option value="$PROJECT_DIR$/assets/js/checkoutCallback.js" />
         <option value="$PROJECT_DIR$/templates/road-to-mastery.html.twig" />
         <option value="$PROJECT_DIR$/templates/checkout-callback.html.twig" />
@@ -218,6 +238,7 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
+        <option value="$PROJECT_DIR$/assets/js/roadToMastery.js" />
       </list>
     </option>
   </component>
@@ -1755,12 +1776,12 @@
       <workItem from="1613305160044" duration="5043000" />
       <workItem from="1613679348544" duration="3999000" />
       <workItem from="1615486600028" duration="17278000" />
-      <workItem from="1621868302486" duration="10452000" />
+      <workItem from="1621868302486" duration="10834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="574851000" />
+    <option name="totallyTimeSpent" value="575233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2036,23 +2057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/road-to-mastery.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/roadToMastery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/success.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2107,17 +2111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2483">
-          <caret line="195" column="56" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="56" />
-          <folding>
-            <element signature="e#71#91#0#PHP" expanded="true" />
-            <element signature="e#6232#7797#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -2133,6 +2126,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="195" column="56" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="56" />
+          <folding>
+            <element signature="e#71#91#0#PHP" expanded="true" />
+            <element signature="e#6232#7797#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/road-to-mastery.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/roadToMastery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="61" column="159" selection-start-line="61" selection-start-column="159" selection-end-line="61" selection-end-column="159" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

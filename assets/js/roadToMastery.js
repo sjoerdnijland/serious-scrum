@@ -59,7 +59,7 @@ class RoadToMastery extends React.Component {
             "\n" +
             "After registering you will be contacted for a 30 minute intake interview. During the intake you will be shown some of the training material and ground we cover. If you choose to opt-out after the intake that's perfectly okay! " +
             "\ <br/><br/>"+
-            "<div class='buttonContainer'> <button class='button' id='checkout-button-price_1Iuf8RJrh5dS40VjdrjY6uOf'role='link' type='button' >Join! </button></div>"+
+            "<div class='buttonContainer'> <button class='button' id='checkout-button-price_1Iuf8RJrh5dS40VjdrjY6uOf'role='link' type='button' >Get your ticket! </button></div>"+
 
             "<div id='error-message'></div>"
         };
