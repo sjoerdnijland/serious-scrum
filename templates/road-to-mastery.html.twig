@@ -1,0 +1,45 @@
+{% extends 'app.html.twig' %}
+
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('build/runtime.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('build/roadToMastery.js') }}"></script>
+    <script src="https://js.stripe.com/v3"></script>
+    <script>
+        (function() {
+            var stripe = Stripe('pk_live_xVSdZ5mcMuvbgiSwViTvPtJo');
+
+            var checkoutButton = document.getElementById('checkout-button-price_1Iuf8RJrh5dS40VjdrjY6uOf');
+            checkoutButton.addEventListener('click', function () {
+
+                /*
+                 * When the customer clicks on the button, redirect
+                 * them to Checkout.
+                 */
+                stripe.redirectToCheckout({
+                    lineItems: [{price: 'price_1Iuf8RJrh5dS40VjdrjY6uOf', quantity: 1}],
+                    mode: 'subscription',
+                    /*
+                     * Do not rely on the redirect to the successUrl for fulfilling
+                     * purchases, customers may not always reach the success_url after
+                     * a successful payment.
+                     * Instead use one of the strategies described in
+                     * https://stripe.com/docs/payments/checkout/fulfill-orders
+                     */
+                    successUrl: window.location.protocol + '//www.seriousscrum.com/success',
+                    cancelUrl: window.location.protocol + '//www.seriousscrum.com/canceled',
+                })
+                    .then(function (result) {
+                        if (result.error) {
+                            /*
+                             * If `redirectToCheckout` fails due to a browser or network
+                             * error, display the localized error message to your customer.
+                             */
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                    });
+            });
+        })();
+    </script>
+{% endblock %}

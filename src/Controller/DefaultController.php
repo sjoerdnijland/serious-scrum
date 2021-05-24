@@ -180,7 +180,10 @@ class DefaultController extends AbstractController
 
         $output['data'] = [
             'user' => $user,
-            'slug' => 'patreon'
+            'slug' => 'patreon',
+            'description' => 'support Serious Scrum on Patreon',
+            'author' => 'Sjoerd Nijland',
+            'url' => 'www.seriousscrum.com/patreon'
         ];
 
 
@@ -203,6 +206,53 @@ class DefaultController extends AbstractController
     public function editorial(Request $request){
 
         return $this->index( $request, 'editorial');
+
+    }
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/road-to-mastery", name="road-to-mastery")
+     * @return Response
+     */
+    public function mastery(Request $request){
+
+        $user['username'] = '';
+        $user['fullname'] = '';
+        $user['avatar'] = '';
+        $user['roles'] = ['ROLE_GUEST'];
+        $user['patreon'] = false;
+
+        if ($this->session->get('patreonToken')) {
+            $user['patreon'] = 'member';
+        }
+
+        if ($this->isGranted('ROLE_USER')) {
+            $user['username'] = $this->getUser()->getUsername();
+            $user['fullname'] = $this->getUser()->getFullname();
+            $user['avatar'] = $this->getUser()->getAvatar();
+            $user['roles'] = $this->getUser()->getRoles();
+            if ($this->getUser()->getIsPatreon()) {
+                $user['patreon'] = 'supporter';
+            }
+        }
+
+
+        $output['data'] = [
+            'user' => $user,
+            'slug' => 'road-to-mastery',
+            'description' => 'join the Road to Mastery!',
+            'author' => 'Sjoerd Nijland',
+            'url' => 'www.seriousscrum.com/road-to-mastery'
+        ];
+
+
+        $output['title'] = 'Our Road to Mastery Train-the-Trainer Program';
+        $output['image'] = "";
+        $output['app'] = 'seriousscrum';
+
+
+        return $this->render('road-to-mastery.html.twig', $output);
 
     }
 

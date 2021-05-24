@@ -8,6 +8,9 @@ class PageHero extends React.Component {
     render() {
 
         let containerClassName = "pageHero";
+        if(this.props.fill == 'full'){
+            containerClassName += " full";
+        }
 
         return (
 
