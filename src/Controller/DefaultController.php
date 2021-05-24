@@ -196,6 +196,41 @@ class DefaultController extends AbstractController
 
     }
 
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/success", name="successCallback")
+     * @return Response
+     */
+    public function successCallback(Request $request){
+
+        $response = $this->forward('App\Controller\PageController::getPage', [
+            'request'  => $request,
+            'slug'  => 'success'
+
+        ]);
+
+        return $response;
+
+    }
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/error", name="errorCallback")
+     * @return Response
+     */
+    public function errorCallback(Request $request){
+
+        $response = $this->forward('App\Controller\PageController::getPage', [
+            'request'  => $request,
+            'slug'  => 'error'
+
+        ]);
+
+        return $response;
+
+    }
 
     /**
      * @param Request
