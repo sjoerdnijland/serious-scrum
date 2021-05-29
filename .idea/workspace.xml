@@ -86,8 +86,8 @@
       <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <state relative-caret-position="511">
+              <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -1742,12 +1742,12 @@
       <workItem from="1613305160044" duration="5043000" />
       <workItem from="1613679348544" duration="3999000" />
       <workItem from="1615486600028" duration="17278000" />
-      <workItem from="1621868302486" duration="12707000" />
+      <workItem from="1621868302486" duration="13221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="577106000" />
+    <option name="totallyTimeSpent" value="577620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="0" />
@@ -2120,8 +2120,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state relative-caret-position="511">
+          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
         </state>
       </provider>
     </entry>
