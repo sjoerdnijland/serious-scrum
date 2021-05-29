@@ -1,0 +1,55 @@
+.homeRoad{
+  border-top:  5px solid $problue;
+  background: url(../images/van-gogh-wheat.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height:500px;
+  text-align: center;
+
+  .homeBanner{
+    background-color: $seriousblue;
+    height:500px;
+    width:500px;
+    margin-left:10%;
+    h1{
+      font-family: 'Permanent Marker', cursive;
+      color: $white;
+      font-size: 54px;
+      text-align: left;
+      padding: 40px;
+    }
+    div{
+      text-align: left;
+      font-size: 20px;
+      margin-left:40px;
+      margin-right:40px;
+      color: $white;
+    }
+  }
+
+}
+
+
+
+/* for smaller desktop: */
+@media only screen and (max-width : 1024px) and (min-device-width : 780px) {
+  .tsunami{
+    height:140px;
+    text-align: right;
+    h1{
+      line-height: 130px;
+      padding: 0px 50px 10px 20px;
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+/* for even smaller desktop:*/
+@media only screen and (max-width: 1100px) {
+  .tsunami {
+    display: none;
+  }
+}

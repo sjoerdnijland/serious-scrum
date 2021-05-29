@@ -45,6 +45,7 @@ import '../js/r2m_II';
 import '../js/editorialHeader';
 import '../js/martyHeader';
 import '../js/roadToMastery';
+import '../js/homeRoad';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -452,7 +453,7 @@ class App extends React.Component {
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
 
-                <Tsunami label={this.state.label}/>
+                <HomeRoad label={this.state.label}/>
                 <R2MI label={this.state.label}/>
                 <R2MII label={this.state.label}/>
                 <EditorialHeader label={this.state.label}/>
