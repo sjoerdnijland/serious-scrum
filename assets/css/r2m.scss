@@ -1,4 +1,4 @@
-.r2m_I, .r2m_II, .r2m_basecamp{
+.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr{
   border-top:  5px solid $problue;
   height:500px;
   text-align: center;
@@ -27,6 +27,13 @@
 }
 
 .r2m_basecamp {
+  background: url(../images/TBRwide.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+.r2m_tbr {
   background: url(../images/basecamp.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -48,7 +55,7 @@
 
 /* for smaller desktop: */
 @media only screen and (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I, .r2m_II .r2m_basecamp{
+  .r2m_I, .r2m_II .r2m_basecamp, .rtm_tbr{
     height:140px;
     text-align: right;
     h1{
@@ -62,7 +69,7 @@
 
 /* for even smaller desktop: */
 @media only screen and (max-width: 1100px) {
-  .r2m_I, .r2m_II .r2m_basecamp {
+  .r2m_I, .r2m_II .r2m_basecamp, .rtm_tbr {
     display: none;
   }
 }

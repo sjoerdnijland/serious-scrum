@@ -41,6 +41,7 @@ import '../js/training.js';
 import '../js/pages';
 import '../js/pageElement';
 import '../js/r2m_basecamp';
+import '../js/r2m_tbr';
 import '../js/r2m_I';
 import '../js/r2m_II';
 import '../js/editorialHeader';
@@ -456,6 +457,7 @@ class App extends React.Component {
 
                 <HomeRoad label={this.state.label}/>
                 <R2MBasecamp label={this.state.label}/>
+                <R2MTBR label={this.state.label}/>
                 <R2MI label={this.state.label}/>
                 <R2MII label={this.state.label}/>
                 <EditorialHeader label={this.state.label}/>
