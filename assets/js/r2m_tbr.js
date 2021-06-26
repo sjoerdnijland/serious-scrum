@@ -13,7 +13,7 @@ class R2MTBR extends React.Component {
 
         let ContainerClassName = "r2m_tbr row";
 
-        if(this.props.label != 'basecamp'){
+        if(this.props.label != 'tbr'){
             ContainerClassName += " hidden";
         }
 
