@@ -13,7 +13,7 @@ class R2MTBR extends React.Component {
 
         let ContainerClassName = "r2m_tbr row";
 
-        if(this.props.label != 'tbr'){
+        if(this.props.label != 'guiding-the-guides'){
             ContainerClassName += " hidden";
         }
 
@@ -24,9 +24,9 @@ class R2MTBR extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Training from the BACK of the Room!</h1>
+                        <h1>Guiding the Guides!</h1>
                         <div>
-                            The “Gold Standard” for (virtual) instruction and learning.<br/>
+                            The “R2M Standard” for (virtual) instruction and learning.<br/>
                         </div>
                         <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="" target="_blank">Introduction</a></p>
 
