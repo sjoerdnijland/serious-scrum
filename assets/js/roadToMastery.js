@@ -26,7 +26,7 @@ class RoadToMastery extends React.Component {
             user: this.props.data.user,
             title: "Welcome to the Road to Mastery",
             introduction: "Join the Train-the-Trainer program!",
-            imageUrl: "/../images/roadtomastery-remastered.png",
+            imageUrl: "/../images/roadtomastery-remastered.jpg",
             loginText: "Login!",
             connectText: "Connect with Patreon!",
             becomeText: "Select a membership level!",
