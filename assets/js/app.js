@@ -451,6 +451,7 @@ class App extends React.Component {
                 <Header functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
                 <SubmitForm functions={functions} submitUrl={this.state.submitUrl} active={this.state.submitForm} submitResponse={this.state.submitResponse} submitData={this.state.submitData} category={this.state.submitCategory} categories={this.state.categories} roles={this.state.user.roles} form="submit"/>
                 <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>
+
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
@@ -464,7 +465,7 @@ class App extends React.Component {
                 <MartyHeader label={this.state.label}/>
 
 
-                <Search functions={functions} value={this.state.search} type="mobile"/>
+
                 <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} search={this.state.search}/>
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
                 <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
@@ -483,6 +484,7 @@ const root = document.getElementById('root');
 const data =  JSON.parse(root.dataset.preload);
 
 ReactDOM.render(<App data={data} />, root);
-/*<Banner bannerText={bannerText1}/>*/
+/*<Banner bannerText={bannerText1}/>
+*  <Search functions={functions} value={this.state.search}  type="mobile"/> */
 /*
                 */

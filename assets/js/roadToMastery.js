@@ -79,7 +79,7 @@ class RoadToMastery extends React.Component {
         const contentClassName = "pageContent ";
 
         let content = this.state.content;
-        const thumbnail = "/images/roadtomastery-remastered.png";
+        const thumbnail = "/images/roadtomastery-remastered.jpg";
 
         return (
             <div className={appContainerClassName}>

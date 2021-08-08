@@ -5,7 +5,7 @@
   .homeBanner{
     background-color: $seriousblue;
     height:500px;
-    width:500px;
+    width:400px;
     margin-left:10%;
     h1{
       font-family: 'Permanent Marker', cursive;
@@ -29,7 +29,7 @@
 .r2m_basecamp {
   background: url(../images/basecamp.jpeg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
 
 }
@@ -37,46 +37,52 @@
 .r2m_tbr {
   background: url(../images/guiding-the-guides.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
 }
 
 .r2m_I {
   background: url(../images/down-the-rabbit-hole.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
 }
 .r2m_II {
   background: url(../images/the-key-to-wonderland.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
 }
 
-/* for smaller desktop: */
-@media only screen and (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .rtm_tbr{
-    height:70px;
+@media  (max-width : 1024px) and (min-device-width : 780px) {
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr{
     text-align: right;
+    height:330px;
     h1{
-      line-height: 60px;
-      padding: 0px 50px 10px 20px;
+      line-height: 50px;
+      font-size: 28px;
+      padding: 20px 50px 10px 40px !important;
       background-color: transparent;
     }
   }
 }
 
 
-/* for even smaller desktop: */
-@media only screen and (max-width: 1100px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .rtm_tbr{
+@media (max-width: 1100px) {
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr{
+    height:330px;
     .homeBanner {
       width: 340px !important;
       div{
         font-size: 14px !important;
       }
     }
+    h1{line-height: 50px;
+      font-size: 28px;
+      padding: 20px 50px 10px 40px !important;
+      background-color: transparent;
+    }
   }
+
 }
 
