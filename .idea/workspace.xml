@@ -68,11 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageContent.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mastery.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="37" column="168" selection-start-line="37" selection-start-column="168" selection-end-line="37" selection-end-column="168" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageContent.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/pageContent.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -183,7 +192,6 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_basecamp.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_tbr.js" />
-        <option value="$PROJECT_DIR$/assets/js/mastery.js" />
         <option value="$PROJECT_DIR$/assets/js/homeRoad.js" />
         <option value="$PROJECT_DIR$/assets/js/roadToMastery.js" />
         <option value="$PROJECT_DIR$/assets/css/search.scss" />
@@ -192,6 +200,7 @@
         <option value="$PROJECT_DIR$/assets/css/homeRoad.scss" />
         <option value="$PROJECT_DIR$/assets/css/editorial.scss" />
         <option value="$PROJECT_DIR$/assets/css/pageContent.scss" />
+        <option value="$PROJECT_DIR$/assets/js/mastery.js" />
       </list>
     </option>
   </component>
@@ -1716,12 +1725,12 @@
       <workItem from="1623062441225" duration="5998000" />
       <workItem from="1625480839137" duration="1593000" />
       <workItem from="1627200058000" duration="247000" />
-      <workItem from="1628164525139" duration="5651000" />
+      <workItem from="1628164525139" duration="6180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591373000" />
+    <option name="totallyTimeSpent" value="591902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="832" extended-state="6" />
@@ -1934,13 +1943,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/pageHeader.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_tbr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -2054,7 +2056,14 @@
     <entry file="file://$PROJECT_DIR$/assets/css/pageContent.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="37" column="168" selection-start-line="37" selection-start-column="168" selection-end-line="37" selection-end-column="168" />
         </state>
       </provider>
     </entry>
