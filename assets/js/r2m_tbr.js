@@ -28,7 +28,7 @@ class R2MTBR extends React.Component {
                         <div>
                             The “R2M Standard” for (virtual) instruction and learning.<br/>
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="" target="_blank">Introduction</a></p>
+                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/page/back-of-the-room" target="_blank">🐇 Follow me...</a></p>
 
                     </div>
                 </div>
