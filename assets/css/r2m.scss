@@ -1,4 +1,4 @@
-.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr{
+.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile{
   border-top:  5px solid $problue;
   height:500px;
   text-align: center;
@@ -31,6 +31,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+.r2m_agile{
+  background: url(../images/agile101.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.r2m_coaching{
+  background: url(../images/coaching.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.r2m_selfmanaging{
+  background: url(../images/selfmanaging.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
 
@@ -55,7 +76,7 @@
 }
 
 @media  (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile{
     text-align: right;
     height:330px;
     h1{
@@ -69,7 +90,7 @@
 
 
 @media (max-width: 1100px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile{
     height:330px;
     .homeBanner {
       width: 340px !important;

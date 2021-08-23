@@ -16,7 +16,7 @@ class Build extends React.Component {
         return (
             <div className={ContainerClassName}>
                 <div className="two-thirds column ">
-                    increment: 2.30 - AGNC - Serious Scrum has a Registered Trademark - KVK: 58970037 - VAT/BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
+                    increment: 2.36 - AGNC - Serious Scrum has a Registered Trademark - KVK: 58970037 - VAT/BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
                 </div>
                 <div className="one-third column right _pr40">
                     :)
