@@ -347,7 +347,73 @@ class DefaultController extends AbstractController
 
     }
 
-   
+    /**
+     * @param Request $request
+     * @Route("/reloadThumbnails/{startAt}", name="reloadThumbnails")
+     * @Method("GET")
+     * @return JsonResponse
+     */
+    function reloadThumbnails($startAt){
+
+
+        # get cache manager
+        $cm = $this->cm;
+
+        $articles = [];
+
+        # get doctrine manager
+        $em = $this->em;
+
+
+        $articles = $em->getRepository(Article::class)
+            ->findAll();
+        $returnType = 'all';
+
+        $data = [];
+
+        $i = 0;
+        foreach($articles as $article){
+            $i++;
+            if($i < $startAt){
+                continue;
+            }
+
+            if($i > ($startAt+50)){
+                break;
+            }
+
+            //$article->getId(),
+            $response = $this->client->request('GET', $article->getUrl());
+
+            $statusCode = $response->getStatusCode();
+
+            if(!$response || $statusCode != 200){
+                continue;
+            }
+
+            $content = $response->getContent();
+
+            $meta = $this->getMetaTags($content); //gets all meta tags, including those without name attribute
+
+            if(!isset($meta['og:image'])){
+                continue;
+            }
+
+            $thumbnail = $cm->storyImageFromUrl('thumbnails', $meta['og:image']);
+
+            $article->setThumbnail($thumbnail);
+
+            $em->persist($article);
+
+            $em->flush();
+
+
+        }
+
+        $data = ["done"];
+
+        return new JsonResponse($data);
+    }
 
 
 }
