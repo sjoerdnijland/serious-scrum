@@ -48,7 +48,7 @@ class ArticleController extends AbstractController
      */
     public function newArticle(Request $request, $response = true)
     {
-        # get doctrine manager
+        # get doctrine manager test
         $em = $this->em;
 
         # get cache manager

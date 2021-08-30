@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +18,25 @@
     <favorites_list name="serious" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+              <folding>
+                <element signature="e#7109#7251#0#PHP" />
+                <element signature="e#7400#10072#0#PHP" />
+                <element signature="e#10078#11253#0#PHP" />
+                <element signature="e#11446#12228#0#PHP" />
+                <element signature="e#12234#13096#0#PHP" />
+                <element signature="e#13269#14577#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/Manager/CacheManager.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/assets/js/article.js" />
-        <option value="$PROJECT_DIR$/src/Controller/ArticleController.php" />
         <option value="$PROJECT_DIR$/src/Command/RssCommand.php" />
         <option value="$PROJECT_DIR$/src/Manager/RssManager.php" />
         <option value="$PROJECT_DIR$/assets/js/editorial.js" />
@@ -133,6 +150,7 @@
         <option value="$PROJECT_DIR$/assets/js/mastery.js" />
         <option value="$PROJECT_DIR$/src/Manager/PrismicManager.php" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/ArticleController.php" />
       </list>
     </option>
   </component>
@@ -1485,6 +1503,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1518,7 +1537,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1640,14 +1658,16 @@
       <workItem from="1630317510143" duration="1013000" />
       <workItem from="1630324889739" duration="51000" />
       <workItem from="1630325688615" duration="850000" />
+      <workItem from="1630346174021" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598123000" />
+    <option name="totallyTimeSpent" value="598145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="128" width="1440" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20347223" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1954,10 +1974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="199" column="66" selection-start-line="199" selection-start-column="66" selection-end-line="199" selection-end-column="66" />
-          <folding>
-            <element signature="e#1233#6225#0#PHP" />
-            <element signature="e#6232#7797#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1965,25 +1981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4965">
           <caret line="349" selection-start-line="349" selection-end-line="349" />
-          <folding>
-            <element signature="e#73#119#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="348" column="5" lean-forward="true" selection-start-line="348" selection-start-column="5" selection-end-line="348" selection-end-column="5" />
-          <folding>
-            <element signature="e#1246#5449#0#PHP" />
-            <element signature="e#7109#7251#0#PHP" />
-            <element signature="e#7400#10072#0#PHP" />
-            <element signature="e#10078#11253#0#PHP" />
-            <element signature="e#11446#12228#0#PHP" />
-            <element signature="e#12234#13096#0#PHP" />
-            <element signature="e#13269#14577#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1991,6 +1988,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding>
+            <element signature="e#7109#7251#0#PHP" />
+            <element signature="e#7400#10072#0#PHP" />
+            <element signature="e#10078#11253#0#PHP" />
+            <element signature="e#11446#12228#0#PHP" />
+            <element signature="e#12234#13096#0#PHP" />
+            <element signature="e#13269#14577#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
