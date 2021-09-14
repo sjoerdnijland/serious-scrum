@@ -51,6 +51,8 @@ import '../js/homeRoad';
 import '../js/r2m_coaching';
 import '../js/r2m_selfmanagement';
 import '../js/r2m_agile';
+import '../js/r2m_definition';
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -461,7 +463,7 @@ class App extends React.Component {
 
                 <HomeRoad label={this.state.label}/>
                 <R2MCoaching label={this.state.label}/>
-
+                <R2MDefinition label={this.state.label}/>
                 <R2MBasecamp label={this.state.label}/>
                 <R2MTBR label={this.state.label}/>
                 <R2MSelfmanagement label={this.state.label}/>

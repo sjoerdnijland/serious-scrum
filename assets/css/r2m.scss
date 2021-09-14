@@ -1,4 +1,4 @@
-.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile{
+.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition{
   border-top:  5px solid $problue;
   height:500px;
   text-align: center;
@@ -24,6 +24,13 @@
     }
   }
 
+}
+
+.r2m_definition {
+  background: url(../images/scrum.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .r2m_basecamp {
@@ -76,7 +83,7 @@
 }
 
 @media  (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition{
     text-align: right;
     height:330px;
     h1{
@@ -90,7 +97,7 @@
 
 
 @media (max-width: 1100px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition{
     height:330px;
     .homeBanner {
       width: 340px !important;
