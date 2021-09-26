@@ -35,6 +35,7 @@ class Mastery extends React.Component {
                 <a href="/r2m/basecamp" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Basecamp</div></a>
                 <a href="/r2m/training-the-guides" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Training the Guides</div></a>
                 <a href="/r2m/agile" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Agile 101</div></a>
+                <a href="/r2m/definition" target="_blank"><div classname={itemClassName} id={'definition'}>Definition of Scrum</div></a>
                 <a href="/r2m/coaching" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Coaching 101</div></a>
                 <a href="/r2m/selfmanaging" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Self-Management</div></a>
                 <a href="/page/the-catalog"  target="_blank"><div className={itemClassName}>R2M Catalog</div></a>
