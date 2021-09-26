@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/editorial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/editorial.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/mastery.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/mastery.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mastery.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mastery.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="523">
+              <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editorial.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editorial.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/editorial.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="420">
+              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -151,8 +150,8 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_definition.js" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
-        <option value="$PROJECT_DIR$/assets/js/mastery.js" />
         <option value="$PROJECT_DIR$/assets/css/editorial.scss" />
+        <option value="$PROJECT_DIR$/assets/js/mastery.js" />
       </list>
     </option>
   </component>
@@ -164,6 +163,149 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/core/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/generator/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/plugin-transform-named-capturing-groups-regex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/preset-env/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/template/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/traverse/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@symfony/webpack-encore/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/acorn-dynamic-import/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/adjust-sourcemap-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/anymatch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/assert/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/assets-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/babel-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/base/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/block-stream/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/bonjour/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cacache/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/camelcase-keys/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/caniuse-api/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/chokidar/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/clean-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cliui/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/color-string/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/compressible/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/copy-concurrently/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/core-js-compat/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cosmiconfig/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/create-hash/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/create-hmac/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cross-spawn/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/css-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/css-select/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/css-tree/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/csso/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/define-property/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/del/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/diffie-hellman/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/error-ex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/extglob/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/file-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/follow-redirects/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/form-data/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/friendly-errors-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/fstream/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/gauge/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/global-prefix/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/globule/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/har-validator/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/has-values/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/hoist-non-react-statics/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/htmlparser2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/http-errors/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/http-proxy-middleware/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/http-signature/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/invariant/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/is-number/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/js-yaml/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/load-json-file/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/loader-utils/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/lru-cache/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/make-dir/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/memory-fs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/meow/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/micromatch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/mini-css-extract-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/mixin-deep/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/mkdirp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/move-concurrently/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/nanomatch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/needle/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-gyp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-libs-browser/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-notifier/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-pre-gyp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-releases/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-sass/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/normalize-package-data/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/object-copy/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/optimize-css-assets-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/pbkdf2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/pkg-up/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/portfinder/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-calc/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-colormin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-merge-rules/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-minify-params/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-modules-local-by-default/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-modules-scope/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-normalize-unicode/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-reduce-initial/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-svgo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/prop-types/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/proxy-addr/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/pumpify/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react-dom/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react-native-elements/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react-native-ratings/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/read-pkg-up/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/readable-stream/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/redent/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/regex-not/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/regexpu-core/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/regjsparser/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/request/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/resolve-url-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/rework/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sass-graph/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sass-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/scheduler/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/scss-tokenizer/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/send/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/snapdragon-node/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/snapdragon-util/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/snapdragon/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sockjs-client/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sockjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/source-map-resolve/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/spdy-transport/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/spdy/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/split-string/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/string-width/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/style-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/stylehacks/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/svgo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/terser-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/to-object-path/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/to-regex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/true-case-path/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/union-value/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/unset-value/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/url/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/verror/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-cli/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-dev-middleware/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-dev-server/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-log/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-manifest-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/worker-farm/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/wrap-ansi/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/yargs/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -1542,12 +1684,12 @@
       <workItem from="1630346174021" duration="1420000" />
       <workItem from="1631039587855" duration="531000" />
       <workItem from="1631633865547" duration="646000" />
-      <workItem from="1632677760954" duration="351000" />
+      <workItem from="1632677760954" duration="586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="601071000" />
+    <option name="totallyTimeSpent" value="601306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="0" />
@@ -1555,6 +1697,7 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.27083334" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -1565,7 +1708,6 @@
       <window_info id="Favorites" order="0" sideWeight="0.19866666" side_tool="true" weight="0.20347223" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -1871,17 +2013,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/editorial.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="420">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/editorial.scss">
+    <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="523">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
         </state>
       </provider>
     </entry>
