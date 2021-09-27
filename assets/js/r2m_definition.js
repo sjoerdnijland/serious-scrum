@@ -28,8 +28,7 @@ class R2MDefinition extends React.Component {
                         <div>
                             Let's develop a <i>shared understanding</i> on Scrum<br/>
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/page/the-game-of-scrum" target="_blank">Start here!</a></p>
-
+                       
                     </div>
                 </div>
 
