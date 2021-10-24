@@ -25,7 +25,7 @@ import '../js/categoryMenu';
 import '../js/r2m_categories';
 import '../js/joinButton';
 import '../js/r2m_category';
-import '../js/HeaderMenuItem';
+import '../js/headerMenuItem';
 import '../js/r2m_subCategory';
 
 class Page extends React.Component {
