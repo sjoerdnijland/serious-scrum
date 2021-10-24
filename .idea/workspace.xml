@@ -2,167 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/adventure.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/format.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/homeR2M.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/r2mPage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/travelgroup.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/adventures.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/agile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/backpack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/basecamp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/definition.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gear.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/guides.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/passport1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/passport2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/r2mhome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/rabbit-shape.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/road2mastery.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/selfmanagement.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/serious-scrum-logo-darkblue-r2m.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tent9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/training-the-guides.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/travelgroups.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/van.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/vanlong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/HeaderMenuItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinEmail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinFirstname.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinLastname.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinLinkedIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinSubmitButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/joinTerms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_adventure.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_adventures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_format.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_guideItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_guides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_join.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_playbook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_subCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_usps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/travelgroupSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/adventures.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/backpack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/basecamp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/boots.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/gear.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goingonadventure.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/guides.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/duck.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain11.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain12.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain13.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain14.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain15.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/tent9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/miro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/passport1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/passport2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/r2m_menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/r2m_menu_active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/r2mhome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/rabbit-shape.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/road2mastery.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/serious-scrum-logo-darkblue-r2m.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/serious-scrum-logo-darkblue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/survival.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/travelgroups.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/van.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vanlong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/zoom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdventureController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/FormatController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TravelerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Adventure.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Badge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Format.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/TravelGroup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Traveler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AdventureRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/FormatRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TravelerRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TravelgroupRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/r2m.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/r2m_page.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/build.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/build.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categoryMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categoryMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/homeRoad.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeRoad.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/pageContent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pageContent.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/pageHero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pageHero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/pageMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pageMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/pageTitle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pageTitle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/r2m.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/r2m.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/simple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/simple.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/swatches.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/swatches.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/coaching.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/coaching.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/categoryMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/categoryMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/homeRoad.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/homeRoad.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/pageMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pageMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_basecamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_basecamp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_definition.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_definition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_tbr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_tbr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/cache/articles/active.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/cache/articles/active.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/cache/categories/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/cache/categories/all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/road-to-mastery.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/road-to-mastery.html.twig.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Badge.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Badge.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -209,24 +49,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="format.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/format.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="travelgroup.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/travelgroup.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -240,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="455">
-              <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+              <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -254,11 +76,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Badge.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Badge.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelGroup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -336,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/r2m_tbr.js" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/templates/r2m_page.html.twig" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
@@ -387,6 +226,7 @@
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/header.js" />
+        <option value="$PROJECT_DIR$/src/Entity/Badge.php" />
       </list>
     </option>
   </component>
@@ -1962,12 +1802,12 @@
       <workItem from="1634645703856" duration="2856000" />
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
-      <workItem from="1634885077836" duration="23056000" />
+      <workItem from="1634885077836" duration="23229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="717509000" />
+    <option name="totallyTimeSpent" value="717682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="49" width="1440" height="830" extended-state="0" />
@@ -2011,20 +1851,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="78" column="163" selection-start-line="78" selection-start-column="163" selection-end-line="78" selection-end-column="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/homeRoad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Adventure.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
@@ -2329,7 +2155,7 @@
     <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
-          <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -2344,6 +2170,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Badge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
         </state>
       </provider>
     </entry>

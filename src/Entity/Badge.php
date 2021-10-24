@@ -33,6 +33,7 @@ class Badge
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Traveler", inversedBy="badges")
+     * @var Collection
      */
     private $travelers;
 
