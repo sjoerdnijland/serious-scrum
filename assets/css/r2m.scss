@@ -1,9 +1,7 @@
 .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition{
-  border-top:  5px solid $problue;
-  height:500px;
+  height:330px;
   text-align: center;
   .homeBanner{
-    background-color: $seriousblue;
     height:500px;
     width:400px;
     margin-left:10%;
@@ -16,7 +14,7 @@
     }
     div{
       text-align: left;
-      font-size: 20px;
+      font-size: 14px;
       margin-left:40px;
       margin-right:40px;
       padding-top:20px;
@@ -27,24 +25,40 @@
 }
 
 .r2m_definition {
-  background: url(../images/scrum.jpg);
+  background: url(../images/definition.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .homeBanner{
+    height:350px;
+    background-color: $seriousblue;
+    h1{
+      font-size:28px !important;
+    }
+  }
+
 }
 
 .r2m_basecamp {
-  background: url(../images/basecamp.jpeg);
+  background: url(../images/basecamp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
+  .homeBanner{
+    height:350px;
+    background-color: #3b8287;
+  }
 }
 
 .r2m_agile{
-  background: url(../images/agile101.png);
+  background: url(../images/agile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .homeBanner{
+    height:350px;
+    background-color: #192E36;
+  }
 }
 
 .r2m_coaching{
@@ -52,21 +66,35 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .homeBanner{
+    height:350px;
+    background-color: #192E36;
+  }
 }
 
 .r2m_selfmanaging{
-  background: url(../images/selfmanaging.jpg);
+  background: url(../images/selfmanagement.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  .homeBanner{
+    height:350px;
+    background-color: #192E36;
+  }
 }
 
 .r2m_tbr {
-  background: url(../images/guiding-the-guides.png);
+  background: url(../images/training-the-guides.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  .homeBanner{
+    height:350px;
+    background-color: #61AF81;
+    h1{
+      font-size:28px !important;
+    }
+  }
 }
 
 .r2m_I {
@@ -81,6 +109,8 @@
   background-size: cover;
   background-position: bottom;
 }
+
+
 
 @media  (max-width : 1024px) and (min-device-width : 780px) {
   .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition{

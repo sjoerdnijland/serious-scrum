@@ -10,13 +10,17 @@ use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Controller\ArticleController;
+use App\Controller\TravelerController;
+use App\Controller\AdventureController;
 use App\Controller\CategoryController;
 use App\Controller\PageController;
 use App\Controller\JiraController;
+use App\Controller\FormatController;
 use App\Manager\PrismicManager;
 use App\Manager\RssManager;
 
@@ -38,6 +42,10 @@ use Squid\Patreon\Patreon;
 class DefaultController extends AbstractController
 {
     private $articleController;
+    private $travelerController;
+    private $travelgroupController;
+    private $adventureController;
+    private $formatController;
     private $pageController;
     private $categoryController;
     private $jiraController;
@@ -47,8 +55,12 @@ class DefaultController extends AbstractController
 
     public function __construct(EntityManagerInterface $entityManager,
                                 ArticleController $articleController,
+                                TravelerController $travelerController,
+                                TravelgroupController $travelgroupController,
+                                AdventureController $adventureController,
                                 PageController $pageController,
                                 CategoryController $categoryController,
+                                FormatController $formatController,
                                 JiraController $jiraController,
                                 SessionInterface $session,
                                 PrismicManager $prismicManager,
@@ -56,7 +68,11 @@ class DefaultController extends AbstractController
     {
         $this->em = $entityManager;
         $this->articleController = $articleController;
+        $this->travelerController = $travelerController;
+        $this->travelgroupController = $travelgroupController;
+        $this->adventureController = $adventureController;
         $this->categoryController = $categoryController;
+        $this->formatController = $formatController;
         $this->pageController = $pageController;
         $this->jiraController = $jiraController;
         $this->session = $session;
@@ -247,10 +263,11 @@ class DefaultController extends AbstractController
     /**
      * @param Request
      * @param Config
-     * @Route("/road-to-mastery", name="road-to-mastery")
+     * * @Route("/r2m", name="road-to-mastery")
+     * @Route("/r2m/{module}", name="road-to-mastery-module")
      * @return Response
      */
-    public function mastery(Request $request){
+    public function mastery(Request $request, $label = false, $module = false){
 
         $user['username'] = '';
         $user['fullname'] = '';
@@ -272,22 +289,77 @@ class DefaultController extends AbstractController
             }
         }
 
+        $pages = $this->pageController->getPages(false, false);
 
+        $categories = $this->categoryController->getCategories(false, true);
+
+        $travelers = $this->travelerController->getTravelers(false);
+
+        $formats = $this->formatController->getFormats(false);
+
+        $guides = [];
+
+        foreach($travelers as $traveler){
+            if($traveler['isGuide']){
+                unset($traveler['e-mail']);
+                $guides[] = $traveler;
+            }
+        }
+
+        $travelgroups = $this->travelgroupController->getTravelgroups(false);
+
+        foreach($travelgroups as $i => $travelgroup) {
+            unset($travelgroups[$i]['travelers']);
+            unset($travelgroups[$i]['conferenceLink']);
+        }
+
+        $adventures = $this->adventureController->getAdventures(false);
+
+        foreach($adventures as $i => $adventure){
+            $adventures[$i]['travelerCount'] =  count($adventure['travelers']);
+            unset($adventures[$i]['travelers']);
+        }
+
+        $contentPages = "hidden";
+        $library = "hidden";
+
+        if($label){
+            $contentPages = "";
+            $library = "hidden";
+        }
+
+        $title = 'Join the Road to Mastery!';
+        $image = 'images/road2mastery.jpeg';
+
+        if($label){
+            $title = 'Serious Scrum: '. ucwords(str_replace('-',' ',$label));
+            $image = 'images/'.$label.'.jpg';
+        }
+
+        # sets everything we want to output to the UX
         $output['data'] = [
             'user' => $user,
-            'slug' => 'road-to-mastery',
-            'description' => 'join the Road to Mastery!',
-            'author' => 'Sjoerd Nijland',
-            'url' => 'www.seriousscrum.com/road-to-mastery'
+            'pages' => $pages,
+            'label' => $label,
+            'contentPages' => $contentPages,
+            'library' => $library,
+            'categories' => $categories,
+            'travelgroups' => $travelgroups,
+            'formats' => $formats,
+            'adventures' => $adventures,
+            'guides' => $guides,
+            'module' => $module
         ];
 
+        $output['title'] = $title;
+        $output['url'] = 'https://www.seriousscrum.com/road-to-mastery';
+        $output['image'] = $image;
+        $output['author'] = 'Sjoerd Nijland';
+        $output['description'] = 'Join the Road to Mastery!';
+        $output['app'] = 'app';
 
-        $output['title'] = 'Our Road to Mastery Train-the-Trainer Program';
-        $output['image'] = "";
-        $output['app'] = 'seriousscrum';
-
-
-        return $this->render('road-to-mastery.html.twig', $output);
+        //return new JsonResponse($output);
+        return $this->render('r2m.html.twig', $output);
 
     }
 
@@ -306,14 +378,15 @@ class DefaultController extends AbstractController
     /**
      * @param Request
      * @param Config
-     * @Route("/r2m/{label}", name="r2m")
+     * @Route("/r2m/chapter/{label}", name="r2m")
      * @return Response
      */
     public function r2m(Request $request, $label){
 
-        return $this->index( $request, $label);
+        return $this->mastery( $request, $label);
 
     }
+
 
     /**
      * @param Request

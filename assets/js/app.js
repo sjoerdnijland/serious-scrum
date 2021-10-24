@@ -444,7 +444,7 @@ class App extends React.Component {
         const bannerText1 = "Community by and for Scrum Practitioners";
 
 
-        let bannerText2 = "We seriously need your help! please support us on Patreon!";
+        let bannerText2 = "Support us on Patreon!";
         if(this.state.user.patreon =="supporter"){
             bannerText2 = "Yes, you're Serious! Thank you for supporting us!";
         }
@@ -453,31 +453,26 @@ class App extends React.Component {
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
 
-                <Header functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
+                <Header functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user} site={"serious"}/>
                 <SubmitForm functions={functions} submitUrl={this.state.submitUrl} active={this.state.submitForm} submitResponse={this.state.submitResponse} submitData={this.state.submitData} category={this.state.submitCategory} categories={this.state.categories} roles={this.state.user.roles} form="submit"/>
                 <Categories functions={functions} expanded={this.state.expanded} data={this.state.categories}/>
 
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
-
                 <HomeRoad label={this.state.label}/>
-                <R2MCoaching label={this.state.label}/>
-                <R2MDefinition label={this.state.label}/>
-                <R2MBasecamp label={this.state.label}/>
-                <R2MTBR label={this.state.label}/>
-                <R2MSelfmanagement label={this.state.label}/>
-                <R2MAgile label={this.state.label}/>
-                <R2MI label={this.state.label}/>
-                <R2MII label={this.state.label}/>
+
                 <EditorialHeader label={this.state.label}/>
                 <MartyHeader label={this.state.label}/>
 
-
-
                 <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} search={this.state.search}/>
+
+
+                 <Library articles={this.state.articles}  category={this.state.category}  categories={this.state.categories}  functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles} reviewForm={this.state.reviewForm}/>
+
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
-                <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
+
+
                 <SocialMenu type="footer"/>
                 <Channels/>
                 <Banner bannerText={bannerText2} url={bannerUrl2}/>

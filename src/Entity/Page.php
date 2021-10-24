@@ -45,6 +45,7 @@ class Page
      */
     private $thumbnail;
 
+
     /**
      * @ORM\Column(type="json")
      */
@@ -55,6 +56,18 @@ class Page
      * @ORM\Column(type="boolean")
      */
     private $isSubscribersOnly = false;
+
+    /**
+     * @ORM\OneToMany(
+     *     targetEntity="Format",
+     *     mappedBy="page",
+     *     fetch="EXTRA_LAZY",
+     *     orphanRemoval=true,
+     *     cascade={"persist"}
+     * )
+     * @Assert\Valid()
+     */
+    private $formats;
 
 
     public function __construct()
@@ -137,6 +150,8 @@ class Page
         return $this;
     }
 
+
+
     public function getThumbnail(): ?string
     {
         return $this->thumbnail;
@@ -158,6 +173,40 @@ class Page
     {
         $this->isSubscribersOnly = $isSubscribersOnly;
     }
+
+    /**
+     * @return ArrayCollection|$formats[]
+     */
+    public function getFormats()
+    {
+        return $this->formats;
+    }
+
+
+    public function addFormat(Format $format)
+    {
+        if ($this->formats->contains($format)) {
+            return;
+        }
+
+        $this->formats[] = $format;
+        // needed to update the owning side of the relationship!
+        $format->setPage($this);
+    }
+
+    public function removeFormat(Format $format)
+    {
+        if (!$this->formats->contains($format)) {
+            return;
+        }
+
+        $this->formats->removeElement($format);
+        // needed to update the owning side of the relationship!
+        $format->setPage(null);
+    }
+
+
+
 
 
 }

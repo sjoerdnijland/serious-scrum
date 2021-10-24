@@ -143,7 +143,7 @@ class Category
 
         $this->articles->removeElement($article);
         // needed to update the owning side of the relationship!
-        $article->setCatgegory(null);
+        $article->setCategory(null);
     }
 
     public function getIsSeries()

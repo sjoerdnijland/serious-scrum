@@ -21,7 +21,9 @@ class Categories extends React.Component {
 
         if (typeof this.props.data !== 'undefined' && this.props.data.length > 0) {
             categories = Object.values(this.props.data).map(function (category) {
-                return (<Category key={category.id} data={category} functions={this.functions}/>);
+                if(category.isSeries == false) {
+                    return (<Category key={category.id} data={category} functions={this.functions}/>);
+                }
             },{
                 functions:this.props.functions,
             });

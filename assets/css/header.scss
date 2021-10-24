@@ -7,6 +7,26 @@
   position: sticky;
   top:0px;
   z-index:3;
+
+  .headerMenuItem{
+    color: $white !important;
+    font-family: "Permanent Marker";
+    a{
+      color: $white !important;
+    }
+
+  }
+}
+
+
+
+.r2m_header{
+  background-color: $masteryOcean;
+  text-align: center;
+  font-family: 'Gotham Light', serif;
+  position: sticky;
+  top:0px;
+  z-index:3;
 }
 
 .logo{
@@ -27,6 +47,21 @@
   overflow: hidden;
 }
 
+.r2m_header {
+  .headerMenuItem {
+    display: none;
+  }
+}
+
+.headerMenuItem{
+  div{
+    cursor: pointer;
+  }
+}
+.headerMenuItem:hover{
+  text-decoration: underline;
+}
+
 @media only screen and (min-device-width : 780px) {
   .header {
     text-align: left;
@@ -34,10 +69,35 @@
   .logo{
     padding-left: 20px;
   }
+  .r2m_header {
+    .headerMenuItem {
+      display: table;
+    }
+  }
+  .r2m_mobileMenu{
+    display: none !important;
+  }
+
 }
 
 @media only screen and (max-width: 780px) {
   .logo img{
     width:150px;
   }
+  .headerMenuItem{
+    margin: 8px 16px 0px 0px !important;
+  }
+
+}
+
+@media only screen and (max-width: 780px) {
+  .r2m_header {
+    .headerMenuItem {
+      display: none ;
+    }
+  }
+  .r2m_mobileMenu{
+    display: block !important;
+  }
+
 }

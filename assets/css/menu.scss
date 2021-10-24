@@ -57,7 +57,25 @@
     cursor: pointer;
   }
 
+}
 
+.headerMenuItem{
+  float: right;
+  display: flex;
+  margin: 8px 40px 0px 0px;
+  font-weight: bold;
+  a{
+    color: $seriousblue;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.r2m_mobileMenu{
+  padding-bottom:20px;
+  display: block;
+  background-color: $masteryOcean !important;
 }
 
 /* for width less than 1000: */

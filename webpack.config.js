@@ -20,8 +20,9 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('page', './assets/js/page.js')
+    .addEntry('r2m_page', './assets/js/r2m_page.js')
     .addEntry('patreon', './assets/js/patreon.js')
-    .addEntry('roadToMastery', './assets/js/roadToMastery.js')
+    .addEntry('r2m', './assets/js/r2m.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

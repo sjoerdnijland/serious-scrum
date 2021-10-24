@@ -1,0 +1,336 @@
+.homeR2M{
+  text-align: center;
+  padding-top:60px;
+
+  .homeBanner{
+    margin-left:10%;
+    height:100%;
+    h1{
+      font-family: 'Permanent Marker', cursive;
+      color: $seriousblue;
+      font-size: 54px;
+      text-align: left;
+      padding: 0px 40px 0px 40px;
+    }
+    div{
+      text-align: left;
+      font-size: 20px;
+      color: $seriousblue;
+    }
+    .title{
+      max-width: 600px;
+    }
+  }
+
+  .inputContainer div{
+    float: left;
+  }
+  .inputContainer .label{
+    min-width: 100px;
+  }
+  .joinForm{
+    display: table;
+    max-width: 600px;
+    .subscription{
+      font-size: 16px;
+    }
+
+    .label{
+      margin-right: 40px;
+    }
+    .Dropdown-root .Dropdown-control{
+      width: 260px
+    }
+    .Dropdown-menu{
+      width:auto;
+      display: grid;
+    }
+    .Dropdown-option{
+      font-size: 12px;
+      background-color: $masteryGreen;
+      margin-bottom: 3px;
+    }
+    .Dropdown-placeholder{
+      font-size: 14px;
+    }
+    input[type="checkbox"] {
+      /* Double-sized Checkboxes */
+      -ms-transform: scale(2); /* IE */
+      -moz-transform: scale(2); /* FF */
+      -webkit-transform: scale(2); /* Safari and Chrome */
+      -o-transform: scale(2); /* Opera */
+      transform: scale(2);
+      padding: 10px;
+      margin:20px;
+      margin:20px;
+    }
+    a {
+      text-decoration: underline;
+    }
+
+  }
+  .errorMessage{
+    color: $red !important;
+    font-family: 'Gotham Bold', serif;
+  }
+  ul{
+    font-size:18px;
+    list-style-position: outside;
+    margin-top:20px;
+    li {
+      list-style-type: circle;
+    }
+
+  }
+
+}
+
+.home{
+  background: url(../images/r2mhome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  min-height: 600px;
+  div{
+    margin-left:20px;
+  }
+}
+
+
+.guides{
+  background: url(../images/guides.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+  height: 610px;
+
+  div{
+    margin-left:40px;
+  }
+}
+
+.travelgroups{
+  background: url(../images/travelgroups.jpg) !important;
+  background-color: #4DB9AF;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+  height: auto !important;
+  padding-bottom: 40px;
+
+}
+
+.adventures{
+
+  background: url(../images/adventures.jpg) !important;
+  background-color: #4DB9AF;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+  height: auto !important;
+  padding-bottom: 40px;
+
+}
+
+.playbook{
+
+  background: url(../images/vanlong.jpg) !important;
+  background-color: #4DB9AF;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom !important;
+  height: auto !important;
+  padding-bottom: 400px;
+
+
+}
+
+.usps{
+  background-color: $masteryOcean;
+  text-align: center;
+  margin: 0 auto;
+  .homeBanner {
+    margin: auto !important;
+    width: fit-content;
+  }
+  .uspItem{
+    float:left;
+    margin-right: 40px;
+    img{
+      height:60px;
+    }
+    .usp{
+      margin-top: -30px;
+      margin-left: 20px;
+      font-family: "Permanent Marker", cursive;
+      font-size: 14px;
+      border-radius: 25px;
+      border: 0px solid $seriousblue;
+      padding: 20px;
+      width: 180px;
+      min-height: 90px;
+      background-color: #fcfffe;
+    }
+  }
+
+}
+
+
+.guideList{
+  font-size: 16px !important;
+  color: $seriousblue!important;
+  margin-left:0px!important;
+}
+.guideList a{
+  color: $seriousblue !important;
+  text-decoration: underline;
+}
+
+
+.join-male{
+  background: url('../images/passport1.jpg') !important;
+  background-color: #4DB9AF;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom !important;
+  height: auto !important;
+  padding-bottom: 80px;
+
+
+}
+
+.join-female{
+  background: url('../images/passport2.jpg') !important;
+  background-color: #4DB9AF;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom !important;
+  height: auto !important;
+  padding-bottom: 80px;
+
+}
+
+.mirozoom{
+  text-align: right;
+  float: right;
+  margin-right: 200px;
+  margin-top:100px;
+  display: flex;
+  div{
+    float:right;
+  }
+  right: 100px;
+  img{
+    height:50px;
+  }
+}
+
+
+
+@media  (max-width : 1024px) and (min-device-width : 780px) {
+  .homeR2M{
+    text-align: right;
+    h1{
+      line-height: 50px;
+      font-size: 28px;
+      padding: 50px 50px 10px 40px !important;
+      background-color: transparent;
+    }
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .homeR2M {
+    .homeBanner {
+      div{
+        font-size: 14px !important;
+      }
+    }
+    h1{line-height: 50px;
+      font-size: 28px;
+      padding: 50px 50px 10px 40px !important;
+      background-color: transparent;
+    }
+  }
+}
+
+/* for width less than 1000: */
+@media only screen and (max-width: 1100px) {
+  .homeBanner div {
+    font-size: 12px !important;
+  }
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  /* Styles */
+  .homeBanner div {
+    font-size: 12px !important;
+  }
+  .homeBanner h1 {
+    font-size: 28px !important;
+    padding: 0px 50px 10px 20px !important;
+  }
+  .guides{
+    background-position: center !important;
+    div{
+     margin-left:20px !important;
+    }
+  }
+  .travelgroup{
+    width:260px !important;
+  }
+  .format{
+    width:260px !important;
+  }
+  .joinForm{
+    .label{
+      width:200px;
+    }
+    .Dropdown-menu{
+      width:260px !important;
+    }
+    .Dropdown-option{
+      front-size:11px;
+    }
+    .subscription{
+      font-size: 14px;
+    }
+  }
+  .homeBanner .title {
+    max-width: 300px !important;
+  }
+  .mirozoom{
+    display:none;
+  }
+  .homeR2M ul{
+    font-size: 12px !important;
+  }
+  .homeR2M{
+    height: 700px;
+  }
+  .usps {
+    .homeBanner {
+      margin: auto !important;
+      width: min-content !important
+    }
+  }
+
+}
+
+/* for width more than 1920: */
+@media only screen and (min-width: 1920px) {
+  .homeR2M {
+    h1{
+      line-height: 140px !important;
+      font-size: 76px !important;
+      padding: 60px 50px 10px 40px !important;
+    }
+  }
+}

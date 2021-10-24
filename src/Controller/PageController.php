@@ -30,13 +30,15 @@ class PageController extends AbstractController
     private $cm;
     private $pm;
     private $session;
+    private $categoryController;
 
-    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager, PrismicManager $prismicManager, SessionInterface $session)
+    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager, PrismicManager $prismicManager, SessionInterface $session, CategoryController $categoryController)
     {
         $this->cm = $cacheManager;
         $this->em = $entityManager;
         $this->pm = $prismicManager;
         $this->session = $session;
+        $this->categoryController = $categoryController;
     }
 
     /**
@@ -140,6 +142,7 @@ class PageController extends AbstractController
         $labels = json_decode($page->getLabels(),1);
 
         $pageMenu = [];
+
         foreach($pages as $pageId => $pagex){
             foreach($pagex['labels'] as $label){
                 if($label != 'road-to-mastery' && in_array($label, $labels)){
@@ -151,6 +154,7 @@ class PageController extends AbstractController
 
         $series = "";
         $seriesSlug = "";
+
         foreach($labels as $label){
             if($label == 'road-to-mastery'){
                 continue;
@@ -159,6 +163,9 @@ class PageController extends AbstractController
             $seriesSlug = $label;
             break;
         }
+
+        $categories = $this->categoryController->getCategories(false, true);
+
 
         $output['data'] = [
             'user' => $user,
@@ -172,6 +179,7 @@ class PageController extends AbstractController
             'labels' => $labels,
             'thumbnail' => $page->getThumbnail(),
             'data' => $data['chapter'],
+            'categories' => $categories,
             'title' => $data['chapter']['title']['value'][0]['text'],
         ];
 
@@ -192,7 +200,9 @@ class PageController extends AbstractController
         $output['url'] = 'https://www.seriousscrum.com/page/'.$slug;
         $output['app'] = 'page';
 
-
+        if(in_array('road-to-mastery',$labels)){
+            return $this->render('r2m_page.html.twig', $output);
+        }
         return $this->render('page.html.twig', $output);
     }
 

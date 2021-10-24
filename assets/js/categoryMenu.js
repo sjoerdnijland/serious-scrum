@@ -31,18 +31,29 @@ class CategoryMenu extends React.Component {
 
     render() {
 
-        let categoryMenuSrc = '/images/menu.png';
+        let baseUrl = '/images/';
+
+        if(this.props.site == 'r2m'){
+            baseUrl += 'r2m_';
+        }
+
+        let categoryMenuSrc = baseUrl+'menu.png';
+
 
         if(this.props.expanded || this.state.hover){
-            categoryMenuSrc = '/images/menu_active.png'
+            categoryMenuSrc = baseUrl+'menu_active.png'
         }
 
         if(this.props.expanded && this.state.hover){
-            categoryMenuSrc = '/images/menu.png';
+            categoryMenuSrc = baseUrl+'menu.png';
         }
 
-        const containerClassName = "categoryMenuContainer";
+        let containerClassName = "categoryMenuContainer";
         const categoryMenuClassName = "categoryMenu";
+
+        if(this.props.site == 'r2m'){
+            containerClassName += ' r2mMenuContainer';
+        }
 
         return (
             <div className={containerClassName}  onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} onClick={this.handleClick}>

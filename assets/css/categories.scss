@@ -46,6 +46,53 @@
 
 
 
+.r2m_categories{
+  background-color: $masteryGreen;
+  min-height: 0;
+  width: 100%;
+  font-family: 'Gotham Light', serif;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  z-index:3;
+  position: sticky;
+  top:80px;
+
+  .category{
+    min-width:240px;
+    float: left;
+    text-transform:capitalize;
+    padding-top: 20px;
+  }
+  .category:last-child{
+    margin-right:40px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li{
+    margin-left: 40px;
+    margin-top: 5px;
+    height:30px;
+    color: $problue;
+    font-size: 14px;
+    border-bottom: 1px solid $white;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    list-style-type: circle;
+  }
+
+  li:hover{
+    background-color: $white;
+    color: $seriousblue;
+    cursor: pointer;
+  }
+}
+
 
 .collapse{
   min-height: 28px;
@@ -68,7 +115,25 @@
     margin-top: 10px;
   }
 }
-.expand:hover{
+
+.r2m_expand{
+  width:100%;
+  height:14px;
+  border-bottom: 1px dashed $masteryOcean;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div{
+    width:120px;
+    text-align: center;
+    background-color: $masteryGreen;
+    margin-top: 10px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+}
+
+.expand:hover, .r2m_expand:hover{
   cursor: pointer;
   font-family: 'Gotham Bold', serif;
 }

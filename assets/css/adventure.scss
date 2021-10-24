@@ -1,0 +1,60 @@
+.adventureContainer{
+  .adventure{
+    background-color: $white;
+    border-radius: 25px;
+    border: 0px solid $seriousblue;
+    padding:20px;
+    width:340px;
+    margin-right: 40px;
+    float:left;
+    margin-top:40px;
+    margin-bottom:10px;
+    min-height: 345px;
+    h3{
+      font-size: 18px;
+      margin-top:10px;
+      /* font-weight: bold; */
+      font-family: 'Gotham Bold', serif;
+    }
+    h4{
+      padding-top:10px;
+      font-size: 14px;
+      margin-bottom: 0px;
+      /* font-weight: bold; */
+      font-family: 'Gotham Bold', serif;
+    }
+    div{
+      font-size: 14px !important;
+      margin-left:0px !important;
+    }
+    .tent{
+      margin-top: -80px;
+      padding-left: 40px;
+      text-align: center;
+      img{
+        height: 65px;
+      }
+    }
+    .launching{
+      font-family: 'Gotham Bold', serif;
+    }
+   .ticketButton{
+     color: #fff;
+     float: left;
+     width: 20px;
+     text-align: right;
+     color: #fff;
+     margin-top: 20px;
+     margin-right: 40px;
+     margin-bottom: 0px;
+     .button{
+       color: $white;
+       margin-bottom: 0px;
+     }
+     .button:hover{
+       color: $seriousblue;
+     }
+   }
+  }
+}
+
