@@ -450,6 +450,12 @@ class App extends React.Component {
         }
         const bannerUrl2 = "/patreon";
 
+        let libraryVisible = '';
+
+        if(this.state.label == "editorial"){
+            libraryVisible = 'hidden';
+        }
+
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
 
@@ -468,10 +474,9 @@ class App extends React.Component {
                 <Menu functions={functions} active={this.state.active} editorial={this.state.editorial} category={this.state.category} categories={this.state.categories} label={this.state.label} search={this.state.search}/>
 
 
-                 <Library articles={this.state.articles}  category={this.state.category}  categories={this.state.categories}  functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles} reviewForm={this.state.reviewForm}/>
+                <Library visible={libraryVisible} articles={this.state.articles}  category={this.state.category}  categories={this.state.categories}  functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles} reviewForm={this.state.reviewForm}/>
 
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
-
 
                 <SocialMenu type="footer"/>
                 <Channels/>

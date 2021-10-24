@@ -9,7 +9,13 @@ class PageTitle extends React.Component {
 
         let containerClassName = "pageTitle";
 
-        let href = "/r2m/"+this.props.seriesslug;
+        let href = "/";
+
+        if(this.props.r2m){
+            href += "r2m/chapter/";
+        }
+
+        href += this.props.seriesslug;
 
         return (
 

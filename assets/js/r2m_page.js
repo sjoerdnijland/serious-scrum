@@ -174,7 +174,7 @@ class Page extends React.Component {
                     <R2MCategories functions={functions} expanded={this.state.expandedCategoryMenu} data={this.state.categories} parentCategoryName={'Chapters'}/>
 
                     <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug}/>
-                    <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug}/>
+                    <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug} r2m={true}/>
                     <PageHero url={thumbnail}/>
 
                     <div className={contentClassName}>
