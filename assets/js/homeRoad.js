@@ -30,7 +30,7 @@ class HomeRoad extends React.Component {
                             The Virtual Training Program!<br/>
                             Exclusive virtual material with over 400 co-active learning activities.
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/road-to-mastery" target="_blank">Explore</a></p>
+                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/r2m" target="_blank">Explore</a></p>
                     </div>
                 </div>
 
