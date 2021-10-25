@@ -48,7 +48,7 @@ class R2MUSPS extends React.Component {
                             <img src='/images/boots.svg'/>
                         </div>
                         <div className="usp">
-                            Do the walk. Find your way as a team. Learn by doing together.
+                            Do the walk! Find your way as a team. Learn by doing together.
                         </div>
                     </div>
 

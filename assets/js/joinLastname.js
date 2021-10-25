@@ -35,14 +35,14 @@ class JoinLastname extends React.Component {
 
         return (
             <div className={containerClassName}>
-                <div className={labelClassName}>Lastname:</div>
+                <div className={labelClassName}>Last name:</div>
                 <input
                     name={'lastname'}
                     type="text"
                     onChange={this.handleChangeInput}
                     className={inputClassName}
                     value={this.props.lastname}
-                    placeholder="My lastname is..."
+                    placeholder="My last name is..."
                     disabled={disabled}
                 />
             </div>
