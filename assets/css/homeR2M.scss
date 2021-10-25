@@ -254,7 +254,6 @@
 @media (max-width: 1320px) {
   .homeR2M {
     .homeBanner {
-      max-width: 400px;
       div{
         font-size: 14px !important;
       }
@@ -263,6 +262,11 @@
       font-size: 28px;
       padding: 50px 50px 10px 40px !important;
       background-color: transparent;
+    }
+  }
+  .usps{
+    .homeBanner {
+      max-width: 400px;
     }
   }
 }
