@@ -13,7 +13,7 @@ class R2MSelfmanagement extends React.Component {
 
         let ContainerClassName = "r2m_selfmanaging row";
 
-        if(this.props.label != 'selfmanaging'){
+        if(this.props.label != 'self-management'){
             ContainerClassName += " hidden";
         }
 

@@ -13,7 +13,7 @@ class R2MDefinition extends React.Component {
 
         let ContainerClassName = "r2m_definition row";
 
-        if(this.props.label != 'definition'){
+        if(this.props.label != 'definition-of-scrum'){
             ContainerClassName += " hidden";
         }
 

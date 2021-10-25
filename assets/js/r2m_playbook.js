@@ -39,6 +39,7 @@ class R2MPlaybook extends React.Component {
                         <h1>Playbook</h1>
                         <div className={'_pl40 _pb40'}>
                             A catalog of co-active training formats!<br/>
+                            All formats are designed to be short and simple.<br/>Each can be done in 10 minutes.
                         </div>
                         <div className="formatContainer">
                             {formats}

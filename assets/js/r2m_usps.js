@@ -32,7 +32,7 @@ class R2MUSPS extends React.Component {
                             <img src='/images/backpack.svg'/>
                         </div>
                         <div className="usp">
-                            Equip your backpack with new tools and techniques to grow as a leader, coach and trainer.
+                            Equip your backpack with leadership and coaching techniques.
                         </div>
                     </div>
                     <div className="uspItem">
@@ -45,19 +45,10 @@ class R2MUSPS extends React.Component {
                     </div>
                     <div className="uspItem">
                         <div className="uspIcon">
-                            <img src='/images/survival.svg'/>
-                        </div>
-                        <div className="usp">
-                            Don't get lost as a team. Learn to train self-management survival skills.
-                        </div>
-                    </div>
-
-                    <div className="uspItem">
-                        <div className="uspIcon">
                             <img src='/images/boots.svg'/>
                         </div>
                         <div className="usp">
-                            It's all co-active. Don't just do the talk. Do the walk. Learn by doing together.
+                            Do the walk. Find your way as a team. Learn by doing together.
                         </div>
                     </div>
 
