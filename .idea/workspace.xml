@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/pageTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pageTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_page.js" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="476" column="48" selection-start-line="476" selection-start-column="48" selection-end-line="476" selection-end-column="48" />
+            <state relative-caret-position="668">
+              <caret line="452" column="31" selection-start-line="452" selection-start-column="31" selection-end-line="452" selection-end-column="31" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -1570,10 +1565,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="49" />
-    <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="x" value="552" />
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1619,6 +1614,19 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1803,16 +1811,15 @@
       <workItem from="1634645703856" duration="2856000" />
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
-      <workItem from="1634885077836" duration="27255000" />
+      <workItem from="1634885077836" duration="28009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721708000" />
+    <option name="totallyTimeSpent" value="722462000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="49" width="1440" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="552" y="25" width="1920" height="1010" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -1820,7 +1827,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.27083334" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.203125" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.36084905" />
@@ -2187,8 +2194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="476" column="48" selection-start-line="476" selection-start-column="48" selection-end-line="476" selection-end-column="48" />
+        <state relative-caret-position="668">
+          <caret line="452" column="31" selection-start-line="452" selection-start-column="31" selection-end-line="452" selection-end-column="31" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
