@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/cafe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/campfire.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/change.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/clean.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/cocktail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/daycare-center.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/festival.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/network.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/format.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/format.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/r2m.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/r2m.scss" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1813,16 +1801,15 @@
       <workItem from="1634645703856" duration="2856000" />
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
-      <workItem from="1634885077836" duration="32844000" />
+      <workItem from="1634885077836" duration="33722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="727297000" />
+    <option name="totallyTimeSpent" value="728175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="990" y="34" width="935" height="1010" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
