@@ -19,7 +19,7 @@ class Build extends React.Component {
                     AGNC - Serious Scrum - KVK: 58970037 - VAT/BTW: NL164404363B01- IBAN: NL84 RABO 0130 4761 53
                 </div>
                 <div className="one-third column right _pr40">
-                    increment: 3.1  :)
+                    increment: 3.4.9  :)
                 </div>
             </div>
 

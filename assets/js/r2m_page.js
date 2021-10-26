@@ -69,7 +69,7 @@ class Page extends React.Component {
     }
 
     setR2MMenu(target){
-        window.location.href = '/road-to-mastery/'+target;
+        window.location.href = '/r2m/'+target;
     }
 
     toggleCategoryMenu() {
