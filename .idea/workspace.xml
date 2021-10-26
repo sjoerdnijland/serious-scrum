@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/icons/angel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/coffee-cup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/confused.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/food-truck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/hand-mirror.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/holy-grail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/nuts.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/parking-car.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/pear.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/postcard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/raft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/respect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/roman-helmet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/standup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/thinking.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/timeline.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/unicorn.svg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,13 +99,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joinFirstname.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="joinFirstname.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/joinFirstname.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angel.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/angel.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="travelgroup.scss" pinned="false" current-in-tab="false">
@@ -1555,10 +1579,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="907" />
-    <option name="y" value="28" />
-    <option name="width" value="1057" />
-    <option name="height" value="1010" />
+    <option name="x" value="-5" />
+    <option name="y" value="49" />
+    <option name="width" value="1440" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1801,16 +1825,15 @@
       <workItem from="1634645703856" duration="2856000" />
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
-      <workItem from="1634885077836" duration="35698000" />
+      <workItem from="1634885077836" duration="35970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="730151000" />
+    <option name="totallyTimeSpent" value="730423000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="907" y="28" width="1057" height="1010" extended-state="0" />
-    <editor active="true" />
+    <frame x="-5" y="49" width="1440" height="830" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -1818,7 +1841,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.36896878" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.27083334" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.36084905" />
@@ -1850,9 +1873,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20211023090110.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20211022152218.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2192,6 +2212,9 @@
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/angel.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
