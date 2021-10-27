@@ -329,7 +329,7 @@ class DefaultController extends AbstractController
         }
 
         $title = 'Join the Road to Mastery!';
-        $image = 'images/road2mastery.jpeg';
+        $image = 'images/r2mhome.jpg';
 
         if($label){
             $title = 'Serious Scrum: '. ucwords(str_replace('-',' ',$label));
