@@ -57,7 +57,7 @@ class FormatController extends AbstractController
         $em = $this->em;
 
         $formats = $em->getRepository(Format::class)
-            ->findAll();
+            ->findBy(array(),array('name' => 'ASC'));
 
         $data = [];
 
