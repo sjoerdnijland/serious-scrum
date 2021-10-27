@@ -55,7 +55,8 @@ class R2MJoin extends React.Component {
                 <div className={bannerClassName}>
                     <h1>Join the Road!</h1>
                     <div className={'_pl40'}>
-                        Sign up for the journey<br/>
+                        Master true Scrum and Agile leadership.<br/>
+                        Experience how to foster a truly collaborative environment.<br/>
                         <br/> 
                         <div className={errorClassName}>
                             {errorMessage}

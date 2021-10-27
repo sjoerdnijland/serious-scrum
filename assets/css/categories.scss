@@ -60,6 +60,7 @@
   position: sticky;
   top:80px;
 
+
   .category{
     min-width:240px;
     float: left;
@@ -101,6 +102,13 @@
   }
 }
 
+.r2m_collapse{
+  min-height: 32px;
+  ul{
+    display: none;
+  }
+}
+
 .expand{
   width:100%;
   height:14px;
@@ -118,18 +126,20 @@
 
 .r2m_expand{
   width:100%;
-  height:14px;
   border-bottom: 1px dashed $masteryOcean;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  height: 16px;
   div{
     width:120px;
     text-align: center;
     background-color: $masteryGreen;
     margin-top: 10px;
-    margin-left:20px;
-    margin-right:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
   }
 }
 

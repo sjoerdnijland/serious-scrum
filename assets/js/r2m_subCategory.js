@@ -7,8 +7,7 @@ class R2MSubCategory extends React.Component {
     }
 
     setCategory(){
-        this.props.functions.setLabel(this.props.data.name.toLowerCase().replace(/\s/g, "-"));
-        this.props.functions.toggleCategoryMenu();
+        window.location.href='/r2m/chapter/'+this.props.data.name.toLowerCase().replace(/\s/g, "-");
     }
 
     render() {

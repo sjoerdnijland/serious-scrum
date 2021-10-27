@@ -72,6 +72,8 @@ import '../js/r2m_subCategory';
 import '../js/r2m_adventures';
 import '../js/r2m_playbook';
 import '../js/r2m_format';
+import '../js/r2m_testimonials';
+import '../js/r2m_testimonial';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -108,6 +110,7 @@ class R2M extends React.Component {
             adventures: this.props.data.adventures,
             travelgroups: this.props.data.travelgroups,
             formats: this.props.data.formats,
+            testimonials: this.props.data.testimonials,
             labels: [],
             user: this.props.data.user,
             submitData: '',
@@ -589,12 +592,7 @@ class R2M extends React.Component {
     }
 
     setR2MMenu(target){
-        this.setState({
-            label: false,
-            module: target,
-            contentPages: 'hidden',
-            expanded: false
-        });
+        window.location.href='/r2m/'+target;
     }
 
     loadMore(){
@@ -661,6 +659,8 @@ class R2M extends React.Component {
                 <R2MGuides label={this.state.label} module={this.state.module} guides={this.state.guides}/>
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
+                <a name="testimonials"/>
+                <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>
                 <a name="adventures"/>
                 <R2MAdventures label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.adventures}/>
                 <a name="join"/>

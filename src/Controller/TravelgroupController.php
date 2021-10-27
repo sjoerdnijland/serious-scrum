@@ -98,10 +98,10 @@ class TravelgroupController extends AbstractController
 
     /**
      * @param Request $request
-     * @Route("/travelgroups", name="travelgroups")
      * @Method("GET")
      * * @return JsonResponse
      */
+    #* @Route("/travelgroups", name="travelgroups")
     public function getTravelgroups($jsonResponse = true)
     {
 

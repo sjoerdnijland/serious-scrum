@@ -110,10 +110,10 @@ class AdventureController extends AbstractController
 
     /**
      * @param Request $request
-     * @Route("/adventures", name="adventures")
      * @Method("GET")
      * * @return JsonResponse
      */
+    #* @Route("/adventures", name="adventures")
     public function getAdventures($jsonResponse = true)
     {
 

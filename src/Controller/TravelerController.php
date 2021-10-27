@@ -114,10 +114,10 @@ class TravelerController extends AbstractController
 
     /**
      * @param Request $request
-     * @Route("/travelers", name="travelers")
      * @Method("GET")
      * * @return JsonResponse
      */
+    #* @Route("/travelers", name="travelers")
     public function getTravelers($jsonResponse = true)
     {
 

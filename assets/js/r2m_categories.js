@@ -33,14 +33,14 @@ class R2MCategories extends React.Component {
         let expandClassName = "collapse _pl20 _pr20";
 
         if(!this.props.expanded){
-            containerClassName += " collapse";
+            containerClassName += " r2m_collapse";
             expandClassName = "r2m_expand";
         }else{
             expandClassName = "hidden";
         }
 
         return (
-            <div className={containerClassName}>
+            <div className={containerClassName} onClick={this.expandCategories}>
                 <div className={expandClassName} onClick={this.expandCategories}>
                     <div><img className="categoryMenuSmall" src="/images/r2m_menu_active.png"/>{this.props.parentCategoryName}</div>
                 </div>

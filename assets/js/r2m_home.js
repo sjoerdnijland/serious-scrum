@@ -47,6 +47,9 @@ class R2MHome extends React.Component {
                             <div>
                                 <img src={'/images/miro.png'}/>
                             </div>
+                            <div>
+                                <img src={'/images/slack.png'}/>
+                            </div>
                         </div>
                     </div>
 

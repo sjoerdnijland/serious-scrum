@@ -20,6 +20,7 @@ use App\Controller\AdventureController;
 use App\Controller\CategoryController;
 use App\Controller\PageController;
 use App\Controller\JiraController;
+use App\Controller\TestimonialController;
 use App\Controller\FormatController;
 use App\Manager\PrismicManager;
 use App\Manager\RssManager;
@@ -46,6 +47,7 @@ class DefaultController extends AbstractController
     private $travelgroupController;
     private $adventureController;
     private $formatController;
+    private $testimonialController;
     private $pageController;
     private $categoryController;
     private $jiraController;
@@ -61,6 +63,7 @@ class DefaultController extends AbstractController
                                 PageController $pageController,
                                 CategoryController $categoryController,
                                 FormatController $formatController,
+                                TestimonialController $testimonialController,
                                 JiraController $jiraController,
                                 SessionInterface $session,
                                 PrismicManager $prismicManager,
@@ -73,6 +76,7 @@ class DefaultController extends AbstractController
         $this->adventureController = $adventureController;
         $this->categoryController = $categoryController;
         $this->formatController = $formatController;
+        $this->testimonialController = $testimonialController;
         $this->pageController = $pageController;
         $this->jiraController = $jiraController;
         $this->session = $session;
@@ -297,6 +301,8 @@ class DefaultController extends AbstractController
 
         $formats = $this->formatController->getFormats(false);
 
+        $testimonials = $this->testimonialController->getTestimonials(false);
+
         $guides = [];
 
         foreach($travelers as $traveler){
@@ -346,6 +352,7 @@ class DefaultController extends AbstractController
             'categories' => $categories,
             'travelgroups' => $travelgroups,
             'formats' => $formats,
+            'testimonials' => $testimonials,
             'adventures' => $adventures,
             'guides' => $guides,
             'module' => $module

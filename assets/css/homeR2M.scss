@@ -149,11 +149,12 @@
 .usps{
   background-color: $masteryOcean;
   text-align: center;
-  margin: 0 auto;
   min-height: 280px;
   .homeBanner  {
-    margin: auto !important;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-left:0px !important;
+    flex-wrap: wrap;
   }
 
   .uspItem{
@@ -175,6 +176,46 @@
 
       min-height: 90px;
       background-color: #fcfffe;
+    }
+  }
+
+}
+
+.testimonials{
+  background-color: $masteryOcean;
+  text-align: center;
+  min-height: 280px;
+
+  .homeBanner  {
+    display: flex;
+    justify-content: center;
+    margin-left:0px !important;
+    flex-wrap: wrap;
+  }
+
+  .testimonialItem{
+    float:left;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 360px;
+    min-width: 200px;
+    img{
+      height:60px;
+      margin-top:-100px;
+    }
+    .testimonial{
+      margin-left: 20px;
+      font-family: 'Gotham Light', serif;
+      font-size: 18px;
+      border-radius: 25px;
+      border: 0px solid $seriousblue;
+      padding: 30px;
+
+      min-height: 90px;
+      background-color: #fcfffe;
+      .name{
+        color: $seriouslySweet;
+      }
     }
   }
 
@@ -245,7 +286,7 @@
     }
 
   }
-  .usps {
+  .usps, .testimonials {
     min-height: 220px!important;
   }
 }
@@ -264,11 +305,7 @@
       background-color: transparent;
     }
   }
-  .usps{
-    .homeBanner {
-      max-width: 400px;
-    }
-  }
+
 }
 
 /* for width less than 1000: */
@@ -330,16 +367,7 @@ and (orientation: portrait) {
   .homeR2M{
     height: 700px;
   }
-  .usps{
-    max-height: 500px !important;
-    .homeBanner {
-      margin: auto !important;
-      width: min-content !important
-    }
-    .uspItem{
-      max-width: 220px;
-    }
-  }
+
 
 }
 
