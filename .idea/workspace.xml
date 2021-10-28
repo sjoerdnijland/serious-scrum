@@ -2,77 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_testimonial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/r2m_testimonials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/001-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/002-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/003-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/004-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/005-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/006-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/007-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/008-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/009-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/010-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/011-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/012-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/013-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/014-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/015-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/016-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/017-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/018-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/019-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/020-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/021-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/022-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/023-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/024-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/025-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/026-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/027-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/028-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/029-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/030-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/031-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/032-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/033-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/034-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/035-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/036-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/037-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/038-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/039-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/040-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/041-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/042-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/043-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/044-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/045-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/046-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/047-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/048-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/049-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/050-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/051-man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TestimonialController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Testimonial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TestimonialRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/mountain16.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categoryMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categoryMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/homeR2M.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeR2M.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_join.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_join.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_subCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_subCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdventureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdventureController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TravelerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/icons/mountain14.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/icons/mountain2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icons/mountain2.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,8 +34,8 @@
       <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="375">
+              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -1731,6 +1664,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
@@ -1856,27 +1790,28 @@
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
       <workItem from="1634885077836" duration="39752000" />
-      <workItem from="1635314065710" duration="9230000" />
+      <workItem from="1635314065710" duration="10146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="743435000" />
+    <option name="totallyTimeSpent" value="744351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.27083334" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
-      <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.27083334" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.36084905" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" sideWeight="0.19866666" side_tool="true" weight="0.20347223" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -1885,7 +1820,6 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.36084905" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2211,8 +2145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>
