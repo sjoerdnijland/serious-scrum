@@ -7,7 +7,7 @@ class Adventure extends React.Component {
     }
 
     handleClick(){
-        window.open(this.props.link, '_blank').focus();
+        window.open(this.props.paymentLink, '_blank').focus();
     }
 
     render() {
@@ -29,6 +29,12 @@ class Adventure extends React.Component {
             functions: this.props.functions
         });
 
+        let linkClass = "link";
+
+        if(this.props.link == null){
+            linkClass = "hidden";
+        }
+
 
         return (
 
@@ -39,6 +45,9 @@ class Adventure extends React.Component {
                 <h3>{this.props.name}</h3>
                 <div>
                     {this.props.description}
+                </div>
+                <div className={linkClass}>
+                    <a href={this.props.link} target={'_blank'}>learn more</a>
                 </div>
                 <h4>{this.props.launch_at}</h4>
                 <h4>duration {this.props.duration} hours</h4>

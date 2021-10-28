@@ -26,7 +26,7 @@ class R2MAdventures extends React.Component {
 
         adventures = Object.values(this.props.data).map(function (adventure) {
             if(adventure.isActive){
-                return (<Adventure functions={this.functions} key={adventure.id} id={adventure.id} name={adventure.name} description={adventure.description} price={adventure.price} link={adventure.paymentLink} launch_at={adventure.launch_at}  duration={adventure.duration} guides={adventure.guides} />);
+                return (<Adventure functions={this.functions} key={adventure.id} id={adventure.id} name={adventure.name} description={adventure.description} price={adventure.price} link={adventure.link} paymentLink={adventure.paymentLink} launch_at={adventure.launch_at}  duration={adventure.duration} guides={adventure.guides} />);
             }
         },{
             functions: this.props.functions

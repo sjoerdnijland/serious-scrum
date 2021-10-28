@@ -55,6 +55,15 @@
        color: $seriousblue;
      }
    }
+    .link{
+      margin-top:10px;
+
+      a {
+        color: $seriouslySweet;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
