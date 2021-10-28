@@ -632,7 +632,7 @@ class R2M extends React.Component {
         functions['toggleLibraryPages'] = this.toggleLibraryPages;
         functions['setR2MMenu'] = this.setR2MMenu;
 
-        const appContainerClassName = "appContainer";
+        const appContainerClassName = "appContainer r2mContainer";
 
         const bannerText1 = "Community by and for Scrum Practitioners";
 

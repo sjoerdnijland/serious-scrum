@@ -136,9 +136,9 @@
 .playbook{
 
   background: url(../images/vanlong.jpg) !important;
-  background-color: #4DB9AF;
+  background-color: $masteryOcean;
   background-repeat: no-repeat !important;
-  background-size: cover !important;
+  background-size: contain !important;
   background-position: bottom !important;
   height: auto !important;
   padding-bottom: 400px;
