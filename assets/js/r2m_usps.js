@@ -32,7 +32,7 @@ class R2MUSPS extends React.Component {
                             <img src='/images/backpack.svg'/>
                         </div>
                         <div className="usp">
-                            Equip your backpack with leadership and coaching techniques.
+                            Equip your backpack with leadership, facilitation and coaching techniques.
                         </div>
                     </div>
                     <div className="uspItem">

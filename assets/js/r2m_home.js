@@ -37,6 +37,7 @@ class R2MHome extends React.Component {
                                 <li>Weekly recurring virtual 2-hour training.</li>
                                 <li>A 6-month journey off the beaten track;  </li>
                                 <li>Share experiences and explore new ways.</li>
+                                <li>Get ready to distinguish yourself preparing for <strong><a href="https://www.scrum.org/professional-scrum-master-iii-certification" target={"_blank"}>PSMIII</a></strong>.</li>
                             </ul>
                         </div>
                         <p className="_pt20 _pl40 buttonContainer joinButton _fl"><a className="button" id="requestInvite_button" href="#join">Join!</a></p>
