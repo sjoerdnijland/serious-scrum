@@ -21,7 +21,7 @@ class JoinTerms extends React.Component {
             <div className={containerClassName}>
                 <br/><span className="subscription">Subscription is €175,- p/m, starting from the first training.</span><br/>
                 <input type="checkbox" className={"_mr10"} checked={this.props.terms} onChange={this.toggleCheckBox}  />
-                I agree to the <a href="/page/terms-and-conditions" target="_blank">terms and conditions</a>.<br/>
+                I agree to the <a href="/page/subscription-terms-and-conditions" target="_blank">terms and conditions</a>.<br/>
 
             </div>
         );
