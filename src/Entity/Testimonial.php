@@ -27,7 +27,7 @@ class Testimonial
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=512)
      */
     private $testimonial;
 
