@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_usps.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_usps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/joinTerms.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/joinTerms.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
@@ -98,14 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Testimonial.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Testimonial.php">
+      <file leaf-file-name="joinTerms.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/joinTerms.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-              <folding>
-                <element signature="e#53#85#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -174,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/button.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_format.js" />
         <option value="$PROJECT_DIR$/src/Entity/Format.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
@@ -225,6 +220,7 @@
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_usps.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
+        <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
       </list>
     </option>
   </component>
@@ -1814,12 +1810,12 @@
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
       <workItem from="1634885077836" duration="39752000" />
-      <workItem from="1635314065710" duration="12105000" />
+      <workItem from="1635314065710" duration="12252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="746310000" />
+    <option name="totallyTimeSpent" value="746457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -1863,9 +1859,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/icons/blank.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/road-to-mastery.html.twig.old">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -2188,6 +2181,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="39" column="205" selection-start-line="39" selection-start-column="205" selection-end-line="39" selection-end-column="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/joinTerms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
         </state>
       </provider>
     </entry>
