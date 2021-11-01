@@ -23,8 +23,8 @@
       <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="208" column="20" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="20" />
+            <state relative-caret-position="725">
+              <caret line="373" column="37" selection-start-line="373" selection-start-column="37" selection-end-line="373" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -118,8 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>trav</find>
-      <find>ji</find>
       <find>joinForm</find>
       <find>join</find>
       <find>setCa</find>
@@ -142,12 +140,14 @@
       <find>chapter</find>
       <find>banner</find>
       <find>Banner</find>
-      <find>usps</find>
       <find>Icon</find>
       <find>collapse</find>
       <find>testim</find>
       <find>r2m_categories</find>
       <find>.testimonialItem{</find>
+      <find>testimon</find>
+      <find>usps</find>
+      <find>homeR2M</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -1811,12 +1811,12 @@
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
       <workItem from="1634885077836" duration="39752000" />
-      <workItem from="1635314065710" duration="13272000" />
+      <workItem from="1635314065710" duration="13862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="747477000" />
+    <option name="totallyTimeSpent" value="748067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
@@ -2187,8 +2187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="208" column="20" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="20" />
+        <state relative-caret-position="725">
+          <caret line="373" column="37" selection-start-line="373" selection-start-column="37" selection-end-line="373" selection-end-column="37" />
         </state>
       </provider>
     </entry>

@@ -149,7 +149,6 @@
 .usps{
   background-color: $masteryOcean;
   text-align: center;
-  min-height: 280px;
   .homeBanner  {
     display: flex;
     justify-content: center;
@@ -182,7 +181,6 @@
 .testimonials{
   background-color: $masteryOcean;
   text-align: center;
-  min-height: 280px;
 
   .homeBanner  {
     display: flex;
@@ -281,9 +279,6 @@
     }
 
   }
-  .usps, .testimonials {
-    min-height: 220px!important;
-  }
 }
 
 
@@ -358,9 +353,7 @@ and (orientation: portrait) {
   }
   .homeR2M ul{
     font-size: 12px !important;
-  }
-  .homeR2M{
-    min-height: 700px;
+
   }
 
 
@@ -371,11 +364,14 @@ and (orientation: portrait) {
 /* for width more than 1920: */
 @media only screen and (min-width: 1920px) {
   .homeR2M {
-    h1{
+    h1 {
       line-height: 140px !important;
       font-size: 76px !important;
       padding: 60px 50px 10px 40px !important;
     }
+  }
+  .playbook{
+    background-size: cover !important;
   }
 }
 
