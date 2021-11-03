@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/docs/Fake Agile - Agile Terminology Hacking.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/053-woman.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +23,8 @@
       <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="376" selection-start-line="376" selection-end-line="376" />
+            <state relative-caret-position="290">
+              <caret line="347" column="22" lean-forward="true" selection-start-line="347" selection-start-column="22" selection-end-line="347" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -1621,6 +1622,19 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1803,15 +1817,15 @@
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
       <workItem from="1634885077836" duration="39752000" />
-      <workItem from="1635314065710" duration="14142000" />
+      <workItem from="1635314065710" duration="16699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="748347000" />
+    <option name="totallyTimeSpent" value="750904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
+    <frame x="0" y="25" width="1440" height="830" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -1819,7 +1833,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.203125" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.27083334" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.36084905" />
@@ -2178,8 +2192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="376" selection-start-line="376" selection-end-line="376" />
+        <state relative-caret-position="290">
+          <caret line="347" column="22" lean-forward="true" selection-start-line="347" selection-start-column="22" selection-end-line="347" selection-end-column="22" />
         </state>
       </provider>
     </entry>
