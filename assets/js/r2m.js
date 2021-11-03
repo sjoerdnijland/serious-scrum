@@ -659,14 +659,17 @@ class R2M extends React.Component {
                 <R2MGuides label={this.state.label} module={this.state.module} guides={this.state.guides}/>
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
-                <a name="testimonials"/>
-                <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>
+
                 <a name="adventures"/>
                 <R2MAdventures label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.adventures}/>
                 <a name="join"/>
                 <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
                 <a name="playbook"/>
                 <R2MPlaybook label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.formats}/>
+
+                <a name="testimonials"/>
+                <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>
+
 
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>
                 <R2MTBR label={this.state.label} module={this.state.module}/>

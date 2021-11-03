@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/053-woman.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/homeR2M.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeR2M.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,15 +25,19 @@
       <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="347" column="22" lean-forward="true" selection-start-line="347" selection-start-column="22" selection-end-line="347" selection-end-column="22" />
+            <state relative-caret-position="30">
+              <caret line="189" column="4" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/build.scss">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="r2m_header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
@@ -62,8 +68,8 @@
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="604" selection-start-line="604" selection-end-line="604" />
+            <state relative-caret-position="87">
+              <caret line="648" column="20" selection-start-line="648" selection-start-column="20" selection-end-line="648" selection-end-column="20" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -176,7 +182,6 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_guides.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/assets/js/HeaderMenuItem.js" />
         <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
         <option value="$PROJECT_DIR$/assets/js/header.js" />
@@ -215,12 +220,13 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_adventure.js" />
         <option value="$PROJECT_DIR$/assets/css/adventure.scss" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/src/Entity/Testimonial.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_usps.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
       </list>
     </option>
@@ -1817,15 +1823,16 @@
       <workItem from="1634729448690" duration="3846000" />
       <workItem from="1634752072969" duration="4271000" />
       <workItem from="1634885077836" duration="39752000" />
-      <workItem from="1635314065710" duration="16699000" />
+      <workItem from="1635314065710" duration="17560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="750904000" />
+    <option name="totallyTimeSpent" value="751765000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="830" extended-state="6" />
+    <frame x="0" y="26" width="1440" height="830" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -2027,13 +2034,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_category.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2182,18 +2182,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        <state relative-caret-position="87">
+          <caret line="648" column="20" selection-start-line="648" selection-start-column="20" selection-end-line="648" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="347" column="22" lean-forward="true" selection-start-line="347" selection-start-column="22" selection-end-line="347" selection-end-column="22" />
+        <state relative-caret-position="30">
+          <caret line="189" column="4" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
         </state>
       </provider>
     </entry>
