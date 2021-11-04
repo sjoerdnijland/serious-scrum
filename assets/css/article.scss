@@ -5,7 +5,7 @@
   height: fit-content;
   width: 290px;
   .thumbnail{
-    width: 280px;
+    width: 260px;
     height: 200px;
   }
   .title{
@@ -13,13 +13,13 @@
     color: $seriousblue;
     font-size: 20px;
     line-height: 32px;
-    width: 280px;
+    width: 260px;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   .intro{
-    width: 280px;
+    width: 260px;
     max-height: 130px;
     font-family: "Georgia", serif;
     color: $grey;
@@ -31,7 +31,7 @@
     overflow: hidden;
   }
   .author{
-    width: 280px;
+    width: 260px;
     padding-bottom:10px;
     border-bottom: 1px dashed $problue;
     .avatar{
