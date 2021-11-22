@@ -300,7 +300,6 @@ class DefaultController extends AbstractController
         # get cache manager
         $cm = $this->cm;
 
-
         $pages = $this->pageController->getPages(false, false);
 
         $categories = $this->categoryController->getCategories(false, true);
@@ -353,8 +352,6 @@ class DefaultController extends AbstractController
         # sets everything we want to output to the UX
         $data = [
             'pages' => $pages,
-            'contentPages' => $contentPages,
-            'library' => $library,
             'categories' => $categories,
             'travelgroups' => $travelgroups,
             'formats' => $formats,
@@ -368,6 +365,8 @@ class DefaultController extends AbstractController
         $data['user'] =  $user;
         $data['label'] =  $label;
         $data['module'] =  $module;
+        $data['contentPages'] = $contentPages;
+        $data['library'] = $library;
 
         $output['data'] = $data;
         $output['title'] = $title;
@@ -418,13 +417,31 @@ class DefaultController extends AbstractController
 
         $data = json_decode($data,1);
 
-        $data['user'] =  $user;
-        $data['label'] =  $label;
-        $data['module'] =  $module;
+        $contentPages = "hidden";
+        $library = "hidden";
+
+        if($label){
+            $contentPages = "";
+            $library = "hidden";
+        }
+
+        if($module){
+            $library = "";
+        }
 
         $title = 'Join the Road to Mastery!';
         $image = 'images/r2mhome.jpg';
 
+        if($label){
+            $title = 'Serious Scrum: '. ucwords(str_replace('-',' ',$label));
+            $image = 'images/'.$label.'.jpg';
+        }
+
+        $data['user'] =  $user;
+        $data['label'] =  $label;
+        $data['module'] =  $module;
+        $data['contentPages'] = $contentPages;
+        $data['library'] = $library;
 
         $output['data'] = $data;
         $output['title'] = $title;
