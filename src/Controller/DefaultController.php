@@ -24,6 +24,7 @@ use App\Controller\TestimonialController;
 use App\Controller\FormatController;
 use App\Manager\PrismicManager;
 use App\Manager\RssManager;
+use App\Manager\CacheManager;
 
 use Squid\Patreon\Patreon;
 
@@ -54,6 +55,7 @@ class DefaultController extends AbstractController
     private $prismicManager;
     private $rssManager;
     private $session;
+    private $cm;
 
     public function __construct(EntityManagerInterface $entityManager,
                                 ArticleController $articleController,
@@ -67,7 +69,8 @@ class DefaultController extends AbstractController
                                 JiraController $jiraController,
                                 SessionInterface $session,
                                 PrismicManager $prismicManager,
-                                RssManager $rssManager)
+                                RssManager $rssManager,
+                                CacheManager $cacheManager)
     {
         $this->em = $entityManager;
         $this->articleController = $articleController;
@@ -82,6 +85,7 @@ class DefaultController extends AbstractController
         $this->session = $session;
         $this->prismicManager = $prismicManager;
         $this->rssManager = $rssManager;
+        $this->cm = $cacheManager;
     }
 
 
@@ -267,11 +271,11 @@ class DefaultController extends AbstractController
     /**
      * @param Request
      * @param Config
-     * * @Route("/r2m", name="road-to-mastery")
-     * @Route("/r2m/{module}", name="road-to-mastery-module")
+     * @Route("/r2m/reload", name="road-to-mastery-reload")
      * @return Response
      */
-    public function mastery(Request $request, $label = false, $module = false){
+    public function masteryReload(Request $request, $label = false, $module = false){
+
 
         $user['username'] = '';
         $user['fullname'] = '';
@@ -292,6 +296,10 @@ class DefaultController extends AbstractController
                 $user['patreon'] = 'supporter';
             }
         }
+
+        # get cache manager
+        $cm = $this->cm;
+
 
         $pages = $this->pageController->getPages(false, false);
 
@@ -343,10 +351,8 @@ class DefaultController extends AbstractController
         }
 
         # sets everything we want to output to the UX
-        $output['data'] = [
-            'user' => $user,
+        $data = [
             'pages' => $pages,
-            'label' => $label,
             'contentPages' => $contentPages,
             'library' => $library,
             'categories' => $categories,
@@ -355,11 +361,74 @@ class DefaultController extends AbstractController
             'testimonials' => $testimonials,
             'adventures' => $adventures,
             'guides' => $guides,
-            'module' => $module
         ];
 
+        $cm->writeCache('r2m', 'all', json_encode($data));
+
+        $data['user'] =  $user;
+        $data['label'] =  $label;
+        $data['module'] =  $module;
+
+        $output['data'] = $data;
         $output['title'] = $title;
-        $output['url'] = 'https://www.seriousscrum.com/road-to-mastery';
+        $output['url'] = 'https://www.road2mastery.com';
+        $output['image'] = $image;
+        $output['author'] = 'Sjoerd Nijland';
+        $output['description'] = 'Join the Road to Mastery!';
+        $output['app'] = 'app';
+
+        //return new JsonResponse($output);
+        return $this->render('r2m.html.twig', $output);
+
+    }
+
+    /**
+     * @param Request
+     * @param Config
+     * @Route("/r2m", name="road-to-mastery")
+     * @Route("/r2m/{module}", name="road-to-mastery-module")
+     * @return Response
+     */
+    public function mastery(Request $request, $label = false, $module = false)
+    {
+        $user['username'] = '';
+        $user['fullname'] = '';
+        $user['avatar'] = '';
+        $user['roles'] = ['ROLE_GUEST'];
+        $user['patreon'] = false;
+
+        if ($this->session->get('patreonToken')) {
+            $user['patreon'] = 'member';
+        }
+
+        if ($this->isGranted('ROLE_USER')) {
+            $user['username'] = $this->getUser()->getUsername();
+            $user['fullname'] = $this->getUser()->getFullname();
+            $user['avatar'] = $this->getUser()->getAvatar();
+            $user['roles'] = $this->getUser()->getRoles();
+            if ($this->getUser()->getIsPatreon()) {
+                $user['patreon'] = 'supporter';
+            }
+        }
+
+        # get cache manager
+        $cm = $this->cm;
+
+        $data = $cm->getCache('r2m', 'all');
+
+        $data = json_decode($data,1);
+
+        $data['user'] =  $user;
+        $data['label'] =  $label;
+        $data['module'] =  $module;
+
+        $title = 'Join the Road to Mastery!';
+        $image = 'images/r2mhome.jpg';
+
+
+        $output['data'] = $data;
+        $output['title'] = $title;
+        $output['url'] = 'https://www.road2mastery.com';
         $output['image'] = $image;
         $output['author'] = 'Sjoerd Nijland';
         $output['description'] = 'Join the Road to Mastery!';
