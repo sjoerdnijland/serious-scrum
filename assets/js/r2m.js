@@ -74,6 +74,7 @@ import '../js/r2m_playbook';
 import '../js/r2m_format';
 import '../js/r2m_testimonials';
 import '../js/r2m_testimonial';
+import '../js/r2m_theory';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -675,6 +676,7 @@ class R2M extends React.Component {
                 <R2MTBR label={this.state.label} module={this.state.module}/>
                 <R2MAgile label={this.state.label} module={this.state.module}/>
                 <R2MDefinition label={this.state.label} module={this.state.module}/>
+                <R2MTheory label={this.state.label} module={this.state.module}/>
                 <R2MCoaching label={this.state.label} module={this.state.module}/>
                 <R2MSelfmanagement label={this.state.label} module={this.state.module}/>
 
