@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +42,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="490">
-              <caret line="442" column="42" lean-forward="true" selection-start-line="442" selection-start-column="42" selection-end-line="442" selection-end-column="42" />
+              <caret line="442" column="42" selection-start-line="442" selection-start-column="42" selection-end-line="442" selection-end-column="42" />
               <folding>
                 <element signature="e#73#119#0#PHP" expanded="true" />
               </folding>
@@ -114,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setLabe</find>
       <find>R@M</find>
       <find>setR2MMenu</find>
       <find>toggle</find>
@@ -144,6 +152,7 @@
       <find>jpg</find>
       <find>reload</find>
       <find>$module</find>
+      <find>$library</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -210,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/Entity/Testimonial.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_usps.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
-        <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
@@ -218,6 +226,7 @@
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/css/homeRoad.scss" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
     </option>
   </component>
@@ -1828,12 +1837,12 @@
       <workItem from="1634885077836" duration="39752000" />
       <workItem from="1635314065710" duration="18035000" />
       <workItem from="1636699719031" duration="589000" />
-      <workItem from="1637579126174" duration="3707000" />
+      <workItem from="1637579126174" duration="4029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="756536000" />
+    <option name="totallyTimeSpent" value="756858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
@@ -2101,13 +2110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="131" selection-start-line="18" selection-start-column="131" selection-end-line="18" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2198,10 +2200,17 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
-          <caret line="442" column="42" lean-forward="true" selection-start-line="442" selection-start-column="42" selection-end-line="442" selection-end-column="42" />
+          <caret line="442" column="42" selection-start-line="442" selection-start-column="42" selection-end-line="442" selection-end-column="42" />
           <folding>
             <element signature="e#73#119#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
         </state>
       </provider>
     </entry>
