@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/icons/compass.svg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1815">
-              <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,8 +81,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="frog.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frog.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/frog.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="compass.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/compass.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -1555,7 +1553,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="205" />
+    <option name="x" value="247" />
+    <option name="y" value="50" />
     <option name="width" value="1440" />
     <option name="height" value="830" />
   </component>
@@ -1824,15 +1823,15 @@
       <workItem from="1635314065710" duration="18035000" />
       <workItem from="1636699719031" duration="589000" />
       <workItem from="1637579126174" duration="5082000" />
-      <workItem from="1637777356584" duration="423000" />
+      <workItem from="1637777356584" duration="436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="758334000" />
+    <option name="totallyTimeSpent" value="758347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="205" width="1440" height="830" extended-state="0" />
+    <frame x="247" y="50" width="1440" height="830" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1872,13 +1871,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="97" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -2186,6 +2178,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/frog.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/compass.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
