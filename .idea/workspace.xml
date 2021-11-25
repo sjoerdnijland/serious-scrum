@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/frog.svg" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1556,10 +1554,10 @@
       <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="1920" />
-    <option name="height" value="1010" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="205" />
+    <option name="width" value="1440" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1826,15 +1824,15 @@
       <workItem from="1635314065710" duration="18035000" />
       <workItem from="1636699719031" duration="589000" />
       <workItem from="1637579126174" duration="5082000" />
-      <workItem from="1637777356584" duration="258000" />
+      <workItem from="1637777356584" duration="423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="758169000" />
+    <option name="totallyTimeSpent" value="758334000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="830" extended-state="6" />
+    <frame x="0" y="205" width="1440" height="830" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
