@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/compass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/whisper.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,8 +77,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="compass.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="compass.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/compass.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="whisper.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/whisper.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -1823,12 +1819,12 @@
       <workItem from="1635314065710" duration="18035000" />
       <workItem from="1636699719031" duration="589000" />
       <workItem from="1637579126174" duration="5082000" />
-      <workItem from="1637777356584" duration="436000" />
+      <workItem from="1637777356584" duration="582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="758347000" />
+    <option name="totallyTimeSpent" value="758493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="247" y="50" width="1440" height="830" extended-state="0" />
@@ -1871,13 +1867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="436" column="43" selection-start-line="436" selection-start-column="43" selection-end-line="436" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/headerMenuItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2181,6 +2170,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/compass.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/whisper.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
