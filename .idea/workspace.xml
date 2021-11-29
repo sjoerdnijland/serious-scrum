@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrumvalues.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -1821,12 +1821,12 @@
       <workItem from="1636699719031" duration="589000" />
       <workItem from="1637579126174" duration="5082000" />
       <workItem from="1637777356584" duration="582000" />
-      <workItem from="1638181281101" duration="1306000" />
+      <workItem from="1638181281101" duration="1404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="759799000" />
+    <option name="totallyTimeSpent" value="759897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
@@ -2165,7 +2165,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrumvalues.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>

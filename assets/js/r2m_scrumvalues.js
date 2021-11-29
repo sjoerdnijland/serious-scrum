@@ -13,7 +13,7 @@ class R2MScrumValues extends React.Component {
 
         let ContainerClassName = "r2m_scrumvalues row";
 
-        if(this.props.label != 'scrum-values'){
+        if(this.props.label != 'scrum values'){
             ContainerClassName += " hidden";
         }
 
