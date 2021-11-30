@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/beautytruth.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/icons/beautytruth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icons/beautytruth.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1836,15 +1835,16 @@
       <workItem from="1636699719031" duration="589000" />
       <workItem from="1637579126174" duration="5082000" />
       <workItem from="1637777356584" duration="582000" />
-      <workItem from="1638181281101" duration="5048000" />
+      <workItem from="1638181281101" duration="5203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="763541000" />
+    <option name="totallyTimeSpent" value="763696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
