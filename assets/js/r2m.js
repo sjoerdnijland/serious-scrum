@@ -76,6 +76,7 @@ import '../js/r2m_testimonials';
 import '../js/r2m_testimonial';
 import '../js/r2m_theory';
 import '../js/r2m_scrumvalues';
+import '../js/r2m_map';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -672,6 +673,8 @@ class R2M extends React.Component {
                 <a name="testimonials"/>
                 <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>
 
+                <a name="map"/>
+                <R2MMap label={this.state.label}  module={this.state.module}/>
 
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>
                 <R2MTBR label={this.state.label} module={this.state.module}/>
