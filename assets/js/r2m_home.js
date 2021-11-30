@@ -40,7 +40,7 @@ class R2MHome extends React.Component {
                                 <li>Get ready to distinguish yourself preparing for <strong><a href="https://www.scrum.org/professional-scrum-master-iii-certification" target={"_blank"}>PSMIII</a></strong>.</li>
                             </ul>
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer joinButton _fl"><a className="button" id="requestInvite_button" href="#join">Join!</a></p>
+                        <p className="_pt20 _pl40 buttonContainer joinButton _fl"><a className="button" id="requestInvite_button" href="/page/the-road-to-mastery-r2m">About the course</a></p>
                         <div className="mirozoom">
                             <div>
                                 <img src={'/images/zoom.png'}/>
