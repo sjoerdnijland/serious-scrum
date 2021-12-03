@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/homeR2M.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeR2M.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/talking.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="r2m_home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_home.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -42,13 +33,18 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="385" column="3" selection-start-line="385" selection-start-column="3" selection-end-line="385" selection-end-column="3" />
+            <state relative-caret-position="526">
+              <caret line="385" selection-start-line="385" selection-end-line="385" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="talking.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/talking.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="homeRoad.js" pinned="false" current-in-tab="false">
@@ -1836,18 +1832,17 @@
       <workItem from="1637579126174" duration="5082000" />
       <workItem from="1637777356584" duration="582000" />
       <workItem from="1638181281101" duration="5203000" />
-      <workItem from="1638462848454" duration="51000" />
+      <workItem from="1638462848454" duration="567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="763747000" />
+    <option name="totallyTimeSpent" value="764263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1440" height="830" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.26944444" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -1885,9 +1880,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Repository/AdventureRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/TravelerRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -2176,10 +2168,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="385" column="3" selection-start-line="385" selection-start-column="3" selection-end-line="385" selection-end-column="3" />
+        <state relative-caret-position="526">
+          <caret line="385" selection-start-line="385" selection-end-line="385" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/talking.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
