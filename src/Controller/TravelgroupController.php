@@ -109,7 +109,7 @@ class TravelgroupController extends AbstractController
         $em = $this->em;
 
         $travelgroups = $em->getRepository(TravelGroup::class)
-            ->findAll();
+            ->findBy([],['launch_at' => 'ASC']);
 
         $data = [];
 
@@ -171,8 +171,10 @@ class TravelgroupController extends AbstractController
                 $data[$i]['registration'] = 'closed';
             }
 
-
         }
+
+
+
 
         # reset the keys (so that React can properly load them in)
         $data = array_values($data);
