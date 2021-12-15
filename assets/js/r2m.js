@@ -77,6 +77,8 @@ import '../js/r2m_testimonial';
 import '../js/r2m_theory';
 import '../js/r2m_scrumvalues';
 import '../js/r2m_map';
+import '../js/r2m_playbookFilters';
+import '../js/r2m_playbookFilter';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -90,6 +92,12 @@ class R2M extends React.Component {
 
     constructor(props) {
         super(props);
+
+        const filters = {};
+        filters['c'] =  '';
+        filters['type'] =  '';
+        filters['activity'] =  '';
+
 
         this.state = {
             expanded: false,
@@ -124,10 +132,10 @@ class R2M extends React.Component {
             email: '',
             terms: false,
             travelgroup: false,
-            terms: false,
             submitCategory: 1,
             reviewCategory: false,
             reviewOption: 'isApproved',
+            filters: filters
         };
 
         this.closeMenus = this.closeMenus.bind(this);
@@ -158,6 +166,7 @@ class R2M extends React.Component {
         this.joinTravelgroup = this.joinTravelgroup.bind(this);
         this.loadMore = this.loadMore.bind(this);
         this.setR2MMenu = this.setR2MMenu.bind(this);
+        this.setFilter = this.setFilter.bind(this);
 
     }
 
@@ -400,6 +409,17 @@ class R2M extends React.Component {
         });
     }
 
+    setFilter(filterValue, type) {
+
+        let filters = this.state.filters;
+
+        filters[type] = filterValue;
+
+        this.setState({
+            filters: filters
+        });
+    }
+
     setActive(active) {
         if(active=="editorial" || active=="mastery" || active=="events"){
             if(this.state.editorial==active){
@@ -634,6 +654,7 @@ class R2M extends React.Component {
         functions['joinTravelgroup'] = this.joinTravelgroup;
         functions['toggleLibraryPages'] = this.toggleLibraryPages;
         functions['setR2MMenu'] = this.setR2MMenu;
+        functions['setFilter'] = this.setFilter;
 
         const appContainerClassName = "appContainer r2mContainer";
 
@@ -668,7 +689,7 @@ class R2M extends React.Component {
                 <a name="join"/>
                 <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
                 <a name="playbook"/>
-                <R2MPlaybook label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.formats}/>
+                <R2MPlaybook label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.formats} filters={this.state.filters}/>
 
                 <a name="testimonials"/>
                 <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>

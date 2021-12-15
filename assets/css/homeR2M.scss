@@ -142,6 +142,26 @@
   background-position: bottom !important;
   height: auto !important;
   padding-bottom: 400px;
+  .filtersContainer{
+    margin-left: 20px;
+    min-height: 60px;
+
+    .filterContainer{
+      float:left;
+    }
+    .Dropdown-control{
+      width:200px !important;
+      font-size: 12px;
+      margin-right:20px;
+    }
+    .Dropdown-placeholder{
+      font-size: 12px !important;
+    }
+    .Dropdown-option{
+      font-size:11px !important;
+      min-width: 120px;
+    }
+  }
 
 
 }
