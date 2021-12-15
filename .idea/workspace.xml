@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/peel.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_playbookFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_playbookFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/peel2.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_playbookFilter.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_playbookFilter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbookFilter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="481">
@@ -88,6 +86,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="peel2.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/peel2.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="reviewSelect.js" pinned="false" current-in-tab="false">
@@ -107,15 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="85" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2120">
-              <caret line="281" column="29" selection-start-line="281" selection-start-column="29" selection-end-line="281" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -159,8 +153,8 @@
       <find>jpg</find>
       <find>travel</find>
       <find>Drop</find>
-      <find>playb</find>
       <find>trave</find>
+      <find>playb</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -1675,8 +1669,8 @@
       <recent name="$PROJECT_DIR$/public/docs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/public/images/icons" />
+      <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/public/docs" />
@@ -1795,12 +1789,12 @@
       <workItem from="1637777356584" duration="582000" />
       <workItem from="1638181281101" duration="5203000" />
       <workItem from="1638462848454" duration="828000" />
-      <workItem from="1639388885046" duration="8214000" />
+      <workItem from="1639388885046" duration="8229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="772738000" />
+    <option name="totallyTimeSpent" value="772753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
@@ -1844,13 +1838,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/adventure.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TestimonialController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -2145,6 +2132,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/peel2.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
