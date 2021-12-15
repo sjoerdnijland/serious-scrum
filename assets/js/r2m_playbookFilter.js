@@ -74,7 +74,6 @@ class PlaybookFilter extends React.Component {
                 { value: 'coaching', label: 'Coaching' },
                 { value: 'concluding', label: 'Concluding' },
                 { value: 'context', label: 'Context' },
-                { value: 'evaluation', label: 'Evalutation' },
                 { value: 'discovering', label: 'Discovering' },
                 { value: 'reflecting', label: 'Reflecting' },
                 { value: 'icebreaker', label: 'Icebreaking' },
