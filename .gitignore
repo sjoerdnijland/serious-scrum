@@ -39,3 +39,4 @@ yarn-error.log
 .env
 public/video/Ubuntu.mov
 public/ebook/Kindle.zip
+public/cache/categories/all.json
