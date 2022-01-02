@@ -26,7 +26,7 @@ class R2MProductOwner extends React.Component {
                         <div>Road to Mastery</div>
                         <h1>Product Owner</h1>
                         <div>
-                            Mastering the art of saying "No"<br/>
+                            Mastering the art of saying "No". This chapter is currently in progress. Stay tuned for more! <br/>
                         </div>
                     </div>
                 </div>
