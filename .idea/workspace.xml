@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/scenario.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/memories.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,8 +67,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="scenario.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scenario.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/scenario.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="memories.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/memories.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -1756,12 +1751,12 @@
       <workItem from="1640115566303" duration="303000" />
       <workItem from="1640605793394" duration="598000" />
       <workItem from="1640854680744" duration="4652000" />
-      <workItem from="1641369676335" duration="1480000" />
+      <workItem from="1641369676335" duration="1794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="780474000" />
+    <option name="totallyTimeSpent" value="780788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
@@ -1804,9 +1799,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/icons/compass.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/whisper.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -2068,6 +2060,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/scenario.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/memories.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
