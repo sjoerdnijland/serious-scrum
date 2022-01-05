@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/sticky-notes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/user.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1747,12 +1747,12 @@
       <workItem from="1640115566303" duration="303000" />
       <workItem from="1640605793394" duration="598000" />
       <workItem from="1640854680744" duration="4652000" />
-      <workItem from="1641369676335" duration="2140000" />
+      <workItem from="1641369676335" duration="2760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="781134000" />
+    <option name="totallyTimeSpent" value="781754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
