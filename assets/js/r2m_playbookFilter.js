@@ -94,6 +94,7 @@ class PlaybookFilter extends React.Component {
                 { value: 'tbr', label: 'TBR' },
                 { value: 'thinking routine', label: 'Thinking Routine' },
                 { value: 'management 3.0', label: 'Management 3.0' },
+                { value: 'gamestorming', label: 'Gamestorming' },
             ];
         }
 
