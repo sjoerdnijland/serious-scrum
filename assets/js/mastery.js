@@ -30,14 +30,12 @@ class Mastery extends React.Component {
         return (
             <div className={containerClassName}>
                 <div className={titleClassname}>Road to Mastery</div>
-                <a href="/page/introduction-to-the-road-to-mastery" target="_blank"><div className={itemClassName}>Introduction to the Road to Mastery</div></a>
-                <a href="/page/our-guides"  target="_blank"><div className={itemClassName}>Our Guides</div></a>
-                <a href="/r2m/basecamp" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Basecamp</div></a>
-                <a href="/r2m/training-the-guides" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Training the Guides</div></a>
-                <a href="/r2m/agile" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Agile 101</div></a>
-                <a href="/r2m/definition" target="_blank"><div className={itemClassName} id={'definition'}>Definition of Scrum</div></a>
-                <a href="/r2m/coaching" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Coaching 101</div></a>
-                <a href="/r2m/selfmanaging" target="_blank"><div className={itemClassName} id={'down-the-rabbit-hole'}>Self-Management</div></a>
+                <a href="https://www.seriousscrum.com/r2m/" target="_blank"><div className={itemClassName}>Road to Mastery Website</div></a>
+                <a href="https://www.seriousscrum.com/page/the-road-to-mastery-r2m" target="_blank"><div className={itemClassName}>About the Road to Mastery</div></a>
+                <a href="https://www.seriousscrum.com/r2m/playbook" target="_blank"><div className={itemClassName}>Playbook</div></a>
+                <a href="https://www.seriousscrum.com/r2m/testimonials" target="_blank"><div className={itemClassName}>Testimonials</div></a>
+                <a href="https://www.seriousscrum.com/r2m/join" target="_blank"><div className={itemClassName}>Join</div></a>
+
                 <a href="/page/the-catalog"  target="_blank"><div className={itemClassName}>R2M Catalog</div></a>
 
             </div>
