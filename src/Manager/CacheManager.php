@@ -57,7 +57,7 @@ class CacheManager
 
     }
 
-    public function storyImageFromUrl($service, $url, $defaultDir = "")
+    public function storyImageFromUrl($service, $url, $defaultDir = "", $id = "thumb")
     {
 
         $fs = $this->fs;
@@ -69,7 +69,7 @@ class CacheManager
         }
 
         $file = file_get_contents($url); // to get file
-        $fileName = uniqid() . '_' . basename($url); // to get file name
+        $fileName = $id . '_' . basename($url); // to get file name
 
         $fileName = explode('?', $fileName);
 
@@ -89,7 +89,10 @@ class CacheManager
 
         $fileLocation = $imgDir.'/'.$fileName.$ext;
 
-        $fs->dumpFile( $fileLocation, $file );
+        if (!$fs->exists($fileLocation)) {
+
+            $fs->dumpFile($fileLocation, $file);
+        }
 
         return $fileLocation;
     }
