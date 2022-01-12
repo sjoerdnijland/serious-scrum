@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/cathedral.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/stream.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_productowner.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_productowner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/homeR2M.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeR2M.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_map.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_map.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,26 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-707">
-              <folding>
-                <element signature="e#1363#6600#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PrismicCommand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/PrismicCommand.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_productowner.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -64,9 +43,27 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="stream.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stream.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/stream.svg">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="205" column="11" selection-start-line="205" selection-start-column="11" selection-end-line="205" selection-end-column="11" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="PrismicManager.php" pinned="false" current-in-tab="false">
@@ -116,7 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>page</find>
       <find>#join</find>
       <find>headerMenu</find>
       <find>HeaderMenu</find>
@@ -146,6 +142,7 @@
       <find>playb</find>
       <find>scrummas</find>
       <find>scrum</find>
+      <find>map</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -200,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_theory.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_scrumvalues.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_map.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/assets/js/homeRoad.js" />
@@ -208,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
         <option value="$PROJECT_DIR$/assets/css/travelgroup.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_playbookFilters.js" />
-        <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_playbook.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_scrummaster.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
@@ -220,6 +215,8 @@
         <option value="$PROJECT_DIR$/src/Manager/PrismicManager.php" />
         <option value="$PROJECT_DIR$/src/Manager/CacheManager.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_productowner.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_map.js" />
+        <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
       </list>
     </option>
   </component>
@@ -1561,7 +1558,7 @@
       <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="1920" />
     <option name="height" value="1010" />
@@ -1784,15 +1781,16 @@
       <workItem from="1640115566303" duration="303000" />
       <workItem from="1640605793394" duration="598000" />
       <workItem from="1640854680744" duration="4652000" />
-      <workItem from="1641369676335" duration="10159000" />
+      <workItem from="1641369676335" duration="11276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="789153000" />
+    <option name="totallyTimeSpent" value="790270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
+    <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1832,13 +1830,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbookFilters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="85" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/reviewSelect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1875,13 +1866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="333" column="14" selection-start-line="333" selection-start-column="14" selection-end-line="333" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -2104,7 +2088,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_productowner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -2113,6 +2097,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/stream.svg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="205" column="11" selection-start-line="205" selection-start-column="11" selection-end-line="205" selection-end-column="11" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

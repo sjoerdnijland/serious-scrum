@@ -19,13 +19,18 @@ class R2MMap extends React.Component {
         }
 
 
-        const bannerClassName = "homeBanner";
+        const bannerClassName = "homeBanner iframe";
 
         return (
 
                 <div className={containerClassName}>
                     <div className={bannerClassName}>
-                        <img src="/images/r2m-map.svg" width="100%"/>
+                        <iframe height="100%"
+                                src="https://miro.com/app/live-embed/o9J_lB0BLm0=/?moveToViewport=-1304,2923,5139,3313&embedAutoplay=true"
+                                frameBorder="0"
+                                scrolling="no"
+                                allowFullScreen>
+                        </iframe>
                     </div>
                 </div>
 
