@@ -81,6 +81,7 @@ import '../js/r2m_playbookFilters';
 import '../js/r2m_playbookFilter';
 import '../js/r2m_scrummaster';
 import '../js/r2m_productowner';
+import '../js/r2m_developer';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -709,6 +710,7 @@ class R2M extends React.Component {
                 <R2MSelfmanagement label={this.state.label} module={this.state.module}/>
                 <R2MScrumMaster label={this.state.label} module={this.state.module}/>
                 <R2MProductOwner label={this.state.label} module={this.state.module}/>
+                <R2MDeveloper label={this.state.label} module={this.state.module}/>
 
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
 
