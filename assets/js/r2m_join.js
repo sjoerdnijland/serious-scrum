@@ -74,7 +74,7 @@ class R2MJoin extends React.Component {
                         </div>
                         <div className={messageClassName}>
                             Thank you for joining the Road to Mastery!<br/><br/>
-                            <img src='/images/goingonadventure.gif'/><br/><br/>
+                            <img src='/images/adventure.jpg'/><br/><br/>
                             We will contact you to schedule the training.<br/>
                             The subscription will begin on the first day of your training.<br/><br/>
                             Would you like to learn more? <br/>
