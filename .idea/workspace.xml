@@ -42,8 +42,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="463" selection-start-line="463" selection-end-line="463" />
+            <state relative-caret-position="96">
+              <caret line="444" lean-forward="true" selection-start-line="444" selection-end-line="444" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -51,14 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="magic-wand.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/icons/magic-wand.svg">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="186" column="46" selection-start-line="186" selection-start-column="46" selection-end-line="186" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="ghostrap.svg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/images/icons/ghostrap.svg">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="banner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/banner.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="home.html.twig" pinned="false" current-in-tab="false">
@@ -173,7 +180,6 @@
         <option value="$PROJECT_DIR$/assets/css/format.scss" />
         <option value="$PROJECT_DIR$/assets/js/joinLastname.js" />
         <option value="$PROJECT_DIR$/assets/js/joinFirstname.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/../../../Certifications/transip-ssl-road2mastery.com-decrypted-certificate/certificate.key" />
         <option value="$PROJECT_DIR$/src/Controller/FormatController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_subCategory.js" />
@@ -220,6 +226,7 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_join.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/templates/app.html.twig" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
       </list>
     </option>
   </component>
@@ -1587,37 +1594,13 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1775,15 +1758,16 @@
       <workItem from="1641369676335" duration="13299000" />
       <workItem from="1641988207840" duration="2599000" />
       <workItem from="1642316480687" duration="681000" />
-      <workItem from="1642457599573" duration="660000" />
+      <workItem from="1642457599573" duration="1065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="796233000" />
+    <option name="totallyTimeSpent" value="796638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1823,16 +1807,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_adventure.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -2086,21 +2060,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/ghostrap.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/magic-wand.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="463" selection-start-line="463" selection-end-line="463" />
+        <state relative-caret-position="96">
+          <caret line="444" lean-forward="true" selection-start-line="444" selection-end-line="444" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/icons/magic-wand.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/assets/js/banner.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/icons/ghostrap.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="186" column="46" selection-start-line="186" selection-start-column="46" selection-end-line="186" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

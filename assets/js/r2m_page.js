@@ -185,7 +185,6 @@ class Page extends React.Component {
                     </div>
 
                     <div className={"_mb20"}/>
-                    <Banner bannerText={bannerText2} url={bannerUrl2}/>
 
                 </div>
             )
