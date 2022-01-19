@@ -55,6 +55,16 @@ class TravelGroup
      */
     private $travelers;
 
+    /**
+     * @ORM\Column(type="integer", length=8)
+     */
+    private $priceTotal;
+
+    /**
+     * @ORM\Column(type="integer", length=8)
+     */
+    private $pricePerMonth;
+
     public function __construct()
     {
         $this->travelers = new ArrayCollection();
@@ -156,6 +166,39 @@ class TravelGroup
         }
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPriceTotal()
+    {
+        return $this->priceTotal;
+    }
+
+    /**
+     * @param mixed $priceTotal
+     */
+    public function setPriceTotal($priceTotal): void
+    {
+        $this->priceTotal = $priceTotal;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPricePerMonth()
+    {
+        return $this->pricePerMonth;
+    }
+
+    /**
+     * @param mixed $pricePerMonth
+     */
+    public function setPricePerMonth($pricePerMonth): void
+    {
+        $this->pricePerMonth = $pricePerMonth;
+    }
+
 
 
 

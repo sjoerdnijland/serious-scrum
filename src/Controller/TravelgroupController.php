@@ -84,6 +84,8 @@ class TravelgroupController extends AbstractController
         $travelgroup = new Travelgroup();
 
         $travelgroup->setGroupname($data['groupname']);
+        $travelgroup->setPricePerMonth($data['price_total']);
+        $travelgroup->setPriceTotal($data['price_per_month']);
         $travelgroup->setLaunchAt($data['launch_at']);
         $travelgroup->setIsActive(1);
 
@@ -130,6 +132,8 @@ class TravelgroupController extends AbstractController
                 'id' => $travelgroup->getId(),
                 'groupname' => $travelgroup->getGroupname(),
                 'conferenceLink' => $travelgroup->getConferenceLink(),
+                'priceTotal' => $travelgroup->getPriceTotal(),
+                'pricePerMonth' => $travelgroup->getPricePerMonth(),
                 'launch_at' => $travelgroup->getLaunchAt(),
                 'created_at' => $travelgroup->getCreatedAt(),
                 'isActive' => $travelgroup->getIsActive(),

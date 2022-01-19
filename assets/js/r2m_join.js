@@ -90,9 +90,3 @@ class R2MJoin extends React.Component {
     }
 }
 window.R2MJoin = R2MJoin;
-
-/*
-<JoinLastname lastname={} functions={this.props.functions} />
-                            <JoinLinkedIn linkedIn={} functions={this.props.functions} />
-                            <JoinTerms terms={} functions={this.props.functions} />
- */
