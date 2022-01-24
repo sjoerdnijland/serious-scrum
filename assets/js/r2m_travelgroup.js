@@ -39,6 +39,9 @@ class Travelgroup extends React.Component {
                 <div>
                     {this.props.launchAt}
                 </div>
+                <div>
+                    Price per month: {this.props.price_per_month},-
+                </div>
                 <h4>Guides:</h4>
                 <div>
                     {guides}

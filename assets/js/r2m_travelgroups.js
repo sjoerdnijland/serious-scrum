@@ -27,7 +27,7 @@ class R2MTravelGroups extends React.Component {
 
         travelgroups = Object.values(this.props.data).map(function (travelgroup) {
             if(travelgroup.isActive){
-                return (<Travelgroup functions={this.functions} key={travelgroup.id} id={travelgroup.id} groupname={travelgroup.groupname} registration={travelgroup.registration} launchAt={travelgroup.launch_at} travelerCount={travelgroup.travelerCount} guides={travelgroup.guides}  />);
+                return (<Travelgroup functions={this.functions} key={travelgroup.id} id={travelgroup.id} groupname={travelgroup.groupname} registration={travelgroup.registration} launchAt={travelgroup.launch_at} travelerCount={travelgroup.travelerCount} guides={travelgroup.guides} price_total={travelgroup.price_total} price_per_month={travelgroup.price_per_month}  />);
             }
         },{
             functions: this.props.functions
