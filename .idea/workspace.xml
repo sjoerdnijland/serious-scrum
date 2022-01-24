@@ -62,20 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+            <state relative-caret-position="463">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="travelgroup.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="travelgroup.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/travelgroup.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -89,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="512">
-              <caret line="133" column="35" lean-forward="true" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+              <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -215,9 +215,9 @@
         <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
-        <option value="$PROJECT_DIR$/assets/css/travelgroup.scss" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
+        <option value="$PROJECT_DIR$/assets/css/travelgroup.scss" />
       </list>
     </option>
   </component>
@@ -1786,12 +1786,12 @@
       <workItem from="1641988207840" duration="2599000" />
       <workItem from="1642316480687" duration="681000" />
       <workItem from="1642457599573" duration="2825000" />
-      <workItem from="1642686714658" duration="1451000" />
+      <workItem from="1642686714658" duration="1760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="799849000" />
+    <option name="totallyTimeSpent" value="800158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
@@ -2103,13 +2103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/travelgroup.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelerController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2123,14 +2116,21 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
-          <caret line="133" column="35" lean-forward="true" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="463">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/travelgroup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
