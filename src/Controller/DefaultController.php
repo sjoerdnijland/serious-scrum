@@ -319,6 +319,8 @@ class DefaultController extends AbstractController
             }
         }
 
+
+
         $travelgroups = $this->travelgroupController->getTravelgroups(false);
 
         foreach($travelgroups as $i => $travelgroup) {

@@ -127,7 +127,7 @@ class TravelerController extends AbstractController
         $em = $this->em;
 
         $travelers = $em->getRepository(Traveler::class)
-            ->findAll();
+            ->findBy(array(),array('lastname' => 'ASC'));
 
         $data = [];
 
