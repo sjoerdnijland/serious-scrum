@@ -38,8 +38,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="bug-report.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bug-report.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/bug-report.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="suncloud.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/suncloud.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -84,15 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1605">
               <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4260">
-              <caret line="308" column="51" selection-start-line="308" selection-start-column="51" selection-end-line="308" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -1790,12 +1786,12 @@
       <workItem from="1642316480687" duration="681000" />
       <workItem from="1642457599573" duration="2825000" />
       <workItem from="1642686714658" duration="2943000" />
-      <workItem from="1643574347304" duration="858000" />
+      <workItem from="1643574347304" duration="1493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="802199000" />
+    <option name="totallyTimeSpent" value="802834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="127" width="1440" height="830" extended-state="0" />
@@ -1838,9 +1834,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/goingonadventure.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Manager/RssManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -2132,6 +2125,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/bug-report.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/suncloud.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
