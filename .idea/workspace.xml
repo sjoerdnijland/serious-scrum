@@ -48,8 +48,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="hot.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hot.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/hot.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="hive.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/hive.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -85,15 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TravelgroupController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -1782,12 +1778,12 @@
       <workItem from="1642316480687" duration="681000" />
       <workItem from="1642457599573" duration="2825000" />
       <workItem from="1642686714658" duration="2943000" />
-      <workItem from="1643574347304" duration="1684000" />
+      <workItem from="1643574347304" duration="1951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="803025000" />
+    <option name="totallyTimeSpent" value="803292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="127" width="1440" height="830" extended-state="0" />
@@ -1830,9 +1826,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/icons/user.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/categoryMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-167" />
@@ -2120,6 +2113,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/hot.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/hive.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
