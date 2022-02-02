@@ -53,18 +53,14 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="hive.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hive.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/hive.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="TravelerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TravelerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
-            </state>
-          </provider>
+      <file leaf-file-name="whack-a-mole.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/whack-a-mole.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
@@ -1550,7 +1546,8 @@
       <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="375" />
     <option name="y" value="25" />
     <option name="width" value="1440" />
     <option name="height" value="830" />
@@ -1778,15 +1775,15 @@
       <workItem from="1642316480687" duration="681000" />
       <workItem from="1642457599573" duration="2825000" />
       <workItem from="1642686714658" duration="2943000" />
-      <workItem from="1643574347304" duration="1951000" />
+      <workItem from="1643574347304" duration="2180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="803292000" />
+    <option name="totallyTimeSpent" value="803521000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="127" width="1440" height="830" extended-state="0" />
+    <frame x="375" y="25" width="1440" height="830" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1826,11 +1823,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/categoryMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/categorySelect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-602" />
@@ -2116,6 +2108,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/hive.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/whack-a-mole.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
