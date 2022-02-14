@@ -36,6 +36,13 @@ class Travelgroup extends React.Component {
             guides = "t.b.a.";
         }
 
+        let travelerCount = this.props.travelerCount;
+
+        //always show a minimum of 3
+        if( travelerCount < 4){
+            travelerCount = 3;
+        }
+
         return (
 
             <div className={containerClassName}>
@@ -53,7 +60,7 @@ class Travelgroup extends React.Component {
                 <div>
                     {guides}
                 </div>
-                <h4>Trailblazers: {this.props.travelerCount}</h4>
+                <h4>Trailblazers: {travelerCount}</h4>
                 <JoinButton functions={this.props.functions} user={this.props.user} visible={joinVisible} travelgroup={id}/>
             </div>
         );
