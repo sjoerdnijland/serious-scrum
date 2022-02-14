@@ -32,15 +32,14 @@ class R2MHome extends React.Component {
                     <div className={bannerClassName}>
                         <h1>Road to Mastery</h1>
                         <div className="title">
-                            Master Scrum together with 500 co-active learning formats.
+                            Master Scrum together with a playbook including 500+ co-active plays.
                             <ul>
-                                <li>Weekly recurring virtual 2-hour training.</li>
+                                <li>Weekly recurring virtual 2-hour training;</li>
                                 <li>A 6-month journey off the beaten track;  </li>
-                                <li>Share experiences and explore new ways.</li>
-                                <li>Get ready to distinguish yourself preparing for <strong><a href="https://www.scrum.org/professional-scrum-master-iii-certification" target={"_blank"}>PSMIII</a></strong>.</li>
+                                <li>Share experiences and explore new ways;</li>
                             </ul>
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer joinButton _fl"><a className="button" id="requestInvite_button" href="/page/the-road-to-mastery-r2m">About the course</a></p>
+                        <p className="_pt20 _pl40 buttonContainer joinButton _fl"><a className="button" id="requestInvite_button" href="/page/the-road-to-mastery-r2m">About the journey</a></p>
                         <div className="mirozoom">
                             <div>
                                 <img src={'/images/zoom.png'}/>
