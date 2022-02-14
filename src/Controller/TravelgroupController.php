@@ -137,6 +137,7 @@ class TravelgroupController extends AbstractController
                 'launch_at' => $travelgroup->getLaunchAt(),
                 'created_at' => $travelgroup->getCreatedAt(),
                 'isActive' => $travelgroup->getIsActive(),
+                'isWaitingList' => $travelgroup->getIsWaitingList(),
                 'travelers' => $travelers
             ];
 

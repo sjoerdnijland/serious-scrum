@@ -10,7 +10,7 @@ class Travelgroup extends React.Component {
         let containerClassName = "travelgroup ";
 
         let joinVisible = false;
-        if(this.props.registration == 'open'){
+        if(this.props.registration == 'open' && this.props.travelerCount < 15){
             joinVisible = true;
         }
 
@@ -29,6 +29,13 @@ class Travelgroup extends React.Component {
             functions: this.props.functions
         });
 
+        let priceLabel = "Price per month: € "+ this.props.price_per_month + ",-";
+
+        if(this.props.isWaitingList){
+            priceLabel = "";
+            guides = "t.b.a.";
+        }
+
         return (
 
             <div className={containerClassName}>
@@ -40,13 +47,13 @@ class Travelgroup extends React.Component {
                     {this.props.launchAt}
                 </div>
                 <div>
-                    Price per month: € {this.props.price_per_month},-
+                    {priceLabel}
                 </div>
                 <h4>Guides:</h4>
                 <div>
                     {guides}
                 </div>
-                <h4>Travelers: {this.props.travelerCount}</h4>
+                <h4>Trailblazers: {this.props.travelerCount}</h4>
                 <JoinButton functions={this.props.functions} user={this.props.user} visible={joinVisible} travelgroup={id}/>
             </div>
         );
