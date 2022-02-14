@@ -618,7 +618,7 @@ class R2M extends React.Component {
     }
 
     setR2MMenu(target){
-        window.location.href='/r2m/'+target;
+        window.location.href='/'+target;
     }
 
     loadMore(){

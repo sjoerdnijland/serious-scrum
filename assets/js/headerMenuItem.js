@@ -3,7 +3,7 @@ import React from 'react';
 class HeaderMenuItem extends React.Component {
     constructor(props) {
         super(props);
-        let target = this.props.name.toLowerCase().replace(/\s/g, "");
+        const target = this.props.target;
         this.state = {
             target: target
         };
