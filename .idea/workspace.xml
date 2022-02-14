@@ -24,7 +24,7 @@
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="9015">
               <caret line="692" column="107" selection-start-line="692" selection-start-column="107" selection-end-line="692" selection-end-column="107" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -58,16 +58,16 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="whack-a-mole.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="whack-a-mole.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/whack-a-mole.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
+      <file leaf-file-name="TravelGroup.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2265">
-              <caret line="151" column="47" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="47" />
+            <state relative-caret-position="418">
+              <caret line="201" column="44" lean-forward="true" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -192,7 +192,6 @@
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/templates/app.html.twig" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
-        <option value="$PROJECT_DIR$/src/Entity/TravelGroup.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_join.js" />
         <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
@@ -205,6 +204,7 @@
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
+        <option value="$PROJECT_DIR$/src/Entity/TravelGroup.php" />
       </list>
     </option>
   </component>
@@ -1546,18 +1546,17 @@
       <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="375" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="13" />
     <option name="y" value="25" />
-    <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="width" value="1904" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1626,6 +1625,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1776,16 +1776,18 @@
       <workItem from="1642457599573" duration="2825000" />
       <workItem from="1642686714658" duration="2943000" />
       <workItem from="1643574347304" duration="2180000" />
+      <workItem from="1644825024031" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="803521000" />
+    <option name="totallyTimeSpent" value="803608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="375" y="25" width="1440" height="830" extended-state="0" />
+    <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.1515625" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.2883598" />
@@ -1943,13 +1945,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/banner.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="181" column="5" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
@@ -2087,7 +2082,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="9015">
           <caret line="692" column="107" selection-start-line="692" selection-start-column="107" selection-end-line="692" selection-end-column="107" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -2112,6 +2107,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/whack-a-mole.svg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="201" column="44" lean-forward="true" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -33,6 +33,11 @@ class TravelGroup
      */
     private $isActive = false;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isWaitingList = false;
+
 
     /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
@@ -197,6 +202,22 @@ class TravelGroup
     public function setPricePerMonth($pricePerMonth): void
     {
         $this->pricePerMonth = $pricePerMonth;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsWaitingList()
+    {
+        return $this->isWaitingList;
+    }
+
+    /**
+     * @param mixed $isWaitingList
+     */
+    public function setIsWaitingList($isWaitingList): void
+    {
+        $this->isWaitingList = $isWaitingList;
     }
 
 
