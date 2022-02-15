@@ -24,8 +24,8 @@
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1106">
-              <caret line="472" column="28" selection-start-line="472" selection-start-column="28" selection-end-line="472" selection-end-column="28" />
+            <state relative-caret-position="352">
+              <caret line="619" column="23" lean-forward="true" selection-start-line="619" selection-start-column="23" selection-end-line="619" selection-end-column="23" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -33,20 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_header.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+              <caret line="30" column="84" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_mobileMenu.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="r2m_mobileMenu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+            <state relative-caret-position="300">
+              <caret line="20" column="86" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -117,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>href</find>
       <find>chapter</find>
       <find>banner</find>
       <find>Banner</find>
@@ -147,6 +146,7 @@
       <find>Drop</find>
       <find>menu</find>
       <find>setR</find>
+      <find>r2m</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -215,12 +215,12 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/headerMenuItem.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
       </list>
     </option>
   </component>
@@ -1791,12 +1791,12 @@
       <workItem from="1642457599573" duration="2825000" />
       <workItem from="1642686714658" duration="2943000" />
       <workItem from="1643574347304" duration="2180000" />
-      <workItem from="1644825024031" duration="6370000" />
+      <workItem from="1644825024031" duration="6692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="809891000" />
+    <option name="totallyTimeSpent" value="810213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2106,25 +2106,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="472" column="28" selection-start-line="472" selection-start-column="28" selection-end-line="472" selection-end-column="28" />
+        <state relative-caret-position="352">
+          <caret line="619" column="23" lean-forward="true" selection-start-line="619" selection-start-column="23" selection-end-line="619" selection-end-column="23" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+          <caret line="30" column="84" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="86" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
         </state>
       </provider>
     </entry>
