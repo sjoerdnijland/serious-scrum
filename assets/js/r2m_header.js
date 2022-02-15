@@ -27,9 +27,9 @@ class R2MHeader extends React.Component {
                     <JoinButton functions={functions} user={this.props.user}/>
                     <HeaderMenuItem functions={functions} name="Playbook" target="r2m/playbook"/>
                     <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials"/>
-                    <HeaderMenuItem functions={functions} name="Travel Groups" target="r2m/travelgroups"/>
+                    <HeaderMenuItem functions={functions} name="Travelgroups" target="r2m/travelgroups"/>
                     <HeaderMenuItem functions={functions} name="Guides" target="r2m/guides"/>
-                    <HeaderMenuItem functions={functions} name="Itinerary" target="page/map--itinerary"/>
+                    <HeaderMenuItem functions={functions} name="The Journey" target="page/map--itinerary"/>
                     <HeaderMenuItem functions={functions} name="Map" target="r2m/map"/>
 
                 </div>
