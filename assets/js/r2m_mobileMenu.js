@@ -16,9 +16,9 @@ class R2MMobileMenu extends React.Component {
 
         return (
             <div className={ContainerClassName} >
-                <HeaderMenuItem functions={functions} name="Playbook" target="/playbook" />
-                <HeaderMenuItem functions={functions} name="Testimonials" target="/testimonials" />
-                <HeaderMenuItem functions={functions} name="Travelgroups" target="/travelgroups" />
+                <HeaderMenuItem functions={functions} name="Playbook" target="playbook" />
+                <HeaderMenuItem functions={functions} name="Testimonials" target="testimonials" />
+                <HeaderMenuItem functions={functions} name="Travelgroups" target="travelgroups" />
                 <HeaderMenuItem functions={functions} name="The Journey" target="page/the-journey" />
             </div>
 
