@@ -29,7 +29,7 @@ class R2MHeader extends React.Component {
                     <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials"/>
                     <HeaderMenuItem functions={functions} name="Travelgroups" target="r2m/travelgroups"/>
                     <HeaderMenuItem functions={functions} name="Guides" target="r2m/guides"/>
-                    <HeaderMenuItem functions={functions} name="The Journey" target="page/map--itinerary"/>
+                    <HeaderMenuItem functions={functions} name="The Journey" target="page/the-journey"/>
                     <HeaderMenuItem functions={functions} name="Map" target="r2m/map"/>
 
                 </div>
