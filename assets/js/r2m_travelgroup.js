@@ -10,7 +10,7 @@ class Travelgroup extends React.Component {
         let containerClassName = "travelgroup ";
 
         let joinVisible = false;
-        if(this.props.registration == 'open' && (this.props.travelerCount < 14 && !this.props.isWaitingList)){
+        if(this.props.registration == 'open' && (this.props.travelerCount < 14 || this.props.isWaitingList)){
             joinVisible = true;
         }
 
