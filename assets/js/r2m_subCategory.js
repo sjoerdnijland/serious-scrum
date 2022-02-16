@@ -14,7 +14,7 @@ class R2MSubCategory extends React.Component {
 
         return (
             <li id={this.props.data.id} onClick={this.setCategory}>
-                {this.props.data.name}
+                {this.props.data.title}
             </li>
         );
     }

@@ -11,14 +11,13 @@
   .headerMenuItem{
     color: $white !important;
     font-family: "Permanent Marker";
+    font-size: 16px;
     a{
       color: $white !important;
     }
 
   }
 }
-
-
 
 .r2m_header{
   background-color: $masteryOcean;
@@ -98,6 +97,7 @@
   }
   .r2m_mobileMenu{
     display: block !important;
+    font-size: 14px;
   }
 
 }

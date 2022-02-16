@@ -23,6 +23,11 @@ class Category
     private $name;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $title;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="subCategories")
      * @ORM\JoinColumn(name="parent", referencedColumnName="id")
      */
@@ -155,5 +160,23 @@ class Category
     {
         $this->isSeries = $isSeries;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param mixed $title
+     */
+    public function setTitle($title): void
+    {
+        $this->title = $title;
+    }
+
+
 
 }
