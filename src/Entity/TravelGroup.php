@@ -36,7 +36,7 @@ class TravelGroup
     /**
      * @ORM\Column(type="boolean")
      */
-    private $soldOut = false;
+    private $isSoldOut = false;
 
     /**
      * @ORM\Column(type="boolean")
@@ -228,17 +228,17 @@ class TravelGroup
     /**
      * @return mixed
      */
-    public function getSoldOut()
+    public function getIsSoldOut()
     {
-        return $this->soldOut;
+        return $this->isSoldOut;
     }
 
     /**
      * @param mixed $soldOut
      */
-    public function setSoldOut($soldOut): void
+    public function setIsSoldOut($isSoldOut): void
     {
-        $this->soldOut = $soldOut;
+        $this->isSoldOut = $isSoldOut;
     }
 
 
