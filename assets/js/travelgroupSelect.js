@@ -56,7 +56,7 @@ class TravelgroupSelect extends React.Component {
 
                     options.push(option);
                 }
-                if(!travelgroups[i].isFuture){
+                if(!travelgroups[i].isFuture || travelgroups[i].isSoldOut || !travelgroups[i].isActive){
                     continue;
                 }
                 let option= [];
