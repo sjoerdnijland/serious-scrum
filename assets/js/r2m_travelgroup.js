@@ -10,7 +10,9 @@ class Travelgroup extends React.Component {
         let containerClassName = "travelgroup ";
 
         let joinVisible = false;
-        if(this.props.registration == 'open' && (this.props.travelerCount < 14 || this.props.isWaitingList)){
+
+
+        if(!this.props.isSoldOut && this.props.registration == 'open' && (this.props.travelerCount < 14 || this.props.isWaitingList)){
             joinVisible = true;
         }
 
@@ -32,8 +34,11 @@ class Travelgroup extends React.Component {
         let priceLabel = "Price per month: € "+ this.props.price_per_month + ",-";
 
         if(this.props.isWaitingList){
-            priceLabel = "";
             guides = "t.b.a.";
+        }
+
+        if(this.props.isSoldOut || this.props.isWaitingList){
+            priceLabel = "";
         }
 
         let travelerCount = this.props.travelerCount;

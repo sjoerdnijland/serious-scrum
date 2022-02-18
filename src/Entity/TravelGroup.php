@@ -36,6 +36,11 @@ class TravelGroup
     /**
      * @ORM\Column(type="boolean")
      */
+    private $soldOut = false;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
     private $isWaitingList = false;
 
 
@@ -219,6 +224,27 @@ class TravelGroup
     {
         $this->isWaitingList = $isWaitingList;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSoldOut()
+    {
+        return $this->soldOut;
+    }
+
+    /**
+     * @param mixed $soldOut
+     */
+    public function setSoldOut($soldOut): void
+    {
+        $this->soldOut = $soldOut;
+    }
+
+
+
+
+
 
 
 
