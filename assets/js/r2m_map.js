@@ -26,7 +26,7 @@ class R2MMap extends React.Component {
                 <div className={containerClassName}>
                     <div className={bannerClassName}>
                         <iframe height="100%"
-                                src="https://miro.com/app/live-embed/o9J_lB0BLm0=/?moveToViewport=-1304,2923,5139,3313&embedAutoplay=true"
+                                src="https://miro.com/app/live-embed/uXjVOJo3Pt8=/?moveToViewport=-2218,-973,4434,1944&embedAutoplay=true"
                                 frameBorder="0"
                                 scrolling="no"
                                 allowFullScreen>
