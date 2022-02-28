@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/editorial.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -1609,14 +1609,13 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1799,16 +1798,15 @@
       <workItem from="1645170488729" duration="1027000" />
       <workItem from="1645790113048" duration="191000" />
       <workItem from="1645805280948" duration="461000" />
-      <workItem from="1646033653621" duration="97000" />
+      <workItem from="1646033653621" duration="918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="815098000" />
+    <option name="totallyTimeSpent" value="815919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -2140,7 +2138,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/editorial.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="16" />
         </state>
       </provider>
     </entry>
