@@ -38,6 +38,7 @@ class R2MHome extends React.Component {
                                 <li>A 6-month journey off the beaten track;  </li>
                                 <li>Share experiences and explore new ways;</li>
                                 <li>Expand your playbook with over 500 creative plays;</li>
+                                <li>Guided by accredited trainers and coaches;</li>
                             </ul>
                         </div>
                         <p className="_pt40 _pl40 buttonContainer joinButton _fl"><a className="button" id="requestInvite_button" href="/page/the-road-to-mastery-r2m">About the journey</a></p>
