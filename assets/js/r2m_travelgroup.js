@@ -46,7 +46,7 @@ class Travelgroup extends React.Component {
             guides = "t.b.a.";
         }
 
-        if(this.props.isSoldOut || this.props.isWaitingList || this.props.registration != 'open'){
+        if(this.props.isSoldOut || this.props.isWaitingList || this.props.registration != 'open' || !this.props.isActive){
             priceLabel = "";
         }
 
