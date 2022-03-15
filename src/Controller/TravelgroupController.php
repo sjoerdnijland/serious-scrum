@@ -168,7 +168,10 @@ class TravelgroupController extends AbstractController
                 $data[$i]['launch_at'] = 'Mark your interest in the journey. We will contact you when we reach 15 registrations.';
                 $data[$i]['launch_at_short'] = '';
                 $data[$i]['isFuture'] = true;
-            }elseif($current_date < $data[$i]['launch_at']){ //launching in the future
+            }if(!$data[$i]['isActive']) {
+                $data[$i]['launch_at'] = 'Concluded.';
+                $data[$i]['launch_at_short'] = 'Concluded.';
+            }elseif ($current_date < $data[$i]['launch_at']){ //launching in the future
                 $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' UTC';
                 $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' UTC';
                 if($data[$i]['region'] == "Americas"){
