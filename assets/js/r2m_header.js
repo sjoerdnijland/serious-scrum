@@ -28,7 +28,7 @@ class R2MHeader extends React.Component {
                     <HeaderMenuItem functions={functions} name="Playbook" target="r2m/playbook"/>
                     <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials"/>
                     <HeaderMenuItem functions={functions} name="Travelgroups" target="r2m/travelgroups"/>
-                    <HeaderMenuItem functions={functions} name="Licences" target="r2m/program"/>
+                    <HeaderMenuItem functions={functions} name="Licences" target="r2m/chapter/program"/>
                     <HeaderMenuItem functions={functions} name="The Journey" target="page/the-journey"/>
                     <HeaderMenuItem functions={functions} name="Map" target="r2m/map"/>
 
