@@ -12,7 +12,7 @@ class Travelgroup extends React.Component {
         let joinVisible = false;
 
 
-        if(!this.props.isSoldOut && this.props.registration == 'open' && (this.props.travelerCount < 14 || this.props.isWaitingList)){
+        if(!this.props.isSoldOut && this.props.registration == 'open' && (this.props.travelerCount < 14 || this.props.isWaitingList) && this.props.isActive){
             joinVisible = true;
         }
 
