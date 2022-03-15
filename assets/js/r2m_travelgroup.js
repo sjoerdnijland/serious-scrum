@@ -38,6 +38,9 @@ class Travelgroup extends React.Component {
         }
 
         let priceLabel = "Price per month: "+currency+" "+ this.props.price_per_month + ",-";
+        if(this.props.price_per_month == 0){
+            priceLabel = "Total price: "+currency+" "+ this.props.price_total + ",-";
+        }
 
         if(this.props.isWaitingList){
             guides = "t.b.a.";
