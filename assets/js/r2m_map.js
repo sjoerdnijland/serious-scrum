@@ -32,6 +32,7 @@ class R2MMap extends React.Component {
                                 allowFullScreen>
                         </iframe>
                     </div>
+
                 </div>
 
 

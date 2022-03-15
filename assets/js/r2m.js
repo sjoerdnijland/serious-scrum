@@ -170,6 +170,7 @@ class R2M extends React.Component {
         this.loadMore = this.loadMore.bind(this);
         this.setR2MMenu = this.setR2MMenu.bind(this);
         this.setFilter = this.setFilter.bind(this);
+        this.goToJoin = this.goToJoin.bind(this);
 
     }
 
@@ -622,6 +623,10 @@ class R2M extends React.Component {
         window.location.href='https://seriousscrum.com/'+target;
     }
 
+    goToJoin(){
+        window.location.href='#join';
+    }
+
     loadMore(){
         console.log('loading more...');
         this.setState({
@@ -659,6 +664,7 @@ class R2M extends React.Component {
         functions['toggleLibraryPages'] = this.toggleLibraryPages;
         functions['setR2MMenu'] = this.setR2MMenu;
         functions['setFilter'] = this.setFilter;
+        functions['goToJoin'] = this.goToJoin;
 
         const appContainerClassName = "appContainer r2mContainer";
 
@@ -684,11 +690,12 @@ class R2M extends React.Component {
                 <a name="usps"/>
                 <R2MUSPS label={this.state.label}  module={this.state.module}/>
 
+                <a name="map"/>
+                <R2MMap label={this.state.label}  module={this.state.module}/>
+
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
 
-                <a name="join"/>
-                <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
 
                 <a name="guides"/>
                 <R2MGuides label={this.state.label} module={this.state.module} guides={this.state.guides}/>
@@ -699,10 +706,9 @@ class R2M extends React.Component {
                 <a name="testimonials"/>
                 <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>
 
+                <a name="join"/>
+                <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
 
-
-                <a name="map"/>
-                <R2MMap label={this.state.label}  module={this.state.module}/>
 
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>
                 <R2MTBR label={this.state.label} module={this.state.module}/>

@@ -7,7 +7,7 @@ class JoinButton extends React.Component {
     }
 
     handleClick(){
-        this.props.functions.setR2MMenu('r2m/join');
+        this.props.functions.goToJoin();
         this.props.functions.joinTravelgroup(this.props.travelgroup);
     }
 

@@ -27,7 +27,7 @@ class R2MJoin extends React.Component {
             containerClassName += " hidden";
         }else if(this.props.module){
             if(this.props.module != 'join' && this.props.module != 'travelgroups'){
-                containerClassName += " hidden";
+                //containerClassName += " hidden";
             }
         }
 
@@ -65,8 +65,8 @@ class R2MJoin extends React.Component {
 
                             <JoinFirstname firstname={this.props.firstname} functions={this.props.functions} />
                             <JoinLastname lastname={this.props.lastname} functions={this.props.functions} />
-                            <JoinLinkedIn linkedIn={this.props.linkedIn} functions={this.props.functions} />
                             <JoinEmail email={this.props.email} functions={this.props.functions} />
+                            <JoinLinkedIn linkedIn={this.props.linkedIn} functions={this.props.functions} />
                             <TravelgroupSelect functions={this.props.functions} travelgroups={this.props.travelgroups} travelgroup={this.props.travelgroup} formType="travelgroup"/>
                             <JoinTerms terms={this.props.terms} functions={this.props.functions} />
                             <JoinSubmitButton functions={this.props.functions} />

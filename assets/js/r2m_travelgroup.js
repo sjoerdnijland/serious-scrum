@@ -31,7 +31,13 @@ class Travelgroup extends React.Component {
             functions: this.props.functions
         });
 
-        let priceLabel = "Price per month: € "+ this.props.price_per_month + ",-";
+        let currency = '€';
+
+        if(this.props.region == 'Americas'){
+            currency = '$';
+        }
+
+        let priceLabel = "Price per month: "+currency+" "+ this.props.price_per_month + ",-";
 
         if(this.props.isWaitingList){
             guides = "t.b.a.";

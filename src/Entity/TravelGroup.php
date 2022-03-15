@@ -75,6 +75,11 @@ class TravelGroup
      */
     private $pricePerMonth;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $region;
+
     public function __construct()
     {
         $this->travelers = new ArrayCollection();
@@ -241,8 +246,21 @@ class TravelGroup
         $this->isSoldOut = $isSoldOut;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getRegion()
+    {
+        return $this->region;
+    }
 
-
+    /**
+     * @param mixed $region
+     */
+    public function setRegion($region): void
+    {
+        $this->region = $region;
+    }
 
 
 

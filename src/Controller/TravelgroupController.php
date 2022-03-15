@@ -131,6 +131,7 @@ class TravelgroupController extends AbstractController
             $data[] = [
                 'id' => $travelgroup->getId(),
                 'groupname' => $travelgroup->getGroupname(),
+                'region' => $travelgroup->getRegion(),
                 'conferenceLink' => $travelgroup->getConferenceLink(),
                 'price_total' => $travelgroup->getPriceTotal(),
                 'price_per_month' => $travelgroup->getPricePerMonth(),
@@ -170,16 +171,21 @@ class TravelgroupController extends AbstractController
             }elseif($current_date < $data[$i]['launch_at']){ //launching in the future
                 $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' UTC';
                 $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' UTC';
+                if($data[$i]['region'] == "Americas"){
+                    $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' Eastern Time';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Eastern Time';
+                }
                 $data[$i]['isFuture'] = true;
             }else{//launched in the past
                 $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' UTC';
                 $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' UTC';
+                if($data[$i]['region'] == "Americas"){
+                    $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Eastern Time';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Eastern Time';
+                }
                 $data[$i]['registration'] = 'closed';
             }
-
         }
-
-
 
 
         # reset the keys (so that React can properly load them in)
