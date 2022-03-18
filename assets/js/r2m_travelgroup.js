@@ -63,19 +63,35 @@ class Travelgroup extends React.Component {
                 <div className="tent">
                     <img src={tent}/>
                 </div>
+                <div>
+                    {this.props.code}
+                </div>
                 <h3>{this.props.groupname}</h3>
                 <div>
                     {this.props.launchAt}
                 </div>
                 <div>
+                    {this.props.description}
+                </div>
+                <div>
+                    sessions: {this.props.sessions}
+                </div>
+                <div>
+                    duration: {this.props.duration}
+                </div>
+                <div>
+                    interval: {this.props.interval}
+                </div>
+                <div>
                     {priceLabel}
                 </div>
+
                 <h4>Guides:</h4>
                 <div>
                     {guides}
                 </div>
                 <h4>Trailblazers: {travelerCount}</h4>
-                <JoinButton functions={this.props.functions} user={this.props.user} visible={joinVisible} travelgroup={id}/>
+                <JoinButton functions={this.props.functions} user={this.props.user} visible={joinVisible} travelgroup={id} externalLink={this.props.registrationLink} host={this.props.host}/>
             </div>
         );
     }

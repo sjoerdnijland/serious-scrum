@@ -21,12 +21,10 @@ class TravelGroup
      */
     private $id;
 
-
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $groupname;
-
 
     /**
      * @ORM\Column(type="boolean")
@@ -58,6 +56,43 @@ class TravelGroup
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $conferenceLink;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $registrationLink;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $code;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $description;
+
+    /**
+     * @ORM\Column(type="integer", length=4, nullable=true)
+     */
+    private $sessions;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $duration;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $host;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $interval;
+
+
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Traveler", inversedBy="travelgroups")
@@ -261,6 +296,120 @@ class TravelGroup
     {
         $this->region = $region;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getRegistrationLink()
+    {
+        return $this->registrationLink;
+    }
+
+    /**
+     * @param mixed $registrationLink
+     */
+    public function setRegistrationLink($registrationLink): void
+    {
+        $this->registrationLink = $registrationLink;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    /**
+     * @param mixed $code
+     */
+    public function setCode($code): void
+    {
+        $this->code = $code;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSessions()
+    {
+        return $this->sessions;
+    }
+
+    /**
+     * @param mixed $sessions
+     */
+    public function setSessions($sessions): void
+    {
+        $this->sessions = $sessions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDuration()
+    {
+        return $this->duration;
+    }
+
+    /**
+     * @param mixed $duration
+     */
+    public function setDuration($duration): void
+    {
+        $this->duration = $duration;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInterval()
+    {
+        return $this->interval;
+    }
+
+    /**
+     * @param mixed $interval
+     */
+    public function setInterval($interval): void
+    {
+        $this->interval = $interval;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHost()
+    {
+        return $this->host;
+    }
+
+    /**
+     * @param mixed $host
+     */
+    public function setHost($host): void
+    {
+        $this->host = $host;
+    }
+
+
 
 
 

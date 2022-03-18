@@ -140,6 +140,13 @@ class TravelgroupController extends AbstractController
                 'isActive' => $travelgroup->getIsActive(),
                 'isWaitingList' => $travelgroup->getIsWaitingList(),
                 'isSoldOut' => $travelgroup->getIsSoldOut(),
+                'description' => $travelgroup->getDescription(),
+                'code' => $travelgroup->getCode(),
+                'sessions' => $travelgroup->getSessions(),
+                'duration' => $travelgroup->getDuration(),
+                'interval' => $travelgroup->getInterval(),
+                'host' => $travelgroup->getHost(),
+                'registrationLink' => $travelgroup->getRegistrationLink(),
                 'travelers' => $travelers
             ];
 
