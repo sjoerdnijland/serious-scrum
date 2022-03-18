@@ -72,9 +72,9 @@ class Travelgroup extends React.Component {
                 <div>
                     {this.props.launchAt}
                 </div>
-                <div>
+                <h4>
                     {this.props.description}
-                </div>
+                </h4>
                 <div>
                     sessions: {this.props.sessions}
                 </div>
