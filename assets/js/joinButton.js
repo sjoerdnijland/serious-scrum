@@ -7,6 +7,10 @@ class JoinButton extends React.Component {
     }
 
     handleClick(){
+        if(this.props.registrationLink){
+            window.location.href = this.props.registrationLink;
+            return;
+        }
         this.props.functions.goToJoin();
         this.props.functions.joinTravelgroup(this.props.travelgroup);
     }
@@ -22,9 +26,15 @@ class JoinButton extends React.Component {
             }
         }
 
+        let joinText = "Join!"
+
+        if(this.props.registrationLink){
+            joinText += " ("+this.props.host+")";
+        }
+
         return (
             <div className={containerClassName}>
-                <div ref={btn => { this.btn = btn; }} onClick={this.handleClick} className={buttonClassName}>Join!</div>
+                <div ref={btn => { this.btn = btn; }} onClick={this.handleClick} className={buttonClassName}>{joinText}</div>
             </div>
         );
     }
