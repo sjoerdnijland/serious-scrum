@@ -26,8 +26,19 @@ class R2MTravelGroups extends React.Component {
         let travelgroups = [];
 
         travelgroups = Object.values(this.props.data).map(function (travelgroup) {
-            return (<Travelgroup functions={this.functions} key={travelgroup.id} id={travelgroup.id} groupname={travelgroup.groupname} registration={travelgroup.registration} launchAt={travelgroup.launch_at} travelerCount={travelgroup.travelerCount} guides={travelgroup.guides} price_total={travelgroup.price_total} price_per_month={travelgroup.price_per_month} isWaitingList={travelgroup.isWaitingList} isSoldOut={travelgroup.isSoldOut} region={travelgroup.region} isActive={travelgroup.isActive}  registrationLink={travelgroup.registrationLink} host={travelgroup.host} code={travelgroup.code} duration={travelgroup.duration} interval={travelgroup.interval} sessions={travelgroup.sessions} description={travelgroup.description}       />);
-
+            if(travelgroup.isActive) {
+                return (<Travelgroup functions={this.functions} key={travelgroup.id} id={travelgroup.id}
+                                     groupname={travelgroup.groupname} registration={travelgroup.registration}
+                                     launchAt={travelgroup.launch_at} travelerCount={travelgroup.travelerCount}
+                                     guides={travelgroup.guides} price_total={travelgroup.price_total}
+                                     price_per_month={travelgroup.price_per_month}
+                                     isWaitingList={travelgroup.isWaitingList} isSoldOut={travelgroup.isSoldOut}
+                                     region={travelgroup.region} isActive={travelgroup.isActive}
+                                     registrationLink={travelgroup.registrationLink} host={travelgroup.host}
+                                     code={travelgroup.code} duration={travelgroup.duration}
+                                     interval={travelgroup.interval} sessions={travelgroup.sessions}
+                                     description={travelgroup.description}/>);
+            }
         },{
             functions: this.props.functions
         });
