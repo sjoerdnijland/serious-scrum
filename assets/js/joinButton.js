@@ -8,7 +8,7 @@ class JoinButton extends React.Component {
 
     handleClick(){
         if(this.props.registrationLink){
-            window.location.href = this.props.registrationLink;
+            window.open(this.props.registrationLink);
             return;
         }
         this.props.functions.goToJoin();
