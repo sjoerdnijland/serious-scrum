@@ -3,7 +3,7 @@
   padding-top:60px;
 
   .homeBanner{
-    margin-left:10%;
+    margin-left:5%;
     height:100%;
     h1{
       font-family: 'Permanent Marker', cursive;
@@ -337,6 +337,10 @@
     }
   }
 
+}
+
+.travelgroup .homeBanner{
+  margin-left: 40px;
 }
 
 /* for width less than 1000: */
