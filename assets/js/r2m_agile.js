@@ -24,7 +24,7 @@ class R2MAgile extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Agile 101</h1>
+                        <h1>Agile Backpacking</h1>
                         <div>
                             Uncovering better ways together!
                         </div>
