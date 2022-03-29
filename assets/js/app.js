@@ -50,7 +50,7 @@ import '../js/homeRoad';
 import '../js/r2m_coaching';
 import '../js/r2m_selfmanagement';
 import '../js/r2m_agile';
-import '../js/r2m_definition';
+import '../js/r2m_game';
 
 
 import React from 'react';

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/homeRoad.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeRoad.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/r2m.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/r2m.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_definition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="370">
+              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -107,15 +112,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joinButton.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -127,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>homeR2M</find>
       <find>reload</find>
       <find>$module</find>
       <find>$library</find>
@@ -157,6 +152,7 @@
       <find>Defini</find>
       <find>defini</find>
       <find>dgame</find>
+      <find>game</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -198,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/Manager/CacheManager.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_productowner.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_developer.js" />
-        <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/templates/app.html.twig" />
         <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
@@ -231,6 +226,7 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_game.js" />
         <option value="$PROJECT_DIR$/assets/css/homeRoad.scss" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
       </list>
     </option>
   </component>
@@ -1813,12 +1809,12 @@
       <workItem from="1647707806316" duration="2909000" />
       <workItem from="1648194574569" duration="381000" />
       <workItem from="1648237248986" duration="338000" />
-      <workItem from="1648547701456" duration="255000" />
+      <workItem from="1648547701456" duration="399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="831794000" />
+    <option name="totallyTimeSpent" value="831938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="310" y="101" width="1440" height="830" extended-state="0" />
@@ -1862,13 +1858,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_guides.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -2169,8 +2158,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="370">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
         </state>
       </provider>
     </entry>
