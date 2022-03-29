@@ -13,7 +13,7 @@ class R2MGame extends React.Component {
 
         let ContainerClassName = "r2m_game row";
 
-        if(this.props.label != 'definition-of-scrum'){
+        if(this.props.label != 'game-of-scrum'){
             ContainerClassName += " hidden";
         }
 

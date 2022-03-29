@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/homeRoad.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeRoad.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_game.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_game.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="r2m_game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="225">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="270">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -150,9 +150,9 @@
       <find>button</find>
       <find>travel</find>
       <find>Defini</find>
-      <find>dgame</find>
       <find>defini</find>
       <find>game</find>
+      <find>dgame</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -223,10 +223,10 @@
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_definition.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_game.js" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/assets/css/homeRoad.scss" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_game.js" />
       </list>
     </option>
   </component>
@@ -1809,12 +1809,12 @@
       <workItem from="1647707806316" duration="2909000" />
       <workItem from="1648194574569" duration="381000" />
       <workItem from="1648237248986" duration="338000" />
-      <workItem from="1648547701456" duration="499000" />
+      <workItem from="1648547701456" duration="648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="832038000" />
+    <option name="totallyTimeSpent" value="832187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="103" width="1440" height="830" extended-state="0" />
@@ -2135,13 +2135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -2165,8 +2158,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="270">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
