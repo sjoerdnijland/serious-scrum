@@ -1,4 +1,4 @@
-.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition, .r2m_theory, .r2m_scrumvalues, .r2m_scrummaster, .r2m_productowner, .r2m_developer{
+.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_scrummaster, .r2m_productowner, .r2m_developer{
   height:330px;
   text-align: center;
   .homeBanner{
@@ -28,7 +28,7 @@
   background-color: $masteryOcean !important;
 }
 
-.r2m_definition {
+.r2m_game {
   background: url(../images/definition.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +180,7 @@
 
 
 @media  (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition, .r2m_theory, .r2m_scrumvalues, .r2m_scrummaster, .r2m_productowner, .r2m_developer{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_scrummaster, .r2m_productowner, .r2m_developer{
     text-align: right;
     height:330px;
     h1{
@@ -194,7 +194,7 @@
 
 
 @media (max-width: 1100px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_definition, .r2m_theory, .r2m_scrumvalues, .r2m_scrummaster, .r2m_productowner, .r2m_developer{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_scrummaster, .r2m_productowner, .r2m_developer{
     height:330px;
     .homeBanner {
       width: 340px !important;

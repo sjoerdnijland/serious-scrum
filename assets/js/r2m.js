@@ -50,7 +50,7 @@ import '../js/r2m_home';
 import '../js/r2m_coaching';
 import '../js/r2m_selfmanagement';
 import '../js/r2m_agile';
-import '../js/r2m_definition';
+import '../js/r2m_game';
 import '../js/r2m_categories';
 import '../js/r2m_category';
 import '../js/r2m_mobileMenu';
@@ -713,7 +713,7 @@ class R2M extends React.Component {
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>
                 <R2MTBR label={this.state.label} module={this.state.module}/>
                 <R2MAgile label={this.state.label} module={this.state.module}/>
-                <R2MDefinition label={this.state.label} module={this.state.module}/>
+                <R2MGame label={this.state.label} module={this.state.module}/>
                 <R2MTheory label={this.state.label} module={this.state.module}/>
                 <R2MScrumValues label={this.state.label} module={this.state.module}/>
                 <R2MCoaching label={this.state.label} module={this.state.module}/>

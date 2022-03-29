@@ -1,6 +1,6 @@
 import React from 'react';
 
-class R2MDefinition extends React.Component {
+class R2MGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ class R2MDefinition extends React.Component {
     render() {
 
 
-        let ContainerClassName = "r2m_definition row";
+        let ContainerClassName = "r2m_game row";
 
         if(this.props.label != 'definition-of-scrum'){
             ContainerClassName += " hidden";
@@ -24,9 +24,9 @@ class R2MDefinition extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Definition of Scrum</h1>
+                        <h1>The Game of Scrum</h1>
                         <div>
-                            Let's develop a <i>shared understanding</i> on Scrum<br/>
+                            The way to play the game of Scrum<br/>
                         </div>
 
                     </div>
@@ -36,4 +36,4 @@ class R2MDefinition extends React.Component {
         );
     }
 }
-window.R2MDefinition = R2MDefinition;
+window.R2MGame = R2MGame;
