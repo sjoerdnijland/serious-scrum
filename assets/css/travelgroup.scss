@@ -57,4 +57,11 @@
     }
   }
 }
-
+/* for width less than 1000: */
+@media only screen and (max-width: 1100px) {
+  .travelgroupContainer {
+    .travelgroup {
+      margin-left:30px;
+    }
+  }
+}

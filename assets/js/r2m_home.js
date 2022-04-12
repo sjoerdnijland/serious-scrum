@@ -34,9 +34,9 @@ class R2MHome extends React.Component {
                         <div className="title">
                             Master Scrum together.
                             <ul>
-                                <li>A 6-month learning journey;  </li>
+                                <li>Go on a learning journey; </li>
                                 <li>Share experiences and explore new ways;</li>
-                                <li>Expand your playbook with over 500 creative plays;</li>
+                                <li>Expand your playbook with 500+ plays;</li>
                                 <li>Guided by accredited trainers and coaches;</li>
                             </ul>
                         </div>
