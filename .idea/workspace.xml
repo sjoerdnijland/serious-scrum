@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_scrumvalues.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_scrumvalues.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="r2mPage.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/r2mPage.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="173" column="160" selection-start-line="173" selection-start-column="160" selection-end-line="173" selection-end-column="160" />
+            <state relative-caret-position="595">
+              <caret line="176" column="32" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_scrumvalues.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrumvalues.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="28" column="106" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -217,13 +217,13 @@
         <option value="$PROJECT_DIR$/assets/css/format.scss" />
         <option value="$PROJECT_DIR$/assets/css/travelgroup.scss" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_scrumvalues.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_developer.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_scrummaster.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_productowner.js" />
         <option value="$PROJECT_DIR$/assets/css/categories.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_scrumvalues.js" />
       </list>
     </option>
   </component>
@@ -1813,12 +1813,12 @@
       <workItem from="1648194574569" duration="381000" />
       <workItem from="1648237248986" duration="338000" />
       <workItem from="1648547701456" duration="2305000" />
-      <workItem from="1649859508197" duration="2064000" />
+      <workItem from="1649859508197" duration="2219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="835908000" />
+    <option name="totallyTimeSpent" value="836063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2043,13 +2043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrumvalues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="141" selection-start-line="29" selection-start-column="141" selection-end-line="29" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_developer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -2182,8 +2175,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="173" column="160" selection-start-line="173" selection-start-column="160" selection-end-line="173" selection-end-column="160" />
+        <state relative-caret-position="595">
+          <caret line="176" column="32" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrumvalues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="106" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="106" />
         </state>
       </provider>
     </entry>
