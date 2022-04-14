@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categories.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_page.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +40,8 @@
       <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="25" column="100" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="100" />
+            <state relative-caret-position="199">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -58,11 +58,8 @@
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="685" column="144" selection-start-line="685" selection-start-column="144" selection-end-line="685" selection-end-column="144" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -76,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_productowner.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_productowner.js">
+      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="211">
+              <caret line="173" column="160" selection-start-line="173" selection-start-column="160" selection-end-line="173" selection-end-column="160" />
             </state>
           </provider>
         </entry>
@@ -94,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="categories.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/categories.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="-379">
               <caret line="130" column="22" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
             </state>
           </provider>
@@ -123,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jpg</find>
-      <find>trave</find>
       <find>playb</find>
       <find>scrummas</find>
       <find>scrum</find>
@@ -153,6 +148,8 @@
       <find>game</find>
       <find>deep</find>
       <find>expand</find>
+      <find>Chapters</find>
+      <find>Chapter</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -166,8 +163,8 @@
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/assets</dir>
-      <dir>$PROJECT_DIR$/assets/js</dir>
       <dir>$PROJECT_DIR$/assets/css</dir>
+      <dir>$PROJECT_DIR$/assets/js</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -193,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Controller/TravelerController.php" />
         <option value="$PROJECT_DIR$/assets/js/headerMenuItem.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/src/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/Controller/CategoryController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_subCategory.js" />
@@ -227,6 +223,7 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_scrummaster.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_productowner.js" />
         <option value="$PROJECT_DIR$/assets/css/categories.scss" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
       </list>
     </option>
   </component>
@@ -1816,12 +1813,12 @@
       <workItem from="1648194574569" duration="381000" />
       <workItem from="1648237248986" duration="338000" />
       <workItem from="1648547701456" duration="2305000" />
-      <workItem from="1649859508197" duration="1928000" />
+      <workItem from="1649859508197" duration="2064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="835772000" />
+    <option name="totallyTimeSpent" value="835908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -1876,13 +1873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -2120,30 +2110,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/channels.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="25" column="100" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="685" column="144" selection-start-line="685" selection-start-column="144" selection-end-line="685" selection-end-column="144" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrummaster.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_productowner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -2188,8 +2154,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/categories.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="-379">
           <caret line="130" column="22" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrummaster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="173" column="160" selection-start-line="173" selection-start-column="160" selection-end-line="173" selection-end-column="160" />
         </state>
       </provider>
     </entry>
