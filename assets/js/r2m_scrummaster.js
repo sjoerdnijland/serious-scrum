@@ -24,9 +24,9 @@ class R2MScrumMaster extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Scrum Master</h1>
+                        <h1>Mountaineering Scrum</h1>
                         <div>
-                            "Watch out, I know some serious Scrum-Fu!" -Sjoerd Nijland<br/>
+                            This Adventure is still in the works! Stay tuned!<br/>
                         </div>
                     </div>
                 </div>

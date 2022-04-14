@@ -24,9 +24,9 @@ class R2MProductOwner extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Product Owner</h1>
+                        <h1>Kayaking the Value Stream</h1>
                         <div>
-                            Mastering the art of saying "No". <br/>
+                           This adventure is still in the works. Stay tuned!<br/>
                         </div>
                     </div>
                 </div>

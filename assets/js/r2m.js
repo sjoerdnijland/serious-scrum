@@ -683,7 +683,7 @@ class R2M extends React.Component {
                 <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
                 <R2MMobileMenu functions={functions}/>
 
-                <R2MCategories functions={functions} expanded={this.state.expanded} data={this.state.categories} parentCategoryName={'Chapters'}/>
+                <R2MCategories functions={functions} expanded={this.state.expanded} data={this.state.categories} parentCategoryName={'Adventures'}/>
 
 
                 <R2MHome label={this.state.label} module={this.state.module}/>

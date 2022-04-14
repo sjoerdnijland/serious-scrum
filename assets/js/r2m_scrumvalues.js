@@ -24,9 +24,10 @@ class R2MScrumValues extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Scrum Values</h1>
+                        <h1>The Valley of Values</h1>
                         <div>
-                            "Trust is a bit like the air we breathe, it sustains, it brings things to life, but without it... we are left gasping" -John Albrecht<br/>
+                            It’s about to get real hot! We are going to practice some volcanic activities and defuse explosive scenarios by living the Scrum Values.
+                            How people act and speak will make an impact. We’re going to explore some of those impact craters in this valley.<br/>
                         </div>
 
                     </div>

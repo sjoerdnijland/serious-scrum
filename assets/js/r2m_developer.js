@@ -23,9 +23,9 @@ class R2MDeveloper extends React.Component {
                 <div className={ContainerClassName}>
                     <div className={bannerClassName}>
                         <div>Road to Mastery</div>
-                        <h1>Developer</h1>
+                        <h1>Deepdiving Developer Culture</h1>
                         <div>
-                            This Chapter is work-in-progress. Stay tuned for more!<br/>
+                            This Adventure is work-in-progress. Stay tuned for more!<br/>
                             Everything in Scrum is designed to enable and empower Developers. <br/>
                         </div>
                     </div>
