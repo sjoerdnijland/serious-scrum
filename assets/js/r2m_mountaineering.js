@@ -1,6 +1,6 @@
 import React from 'react';
 
-class R2MScrumMaster extends React.Component {
+class R2MMountaineering extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,9 +11,9 @@ class R2MScrumMaster extends React.Component {
     render() {
 
 
-        let ContainerClassName = "r2m_scrummaster row";
+        let ContainerClassName = "r2m_mountaineering row";
 
-        if(this.props.label != 'scrum-master'){
+        if(this.props.label != 'mountaineering'){
             ContainerClassName += " hidden";
         }
 
@@ -26,7 +26,7 @@ class R2MScrumMaster extends React.Component {
                         <div>Road to Mastery</div>
                         <h1>Mountaineering Scrum</h1>
                         <div>
-                            This Adventure is still in the works! Stay tuned!<br/>
+                            Getting to grips with the accountabilities in Scrum.<br/>
                         </div>
                     </div>
                 </div>
@@ -35,4 +35,4 @@ class R2MScrumMaster extends React.Component {
         );
     }
 }
-window.R2MScrumMaster = R2MScrumMaster;
+window.R2MMountaineering = R2MMountaineering;

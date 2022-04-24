@@ -79,7 +79,7 @@ import '../js/r2m_scrumvalues';
 import '../js/r2m_map';
 import '../js/r2m_playbookFilters';
 import '../js/r2m_playbookFilter';
-import '../js/r2m_scrummaster';
+import '../js/r2m_mountaineering';
 import '../js/r2m_productowner';
 import '../js/r2m_developer';
 
@@ -718,7 +718,7 @@ class R2M extends React.Component {
                 <R2MScrumValues label={this.state.label} module={this.state.module}/>
                 <R2MCoaching label={this.state.label} module={this.state.module}/>
                 <R2MSelfmanagement label={this.state.label} module={this.state.module}/>
-                <R2MScrumMaster label={this.state.label} module={this.state.module}/>
+                <R2MMountaineering label={this.state.label} module={this.state.module}/>
                 <R2MProductOwner label={this.state.label} module={this.state.module}/>
                 <R2MDeveloper label={this.state.label} module={this.state.module}/>
 
