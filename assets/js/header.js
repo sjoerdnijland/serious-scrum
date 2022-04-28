@@ -30,6 +30,8 @@ class Header extends React.Component {
                     <PublishButton functions={functions} user={this.props.user}/>
                     <div className={'headerMenuItem'}>
                         <a href={'/r2m'} target={'_blank'}>Road to Mastery</a>
+                    </div>
+                    <div className={'headerMenuItem'}>
                         <a href={'https://scrumfeedback.com'} target={'_blank'}>Scrum Guide Feedback</a>
                     </div>
                 </div>
