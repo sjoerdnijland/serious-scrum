@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/mountaineering.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/r2m.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/r2m.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_scrummaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_mountaineering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mountaineering.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mountaineering.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/mountaineering.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mountaineering.webp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,6 +22,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="78" lean-forward="true" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="r2m_mountaineering.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_mountaineering.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -32,32 +49,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="720" column="34" selection-start-line="720" selection-start-column="34" selection-end-line="720" selection-end-column="34" />
+            <state relative-caret-position="128">
+              <caret line="716" column="18" selection-start-line="716" selection-start-column="18" selection-end-line="716" selection-end-column="18" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="176" column="32" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_scrumvalues.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_scrumvalues.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -84,7 +83,7 @@
         <entry file="file://$USER_HOME$/Downloads/transip-ssl-seriousscrum.com-decrypted-certificate/certificate.crt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="64" lean-forward="true" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+              <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -102,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -176,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/adventure.scss" />
         <option value="$PROJECT_DIR$/src/Entity/Testimonial.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_usps.js" />
         <option value="$PROJECT_DIR$/assets/css/article.scss" />
@@ -203,7 +201,6 @@
         <option value="$PROJECT_DIR$/assets/css/pageContent.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_map.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_join.js" />
-        <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/src/Entity/TravelGroup.php" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
@@ -227,6 +224,8 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_scrummaster.js" />
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
+        <option value="$PROJECT_DIR$/assets/js/header.js" />
+        <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
     </option>
   </component>
@@ -1569,9 +1568,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="576" />
-    <option name="height" value="830" />
+    <option name="y" value="204" />
+    <option name="width" value="1441" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1823,21 +1822,21 @@
       <workItem from="1648237248986" duration="338000" />
       <workItem from="1648547701456" duration="2305000" />
       <workItem from="1649859508197" duration="5069000" />
-      <workItem from="1650786631423" duration="667000" />
+      <workItem from="1650786631423" duration="1424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="839580000" />
+    <option name="totallyTimeSpent" value="840337000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="830" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.1515625" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" visible="true" weight="0.28666666" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" visible="true" weight="0.2311828" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" />
@@ -1872,13 +1871,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="300" column="24" selection-start-line="300" selection-start-column="24" selection-end-line="300" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -1917,13 +1909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -2120,13 +2105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2220">
@@ -2161,7 +2139,7 @@
     <entry file="file://$USER_HOME$/Downloads/transip-ssl-seriousscrum.com-decrypted-certificate/certificate.crt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="64" lean-forward="true" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -2182,17 +2160,38 @@
     <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/editorialHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="720" column="34" selection-start-line="720" selection-start-column="34" selection-end-line="720" selection-end-column="34" />
+        <state relative-caret-position="128">
+          <caret line="716" column="18" selection-start-line="716" selection-start-column="18" selection-end-line="716" selection-end-column="18" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="78" lean-forward="true" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
