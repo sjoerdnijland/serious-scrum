@@ -36,6 +36,7 @@ class R2MTravelGroups extends React.Component {
                                      region={travelgroup.region} isActive={travelgroup.isActive}
                                      registrationLink={travelgroup.registrationLink} host={travelgroup.host}
                                      code={travelgroup.code} duration={travelgroup.duration}
+                                     overwriteTravelerCount={travelgroup.overwriteTravelerCount}
                                      interval={travelgroup.interval} sessions={travelgroup.sessions}
                                      description={travelgroup.description}/>);
             }

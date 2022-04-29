@@ -143,6 +143,7 @@ class TravelgroupController extends AbstractController
                 'description' => $travelgroup->getDescription(),
                 'code' => $travelgroup->getCode(),
                 'sessions' => $travelgroup->getSessions(),
+                'overwriteTravelerCount' => $travelgroup->getOverwriteTravelerCount(),
                 'duration' => $travelgroup->getDuration(),
                 'interval' => $travelgroup->getInterval(),
                 'host' => $travelgroup->getHost(),

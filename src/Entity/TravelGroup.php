@@ -93,6 +93,12 @@ class TravelGroup
     private $interval;
 
 
+    /**
+     * @ORM\Column(type="integer", length=4, nullable=true)
+     */
+    private $overwriteTravelerCount;
+
+
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Traveler", inversedBy="travelgroups")
@@ -409,12 +415,21 @@ class TravelGroup
         $this->host = $host;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getOverwriteTravelerCount()
+    {
+        return $this->overwriteTravelerCount;
+    }
 
-
-
-
-
-
+    /**
+     * @param mixed $overwriteTravelerCount
+     */
+    public function setOverwriteTravelerCount($overwriteTravelerCount): void
+    {
+        $this->overwriteTravelerCount = $overwriteTravelerCount;
+    }
 
 
 }

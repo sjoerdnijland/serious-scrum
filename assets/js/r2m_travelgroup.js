@@ -52,6 +52,10 @@ class Travelgroup extends React.Component {
 
         let travelerCount = this.props.travelerCount;
 
+        if(this.props.overwriteTravelerCount > 0){
+            travelerCount = this.props.overwriteTravelerCount;
+        }
+
         //always show a minimum of 3
         if( travelerCount < 4){
             travelerCount = 3;
