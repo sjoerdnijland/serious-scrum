@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/TravelGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/TravelGroup.php" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -74,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
-              <caret line="424" lean-forward="true" selection-start-line="424" selection-end-line="424" />
+              <caret line="424" selection-start-line="424" selection-end-line="424" />
             </state>
           </provider>
         </entry>
@@ -83,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="147" column="58" lean-forward="true" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
+              <caret line="147" column="58" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -92,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroups.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -1572,9 +1567,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="204" />
-    <option name="width" value="1441" />
-    <option name="height" value="831" />
+    <option name="y" value="25" />
+    <option name="width" value="1440" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1826,12 +1821,12 @@
       <workItem from="1648237248986" duration="338000" />
       <workItem from="1648547701456" duration="2305000" />
       <workItem from="1649859508197" duration="5069000" />
-      <workItem from="1650786631423" duration="2175000" />
+      <workItem from="1650786631423" duration="2657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="841088000" />
+    <option name="totallyTimeSpent" value="841570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2146,7 +2141,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -2174,21 +2169,21 @@
     <entry file="file://$PROJECT_DIR$/src/Entity/TravelGroup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
-          <caret line="424" lean-forward="true" selection-start-line="424" selection-end-line="424" />
+          <caret line="424" selection-start-line="424" selection-end-line="424" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="147" column="58" lean-forward="true" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
+          <caret line="147" column="58" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroups.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
