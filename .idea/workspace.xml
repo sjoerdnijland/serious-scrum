@@ -35,15 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_mountaineering.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_mountaineering.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,13 +83,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
               <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alipine.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/alipine.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
@@ -1821,16 +1817,15 @@
       <workItem from="1648237248986" duration="338000" />
       <workItem from="1648547701456" duration="2305000" />
       <workItem from="1649859508197" duration="5069000" />
-      <workItem from="1650786631423" duration="2657000" />
+      <workItem from="1650786631423" duration="2719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="841570000" />
+    <option name="totallyTimeSpent" value="841632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.20208333" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -1870,13 +1865,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/build.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2193,6 +2181,9 @@
           <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/alipine.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
