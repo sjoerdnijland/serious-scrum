@@ -26,7 +26,7 @@ class R2MKayaking extends React.Component {
                         <div>Road to Mastery</div>
                         <h1>Kayaking the Value Stream</h1>
                         <div>
-                           This adventure is still in the works. Stay tuned!<br/>
+                          Go with the Value Flow!<br/>
                         </div>
                     </div>
                 </div>
