@@ -13,7 +13,7 @@ class R2MKayaking extends React.Component {
 
         let ContainerClassName = "r2m_kayaking row";
 
-        if(this.props.label != 'product-owner'){
+        if(this.props.label != 'kayaking'){
             ContainerClassName += " hidden";
         }
 
