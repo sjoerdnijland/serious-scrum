@@ -16,7 +16,7 @@ class Build extends React.Component {
         return (
             <div className={ContainerClassName}>
                 <div className="two-thirds column ">
-                    AGNC - Serious Scrum - KVK: 58970037 - VAT/BTW: NL001876992B83 - IBAN: NL84 RABO 0130 4761 53 - <a href={'/page/terms-policies-and-conditions'} target={"_blank"}>terms, conditions, privacy</a>
+                    AGNC - Serious Scrum - <a href={'/page/behind-the-road'} target={"_blank"}>contact</a> - KVK: 58970037 - VAT/BTW: NL001876992B83 - IBAN: NL84 RABO 0130 4761 53 - <a href={'/page/terms-policies-and-conditions'} target={"_blank"}>terms, conditions, privacy</a>
                 </div>
                 <div className="one-third column right _pr40">
                     increment: 3.61.1  :)
