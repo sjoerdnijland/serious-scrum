@@ -624,7 +624,7 @@ class R2M extends React.Component {
     }
 
     goToJoin(){
-        window.location.href='r2m/travelgroups#join';
+        window.location.href='/r2m/travelgroups#join';
     }
 
     loadMore(){
