@@ -37,7 +37,7 @@ class Format extends React.Component {
                 <div className={"label-type"}>{this.props.type}</div>
                 <br/> <br/>
                 <div className={'buttonContainer formatButton'}>
-                    <div onClick={this.handleClick} className={'button'}>Explore format</div>
+                    <div onClick={this.handleClick} className={'button'}>Explore</div>
                 </div>
             </div>
         );
