@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/stones4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_format.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/sizing.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,8 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stones4.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stones4.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/stones4.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="sizing.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/icons/sizing.svg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -83,15 +87,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_join.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -1817,12 +1812,12 @@
       <workItem from="1648547701456" duration="2305000" />
       <workItem from="1649859508197" duration="5069000" />
       <workItem from="1650786631423" duration="4928000" />
-      <workItem from="1652168878100" duration="3033000" />
+      <workItem from="1652168878100" duration="3442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="846874000" />
+    <option name="totallyTimeSpent" value="847283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -1865,13 +1860,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -2175,6 +2163,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/stones4.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/icons/sizing.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
