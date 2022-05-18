@@ -58,10 +58,7 @@ class Traveler extends React.Component {
                 <h4>
                     travelgroups:
                 </h4>
-                <div>
                     {travelgroups}
-                </div><br/>
-                <br/>
             </div>
         );
     }
