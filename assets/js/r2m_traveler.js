@@ -28,7 +28,7 @@ class Traveler extends React.Component {
         let travelgroups = [];
 
         travelgroups = Object.values(this.props.data.travelgroups).map(function (travelgroup) {
-           return(<div key={travelgroup.id}>{travelgroup.groupname}</div>);
+           return(<span key={travelgroup.id}>{travelgroup.groupname}</span>);
         });
 
         return (

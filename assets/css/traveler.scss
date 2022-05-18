@@ -9,7 +9,7 @@
     float:left;
     margin-top:60px;
     margin-bottom:10px;
-    min-height: 350px;
+    min-height: 370px;
     position:relative;
     line-height: 1;
     h3{
@@ -29,6 +29,12 @@
     div{
       font-size: 14px !important;
       margin-left:0px !important;
+    }
+    span{
+      margin-right:10px;
+      background-color: $masteryBeach;
+      border-radius: 5px;
+      padding: 5px;
     }
 
     .launching{
