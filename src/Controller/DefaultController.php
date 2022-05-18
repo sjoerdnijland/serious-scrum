@@ -288,7 +288,7 @@ class DefaultController extends AbstractController
         }
 
         if ($this->isGranted('ROLE_USER')) {
-            echo(1);
+           
             $user['username'] = $this->getUser()->getUsername();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
@@ -296,8 +296,6 @@ class DefaultController extends AbstractController
             if ($this->getUser()->getIsPatreon()) {
                 $user['patreon'] = 'supporter';
             }
-        }else{
-            echo(2);
         }
 
         # get cache manager
