@@ -9,9 +9,10 @@
     float:left;
     margin-top:60px;
     margin-bottom:10px;
-    min-height: 370px;
+    min-height: 400px;
     position:relative;
     line-height: 1;
+    max-height: 400px;
     h3{
       font-size: 18px;
       margin-top:10px;
@@ -36,6 +37,8 @@
       border-radius: 5px;
       padding: 5px;
       font-size: 12px;
+      float: left;
+      margin: 5px;
     }
 
     .launching{

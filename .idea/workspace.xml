@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/css/traveler.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/traveler.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_traveler.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_traveler.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="traveler.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/traveler.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -1766,12 +1765,12 @@
       <workItem from="1649859508197" duration="5069000" />
       <workItem from="1650786631423" duration="4928000" />
       <workItem from="1652168878100" duration="3805000" />
-      <workItem from="1652516869985" duration="15418000" />
+      <workItem from="1652516869985" duration="15595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="863064000" />
+    <option name="totallyTimeSpent" value="863241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
@@ -2159,8 +2158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/traveler.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
