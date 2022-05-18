@@ -92,6 +92,7 @@ class TravelerController extends AbstractController
         $traveler->setLink($data['linkedIn']);
         $traveler->setIsActive(0);
         $traveler->setIsGuide(0);
+        $traveler->setIsContacted(0);
         $traveler->setCreatedAt(new \DateTime());
 
         if($data['travelgroup']){
@@ -173,9 +174,13 @@ class TravelerController extends AbstractController
                 'fullname' => $traveler->getFullname(),
                 'firstname' => $traveler->getFirstname(),
                 'lastname' => $traveler->getLastname(),
+                'email' => $traveler->getEmail(),
+                'program' => $traveler->getProgram(),
                 'link' => $traveler->getLink(),
                 'isActive' => $traveler->getIsActive(),
                 'isGuide' => $traveler->getIsGuide(),
+                'isContacted' => $traveler->getIsContacted(),
+                'created' => $traveler->getCreatedAt(),
                 'travelgroups' => $travelgroups,
                 'adventures' => $adventures,
                 'badges' => $badges

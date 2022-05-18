@@ -82,6 +82,10 @@ import '../js/r2m_playbookFilter';
 import '../js/r2m_mountaineering';
 import '../js/r2m_kayaking';
 import '../js/r2m_developer';
+import '../js/r2m_backstage';
+import '../js/r2m_traveler';
+import '../js/r2m_backstageFilters';
+import '../js/r2m_backstageFilter';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -101,6 +105,11 @@ class R2M extends React.Component {
         filters['type'] =  '';
         filters['activity'] =  '';
 
+        const backstageFilters = {};
+        backstageFilters['name'] =  '';
+        backstageFilters['travelgroup'] =  '';
+        backstageFilters['isContacted'] =  '';
+        backstageFilters['program'] =  '';
 
         this.state = {
             expanded: false,
@@ -123,6 +132,7 @@ class R2M extends React.Component {
             guides: this.props.data.guides,
             adventures: this.props.data.adventures,
             travelgroups: this.props.data.travelgroups,
+            travelers: this.props.data.travelers,
             formats: this.props.data.formats,
             testimonials: this.props.data.testimonials,
             labels: [],
@@ -138,7 +148,8 @@ class R2M extends React.Component {
             submitCategory: 1,
             reviewCategory: false,
             reviewOption: 'isApproved',
-            filters: filters
+            filters: filters,
+            backstageFilters: backstageFilters
         };
 
         this.closeMenus = this.closeMenus.bind(this);
@@ -170,6 +181,7 @@ class R2M extends React.Component {
         this.loadMore = this.loadMore.bind(this);
         this.setR2MMenu = this.setR2MMenu.bind(this);
         this.setFilter = this.setFilter.bind(this);
+        this.setBackstageFilter = this.setBackstageFilter.bind(this);
         this.goToJoin = this.goToJoin.bind(this);
 
     }
@@ -424,6 +436,17 @@ class R2M extends React.Component {
         });
     }
 
+    setBackstageFilter(backstageFiltersValue, type) {
+
+        let backstageFilters = this.state.backstageFilters;
+
+        backstageFilters[type] = backstageFiltersValue;
+
+        this.setState({
+            backstageFilters: backstageFilters
+        });
+    }
+
     setActive(active) {
         if(active=="editorial" || active=="mastery" || active=="events"){
             if(this.state.editorial==active){
@@ -664,6 +687,7 @@ class R2M extends React.Component {
         functions['toggleLibraryPages'] = this.toggleLibraryPages;
         functions['setR2MMenu'] = this.setR2MMenu;
         functions['setFilter'] = this.setFilter;
+        functions['setBackstageFilter'] = this.setBackstageFilter;
         functions['goToJoin'] = this.goToJoin;
 
         const appContainerClassName = "appContainer r2mContainer";
@@ -685,7 +709,6 @@ class R2M extends React.Component {
 
                 <R2MCategories functions={functions} expanded={this.state.expanded} data={this.state.categories} parentCategoryName={'Adventures'}/>
 
-
                 <R2MHome label={this.state.label} module={this.state.module}/>
                 <a name="usps"/>
                 <R2MUSPS label={this.state.label}  module={this.state.module}/>
@@ -695,7 +718,6 @@ class R2M extends React.Component {
 
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
-
 
                 <a name="guides"/>
                 <R2MGuides label={this.state.label} module={this.state.module} guides={this.state.guides}/>
@@ -708,6 +730,9 @@ class R2M extends React.Component {
 
                 <a name="join"/>
                 <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
+
+                <a name="backstage"/>
+                <R2MBackstage label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelers} travelgroups={this.state.travelgroups} backstageFilters={this.state.backstageFilters}/>
 
 
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>

@@ -77,6 +77,16 @@ class Traveler
     private $isGuide = false;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isContacted = false;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $program = false;
+
+    /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
      */
     private $created_at;
@@ -270,6 +280,40 @@ class Traveler
         }
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getisContacted()
+    {
+        return $this->isContacted;
+    }
+
+    /**
+     * @param mixed $isContacted
+     */
+    public function setIsContacted($isContacted): void
+    {
+        $this->isContacted = $isContacted;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProgram()
+    {
+        return $this->program;
+    }
+
+    /**
+     * @param mixed $program
+     */
+    public function setProgram($program): void
+    {
+        $this->program = $program;
+    }
+
+
 
 
 }

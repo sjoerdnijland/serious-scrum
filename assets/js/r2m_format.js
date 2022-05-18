@@ -20,7 +20,6 @@ class Format extends React.Component {
 
         let tent = "/images/icons/"+this.props.icon;
 
-
         return (
 
             <div className={containerClassName}>

@@ -19,7 +19,13 @@ class HeaderMenuItem extends React.Component {
     render() {
 
         //active
-        const headerMenuItemClassName = "headerMenuItem";
+        let headerMenuItemClassName = "headerMenuItem";
+
+        if (typeof this.props.hidden !== 'undefined') {
+            if(this.props.hidden == true){
+                headerMenuItemClassName += " hidden";
+            }
+        }
 
         return (
             <div className={headerMenuItemClassName}>

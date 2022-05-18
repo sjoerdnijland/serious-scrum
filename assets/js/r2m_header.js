@@ -16,6 +16,12 @@ class R2MHeader extends React.Component {
 
         const src = "/images/serious-scrum-logo-darkblue-r2m.svg";
 
+        let backstage = false;
+
+        if(this.props.user.username != ""){
+            backstage = true;
+        }
+
         return (
             <div className={ContainerClassName} >
                 <a href="/r2m"><div className=" logo">
@@ -24,6 +30,7 @@ class R2MHeader extends React.Component {
                 </a>
                 <div className="headerOptions _pr10 _pt20">
                     <CategoryMenu functions={functions} expanded={this.props.expanded} site="r2m"/>
+                    <HeaderMenuItem functions={functions} name="Backstage" target="r2m/backstage" hidden={!backstage}/>
                     <HeaderMenuItem functions={functions} name="Contact" target="page/behind-the-road"/>
                     <JoinButton functions={functions} user={this.props.user}/>
                     <HeaderMenuItem functions={functions} name="Playbook" target="r2m/playbook"/>

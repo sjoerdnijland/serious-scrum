@@ -166,6 +166,37 @@
       min-width: 120px;
     }
   }
+}
+
+.backstage{
+
+  background: url(../images/travelgroups.webp) !important;
+  background-color: $masteryOcean;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+  height: auto !important;
+  padding-bottom: 400px;
+  .filtersContainer{
+    margin-left: 20px;
+    min-height: 60px;
+
+    .filterContainer{
+      float:left;
+    }
+    .Dropdown-control{
+      width:200px !important;
+      font-size: 12px;
+      margin-right:20px;
+    }
+    .Dropdown-placeholder{
+      font-size: 12px !important;
+    }
+    .Dropdown-option{
+      font-size:11px !important;
+      min-width: 120px;
+    }
+  }
 
 
 }
@@ -414,9 +445,6 @@ and (orientation: portrait) {
       font-size: 76px !important;
       padding: 60px 50px 10px 40px !important;
     }
-  }
-  .playbook{
-
   }
 }
 

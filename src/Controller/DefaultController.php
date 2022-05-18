@@ -319,8 +319,6 @@ class DefaultController extends AbstractController
             }
         }
 
-
-
         $travelgroups = $this->travelgroupController->getTravelgroups(false);
 
         foreach($travelgroups as $i => $travelgroup) {
@@ -355,6 +353,7 @@ class DefaultController extends AbstractController
         $data = [
             'pages' => $pages,
             'categories' => $categories,
+            'travelers' => [],
             'travelgroups' => $travelgroups,
             'formats' => $formats,
             'testimonials' => $testimonials,
@@ -418,6 +417,11 @@ class DefaultController extends AbstractController
         $data = $cm->getCache('r2m', 'all');
 
         $data = json_decode($data,1);
+
+        if ($this->isGranted('ROLE_ADMIN')) {
+            $travelers = $this->travelerController->getTravelers(false);
+            $data['travelers'] = $travelers;
+        }
 
         $contentPages = "hidden";
         $library = "hidden";
