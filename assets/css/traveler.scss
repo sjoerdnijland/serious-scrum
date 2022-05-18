@@ -2,7 +2,7 @@
   .traveler{
     background-color: $white;
     border-radius: 25px;
-    border: 0px solid $seriousblue;
+    border: 8px solid $white !important;
     padding:20px;
     width:340px;
     margin-right: 40px;
@@ -13,6 +13,9 @@
     position:relative;
     line-height: 1;
     max-height: 400px;
+    overflow: hidden;
+
+
     h3{
       font-size: 18px;
       margin-top:10px;
