@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/homeR2M.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeR2M.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/r2m_backstage.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_backstage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_backstageFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_backstageFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_backstageFilters.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_backstageFilters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_traveler.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_traveler.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="285">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -74,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_backstage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="r2m_backstage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_backstage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="503">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -231,8 +224,8 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_backstageFilters.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_backstageFilter.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_backstage.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_backstage.js" />
       </list>
     </option>
   </component>
@@ -1831,12 +1824,12 @@
       <workItem from="1649859508197" duration="5069000" />
       <workItem from="1650786631423" duration="4928000" />
       <workItem from="1652168878100" duration="3805000" />
-      <workItem from="1652516869985" duration="19666000" />
+      <workItem from="1652516869985" duration="19915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="867312000" />
+    <option name="totallyTimeSpent" value="867561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
@@ -2209,6 +2202,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/build.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_backstageFilters.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -2218,18 +2221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_backstage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/build.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="503">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
         </state>
       </provider>
     </entry>

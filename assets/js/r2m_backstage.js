@@ -36,7 +36,7 @@ class R2MBackstage extends React.Component {
                 });
                 let contacted = "no";
 
-                if(traveler.contacted){
+                if(traveler.isContacted){
                     contacted = "yes";
                 }
 
