@@ -177,9 +177,17 @@
   background-position: left !important;
   height: auto !important;
   padding-bottom: 400px;
+
+
   .filtersContainer{
     margin-left: 20px;
     min-height: 60px;
+
+    .label{
+      font-size:12px;
+      margin-right: 5px;
+      padding-top: 5px;
+    }
 
     .filterContainer{
       float:left;
@@ -196,6 +204,16 @@
       font-size:11px !important;
       min-width: 120px;
     }
+  }
+  input[type="checkbox"] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+    margin:5px 5px 5px 10px;
   }
 
 

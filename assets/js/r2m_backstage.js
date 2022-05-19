@@ -34,7 +34,16 @@ class R2MBackstage extends React.Component {
                         travelgroupFilter = true;
                     }
                 });
-                if(this.backstageFilters.travelgroup == "" || travelgroupFilter) {
+                let contacted = "no";
+
+                if(traveler.contacted){
+                    contacted = "yes";
+                }
+
+                if( (this.backstageFilters.travelgroup == "" || travelgroupFilter) &&
+                    (this.backstageFilters.program == "" || this.backstageFilters.program  == traveler.program) &&
+                    (this.backstageFilters.contacted == "" || this.backstageFilters.contacted  == contacted))
+                {
                     return (<Traveler functions={this.functions} key={"traveler" + traveler.id} data={traveler}/>);
                 }
         },{
@@ -51,7 +60,7 @@ class R2MBackstage extends React.Component {
                         <div className={'_pl40 _pb40'}>
                             Manage travelgroups and waitinglists
                         </div>
-                        <BackstageFilters functions={this.props.functions} value={this.props.backstageFilters} travelgroups={this.props.travelgroups}/>
+                        <BackstageFilters functions={this.props.functions} data={this.props.backstageFilters} travelgroups={this.props.travelgroups}/>
                         <div className="travelerContainer">
                             {travelers}
                         </div>

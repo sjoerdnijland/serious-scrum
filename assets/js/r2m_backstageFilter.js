@@ -7,6 +7,14 @@ class BackstageFilter extends React.Component {
 
         let placeholder = "All travelgroups";
 
+        if(this.props.type == 'program') {
+            placeholder = "All programs";
+        }
+
+        if(this.props.type == 'contacted') {
+            placeholder = "contacted?";
+        }
+
         const selectedOption = { value: '', label: placeholder };
 
         this.state = {
@@ -51,12 +59,33 @@ class BackstageFilter extends React.Component {
         ];
 
         let option = {};
-        this.props.travelgroups.forEach(travelgroup => {
-            option = {};
-            option['value'] = travelgroup.id;
-            option['label'] = travelgroup.groupname;
-            options.push(option);
-        });
+
+        if(this.props.type=='travelgroup'){
+            this.props.travelgroups.forEach(travelgroup => {
+                option = {};
+                option['value'] = travelgroup.id;
+                option['label'] = travelgroup.groupname;
+                options.push(option);
+            });
+        }
+
+        if(this.props.type == 'program'){
+            options = [
+                { value: '', label: placeholder },
+                { value: 'traveler', label: 'traveler' },
+                { value: 'trailblazer', label: 'trailblazer' },
+                { value: 'guide', label: 'guide' },
+                { value: 'expedition', label: 'expedition' },
+            ];
+        }
+
+        if(this.props.type == 'contacted'){
+            options = [
+                { value: '', label: placeholder },
+                { value: 'no', label: 'uncontacted' },
+                { value: 'yes', label: 'contacted' }
+            ];
+        }
 
         return (
             <div className={containerClassName}>

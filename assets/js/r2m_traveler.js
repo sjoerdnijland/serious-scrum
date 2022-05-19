@@ -13,8 +13,8 @@ class Traveler extends React.Component {
     render() {
 
         let containerClassName = "traveler";
-        let contacted = 'no';
-        let guide = 'yes';
+        let contacted = 'yes';
+        let guide = 'no';
 
         if(!this.props.data.isContacted){
             contacted = 'no';

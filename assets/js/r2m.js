@@ -108,7 +108,7 @@ class R2M extends React.Component {
         const backstageFilters = {};
         backstageFilters['name'] =  '';
         backstageFilters['travelgroup'] =  '';
-        backstageFilters['isContacted'] =  '';
+        backstageFilters['contacted'] =  '';
         backstageFilters['program'] =  '';
 
         this.state = {
