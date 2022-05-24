@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="105" column="51" lean-forward="true" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="51" />
+              <caret line="105" column="51" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="51" />
               <folding>
                 <element signature="e#73#97#0#PHP" expanded="true" />
                 <element signature="e#1343#2665#0#PHP" />
@@ -1799,12 +1798,12 @@
       <workItem from="1650786631423" duration="4928000" />
       <workItem from="1652168878100" duration="3805000" />
       <workItem from="1652516869985" duration="20144000" />
-      <workItem from="1653197715014" duration="399000" />
+      <workItem from="1653197715014" duration="571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="868189000" />
+    <option name="totallyTimeSpent" value="868361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2162,7 +2161,7 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="105" column="51" lean-forward="true" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="51" />
+          <caret line="105" column="51" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="51" />
           <folding>
             <element signature="e#73#97#0#PHP" expanded="true" />
             <element signature="e#1343#2665#0#PHP" />
