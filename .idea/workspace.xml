@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +53,8 @@
       <file leaf-file-name="TravelgroupController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="175" column="215" selection-start-line="175" selection-start-column="215" selection-end-line="175" selection-end-column="215" />
+            <state relative-caret-position="336">
+              <caret line="177" column="45" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
               <folding>
                 <element signature="e#73#97#0#PHP" expanded="true" />
                 <element signature="e#1343#2665#0#PHP" />
@@ -1559,8 +1556,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
-    <option name="y" value="77" />
+    <option name="x" value="465" />
+    <option name="y" value="144" />
     <option name="width" value="1641" />
     <option name="height" value="884" />
   </component>
@@ -1592,6 +1589,12 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1781,18 +1784,17 @@
       <workItem from="1652168878100" duration="3805000" />
       <workItem from="1652516869985" duration="20144000" />
       <workItem from="1653197715014" duration="586000" />
-      <workItem from="1653569501723" duration="2359000" />
+      <workItem from="1653569501723" duration="2522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="870735000" />
+    <option name="totallyTimeSpent" value="870898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="77" width="1641" height="884" extended-state="0" />
-    <editor active="true" />
+    <frame x="465" y="144" width="1641" height="884" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.23948811" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.34856793" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.047263682" />
@@ -2138,8 +2140,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="175" column="215" selection-start-line="175" selection-start-column="215" selection-end-line="175" selection-end-column="215" />
+        <state relative-caret-position="336">
+          <caret line="177" column="45" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
           <folding>
             <element signature="e#73#97#0#PHP" expanded="true" />
             <element signature="e#1343#2665#0#PHP" />
