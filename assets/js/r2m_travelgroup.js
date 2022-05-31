@@ -47,7 +47,7 @@ class Travelgroup extends React.Component {
         }
 
         if(this.props.isSoldOut || this.props.isWaitingList || this.props.registration != 'open' || !this.props.isActive){
-            priceLabel = "";
+            priceLabel = "Joining a waitinglist is free. Prices for travelgroups may vary.";
         }
 
         let travelerCount = this.props.travelerCount;
