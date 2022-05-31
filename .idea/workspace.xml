@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/public/docs/Serious-Scrum-Road-to-Mastery-Virtual Expedition-Licence-EN-EXAMPLE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/Serious-Scrum-Road-to-Mastery-Virtual-Expedition-Licence-EN-EXAMPLE.pdf" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1636,8 +1638,8 @@
       <recent name="$PROJECT_DIR$/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/icons" />
       <recent name="$PROJECT_DIR$/public/docs" />
+      <recent name="$PROJECT_DIR$/public/images/icons" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/src/Controller" />
@@ -1784,12 +1786,12 @@
       <workItem from="1652168878100" duration="3805000" />
       <workItem from="1652516869985" duration="20144000" />
       <workItem from="1653197715014" duration="586000" />
-      <workItem from="1653569501723" duration="2522000" />
+      <workItem from="1653569501723" duration="2726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="870898000" />
+    <option name="totallyTimeSpent" value="871102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="465" y="144" width="1641" height="884" extended-state="0" />
