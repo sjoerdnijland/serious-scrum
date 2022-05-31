@@ -173,7 +173,7 @@ class TravelgroupController extends AbstractController
             $launchDate = $data[$i]['launch_at'];
 
             if(!$data[$i]['launch_at']){
-                $data[$i]['launch_at'] = 'Mark your interest in the journey. We will contact you when we reach 15 registrations to form a travelgroup.';
+                $data[$i]['launch_at'] = 'Mark your interest in the journey. We will contact you when we reach 15 registrations to form a travelgroup. Joining a waitinglist is free. Prices for travelgroups may vary.';
                 $data[$i]['launch_at_short'] = '';
                 $data[$i]['isFuture'] = true;
             }elseif(!$data[$i]['isActive']){
