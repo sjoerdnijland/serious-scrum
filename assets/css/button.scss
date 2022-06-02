@@ -52,7 +52,7 @@
 
 
 
-.publishButton, .loginButton, joinSubmitButton, .formatButton{
+.publishButton, .loginButton, .joinSubmitButton, .formatButton{
   .button:hover {
     color: $seriouslySweet;
     background-color: $white;
@@ -90,6 +90,11 @@
     }
     .joinButton .button{
       margin-right:0;
+    }
+  }
+  .homeBanner{
+    .joinButton{
+      margin-top: 40px;
     }
   }
 }

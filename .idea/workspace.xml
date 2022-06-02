@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/docs/Serious-Scrum-Road-to-Mastery-Virtual Expedition-Licence-EN-EXAMPLE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/Serious-Scrum-Road-to-Mastery-Virtual-Expedition-Licence-EN-EXAMPLE.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/r2m.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/r2m.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,15 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TravelerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TravelerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="174" selection-start-line="174" selection-end-line="175" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pirates.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/pirates.svg">
           <provider selected="true" editor-type-id="images" />
@@ -36,6 +29,24 @@
       <file leaf-file-name="beach.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/icons/beach.svg">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="206" column="6" selection-start-line="206" selection-start-column="6" selection-end-line="206" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="button.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/button.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-577">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="hand.svg" pinned="false" current-in-tab="false">
@@ -52,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TravelgroupController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TravelgroupController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -65,38 +76,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="GoogleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleAuthenticator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="r2m_join.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="907">
               <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_backstage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_backstage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_backstageFilters.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_backstageFilters.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="117" selection-start-line="21" selection-start-column="117" selection-end-line="21" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -165,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/joinTerms.js" />
         <option value="$PROJECT_DIR$/src/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/Controller/CategoryController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_subCategory.js" />
@@ -193,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/Entity/TravelGroup.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_productowner.js" />
-        <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_kayaking.js" />
         <option value="$PROJECT_DIR$/src/Entity/Traveler.php" />
         <option value="$PROJECT_DIR$/assets/js/headerMenuItem.js" />
@@ -216,6 +216,8 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_join.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
+        <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
+        <option value="$PROJECT_DIR$/assets/css/button.scss" />
       </list>
     </option>
   </component>
@@ -1558,10 +1560,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="465" />
-    <option name="y" value="144" />
-    <option name="width" value="1641" />
-    <option name="height" value="884" />
+    <option name="x" value="366" />
+    <option name="y" value="131" />
+    <option name="width" value="1652" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1580,6 +1582,12 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1607,7 +1615,31 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1786,20 +1818,21 @@
       <workItem from="1652168878100" duration="3805000" />
       <workItem from="1652516869985" duration="20144000" />
       <workItem from="1653197715014" duration="586000" />
-      <workItem from="1653569501723" duration="2726000" />
+      <workItem from="1653569501723" duration="3563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="871102000" />
+    <option name="totallyTimeSpent" value="871939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="465" y="144" width="1641" height="884" extended-state="0" />
+    <frame x="366" y="131" width="1652" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.34856793" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.346247" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.047263682" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.050666668" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" />
@@ -1834,27 +1867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_mountaineering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/editorialHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/alipine.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -2055,13 +2067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_traveler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -2148,6 +2153,34 @@
             <element signature="e#73#97#0#PHP" expanded="true" />
             <element signature="e#1343#2665#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="206" column="6" selection-start-line="206" selection-start-column="6" selection-end-line="206" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-577">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
