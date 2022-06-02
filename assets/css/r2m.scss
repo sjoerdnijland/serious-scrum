@@ -204,9 +204,6 @@
       div{
         font-size: 14px !important;
       }
-      .joinButton{
-        margin-top: 40px;
-      }
     }
     h1{line-height: 50px;
       font-size: 28px;
@@ -214,6 +211,13 @@
       background-color: transparent;
     }
   }
+
+  .homeBanner{
+    .joinButton{
+      margin-top: 40px;
+    }
+  }
+
 
 }
 
