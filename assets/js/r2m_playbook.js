@@ -15,6 +15,11 @@ class R2MPlaybook extends React.Component {
         if(this.props.label || !this.props.module){
             containerClassName += " hidden";
         }
+        if(this.props.module){
+            if(this.props.module != 'playbook'){
+                containerClassName += " hidden";
+            }
+        }
 
         const bannerClassName = "homeBanner";
 

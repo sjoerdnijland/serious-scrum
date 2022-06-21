@@ -15,6 +15,11 @@ class R2MTestimonials extends React.Component {
         if(this.props.label || !this.props.module){
             containerClassName += " hidden";
         }
+        if(this.props.module){
+            if(this.props.module != 'testimonials'){
+                containerClassName += " hidden";
+            }
+        }
 
         const bannerClassName = "homeBanner";
 

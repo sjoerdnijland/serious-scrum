@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_guides.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_guides.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_playbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_playbook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_testimonials.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_testimonials.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,16 +52,16 @@
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="515">
-              <caret line="38" column="100" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="100" />
+              <caret line="38" column="100" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="100" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_guides.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="r2m_guides.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_guides.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="249">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -67,8 +69,8 @@
       <file leaf-file-name="r2m_testimonials.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_testimonials.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -76,17 +78,17 @@
       <file leaf-file-name="r2m_playbook.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="315">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_mobileMenu.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_mobileMenu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="102" selection-start-line="20" selection-start-column="102" selection-end-line="20" selection-end-column="102" />
+            <state relative-caret-position="360">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -216,10 +218,10 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/assets/js/pageMenu.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_guides.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_testimonials.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_playbook.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_playbook.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_testimonials.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_guides.js" />
       </list>
     </option>
   </component>
@@ -1836,12 +1838,12 @@
       <workItem from="1654520199146" duration="1522000" />
       <workItem from="1654761784324" duration="94000" />
       <workItem from="1654792001851" duration="596000" />
-      <workItem from="1655797786136" duration="6157000" />
+      <workItem from="1655797786136" duration="6471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="880817000" />
+    <option name="totallyTimeSpent" value="881131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2108,27 +2110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_guides.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_testimonials.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/categoryMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-347" />
@@ -2142,14 +2123,35 @@
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
-          <caret line="38" column="100" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="100" />
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="102" selection-start-line="20" selection-start-column="102" selection-end-line="20" selection-end-column="102" />
+        <state relative-caret-position="360">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_testimonials.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_guides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
