@@ -121,7 +121,6 @@ class Page extends React.Component {
         }
         const bannerUrl2 = "/patreon";
 
-
         let thumbnail = this.props.data.thumbnail;
 
         let ogThumbnail = "";
@@ -131,8 +130,6 @@ class Page extends React.Component {
                 thumbnail = '/'+thumbnail;
                 ogThumbnail = 'http://www.seriousscrum.com'+thumbnail;
             }
-
-
         }
 
         let ctaHref = "";
@@ -151,6 +148,24 @@ class Page extends React.Component {
         }
 
         const url = "https://www.seriousscrum.com/page/"+this.props.data.slug;
+
+        let followMeIcon = '/images/rabbit-shape.svg';
+
+        if(this.props.data.seriesslug == 'mountaineering'){
+            followMeIcon = '/images/eagle-white.svg';
+        }
+        if(this.props.data.seriesslug == 'kayaking'){
+            followMeIcon = '/images/beaver-white.svg';
+        }
+        if(this.props.data.seriesslug == 'developer'){
+            followMeIcon = '/images/dolphin-white.svg';
+        }
+        if(this.props.data.seriesslug == 'self-management'){
+            followMeIcon = '/images/turtle-white.svg';
+        }
+        if(this.props.data.seriesslug == 'artifacts'){
+            followMeIcon = '/images/bat-white.svg';
+        }
 
 
 
@@ -173,14 +188,14 @@ class Page extends React.Component {
 
                     <R2MCategories functions={functions} expanded={this.state.expandedCategoryMenu} data={this.state.categories} parentCategoryName={'Adventures'}/>
 
-                    <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug}/>
+                    <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug} followMeIcon={followMeIcon}/>
                     <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug} r2m={true}/>
                     <PageHero url={thumbnail}/>
 
                     <div className={contentClassName}>
                         <RichText render={this.state.doc.data.content.value} linkResolver={this.linkResolver} />
                         <div className={"buttonContainer _fr "+hideCTA}>
-                            <a href={ctaHref} className={"button  _mb10 _mt10"}><img src={'/images/rabbit-shape.svg'} className="whiteRabbit"/>{RichText.asText(this.state.doc.data.cta_text.value)}</a>
+                            <a href={ctaHref} className={"button  _mb10 _mt10"}><img src={followMeIcon} className="whiteRabbit"/>{RichText.asText(this.state.doc.data.cta_text.value)}</a>
                         </div>
                     </div>
 
