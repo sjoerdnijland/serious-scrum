@@ -15,7 +15,7 @@ class PageMenu extends React.Component {
         let containerClassName = "pageMenu ";
         
         if(!this.props.expanded){
-            containerClassName += "closedPageMenu";
+            containerClassName += "closedPageMenu ";
         }
 
         let pages = [];
@@ -27,7 +27,9 @@ class PageMenu extends React.Component {
             slug: this.props.slug,
         });
 
-
+        if (pages.length === 0) {
+            containerClassName += "hidden";
+        }
 
         return (
 
