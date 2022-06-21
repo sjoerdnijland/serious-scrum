@@ -12,12 +12,8 @@ class R2MGuides extends React.Component {
 
         let containerClassName = "homeR2M row guides";
 
-        if(this.props.label){
+        if(this.props.label || !this.props.module){
             containerClassName += " hidden";
-        }else if(this.props.module){
-            if(this.props.module != 'guides'){
-                containerClassName += " hidden";
-            }
         }
 
         const bannerClassName = "homeBanner";
