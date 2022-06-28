@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1613,6 +1615,13 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="R2MVE" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1833,15 +1842,15 @@
       <workItem from="1654761784324" duration="94000" />
       <workItem from="1654792001851" duration="596000" />
       <workItem from="1655797786136" duration="6906000" />
-      <workItem from="1656343933092" duration="1278000" />
+      <workItem from="1656343933092" duration="1506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="882844000" />
+    <option name="totallyTimeSpent" value="883072000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1010" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.184375" />
       <window_info anchor="bottom" id="TODO" order="11" />
