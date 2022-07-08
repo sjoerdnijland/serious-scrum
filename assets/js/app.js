@@ -47,6 +47,7 @@ import '../js/r2m_II';
 import '../js/editorialHeader';
 import '../js/martyHeader';
 import '../js/homeRoad';
+import '../js/homeConference';
 import '../js/r2m_coaching';
 import '../js/r2m_selfmanagement';
 import '../js/r2m_agile';
@@ -465,7 +466,7 @@ class App extends React.Component {
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
-                <HomeRoad label={this.state.label}/>
+                <HomeConference label={this.state.label}/>
 
                 <EditorialHeader label={this.state.label}/>
                 <MartyHeader label={this.state.label}/>
