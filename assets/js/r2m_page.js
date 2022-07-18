@@ -157,7 +157,7 @@ class Page extends React.Component {
         if(this.props.data.seriesslug == 'kayaking'){
             followMeIcon = '/images/beaver-white.svg';
         }
-        if(this.props.data.seriesslug == 'developer'){
+        if(this.props.data.seriesslug == 'developer' || this.props.data.seriesslug == 'smooth-sailing'){
             followMeIcon = '/images/dolphin-white.svg';
         }
         if(this.props.data.seriesslug == 'self-management'){
