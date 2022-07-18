@@ -25,9 +25,9 @@ class HomeConference extends React.Component {
                     <div className={bannerClassName}>
                         <h1>Virtual Conference 2022</h1>
                         <div>
-                            The Serious Scrum Virtual Conference 2022 Is Coming! And YOU will determine what we will do!
+                            The Serious Scrum Virtual Conference 2022 Is Coming! And YOU will determine what we will do! Vote for your preferred speaker / topic.
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="https://www.meetup.com/serious-scrum/events/286825095/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link" target="_blank">Learn more!</a></p>
+                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="https://www.surveymonkey.com/r/RTSJ8TR" target="_blank">Vote Now!</a></p>
                     </div>
                 </div>
 
