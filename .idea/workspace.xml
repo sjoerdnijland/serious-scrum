@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/homeConference.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/homeConference.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/r2m_events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/r2m.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/r2m.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +25,8 @@
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8760">
-              <caret line="680" column="52" selection-start-line="680" selection-start-column="51" selection-end-line="680" selection-end-column="52" />
+            <state relative-caret-position="462">
+              <caret line="751" column="26" selection-start-line="751" selection-start-column="26" selection-end-line="751" selection-end-column="26" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -31,14 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6120">
-              <caret line="470" column="33" selection-start-line="470" selection-start-column="33" selection-end-line="470" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="212">
+              <caret line="221" column="211" selection-start-line="221" selection-start-column="211" selection-end-line="221" selection-end-column="211" />
             </state>
           </provider>
         </entry>
@@ -48,11 +48,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="homeConference.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeConference.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/homeConference.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="159" selection-start-line="27" selection-start-column="159" selection-end-line="27" selection-end-column="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_artifacts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_artifacts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_events.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_events.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -157,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/r2m_definition.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_game.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
         <option value="$PROJECT_DIR$/assets/css/format.scss" />
@@ -192,7 +209,6 @@
         <option value="$PROJECT_DIR$/assets/css/button.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/src/Manager/PrismicManager.php" />
-        <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_artifacts.js" />
         <option value="$PROJECT_DIR$/assets/css/r2mPage.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
@@ -201,13 +217,15 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_playbook.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_testimonials.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_guides.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/assets/css/app.scss" />
         <option value="$PROJECT_DIR$/assets/css/homeRoad.scss" />
         <option value="$PROJECT_DIR$/assets/css/homeConference.scss" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/homeConference.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_events.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
+        <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
       </list>
     </option>
   </component>
@@ -1652,19 +1670,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/css" />
-      <recent name="$PROJECT_DIR$/assets/js" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/images/icons" />
-      <recent name="$PROJECT_DIR$/assets/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/R2MVE" />
       <recent name="$PROJECT_DIR$/public/images/icons" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/public/docs" />
       <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/js" />
+      <recent name="$PROJECT_DIR$/assets/css" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/icons" />
+      <recent name="$PROJECT_DIR$/assets/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1815,12 +1833,12 @@
       <workItem from="1655797786136" duration="6906000" />
       <workItem from="1656343933092" duration="2006000" />
       <workItem from="1657274698769" duration="1685000" />
-      <workItem from="1657615272310" duration="898000" />
+      <workItem from="1657615272310" duration="1252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="886155000" />
+    <option name="totallyTimeSpent" value="886509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="143" y="129" width="1440" height="830" extended-state="0" />
@@ -1864,13 +1882,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/submarine-connect.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1900,13 +1911,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_kayaking.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_artifacts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/bat-signal.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1927,13 +1931,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/pageTitle.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="202" column="8" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/page.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -2062,16 +2059,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8760">
-          <caret line="680" column="52" selection-start-line="680" selection-start-column="51" selection-end-line="680" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6120">
@@ -2124,6 +2111,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="159" selection-start-line="27" selection-start-column="159" selection-end-line="27" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_artifacts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="751" column="26" selection-start-line="751" selection-start-column="26" selection-end-line="751" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="221" column="211" selection-start-line="221" selection-start-column="211" selection-end-line="221" selection-end-column="211" />
         </state>
       </provider>
     </entry>

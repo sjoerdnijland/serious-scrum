@@ -1,4 +1,4 @@
-.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_mountaineering, .r2m_kayaking, .r2m_developer, .r2m_artifacts{
+.r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_mountaineering, .r2m_kayaking, .r2m_developer, .r2m_artifacts, .r2m_events{
   height:330px;
   text-align: center;
   .homeBanner{
@@ -161,6 +161,17 @@
   }
 }
 
+.r2m_events{
+  background: url(../images/smoothsailing.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  .homeBanner{
+    height:350px;
+    background-color: #EAF5FE;
+  }
+}
+
 
 .r2m_tbr {
   background: url(../images/training-the-guides.webp);
@@ -194,7 +205,7 @@
 
 
 @media  (max-width : 1024px) and (min-device-width : 780px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_mountaineering, .r2m_kayaking, .r2m_developer, .r2m_artifacts{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_mountaineering, .r2m_kayaking, .r2m_developer, .r2m_artifacts, .r2m_events{
     text-align: right;
     height:330px;
     h1{
@@ -208,7 +219,7 @@
 
 
 @media (max-width: 1100px) {
-  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_mountaineering, .r2m_kayaking, .r2m_developer, .r2m_artifacts{
+  .r2m_I, .r2m_II, .r2m_basecamp, .r2m_tbr, .r2m_coaching, .r2m_selfmanaging, .r2m_agile, .r2m_game, .r2m_theory, .r2m_scrumvalues, .r2m_mountaineering, .r2m_kayaking, .r2m_developer, .r2m_artifacts, .r2m_events{
     height:330px;
     .homeBanner {
       width: 340px !important;
