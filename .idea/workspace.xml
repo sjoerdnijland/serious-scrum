@@ -51,8 +51,8 @@
       <file leaf-file-name="homeConference.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/homeConference.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="117" lean-forward="true" selection-start-line="27" selection-start-column="117" selection-end-line="27" selection-end-column="117" />
+            <state relative-caret-position="390">
+              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -1815,12 +1815,12 @@
       <workItem from="1655797786136" duration="6906000" />
       <workItem from="1656343933092" duration="2006000" />
       <workItem from="1657274698769" duration="1685000" />
-      <workItem from="1657615272310" duration="657000" />
+      <workItem from="1657615272310" duration="834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="885914000" />
+    <option name="totallyTimeSpent" value="886091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="143" y="129" width="1440" height="830" extended-state="0" />
@@ -2122,8 +2122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/homeConference.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="117" lean-forward="true" selection-start-line="27" selection-start-column="117" selection-end-line="27" selection-end-column="117" />
+        <state relative-caret-position="390">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
