@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/Conference/submissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Conference/submissions.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,8 +84,8 @@
       <file leaf-file-name="submissions.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/Conference/submissions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="542" column="52" lean-forward="true" selection-start-line="542" selection-start-column="52" selection-end-line="542" selection-end-column="52" />
+            <state relative-caret-position="366">
+              <caret line="756" column="186" selection-start-line="756" selection-start-column="186" selection-end-line="756" selection-end-column="186" />
             </state>
           </provider>
         </entry>
@@ -1838,12 +1837,12 @@
       <workItem from="1656343933092" duration="2006000" />
       <workItem from="1657274698769" duration="1685000" />
       <workItem from="1657615272310" duration="2698000" />
-      <workItem from="1658300184963" duration="219000" />
+      <workItem from="1658300184963" duration="416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="888174000" />
+    <option name="totallyTimeSpent" value="888371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-26" y="25" width="1920" height="1010" extended-state="0" />
@@ -2150,8 +2149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/Conference/submissions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="542" column="52" lean-forward="true" selection-start-line="542" selection-start-column="52" selection-end-line="542" selection-end-column="52" />
+        <state relative-caret-position="366">
+          <caret line="756" column="186" selection-start-line="756" selection-start-column="186" selection-end-line="756" selection-end-column="186" />
         </state>
       </provider>
     </entry>
