@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/Conference/submissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Conference/submissions.html" afterDir="false" />
-    </list>
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageHero.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pageHero.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/pageHero.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -81,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="submissions.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="submissions.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/Conference/submissions.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -119,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>game</find>
       <find>deep</find>
       <find>expand</find>
       <find>Chapters</find>
@@ -149,6 +146,7 @@
       <find>rabbit</find>
       <find>seriesslug</find>
       <find>Nick Brown</find>
+      <find>Marcin</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -172,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
         <option value="$PROJECT_DIR$/assets/css/format.scss" />
         <option value="$PROJECT_DIR$/assets/css/travelgroup.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_developer.js" />
@@ -223,6 +220,7 @@
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/public/Conference/submissions.html" />
+        <option value="$PROJECT_DIR$/assets/css/pageHero.scss" />
       </list>
     </option>
   </component>
@@ -1565,8 +1563,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-26" />
-    <option name="y" value="25" />
+    <option name="x" value="62" />
+    <option name="y" value="43" />
     <option name="width" value="1920" />
     <option name="height" value="1010" />
   </component>
@@ -1837,15 +1835,15 @@
       <workItem from="1656343933092" duration="2006000" />
       <workItem from="1657274698769" duration="1685000" />
       <workItem from="1657615272310" duration="2698000" />
-      <workItem from="1658300184963" duration="609000" />
+      <workItem from="1658300184963" duration="842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="888564000" />
+    <option name="totallyTimeSpent" value="888797000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-26" y="25" width="1920" height="1010" extended-state="0" />
+    <frame x="62" y="43" width="1920" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.32760417" />
@@ -2109,20 +2107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/pageHero.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/r2mPage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9810">
@@ -2151,6 +2135,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="512" column="414" selection-start-line="512" selection-start-column="414" selection-end-line="512" selection-end-column="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/r2mPage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/pageHero.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
