@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="" />
+    <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/css/pageContent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pageContent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/pageHero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/pageHero.scss" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,11 +73,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pageContent.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/pageContent.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="149" column="78" lean-forward="true" selection-start-line="149" selection-start-column="78" selection-end-line="149" selection-end-column="78" />
+              <caret line="149" column="78" selection-start-line="149" selection-start-column="78" selection-end-line="149" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -93,15 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
-              <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -170,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/format.scss" />
         <option value="$PROJECT_DIR$/assets/css/travelgroup.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_developer.js" />
         <option value="$PROJECT_DIR$/assets/css/categories.scss" />
@@ -220,6 +222,7 @@
         <option value="$PROJECT_DIR$/assets/css/r2m.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/public/Conference/submissions.html" />
+        <option value="$PROJECT_DIR$/assets/css/pageContent.scss" />
         <option value="$PROJECT_DIR$/assets/css/pageHero.scss" />
       </list>
     </option>
@@ -1835,12 +1838,12 @@
       <workItem from="1656343933092" duration="2006000" />
       <workItem from="1657274698769" duration="1685000" />
       <workItem from="1657615272310" duration="2698000" />
-      <workItem from="1658300184963" duration="842000" />
+      <workItem from="1658300184963" duration="937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="888797000" />
+    <option name="totallyTimeSpent" value="888892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="43" width="1920" height="1010" extended-state="0" />
@@ -1924,9 +1927,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/holy-grail2.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/pageContent.scss">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/page.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -2127,7 +2127,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="149" column="78" lean-forward="true" selection-start-line="149" selection-start-column="78" selection-end-line="149" selection-end-column="78" />
+          <caret line="149" column="78" selection-start-line="149" selection-start-column="78" selection-end-line="149" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -2142,6 +2142,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/pageContent.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
         </state>
       </provider>
     </entry>
