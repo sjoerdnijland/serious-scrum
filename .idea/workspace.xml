@@ -84,8 +84,8 @@
       <file leaf-file-name="submissions.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/Conference/submissions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="756" column="186" selection-start-line="756" selection-start-column="186" selection-end-line="756" selection-end-column="186" />
+            <state relative-caret-position="336">
+              <caret line="512" column="414" selection-start-line="512" selection-start-column="414" selection-end-line="512" selection-end-column="414" />
             </state>
           </provider>
         </entry>
@@ -1837,12 +1837,12 @@
       <workItem from="1656343933092" duration="2006000" />
       <workItem from="1657274698769" duration="1685000" />
       <workItem from="1657615272310" duration="2698000" />
-      <workItem from="1658300184963" duration="416000" />
+      <workItem from="1658300184963" duration="609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="888371000" />
+    <option name="totallyTimeSpent" value="888564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-26" y="25" width="1920" height="1010" extended-state="0" />
@@ -2149,8 +2149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/Conference/submissions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="756" column="186" selection-start-line="756" selection-start-column="186" selection-end-line="756" selection-end-column="186" />
+        <state relative-caret-position="336">
+          <caret line="512" column="414" selection-start-line="512" selection-start-column="414" selection-end-line="512" selection-end-column="414" />
         </state>
       </provider>
     </entry>
