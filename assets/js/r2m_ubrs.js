@@ -29,7 +29,7 @@ class R2MUBRS extends React.Component {
                 <div className={bannerClassName}>
 
                     <div className="uspItem">
-                       <a href={"https://www.seriousscrum.com/r2m/#join"} target={"_self"}>
+                       <a href={"https://www.seriousscrum.com/r2m/travelgroups"} target={"_self"}>
                         <div className="uspIcon">
                             <img src='/images/hike.svg'/>
                         </div>
