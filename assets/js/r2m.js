@@ -646,7 +646,14 @@ class R2M extends React.Component {
 
     setR2MMenu(target){
         //warning: this function also lives in r2m_page
-        window.location.href='https://www.seriousscrum.com/'+target;
+        const http = target.slice(0, 4);
+
+        if(http == 'http'){
+            window.location.href = target ;
+        }else{
+            window.location.href = 'https://www.seriousscrum.com/'+target;
+        }
+
     }
 
     goToJoin(){
