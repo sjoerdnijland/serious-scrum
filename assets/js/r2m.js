@@ -68,6 +68,7 @@ import '../js/joinTerms';
 import '../js/joinSubmitButton';
 import '../js/travelgroupSelect';
 import '../js/r2m_usps';
+import '../js/r2m_ubrs';
 import '../js/r2m_subCategory';
 import '../js/r2m_adventures';
 import '../js/r2m_playbook';
@@ -712,14 +713,18 @@ class R2M extends React.Component {
                 <R2MCategories functions={functions} expanded={this.state.expanded} data={this.state.categories} parentCategoryName={'Adventures'}/>
 
                 <R2MHome label={this.state.label} module={this.state.module}/>
-                <a name="usps"/>
-                <R2MUSPS label={this.state.label}  module={this.state.module}/>
+
+                <a name="ubrs"/>
+                <R2MUBRS label={this.state.label}  module={this.state.module}/>
 
                 <a name="map"/>
                 <R2MMap label={this.state.label}  module={this.state.module}/>
 
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
+
+                <a name="usps"/>
+                <R2MUSPS label={this.state.label}  module={this.state.module}/>
 
                 <a name="guides"/>
                 <R2MGuides label={this.state.label} module={this.state.module} guides={this.state.guides}/>
