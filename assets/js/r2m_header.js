@@ -35,10 +35,11 @@ class R2MHeader extends React.Component {
                     <JoinButton functions={functions} user={this.props.user}/>
                     <HeaderMenuItem functions={functions} name="Playbook" target="r2m/playbook"/>
                     <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials"/>
-                    <HeaderMenuItem functions={functions} name="Travelgroups" target="r2m/travelgroups"/>
-                    <HeaderMenuItem functions={functions} name="Shop" target="r2m/chapter/program"/>
+                    <HeaderMenuItem functions={functions} name="Licenses" target="r2m/chapter/program"/>
+                    <HeaderMenuItem functions={functions} name="E-Books" target="https://road2mastery.gumroad.com/"/>
+                    <HeaderMenuItem functions={functions} name="Hardcopy Books" target="https://www.seriousscrum.com/page/hardcopy-companions-for-guides-adventures-1-4"/>
                     <HeaderMenuItem functions={functions} name="The Journey" target="page/the-journey"/>
-                    <HeaderMenuItem functions={functions} name="Map" target="r2m/map"/>
+
                 </div>
             </div>
 
