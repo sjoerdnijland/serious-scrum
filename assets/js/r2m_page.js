@@ -69,7 +69,14 @@ class Page extends React.Component {
     }
 
     setR2MMenu(target){
-        window.location.href='https://seriousscrum.com/'+target;
+        const http = target.slice(0, 4);
+        console.log(http);
+
+        if(http == 'http'){
+            window.location.href = target ;
+        }else{
+            window.location.href = 'https://www.seriousscrum.com/'+target;
+        }
     }
 
     toggleCategoryMenu() {

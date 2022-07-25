@@ -645,8 +645,9 @@ class R2M extends React.Component {
     }
 
     setR2MMenu(target){
-        //warning: this function also lives in r2m_page
+        //warning: this function also lives in r2m_page, so please make sure the changes here are also reflected there.
         const http = target.slice(0, 4);
+        console.log(http);
 
         if(http == 'http'){
             window.location.href = target ;
