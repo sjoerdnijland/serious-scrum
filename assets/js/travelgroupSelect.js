@@ -56,7 +56,7 @@ class TravelgroupSelect extends React.Component {
 
                     options.push(option);
                 }
-                if(!travelgroups[i].isFuture || travelgroups[i].isSoldOut || !travelgroups[i].isActive){
+                if(!travelgroups[i].isFuture || travelgroups[i].isSoldOut || !travelgroups[i].isActive || travelgoups[1].host == 'MaibornWolff'){
                     continue;
                 }
                 let option= [];
