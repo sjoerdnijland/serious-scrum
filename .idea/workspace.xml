@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/joinButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/joinButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="659" column="12" selection-start-line="659" selection-start-column="4" selection-end-line="659" selection-end-column="12" />
+            <state relative-caret-position="492">
+              <caret line="664" column="9" selection-start-line="664" selection-start-column="9" selection-end-line="664" selection-end-column="9" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -106,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joinButton.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="joinButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -227,9 +226,9 @@
         <option value="$PROJECT_DIR$/assets/js/travelgroupSelect.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
-        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
       </list>
     </option>
   </component>
@@ -1859,12 +1858,12 @@
       <workItem from="1658300184963" duration="1088000" />
       <workItem from="1658391550826" duration="5018000" />
       <workItem from="1659346091036" duration="3734000" />
-      <workItem from="1659622553908" duration="2234000" />
+      <workItem from="1659622553908" duration="2342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="900029000" />
+    <option name="totallyTimeSpent" value="900137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
@@ -2157,16 +2156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="659" column="12" selection-start-line="659" selection-start-column="4" selection-end-line="659" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -2194,7 +2183,17 @@
     <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="664" column="9" selection-start-line="664" selection-start-column="9" selection-end-line="664" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
