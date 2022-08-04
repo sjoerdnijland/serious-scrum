@@ -182,6 +182,7 @@ class TravelgroupController extends AbstractController
             }elseif($current_date < $data[$i]['launch_at']){ //launching in the future
                 $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' UTC';
                 $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' UTC';
+
                 if($data[$i]['region'] == "Americas"){
                     $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' Eastern Time';
                     $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Eastern Time';
@@ -190,10 +191,16 @@ class TravelgroupController extends AbstractController
                     $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' Europe/Berlin';
                     $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Europe/Berlin';
                 }
+                if($data[$i]['region'] == "Asia/Pacific"){
+                    $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' Australia/Sydney';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Australia/Sydney';
+                }
+
                 $data[$i]['isFuture'] = true;
             }else{//launched in the past
                 $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' UTC';
                 $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' UTC';
+
                 if($data[$i]['region'] == "Americas"){
                     $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Europe/Berlin';
                     $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Europe/Berlin';
@@ -202,6 +209,11 @@ class TravelgroupController extends AbstractController
                     $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Europe/Berlin';
                     $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Europe/Berlin';
                 }
+                if($data[$i]['region'] == "Asia/Pacific"){
+                    $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Australia/Sydney';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Australia/Sydney';
+                }
+
                 $data[$i]['registration'] = 'closed';
             }
         }
