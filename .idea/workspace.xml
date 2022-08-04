@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/js/joinButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/joinButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,14 +64,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="99" column="205" selection-start-line="99" selection-start-column="205" selection-end-line="99" selection-end-column="205" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="663" column="54" selection-start-line="663" selection-start-column="54" selection-end-line="663" selection-end-column="54" />
+            <state relative-caret-position="417">
+              <caret line="659" column="12" selection-start-line="659" selection-start-column="4" selection-end-line="659" selection-end-column="12" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -88,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joinButton.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="joinButton.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="210">
+              <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -136,8 +154,8 @@
       <find>setR2M</find>
       <find>joinBu</find>
       <find>join</find>
-      <find>joinButton</find>
       <find>goToJoin</find>
+      <find>joinButton</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -182,7 +200,6 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_backstageFilter.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_backstage.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_join.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/assets/css/button.scss" />
         <option value="$PROJECT_DIR$/src/Manager/PrismicManager.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_artifacts.js" />
@@ -210,8 +227,9 @@
         <option value="$PROJECT_DIR$/assets/js/travelgroupSelect.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
-        <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
+        <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
       </list>
     </option>
   </component>
@@ -1841,12 +1859,12 @@
       <workItem from="1658300184963" duration="1088000" />
       <workItem from="1658391550826" duration="5018000" />
       <workItem from="1659346091036" duration="3734000" />
-      <workItem from="1659622553908" duration="2009000" />
+      <workItem from="1659622553908" duration="2234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="899804000" />
+    <option name="totallyTimeSpent" value="900029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
@@ -1890,20 +1908,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_playbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_testimonials.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/icons/growglow.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -2136,16 +2140,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/tsunami.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/travelgroupSelect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="58" column="143" selection-start-line="58" selection-start-column="143" selection-end-line="58" selection-end-column="143" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
@@ -2163,20 +2157,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="663" column="54" selection-start-line="663" selection-start-column="54" selection-end-line="663" selection-end-column="54" />
+        <state relative-caret-position="417">
+          <caret line="659" column="12" selection-start-line="659" selection-start-column="4" selection-end-line="659" selection-end-column="12" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/travelgroupSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="58" column="143" selection-start-line="58" selection-start-column="143" selection-end-line="58" selection-end-column="143" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="99" column="205" selection-start-line="99" selection-start-column="205" selection-end-line="99" selection-end-column="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
         </state>
       </provider>
     </entry>

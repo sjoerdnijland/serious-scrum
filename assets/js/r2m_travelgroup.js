@@ -97,7 +97,7 @@ class Travelgroup extends React.Component {
                     {guides}
                 </div>
                 <h4>Trailblazers: {travelerCount}</h4>
-                <JoinButton functions={this.props.functions} user={this.props.user} visible={joinVisible} travelgroup={id} registrationLink={this.props.registrationLink} host={this.props.host}/>
+                <JoinButton functions={this.props.functions} user={this.props.user} visible={joinVisible} travelgroup={id} registrationLink={this.props.registrationLink} host={this.props.host} direct={true}/>
             </div>
         );
     }

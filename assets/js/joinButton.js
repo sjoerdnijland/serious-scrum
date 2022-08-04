@@ -11,7 +11,8 @@ class JoinButton extends React.Component {
             window.open(this.props.registrationLink);
             return;
         }
-        this.props.functions.goToJoin(true);
+
+        this.props.functions.goToJoin(this.props.direct);
         this.props.functions.joinTravelgroup(this.props.travelgroup);
     }
 
