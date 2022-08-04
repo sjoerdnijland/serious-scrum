@@ -48,6 +48,7 @@ class Page extends React.Component {
         this.setR2MMenu = this.setR2MMenu.bind(this);
         this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
         this.setLabel = this.setLabel.bind(this);
+        this.goToJoin = this.setLabel.bind(this);
     }
 
     componentDidMount(){
@@ -121,6 +122,7 @@ class Page extends React.Component {
         functions['setR2MMenu'] = this.setR2MMenu;
         functions['toggleCategoryMenu'] = this.toggleCategoryMenu;
         functions['setLabel'] = this.setLabel;
+        functions['goToJoin'] = this.goToJoin;
 
         const appContainerClassName = "r2mPageContainer";
         const contentClassName = "pageContent ";
