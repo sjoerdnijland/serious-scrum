@@ -186,13 +186,21 @@ class TravelgroupController extends AbstractController
                     $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' Eastern Time';
                     $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Eastern Time';
                 }
+                if($data[$i]['region'] == "Germany"){
+                    $data[$i]['launch_at'] = 'Departing: '.$launchDate->format("l j F Y H:i"). ' Europe/Berlin';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Europe/Berlin';
+                }
                 $data[$i]['isFuture'] = true;
             }else{//launched in the past
                 $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' UTC';
                 $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' UTC';
                 if($data[$i]['region'] == "Americas"){
-                    $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Eastern Time';
-                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Eastern Time';
+                    $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Europe/Berlin';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Europe/Berlin';
+                }
+                if($data[$i]['region'] == "Germany"){
+                    $data[$i]['launch_at'] = 'Traveling every '.$launchDate->format("l H:i"). ' Europe/Berlin';
+                    $data[$i]['launch_at_short'] = $launchDate->format("D j M Y H:i"). ' Europe/Berlin';
                 }
                 $data[$i]['registration'] = 'closed';
             }
