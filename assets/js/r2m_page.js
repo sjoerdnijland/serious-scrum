@@ -90,6 +90,10 @@ class Page extends React.Component {
         window.location.href = '/r2m/'+label;
     }
 
+    goToJoin(){
+        window.location.href='/r2m/travelgroups';
+    }
+
 
     async getContent(){
 
