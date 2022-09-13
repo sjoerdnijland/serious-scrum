@@ -48,7 +48,7 @@ class Page extends React.Component {
         this.setR2MMenu = this.setR2MMenu.bind(this);
         this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
         this.setLabel = this.setLabel.bind(this);
-        this.goToJoin = this.setLabel.bind(this);
+        this.goToJoin = this.goToJoin.bind(this);
     }
 
     componentDidMount(){
