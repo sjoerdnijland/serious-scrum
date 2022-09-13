@@ -27,11 +27,8 @@ class JoinButton extends React.Component {
             }
         }
 
-        let joinText = "Join!"
 
-        if(this.props.registrationLink){
-            joinText += " ("+this.props.host+")";
-        }
+        joinText += " ("+this.props.host+")";
 
         return (
             <div className={containerClassName}>
