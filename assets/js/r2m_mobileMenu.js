@@ -19,7 +19,7 @@ class R2MMobileMenu extends React.Component {
                 <HeaderMenuItem functions={functions} name="Playbook" target="r2m/playbook" />
                 <HeaderMenuItem functions={functions} name="E-Books" target="https://road2mastery.gumroad.com"/>
                 <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials" />
-                <HeaderMenuItem functions={functions} name="Journey" target="page/the-journey" />
+                <HeaderMenuItem functions={functions} name="Journey" target="page/the-road-to-mastery-r2m" />
             </div>
 
         );

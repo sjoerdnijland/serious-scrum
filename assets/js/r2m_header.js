@@ -38,7 +38,7 @@ class R2MHeader extends React.Component {
                     <HeaderMenuItem functions={functions} name="Licenses" target="r2m/chapter/program"/>
                     <HeaderMenuItem functions={functions} name="E-Books" target="https://road2mastery.gumroad.com/"/>
                     <HeaderMenuItem functions={functions} name="Hardcopy Books" target="https://www.seriousscrum.com/page/hardcopy-companions-for-guides-adventures-1-4"/>
-                    <HeaderMenuItem functions={functions} name="The Journey" target="page/the-journey"/>
+                    <HeaderMenuItem functions={functions} name="The Journey" target="page/the-road-to-mastery-r2m"/>
 
                 </div>
             </div>

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TravelgroupController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
+            <state relative-caret-position="315">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -41,36 +44,10 @@
         <entry file="file://$PROJECT_DIR$/assets/js/page.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="975">
-              <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tsunami.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/tsunami.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="travelgroupSelect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/travelgroupSelect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="58" column="143" selection-start-line="58" selection-start-column="143" selection-end-line="58" selection-end-column="143" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="99" column="205" selection-start-line="99" selection-start-column="205" selection-end-line="99" selection-end-column="205" />
             </state>
           </provider>
         </entry>
@@ -79,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="665" column="5" lean-forward="true" selection-start-line="659" selection-start-column="3" selection-end-line="665" selection-end-column="5" />
+              <caret line="665" column="5" selection-start-line="659" selection-start-column="3" selection-end-line="665" selection-end-column="5" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -96,14 +73,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-392" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+            <state relative-caret-position="286">
+              <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_mobileMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -156,8 +158,8 @@
       <find>joinBu</find>
       <find>joinButton</find>
       <find>join</find>
-      <find>goToJoin</find>
       <find>go</find>
+      <find>goToJoin</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -221,17 +223,17 @@
         <option value="$PROJECT_DIR$/assets/css/pageHero.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_usps.js" />
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_ubrs.js" />
         <option value="$PROJECT_DIR$/assets/js/homeConference.js" />
-        <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/travelgroupSelect.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
+        <option value="$PROJECT_DIR$/assets/js/build.js" />
       </list>
     </option>
   </component>
@@ -243,6 +245,149 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/core/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/generator/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/plugin-transform-named-capturing-groups-regex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/preset-env/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/template/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@babel/traverse/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/@symfony/webpack-encore/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/acorn-dynamic-import/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/adjust-sourcemap-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/anymatch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/assert/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/assets-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/babel-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/base/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/block-stream/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/bonjour/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cacache/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/camelcase-keys/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/caniuse-api/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/chokidar/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/clean-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cliui/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/color-string/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/compressible/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/copy-concurrently/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/core-js-compat/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cosmiconfig/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/create-hash/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/create-hmac/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/cross-spawn/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/css-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/css-select/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/css-tree/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/csso/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/define-property/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/del/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/diffie-hellman/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/error-ex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/extglob/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/file-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/follow-redirects/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/form-data/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/friendly-errors-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/fstream/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/gauge/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/global-prefix/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/globule/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/har-validator/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/has-values/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/hoist-non-react-statics/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/htmlparser2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/http-errors/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/http-proxy-middleware/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/http-signature/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/invariant/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/is-number/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/js-yaml/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/load-json-file/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/loader-utils/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/lru-cache/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/make-dir/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/memory-fs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/meow/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/micromatch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/mini-css-extract-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/mixin-deep/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/mkdirp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/move-concurrently/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/nanomatch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/needle/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-gyp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-libs-browser/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-notifier/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-pre-gyp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-releases/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/node-sass/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/normalize-package-data/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/object-copy/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/optimize-css-assets-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/pbkdf2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/pkg-up/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/portfinder/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-calc/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-colormin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-merge-rules/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-minify-params/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-modules-local-by-default/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-modules-scope/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-normalize-unicode/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-reduce-initial/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss-svgo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/postcss/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/prop-types/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/proxy-addr/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/pumpify/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react-dom/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react-native-elements/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react-native-ratings/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/react/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/read-pkg-up/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/readable-stream/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/redent/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/regex-not/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/regexpu-core/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/regjsparser/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/request/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/resolve-url-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/rework/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sass-graph/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sass-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/scheduler/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/scss-tokenizer/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/send/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/snapdragon-node/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/snapdragon-util/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/snapdragon/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sockjs-client/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/sockjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/source-map-resolve/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/spdy-transport/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/spdy/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/split-string/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/string-width/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/style-loader/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/stylehacks/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/svgo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/terser-webpack-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/to-object-path/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/to-regex/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/true-case-path/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/union-value/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/unset-value/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/url/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/verror/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-cli/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-dev-middleware/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-dev-server/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-log/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack-manifest-plugin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/webpack/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/worker-farm/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/wrap-ansi/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules_bu/yargs/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -1719,12 +1864,12 @@
       <workItem from="1658391550826" duration="5018000" />
       <workItem from="1659346091036" duration="3734000" />
       <workItem from="1659622553908" duration="3351000" />
-      <workItem from="1663061136006" duration="197000" />
+      <workItem from="1663061136006" duration="886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="901343000" />
+    <option name="totallyTimeSpent" value="902032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1010" extended-state="0" />
@@ -1732,6 +1877,7 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.32760417" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" weight="0.050666668" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -1742,7 +1888,6 @@
       <window_info id="Favorites" order="0" sideWeight="0.19866666" side_tool="true" weight="0.20347223" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -1768,13 +1913,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/roadToMastery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/mastery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1895,13 +2033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_usps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1913,13 +2044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="110" selection-start-line="41" selection-start-column="105" selection-end-line="41" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="92" selection-start-line="32" selection-start-column="92" selection-end-line="32" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -1973,13 +2097,6 @@
     <entry file="file://$PROJECT_DIR$/assets/images/crane.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
@@ -1989,13 +2106,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/tsunami.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/travelgroupSelect.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -2038,7 +2148,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="665" column="5" lean-forward="true" selection-start-line="659" selection-start-column="3" selection-end-line="665" selection-end-column="5" />
+          <caret line="665" column="5" selection-start-line="659" selection-start-column="3" selection-end-line="665" selection-end-column="5" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -2048,7 +2158,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -2057,11 +2167,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+        <state relative-caret-position="286">
+          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_mobileMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
         </state>
       </provider>
     </entry>
