@@ -29,8 +29,8 @@ class JoinButton extends React.Component {
 
         let joinText = "Join!";
 
-        if(this.props.host !== "undefined"){
-             joinText = " ("+this.props.host+")";
+        if(typeof this.props.host !== "undefined"){
+             joinText += " ("+this.props.host+")";
         }
 
         return (
