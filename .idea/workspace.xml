@@ -79,8 +79,8 @@
       <file leaf-file-name="joinButton.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="403">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -1831,12 +1831,12 @@
       <workItem from="1658391550826" duration="5018000" />
       <workItem from="1659346091036" duration="3734000" />
       <workItem from="1659622553908" duration="3351000" />
-      <workItem from="1663061136006" duration="2215000" />
+      <workItem from="1663061136006" duration="2290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="903361000" />
+    <option name="totallyTimeSpent" value="903436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -2167,8 +2167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/joinButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="403">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
