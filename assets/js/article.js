@@ -47,7 +47,7 @@ class Article extends React.Component {
 
         if(this.props.article.isCurated){
             className += " curated";
-            curated = "highlighted by our editorial";
+            curated = " by our editorial";
             curatedClassName = "curatedText";
         }
 

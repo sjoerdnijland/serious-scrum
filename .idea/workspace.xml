@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/homeConference.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/homeConference.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/article.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +55,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeConference.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeConference.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/homeConference.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="213" selection-start-line="29" selection-start-column="213" selection-end-line="29" selection-end-column="213" />
+            <state relative-caret-position="225">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/pageMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/article.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/r2m_scrummaster.js" />
         <option value="$PROJECT_DIR$/assets/js/header.js" />
         <option value="$PROJECT_DIR$/assets/css/header.scss" />
         <option value="$PROJECT_DIR$/src/Entity/TravelGroup.php" />
@@ -209,6 +224,7 @@
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
         <option value="$PROJECT_DIR$/assets/js/homeConference.js" />
+        <option value="$PROJECT_DIR$/assets/js/article.js" />
       </list>
     </option>
   </component>
@@ -1699,12 +1715,12 @@
       <workItem from="1659622553908" duration="3351000" />
       <workItem from="1663061136006" duration="2740000" />
       <workItem from="1663658635907" duration="166000" />
-      <workItem from="1664103999946" duration="70000" />
+      <workItem from="1664103999946" duration="398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="904122000" />
+    <option name="totallyTimeSpent" value="904450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="63" width="1440" height="875" extended-state="0" />
@@ -1748,23 +1764,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/homeRoad.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeConference.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_artifacts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2029,8 +2028,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/homeConference.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="213" selection-start-line="29" selection-start-column="213" selection-end-line="29" selection-end-column="213" />
+        <state relative-caret-position="225">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pageMenuItem.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pageMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
         </state>
       </provider>
     </entry>
