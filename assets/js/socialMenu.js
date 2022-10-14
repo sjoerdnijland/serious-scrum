@@ -44,6 +44,11 @@ class SocialMenu extends React.Component {
         const meetupUrl = 'https://www.meetup.com/nl-NL/Serious-Scrum/';
         const meetupIconSrc = '/images/social/meetup-logo.png';
 
+        const youtubeAlt = "Youtube";
+        const youtubeLogo = "youtubeLogo";
+        const youtubeUrl = 'https://www.youtube.com/channel/UCJqtVtsuW6mOKykV6jZ_F7g';
+        const youtubeSrc = '/images/social/youtube-logo.png';
+
 
 
         const sponsorAlt = "Sponsored by Vamp!";
@@ -58,8 +63,8 @@ class SocialMenu extends React.Component {
             <div className={containerClassName}>
                 <a href={slackUrl} target="_blank" className="socialMenuItem "><img className={slackLogo} src={slackIconSrc} title={slackAlt}/> </a>
                 <a href={mediumUrl} target="_blank" className="socialMenuItem "><img className={mediumLogo} src={mediumIconSrc} title={mediumAlt}/> </a>
+                <a href={youtubeUrl} target="_blank" className="socialMenuItem "><img className={youtubeLogo} src={youtubeIconSrc} title={youtubeAlt}/> </a>
                 <a href={patreonUrl} target="_blank" className="socialMenuItem "><img className={patreonLogo} src={patreonIconSrc} title={patreonAlt}/> </a>
-                <a href={instagramUrl} target="_blank" className="socialMenuItem "><img className={instagramLogo} src={instagramIconSrc} title={instagramAlt}/> </a>
                 <a href={meetupUrl} target="_blank" className="socialMenuItem "><img className={meetupLogo} src={meetupIconSrc} title={meetupAlt}/> </a>
                 <a href={twitterUrl} target="_blank" className="socialMenuItem "><img className={twitterLogo} src={twitterIconSrc} title={twitterAlt}/> </a>
                 <a href={linkedInUrl} target="_blank" className="socialMenuItem "><img className={linkedInLogo} src={linkedInIconSrc} title={linkedInAlt}/> </a>
