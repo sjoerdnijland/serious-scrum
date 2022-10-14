@@ -47,7 +47,7 @@ class SocialMenu extends React.Component {
         const youtubeAlt = "Youtube";
         const youtubeLogo = "youtubeLogo";
         const youtubeUrl = 'https://www.youtube.com/channel/UCJqtVtsuW6mOKykV6jZ_F7g';
-        const youtubeSrc = '/images/social/youtube-logo.png';
+        const youtubeIconSrc = '/images/social/youtube-logo.png';
 
 
 
