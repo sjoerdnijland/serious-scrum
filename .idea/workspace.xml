@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/R2MVE/R2M-VE-Itinerary.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,15 +39,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_join.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,11 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m_travelgroup.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -212,7 +214,6 @@
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_ubrs.js" />
         <option value="$PROJECT_DIR$/assets/js/travelgroupSelect.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
@@ -223,6 +224,7 @@
         <option value="$PROJECT_DIR$/assets/js/article.js" />
         <option value="$PROJECT_DIR$/assets/js/homeConference.js" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
       </list>
     </option>
   </component>
@@ -1566,7 +1568,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="25" />
-    <option name="width" value="1440" />
+    <option name="width" value="1299" />
     <option name="height" value="830" />
   </component>
   <component name="ProjectView">
@@ -1574,7 +1576,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1586,6 +1587,12 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1618,6 +1625,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1630,19 +1638,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$/public/R2MVE" />
-      <recent name="$PROJECT_DIR$/public/images/icons" />
-      <recent name="$PROJECT_DIR$/public/docs" />
-      <recent name="$PROJECT_DIR$/public/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/icons" />
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/assets/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/R2MVE" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/public/images/icons" />
+      <recent name="$PROJECT_DIR$/public/docs" />
+      <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1801,17 +1809,19 @@
       <workItem from="1663061136006" duration="2740000" />
       <workItem from="1663658635907" duration="166000" />
       <workItem from="1664103999946" duration="1186000" />
-      <workItem from="1664542939299" duration="684000" />
+      <workItem from="1664542939299" duration="3305000" />
+      <workItem from="1665743686611" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="905922000" />
+    <option name="totallyTimeSpent" value="908849000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="830" extended-state="0" />
+    <frame x="0" y="25" width="1299" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.3263889" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8013333" visible="true" weight="0.04234026" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" weight="0.050666668" />
@@ -1988,13 +1998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="205" selection-start-line="99" selection-start-column="205" selection-end-line="99" selection-end-column="205" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -2128,6 +2131,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
         </state>
       </provider>
     </entry>
