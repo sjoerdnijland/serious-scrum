@@ -45,12 +45,10 @@ class Page
      */
     private $thumbnail;
 
-
     /**
      * @ORM\Column(type="json")
      */
     private $data = [];
-
 
     /**
      * @ORM\Column(type="boolean")
@@ -68,7 +66,6 @@ class Page
      * @Assert\Valid()
      */
     private $formats;
-
 
     public function __construct()
     {
@@ -91,7 +88,6 @@ class Page
 
         return $this;
     }
-
 
     public function getSlug(): ?string
     {
@@ -137,7 +133,6 @@ class Page
         $this->data = $data;
     }
 
-
     public function getAuthor(): ?string
     {
         return $this->author;
@@ -149,8 +144,6 @@ class Page
 
         return $this;
     }
-
-
 
     public function getThumbnail(): ?string
     {
@@ -182,7 +175,6 @@ class Page
         return $this->formats;
     }
 
-
     public function addFormat(Format $format)
     {
         if ($this->formats->contains($format)) {
@@ -204,9 +196,4 @@ class Page
         // needed to update the owning side of the relationship!
         $format->setPage(null);
     }
-
-
-
-
-
 }

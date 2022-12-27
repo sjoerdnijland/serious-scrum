@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Security;
 
 use App\Entity\User;
@@ -10,7 +11,6 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
-
 
 class GoogleAuthenticator extends SocialAuthenticator
 {
@@ -81,7 +81,7 @@ class GoogleAuthenticator extends SocialAuthenticator
      *  B) For an API token authentication system, you return a 401 response
      *      return new Response('Auth header required', 401);
      *
-     * @param Request $request The request that resulted in an AuthenticationException
+     * @param Request                                                            $request       The request that resulted in an AuthenticationException
      * @param \Symfony\Component\Security\Core\Exception\AuthenticationException $authException The exception that started the authentication process
      *
      * @return \Symfony\Component\HttpFoundation\Response
@@ -100,9 +100,6 @@ class GoogleAuthenticator extends SocialAuthenticator
      * If you return null, the request will continue, but the user will
      * not be authenticated. This is probably not what you want to do.
      *
-     * @param Request $request
-     * @param \Symfony\Component\Security\Core\Exception\AuthenticationException $exception
-     *
      * @return \Symfony\Component\HttpFoundation\Response|null
      */
     public function onAuthenticationFailure(Request $request, \Symfony\Component\Security\Core\Exception\AuthenticationException $exception)
@@ -119,8 +116,6 @@ class GoogleAuthenticator extends SocialAuthenticator
      * If you return null, the current request will continue, and the user
      * will be authenticated. This makes sense, for example, with an API.
      *
-     * @param Request $request
-     * @param \Symfony\Component\Security\Core\Authentication\Token\TokenInterface $token
      * @param string $providerKey The provider (i.e. firewall) key
      *
      * @return void

@@ -168,6 +168,7 @@ class Article
     {
         $this->isApproved = $isApproved;
     }
+
     /**
      * @return mixed
      */

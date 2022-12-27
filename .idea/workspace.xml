@@ -2,14 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/serious.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serious.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.php-cs-fixer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/php-cs-fixer/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/php-cs-fixer/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/homeConference.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeConference.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/PrismicCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/PrismicCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ReloadCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ReloadCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/RssCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/RssCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdventureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdventureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FormatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FormatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/GoogleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GoogleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/JiraController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JiraController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PatreonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PatreonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SubscribeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SubscribeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TestimonialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TestimonialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TravelerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelgroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Adventure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Adventure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Badge.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Badge.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Format.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Format.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Testimonial.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Testimonial.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/TravelGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/TravelGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Traveler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Traveler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/CacheManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/CacheManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/PrismicManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/PrismicManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/RssManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/RssManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200503123814.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200503123814.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200503124956.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200503124956.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200503130223.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200503130223.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200510063901.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200510063901.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200510070036.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200510070036.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200511072710.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200511072710.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200511075825.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200511075825.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200518182700.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200518182700.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200521063533.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200521063533.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200524173442.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200524173442.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200524193228.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200524193228.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200607175912.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200607175912.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200906195251.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200906195251.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200907175530.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200907175530.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200916141612.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200916141612.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200920172250.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20200920172250.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004103042.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004103042.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004104329.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004104329.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004104631.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004104631.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004110025.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004110025.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004112536.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004112536.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004113044.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004113044.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004113801.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211004113801.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211007115205.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211007115205.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211016132457.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211016132457.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022104714.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211022104714.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022105623.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211022105623.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022145243.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211022145243.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022152218.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211022152218.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211023090110.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211023090110.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211023093643.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211023093643.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211027101611.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211027101611.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211031071343.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20211031071343.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220119105134.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220119105134.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220214075232.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220214075232.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220216095036.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220216095036.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220218075633.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220218075633.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220218075940.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220218075940.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220315085353.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220315085353.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220318133435.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220318133435.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220429065910.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220429065910.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220518085024.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220518085024.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220518085115.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20220518085115.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AdventureRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AdventureRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TestimonialRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TestimonialRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TravelerRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TravelerRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TravelgroupRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TravelgroupRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/GoogleAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/GoogleAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/UserProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,87 +103,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="library.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/library.js">
+      <file leaf-file-name="CategoryController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editorial.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/editorial.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="editorial.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/editorial.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-584" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editorialHeader.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/editorialHeader.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homeConference.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/homeConference.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rector.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rector.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="648">
+              <caret line="48" column="63" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="63" />
               <folding>
-                <element signature="e#33#111#0#PHP" expanded="true" />
+                <element signature="e#75#99#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="133" selection-start-line="133" selection-end-line="133" selection-end-column="43" />
+            <state relative-caret-position="523">
+              <caret line="249" column="43" lean-forward="true" selection-start-line="249" selection-start-column="43" selection-end-line="249" selection-end-column="43" />
+              <folding>
+                <element signature="e#72#92#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="PatreonController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PatreonController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubscribeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/SubscribeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-512" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelgroupController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1982">
+              <caret line="50" column="61" lean-forward="true" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrismicCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Command/PrismicCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReloadCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Command/ReloadCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RssCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Command/RssCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+              <folding>
+                <element signature="e#31#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -173,19 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/traveler.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_traveler.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_backstageFilters.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_backstageFilter.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_join.js" />
-        <option value="$PROJECT_DIR$/assets/css/button.scss" />
-        <option value="$PROJECT_DIR$/src/Manager/PrismicManager.php" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_artifacts.js" />
-        <option value="$PROJECT_DIR$/assets/css/r2mPage.scss" />
-        <option value="$PROJECT_DIR$/assets/js/pageMenu.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_playbook.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_testimonials.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_guides.js" />
         <option value="$PROJECT_DIR$/assets/css/app.scss" />
         <option value="$PROJECT_DIR$/assets/css/homeRoad.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_events.js" />
@@ -196,7 +265,6 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_usps.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_ubrs.js" />
         <option value="$PROJECT_DIR$/assets/js/travelgroupSelect.js" />
-        <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
         <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
         <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
         <option value="$PROJECT_DIR$/assets/js/article.js" />
@@ -224,6 +292,20 @@
         <option value="$PROJECT_DIR$/assets/css/homeConference.scss" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/rector.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.php-cs-fixer.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AdventureController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/ArticleController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/CategoryController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/FormatController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/PageController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/TestimonialController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/TravelerController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
+        <option value="$PROJECT_DIR$/src/Command/RssCommand.php" />
+        <option value="$PROJECT_DIR$/src/Command/ReloadCommand.php" />
+        <option value="$PROJECT_DIR$/src/Command/PrismicCommand.php" />
+        <option value="$PROJECT_DIR$/src/Kernel.php" />
       </list>
     </option>
   </component>
@@ -1565,7 +1647,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
+    <option name="x" value="52" />
     <option name="y" value="25" />
     <option name="width" value="1211" />
     <option name="height" value="830" />
@@ -1585,29 +1667,13 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -1618,7 +1684,13 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="php-cs-fixer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1810,15 +1882,15 @@
       <workItem from="1664103999946" duration="1186000" />
       <workItem from="1664542939299" duration="3305000" />
       <workItem from="1665743686611" duration="2032000" />
-      <workItem from="1672131500011" duration="12773000" />
+      <workItem from="1672131500011" duration="14607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="923348000" />
+    <option name="totallyTimeSpent" value="925182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="25" width="1211" height="830" extended-state="0" />
+    <frame x="52" y="25" width="1211" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -1860,107 +1932,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/socialMenu.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/bundles.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="619" column="8" selection-start-line="619" selection-start-column="8" selection-end-line="619" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_travelgroups.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/swatches.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/r2m_page.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/r2m.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/patreon.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/r2m.959b5795.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="3183" column="15" selection-start-line="3183" selection-start-column="15" selection-end-line="3183" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Entity/ArticleTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_backstage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -2158,20 +2129,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#33#111#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.php-cs-fixer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdventureController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="e#75#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3587">
+          <caret line="225" column="44" selection-start-line="225" selection-start-column="44" selection-end-line="225" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FormatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/JiraController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2147" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="48" column="63" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="63" />
+          <folding>
+            <element signature="e#75#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="249" column="43" lean-forward="true" selection-start-line="249" selection-start-column="43" selection-end-line="249" selection-end-column="43" />
+          <folding>
+            <element signature="e#72#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PatreonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/RssCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding>
+            <element signature="e#31#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/ReloadCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/PrismicCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1982">
+          <caret line="50" column="61" lean-forward="true" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TravelerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1367">
+          <caret line="58" column="61" lean-forward="true" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TestimonialController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SubscribeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -4,12 +4,9 @@ namespace App\Entity;
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\AdventureRepository")
@@ -22,7 +19,6 @@ class Adventure
      * @ORM\Column(type="integer")
      */
     private $id;
-
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -39,7 +35,6 @@ class Adventure
      */
     private $price;
 
-
     /**
      * @ORM\Column(type="boolean")
      */
@@ -49,7 +44,6 @@ class Adventure
      * @ORM\Column(type="integer")
      */
     private $duration = 1;
-
 
     /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
@@ -73,6 +67,7 @@ class Adventure
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Traveler", inversedBy="adventures")
+     *
      * @var Collection
      */
     private $travelers;
@@ -82,12 +77,10 @@ class Adventure
         $this->travelers = new ArrayCollection();
     }
 
-
     public function getId(): ?int
     {
         return $this->id;
     }
-
 
     public function getName(): ?string
     {
@@ -120,7 +113,7 @@ class Adventure
 
     public function setPrice(string $price): self
     {
-        $this->price= $price;
+        $this->price = $price;
 
         return $this;
     }
@@ -132,12 +125,10 @@ class Adventure
 
     public function setPaymentLink(string $paymentLink): self
     {
-        $this->paymentLink= $paymentLink;
+        $this->paymentLink = $paymentLink;
 
         return $this;
     }
-
-
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
@@ -150,7 +141,6 @@ class Adventure
 
         return $this;
     }
-
 
     /**
      * @return mixed
@@ -165,7 +155,7 @@ class Adventure
      */
     public function setIsActive($isActive): void
     {
-        $this->isActive= $isActive;
+        $this->isActive = $isActive;
     }
 
     public function getLink(): ?string
@@ -192,7 +182,6 @@ class Adventure
         return $this;
     }
 
-
     /**
      * @return Collection|Traveler[]
      */
@@ -200,20 +189,24 @@ class Adventure
     {
         return $this->travelers;
     }
+
     public function addTraveler(Traveler $traveler): self
     {
         if (!$this->travelers->contains($traveler)) {
             $this->travelers[] = $traveler;
             $traveler->addAdventure($this);
         }
+
         return $this;
     }
+
     public function removeTraveler(Traveler $traveler): self
     {
         if ($this->travelers->contains($traveler)) {
             $this->travelers->removeElement($traveler);
             $traveler->removeAdventure($this);
         }
+
         return $this;
     }
 
@@ -228,12 +221,4 @@ class Adventure
 
         return $this;
     }
-
-
-
-
-
-
-
-
 }

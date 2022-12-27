@@ -2,12 +2,9 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TravelgroupRepository")
@@ -40,7 +37,6 @@ class TravelGroup
      * @ORM\Column(type="boolean")
      */
     private $isWaitingList = false;
-
 
     /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
@@ -92,16 +88,14 @@ class TravelGroup
      */
     private $interval;
 
-
     /**
      * @ORM\Column(type="integer", length=4, nullable=true)
      */
     private $overwriteTravelerCount;
 
-
-
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Traveler", inversedBy="travelgroups")
+     *
      * @var Collection
      */
     private $travelers;
@@ -131,7 +125,6 @@ class TravelGroup
         return $this->id;
     }
 
-
     public function getGroupname(): ?string
     {
         return $this->groupname;
@@ -143,7 +136,6 @@ class TravelGroup
 
         return $this;
     }
-
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
@@ -169,7 +161,6 @@ class TravelGroup
         return $this;
     }
 
-
     /**
      * @return mixed
      */
@@ -183,7 +174,7 @@ class TravelGroup
      */
     public function setIsActive($isActive): void
     {
-        $this->isActive= $isActive;
+        $this->isActive = $isActive;
     }
 
     public function getConferenceLink(): ?string
@@ -198,7 +189,6 @@ class TravelGroup
         return $this;
     }
 
-
     /**
      * @return Collection|Traveler[]
      */
@@ -206,20 +196,24 @@ class TravelGroup
     {
         return $this->travelers;
     }
+
     public function addTraveler(Traveler $traveler): self
     {
         if (!$this->travelers->contains($traveler)) {
             $this->travelers[] = $traveler;
             $traveler->addTravelGroup($this);
         }
+
         return $this;
     }
+
     public function removeTraveler(Traveler $traveler): self
     {
         if ($this->travelers->contains($traveler)) {
             $this->travelers->removeElement($traveler);
             $traveler->removeAdventure($this);
         }
+
         return $this;
     }
 
@@ -430,6 +424,4 @@ class TravelGroup
     {
         $this->overwriteTravelerCount = $overwriteTravelerCount;
     }
-
-
 }

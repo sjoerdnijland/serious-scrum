@@ -43,5 +43,4 @@ class TravelerRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult();
     }
-
 }

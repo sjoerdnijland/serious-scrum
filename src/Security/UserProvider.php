@@ -2,9 +2,8 @@
 
 namespace App\Security;
 
-
-use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\User;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
@@ -15,7 +14,7 @@ class UserProvider implements UserProviderInterface
 
     /**
      * UserProvider constructor.
-     * @param EntityManagerInterface $entityManager
+     *
      * @internal param Client $httpClient
      * @internal param UserOptionService $userOptionService
      * @internal param ProjectService $projectService
@@ -57,17 +56,14 @@ class UserProvider implements UserProviderInterface
      * object can just be merged into some internal array of users / identity
      * map.
      *
-     * @param UserInterface $user
      * @return UserInterface
-     *
      */
     public function refreshUser(UserInterface $user)
     {
         if (!$user instanceof User) {
-            throw new UnsupportedUserException(
-                sprintf('Instances of "%s" are not supported.', get_class($user))
-            );
+            throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', get_class($user)));
         }
+
         return $user;
     }
 

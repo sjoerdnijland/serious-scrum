@@ -1,26 +1,19 @@
 <?php
+
 // src/Controller/ArticleController.php
+
 namespace App\Controller;
 
 use App\Entity\Testimonial;
+use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-
-use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
-
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
-
-use App\Manager\CacheManager;
-
 
 class TestimonialController extends AbstractController
 {
@@ -41,14 +34,15 @@ class TestimonialController extends AbstractController
 
     /**
      * @param Request $request
+     *
      * @Route("api/testimonials", name="testimonials")
      * @Method("GET")
+     *
      * * @return JsonResponse
      */
     public function getTestimonials($jsonResponse = true)
     {
-
-       # get doctrine manager
+        // get doctrine manager
         $em = $this->em;
 
         $testimonials = $em->getRepository(Testimonial::class)
@@ -56,27 +50,22 @@ class TestimonialController extends AbstractController
 
         $data = [];
 
-        foreach($testimonials as $testimonial){
-
+        foreach ($testimonials as $testimonial) {
             $data[] = [
                 'id' => $testimonial->getId(),
                 'name' => $testimonial->getName(),
                 'testimonial' => $testimonial->getTestimonial(),
                 'icon' => $testimonial->getIcon(),
             ];
-
         }
 
-        # reset the keys (so that React can properly load them in)
+        // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
-        if($jsonResponse){
-            return new JsonResponse($data, 200);
+        if ($jsonResponse) {
+            return new JsonResponse($data, Response::HTTP_OK);
         }
 
-        return($data);
-
+        return $data;
     }
-
-
 }

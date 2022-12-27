@@ -4,17 +4,13 @@ namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TravelerRepository")
  */
 class Traveler
 {
-
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -42,7 +38,6 @@ class Traveler
      */
     private $fullname;
 
-
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
@@ -50,12 +45,14 @@ class Traveler
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\TravelGroup", mappedBy="travelers")
+     *
      * @var Collection
      */
     private $travelgroups;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Adventure", mappedBy="travelers")
+     *
      * @var Collection
      */
     private $adventures;
@@ -64,7 +61,6 @@ class Traveler
      * @ORM\ManyToMany(targetEntity="App\Entity\Badge", mappedBy="travelers")
      */
     private $badges;
-
 
     /**
      * @ORM\Column(type="boolean")
@@ -93,8 +89,8 @@ class Traveler
 
     public function __construct()
     {
-       $this->travelgroups = new ArrayCollection();
-       $this->adventures = new ArrayCollection();
+        $this->travelgroups = new ArrayCollection();
+        $this->adventures = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -129,7 +125,6 @@ class Traveler
         return $this->lastname;
     }
 
-
     public function setFullname(string $fullname): self
     {
         $this->fullname = $fullname;
@@ -163,7 +158,6 @@ class Traveler
         return $this;
     }
 
-
     public function getCreatedAt(): ?\DateTimeInterface
     {
         return $this->created_at;
@@ -175,7 +169,6 @@ class Traveler
 
         return $this;
     }
-
 
     /**
      * @return mixed
@@ -190,7 +183,7 @@ class Traveler
      */
     public function setIsActive($isActive): void
     {
-        $this->isActive= $isActive;
+        $this->isActive = $isActive;
     }
 
     /**
@@ -206,7 +199,7 @@ class Traveler
      */
     public function setIsGuide($isGuide): void
     {
-        $this->isGuide= $isGuide;
+        $this->isGuide = $isGuide;
     }
 
     /**
@@ -216,20 +209,24 @@ class Traveler
     {
         return $this->travelgroups;
     }
+
     public function addTravelGroup(TravelGroup $travelGroup): self
     {
         if (!$this->travelgroups->contains($travelGroup)) {
             $this->travelgroups[] = $travelGroup;
             $travelGroup->addTraveler($this);
         }
+
         return $this;
     }
+
     public function removeTravelGroup(TravelGroup $travelGroup): self
     {
         if ($this->travelgroups->contains($travelGroup)) {
             $this->travelgroups->removeElement($travelGroup);
             $travelGroup->removeTraveler($this);
         }
+
         return $this;
     }
 
@@ -240,20 +237,24 @@ class Traveler
     {
         return $this->adventures;
     }
+
     public function addAdventure(Adventure $adventure): self
     {
         if (!$this->adventures->contains($adventure)) {
             $this->adventures[] = $adventure;
             $adventure->addTraveler($this);
         }
+
         return $this;
     }
+
     public function removeAdventure(TravelGroup $adventure): self
     {
         if ($this->adventures->contains($adventure)) {
             $this->adventures->removeElement($adventure);
             $adventure->removeTraveler($this);
         }
+
         return $this;
     }
 
@@ -264,20 +265,24 @@ class Traveler
     {
         return $this->badges;
     }
+
     public function addBadge(Adventure $badge): self
     {
         if (!$this->badges->contains($badge)) {
             $this->badges[] = $badge;
             $badge->addTraveler($this);
         }
+
         return $this;
     }
+
     public function removeBadge(TravelGroup $badge): self
     {
         if ($this->badges->contains($badge)) {
             $this->badges->removeElement($badge);
             $badge->removeTraveler($this);
         }
+
         return $this;
     }
 
@@ -312,8 +317,4 @@ class Traveler
     {
         $this->program = $program;
     }
-
-
-
-
 }

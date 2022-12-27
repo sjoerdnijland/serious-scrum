@@ -28,7 +28,6 @@ class UserRepository extends ServiceEntityRepository
             ->getOneOrNullResult();
     }
 
-
     // /**
     //  * @return User[] Returns an array of User objects
     //  */

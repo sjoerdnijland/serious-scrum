@@ -1,27 +1,22 @@
 <?php
+
 // src/Controller/ArticleController.php
+
 namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Category;
+use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
-
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
-
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
-
-use App\Manager\CacheManager;
-
 
 class ArticleController extends AbstractController
 {
@@ -41,117 +36,112 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @param Request $request
      * @Route("/article/new", name="article_new")
      * @Method("POST")
+     *
      * @return JsonResponse
      */
     public function newArticle(Request $request, $response = true)
     {
-        # get doctrine manager test
+        // get doctrine manager test
         $em = $this->em;
 
-        # get cache manager
+        // get cache manager
         $cm = $this->cm;
-
 
         $data = $request->getContent();
         $data = json_decode($data, 1);
 
-        if(!isset($data['url']) || !isset($data['url'])){
-            return new JsonResponse('url not submitted!', 400); #bad request
+        if (!isset($data['url']) || !isset($data['url'])) {
+            return new JsonResponse('url not submitted!', Response::HTTP_BAD_REQUEST); // bad request
         }
 
-        if(!filter_var($data['url'], FILTER_VALIDATE_URL)){
-            return new JsonResponse('invalid url format! ', 400); #bad request
+        if (!filter_var($data['url'], FILTER_VALIDATE_URL)) {
+            return new JsonResponse('invalid url format! ', Response::HTTP_BAD_REQUEST); // bad request
         }
 
         $urlAlreadyExists = $em->getRepository(Article::class)
             ->findArticleByUrl($data['url']);
 
-        if($urlAlreadyExists){
-            return new JsonResponse('url already submitted', 200); #bad request
+        if ($urlAlreadyExists) {
+            return new JsonResponse('url already submitted', Response::HTTP_OK); // bad request
         }
 
         $client = HttpClient::create();
 
         $response = $client->request('GET', $data['url']);
 
-        if(!$response){
-            return new JsonResponse('could not fetch article!', 400); #bad request
+        if (!$response) {
+            return new JsonResponse('could not fetch article!', Response::HTTP_BAD_REQUEST); // bad request
         }
 
         $statusCode = $response->getStatusCode();
 
-        if($statusCode != 200){
-            return new JsonResponse('could not fetch article!', 400); #bad request
+        if ($statusCode != 200) {
+            return new JsonResponse('could not fetch article!', Response::HTTP_BAD_REQUEST); // bad request
         }
 
         $content = $response->getContent();
 
-        $meta = $this->getMetaTags($content); //gets all meta tags, including those without name attribute
+        $meta = $this->getMetaTags($content); // gets all meta tags, including those without name attribute
 
-        //$meta = get_meta_tags( $data['url']); //gets only the meta tags with name attribute
+        // $meta = get_meta_tags( $data['url']); //gets only the meta tags with name attribute
 
         $data['author'] = '';
         $data['source'] = $data['url'];
         $ogData = false;
 
-        if(
+        if (
             isset($meta['og:title']) &&
             isset($meta['og:url']) &&
-            isset($meta['og:description'])  &&
+            isset($meta['og:description']) &&
             isset($meta['og:image'])
-        ){
+        ) {
             $ogData = true;
         }
 
-        if(!$ogData){
-            return new JsonResponse('could not fetch required OG data!', 400); #bad request
+        if (!$ogData) {
+            return new JsonResponse('could not fetch required OG data!', Response::HTTP_BAD_REQUEST); // bad request
         }
-
-
 
         $data['title'] = $meta['og:title'];
         $data['url'] = $meta['og:url'];
         $data['intro'] = substr($meta['og:description'], 0, 255);
 
-        if(isset($meta['og:image'])){
+        if (isset($meta['og:image'])) {
             $data['thumbnail'] = $cm->storyImageFromUrl('thumbnails', $meta['og:image']);
-        }else{
-            $data['thumbnail'] = "";
+        } else {
+            $data['thumbnail'] = '';
         }
 
-        if(isset($meta['og:author'])) {
+        if (isset($meta['og:author'])) {
             $data['author'] = $meta['og:author'];
-        }elseif(isset($meta['author'])){
+        } elseif (isset($meta['author'])) {
             $data['author'] = $meta['author'];
-        }elseif(isset($meta['article:author'])){
+        } elseif (isset($meta['article:author'])) {
             $data['author'] = $meta['article:author'];
         }
 
-        if(isset($meta['og:site_name'])){
+        if (isset($meta['og:site_name'])) {
             $data['source'] = $meta['og:site_name'];
         }
 
-        //get author name from LinkedIn
-        if($data['author']  == "" && strpos($content, 'View profile for') !== false){
+        // get author name from LinkedIn
+        if ($data['author'] == '' && strpos($content, 'View profile for') !== false) {
+            $parseAuthor = explode('View profile for', $content);
 
-            $parseAuthor = explode("View profile for", $content);
-
-            if(isset($parseAuthor[1])){
-                $parseAuthor2 = explode(">", $parseAuthor[1]);
-                $data['author'] = trim(substr($parseAuthor2[0],0, -1));
+            if (isset($parseAuthor[1])) {
+                $parseAuthor2 = explode('>', $parseAuthor[1]);
+                $data['author'] = trim(substr($parseAuthor2[0], 0, -1));
             }
         }
 
-        //get author name from Scrum.org
-        if($data['author']  == "" && strpos($content, 'fa-user') !== false){
+        // get author name from Scrum.org
+        if ($data['author'] == '' && strpos($content, 'fa-user') !== false) {
+            $parseAuthor = explode('fa-user"></i> ', $content);
 
-            $parseAuthor = explode("fa-user\"></i> ", $content);
-
-            if(isset($parseAuthor[1])){
-                $parseAuthor2 = explode("<", $parseAuthor[1]);
+            if (isset($parseAuthor[1])) {
+                $parseAuthor2 = explode('<', $parseAuthor[1]);
                 $data['author'] = $parseAuthor2[0];
             }
         }
@@ -171,10 +161,10 @@ class ArticleController extends AbstractController
 
         $article->setCategory($category);
 
-        if($this->isGranted('ROLE_EDITOR')){
+        if ($this->isGranted('ROLE_EDITOR')) {
             $article->setIsApproved(true);
-            if(isset($data['option'])){
-                if($data['option'] == 'isCurated') {
+            if (isset($data['option'])) {
+                if ($data['option'] == 'isCurated') {
                     $article->setIsCurated(true);
                 }
             }
@@ -185,39 +175,39 @@ class ArticleController extends AbstractController
         $em->flush();
 
         return new JsonResponse($data);
-
     }
 
     /**
-     * @param Request $request
      * @Route("/article/review", name="article_review")
      * @Method("POST")
      * @IsGranted("ROLE_EDITOR")
+     *
      * @return JsonResponse
      */
     public function reviewArticle(Request $request, $response = true)
     {
-        #
-        # get doctrine manager
+        //
+        // get doctrine manager
         $em = $this->em;
 
         $data = $request->getContent();
         $data = json_decode($data, 1);
 
-        if(!isset($data['id']) || !isset($data['category']) || !isset($data['option'])){
-            return new JsonResponse('did not receive required formdata!', 400); #bad request
+        if (!isset($data['id']) || !isset($data['category']) || !isset($data['option'])) {
+            return new JsonResponse('did not receive required formdata!', Response::HTTP_BAD_REQUEST); // bad request
         }
 
         $article = $em->getRepository(Article::class)
             ->find($data['id']);
 
-        if(!$article){
-            return new JsonResponse('could not find article to review!', 400); #bad request
+        if (!$article) {
+            return new JsonResponse('could not find article to review!', Response::HTTP_BAD_REQUEST); // bad request
         }
 
-        if($data['option'] == 'isRejected'){
+        if ($data['option'] == 'isRejected') {
             $em->remove($article);
             $em->flush();
+
             return new JsonResponse($data);
         }
 
@@ -228,11 +218,11 @@ class ArticleController extends AbstractController
 
         $article->setCategory($category);
 
-        if($data['option'] == 'isApproved' || $data['option'] == 'isCurated'){
+        if ($data['option'] == 'isApproved' || $data['option'] == 'isCurated') {
             $article->setIsApproved(true);
         }
 
-        if($data['option'] == 'isCurated'){
+        if ($data['option'] == 'isCurated') {
             $article->setIsCurated(true);
         }
 
@@ -241,79 +231,84 @@ class ArticleController extends AbstractController
         $em->flush();
 
         return new JsonResponse($data);
-
     }
 
     /**
      * @param Request $request
+     *
      * @Route("/articles/reload", name="reload_articles")
      * @Method("GET")
+     *
      * * @return JsonResponse
      */
-    public function reloadArticles(){
+    public function reloadArticles()
+    {
         $articles = $this->getArticles(false, false);
-        return new JsonResponse($articles, 200);
+
+        return new JsonResponse($articles, Response::HTTP_OK);
     }
 
     /**
      * @param Request $request
+     *
      * @Route("/articles", name="articles")
      * @Method("GET")
+     *
      * * @return JsonResponse
      */
     public function getArticles($jsonResponse = true, $cache = false)
     {
-        # get cache manager
+        // get cache manager
         $cm = $this->cm;
 
         $articles = [];
 
-        if($cache){
-            if($this->isGranted('ROLE_EDITOR')){
+        if ($cache) {
+            if ($this->isGranted('ROLE_EDITOR')) {
                 $articles = $cm->getCache('articles', 'all');
-            }else{
+            } else {
                 $articles = $cm->getCache('articles', 'active');
             }
 
-            $articles = json_decode($articles,1);
+            $articles = json_decode($articles, 1);
 
-            if($jsonResponse){
-                return new JsonResponse($articles, 200);
+            if ($jsonResponse) {
+                return new JsonResponse($articles, Response::HTTP_OK);
             }
 
-            return($articles);
+            return $articles;
         }
 
-        # get doctrine manager
+        // get doctrine manager
         $em = $this->em;
 
-        //if the service will return all articles for role editor, or if it will return only active articles for guests and general users
+        // if the service will return all articles for role editor, or if it will return only active articles for guests and general users
         $returnType = 'active';
 
-        if($this->isGranted('ROLE_EDITOR')){
+        if ($this->isGranted('ROLE_EDITOR')) {
             $articles = $em->getRepository(Article::class)
                 ->findAll();
             $returnType = 'all';
-        }else{
+        } else {
             $articles = $em->getRepository(Article::class)
                 ->findApproved();
         }
 
         $data = [];
 
-        foreach($articles as $article){
-            $src = "";
+        foreach ($articles as $article) {
+            $src = '';
             $url = $article->getUrl();
-            if (strpos($url, "www.scrum.org") !== false) {
+            if (strpos($url, 'www.scrum.org') !== false) {
                 $src = 'scrumorg';
             }
-            if (strpos($url, "seriousscrum.com") !== false) {
+            if (strpos($url, 'seriousscrum.com') !== false) {
                 $src = 'seriousscrum';
             }
-            if (strpos($url, "medium.com") !== false) {
+            if (strpos($url, 'medium.com') !== false) {
                 $src = 'medium';
             }
-            if (strpos($url, "www.linkedin.com") !== false) {
+            if (strpos($url, 'www.linkedin.com') !== false) {
                 $src = 'linkedin';
             }
 
@@ -328,42 +323,39 @@ class ArticleController extends AbstractController
                 'category' => $article->getCategory()->getId(),
                 'isCurated' => $article->getIsCurated(),
                 'isApproved' => $article->getIsApproved(),
-                'submittedAt' => $article->getSubmittedAt()
+                'submittedAt' => $article->getSubmittedAt(),
             ];
         }
 
-        //reverse the array so latest show first
+        // reverse the array so latest show first
         $data = array_reverse($data);
 
-        # reset the keys (so that React can properly load them in)
+        // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
         $cm->writeCache('articles', $returnType, json_encode($data));
 
-        if($jsonResponse){
-            return new JsonResponse($data, 200);
+        if ($jsonResponse) {
+            return new JsonResponse($data, Response::HTTP_OK);
         }
 
-        return($data);
-
+        return $data;
     }
 
-    public function reloadActive(){
-
-        # get cache manager
+    public function reloadActive()
+    {
+        // get cache manager
         $cm = $this->cm;
 
-        # get doctrine manager
+        // get doctrine manager
         $em = $this->em;
-
 
         $articles = $em->getRepository(Article::class)
             ->findApproved();
 
-
         $data = [];
 
-        foreach($articles as $article){
+        foreach ($articles as $article) {
             $data[] = [
             'id' => $article->getId(),
             'url' => $article->getUrl(),
@@ -374,14 +366,14 @@ class ArticleController extends AbstractController
             'category' => $article->getCategory()->getId(),
             'isCurated' => $article->getIsCurated(),
             'isApproved' => $article->getIsApproved(),
-            'submittedAt' => $article->getSubmittedAt()
+            'submittedAt' => $article->getSubmittedAt(),
             ];
         }
 
-        //reverse the array so latest show first
+        // reverse the array so latest show first
         $data = array_reverse($data);
 
-        # reset the keys (so that React can properly load them in)
+        // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
         $cm->writeCache('articles', 'active', json_encode($data), 'public/');
@@ -391,47 +383,46 @@ class ArticleController extends AbstractController
 
     /**
      * @param Request $request
+     *
      * @Route("/articles/images", name="article_images")
      * @Method("POST")
      * @IsGranted("ROLE_ADMIN")
+     *
      * @return JsonResponse
      */
-    public function replaceImages(Request $request, $jsonResponse = true)
+    public function replaceImages($jsonResponse = true)
     {
-
-        # get managers
+        // get managers
         $em = $this->em;
         $cm = $this->cm;
 
         $articles = $em->getRepository(Article::class)
             ->findAll();
 
-        foreach($articles as $article){
-           $thumbnail = $article->getThumbnail();
-            if(substr($thumbnail, 0,4) != "http"){
+        foreach ($articles as $article) {
+            $thumbnail = $article->getThumbnail();
+            if (substr($thumbnail, 0, 4) != 'http') {
                 continue;
-           }
+            }
 
-           $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail);
-           if(!$thumbnail) {
-            continue;
-           }
+            $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail);
+            if (!$thumbnail) {
+                continue;
+            }
 
-           $article->setThumbnail($thumbnail);
-           $em->persist($article);
+            $article->setThumbnail($thumbnail);
+            $em->persist($article);
         }
         $em->flush();
 
-        if($jsonResponse){
-            return new JsonResponse(true, 200);
+        if ($jsonResponse) {
+            return new JsonResponse(true, Response::HTTP_OK);
         }
 
-        return(true);
-
-
+        return true;
     }
 
-    function getMetaTags($str)
+    public function getMetaTags($str)
     {
         $pattern = '
                       ~<\s*meta\s
@@ -451,28 +442,30 @@ class ArticleController extends AbstractController
                     
                       ~ix';
 
-        if(preg_match_all($pattern, $str, $out))
+        if (preg_match_all($pattern, $str, $out)) {
             return array_combine($out[1], $out[2]);
-        return array();
+        }
+
+        return [];
     }
 
     /**
      * @param Request $request
+     *
      * @Route("/reloadThumbnails/{startAt}", name="reloadThumbnails")
      * @Method("GET")
+     *
      * @return JsonResponse
      */
-    function reloadThumbnails($startAt){
-
-
-        # get cache manager
+    public function reloadThumbnails($startAt)
+    {
+        // get cache manager
         $cm = $this->cm;
 
         $articles = [];
 
-        # get doctrine manager
+        // get doctrine manager
         $em = $this->em;
-
 
         $articles = $em->getRepository(Article::class)
             ->findAll();
@@ -481,30 +474,30 @@ class ArticleController extends AbstractController
         $data = [];
 
         $i = 0;
-        foreach($articles as $article){
-            $i++;
-            if($i < $startAt){
+        foreach ($articles as $article) {
+            ++$i;
+            if ($i < $startAt) {
                 continue;
             }
 
-            if($i > ($startAt+50)){
+            if ($i > ($startAt + 50)) {
                 break;
             }
 
-             //$article->getId(),
+            // $article->getId(),
             $response = $this->client->request('GET', $article->getUrl());
 
             $statusCode = $response->getStatusCode();
 
-            if(!$response || $statusCode != 200){
+            if (!$response || $statusCode != 200) {
                 continue;
             }
 
             $content = $response->getContent();
 
-            $meta = $this->getMetaTags($content); //gets all meta tags, including those without name attribute
+            $meta = $this->getMetaTags($content); // gets all meta tags, including those without name attribute
 
-            if(!isset($meta['og:image'])){
+            if (!isset($meta['og:image'])) {
                 continue;
             }
 
@@ -515,14 +508,10 @@ class ArticleController extends AbstractController
             $em->persist($article);
 
             $em->flush();
-
-
         }
 
-        $data = ["done"];
+        $data = ['done'];
 
         return new JsonResponse($data);
     }
-
-
 }

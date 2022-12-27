@@ -5,8 +5,6 @@ namespace App\Entity;
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TestimonialRepository")
@@ -19,7 +17,6 @@ class Testimonial
      * @ORM\Column(type="integer")
      */
     private $id;
-
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -35,7 +32,6 @@ class Testimonial
      * @ORM\Column(type="string", length=255)
      */
     private $icon;
-
 
     /**
      * @return mixed
@@ -100,11 +96,4 @@ class Testimonial
     {
         $this->icon = $icon;
     }
-
-
-
-
-
-
-
 }

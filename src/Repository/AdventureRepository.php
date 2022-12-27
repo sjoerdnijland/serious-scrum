@@ -35,5 +35,4 @@ class AdventureRepository extends ServiceEntityRepository
             ->getQuery()
             ->getOneOrNullResult();
     }
-
 }

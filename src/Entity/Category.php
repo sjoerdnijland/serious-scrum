@@ -62,7 +62,6 @@ class Category
      */
     private $articles;
 
-
     public function getId(): ?int
     {
         return $this->id;
@@ -128,7 +127,6 @@ class Category
         return $this->articles;
     }
 
-
     public function addArticle(Article $article)
     {
         if ($this->articles->contains($article)) {
@@ -176,7 +174,4 @@ class Category
     {
         $this->title = $title;
     }
-
-
-
 }

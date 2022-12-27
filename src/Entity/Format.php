@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\FormatRepository")
@@ -53,7 +52,6 @@ class Format
      */
     private $page;
 
-
     public function getId(): ?int
     {
         return $this->id;
@@ -70,8 +68,6 @@ class Format
 
         return $this;
     }
-
-
 
     /**
      * @return mixed
@@ -162,9 +158,4 @@ class Format
     {
         $this->icon = $icon;
     }
-
-
-
-
-
 }

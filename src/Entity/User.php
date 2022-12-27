@@ -5,9 +5,8 @@ namespace App\Entity;
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
@@ -127,8 +126,6 @@ class User implements UserInterface
         return $this;
     }
 
-
-
     /**
      * Returns the password used to authenticate the user.
      *
@@ -190,8 +187,4 @@ class User implements UserInterface
     {
         $this->isPatreon = $isPatreon;
     }
-
-
-
-
 }

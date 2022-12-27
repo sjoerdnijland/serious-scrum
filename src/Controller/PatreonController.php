@@ -2,25 +2,17 @@
 
 namespace App\Controller;
 
-
-use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-
 use Doctrine\ORM\EntityManagerInterface;
-
 use Squid\Patreon\Exceptions\OAuthReturnedError;
 use Squid\Patreon\OAuth;
 use Squid\Patreon\Patreon;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
-use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Routing\Annotation\Route;
 
 class PatreonController extends AbstractController
 {
-
     private $session;
     private $em;
 
@@ -31,11 +23,11 @@ class PatreonController extends AbstractController
     }
 
     /**
-     * Link to this controller to start the "connect" process
+     * Link to this controller to start the "connect" process.
      *
      * @Route("/patreon/login", name="login_patreon")
      */
-    public function patreonLogin()
+    public function patreonLogin(): \Symfony\Component\HttpFoundation\RedirectResponse
     {
         $em = $this->em;
         // Create a new OAuth client using the values from .env
@@ -49,7 +41,7 @@ class PatreonController extends AbstractController
         // not been sent here by Patreon, so we need to redirect them to the Patreon
         // login page.
         if (!isset($_GET['code'])) {
-            Header("Location: {$oauth->getAuthorizationUrl()}");
+            header("Location: {$oauth->getAuthorizationUrl()}");
             exit;
         }
 
@@ -59,7 +51,7 @@ class PatreonController extends AbstractController
         // from Patreon using the Patreon client.
         try {
             $tokens = $oauth->getAccessToken($_GET['code']);
-        } catch(OAuthReturnedError $e) {
+        } catch (OAuthReturnedError $e) {
             $this->getUser()->setIsPatreon(false);
             $em->persist($this->getUser());
             $em->flush();
@@ -79,37 +71,35 @@ class PatreonController extends AbstractController
         // Get the logged in User, this returns a Squid\Patreon\Entities\User
         $patreonSupporter = $patron->me()->get();
 
-        if(!$patreonSupporter->hasActivePledge()) {
+        if (!$patreonSupporter->hasActivePledge()) {
             $this->getUser()->setIsPatreon(false);
             $em->persist($this->getUser());
             $em->flush();
+
             return $this->redirectToRoute('patreon');
         }
 
-        if(!$patreonSupporter->pledge->hasReward()) {
+        if (!$patreonSupporter->pledge->hasReward()) {
             $this->getUser()->setIsPatreon(false);
             $em->persist($this->getUser());
             $em->flush();
+
             return $this->redirectToRoute('patreon');
         }
 
-        if($patreonSupporter->pledge->reward->title == 'Serious Mastery' || $patreonSupporter->pledge->reward->title == 'Superscrummyagilisticexpialidocious!'){
+        if ($patreonSupporter->pledge->reward->title == 'Serious Mastery' || $patreonSupporter->pledge->reward->title == 'Superscrummyagilisticexpialidocious!') {
             if ($this->isGranted('ROLE_USER')) {
-
                 $this->getUser()->setIsPatreon(true);
 
                 $em->persist($this->getUser());
                 $em->flush();
 
-                if($this->session->get('page')){
-                    return $this->redirectToRoute('page', array('slug' => $this->session->get('page')));
+                if ($this->session->get('page')) {
+                    return $this->redirectToRoute('page', ['slug' => $this->session->get('page')]);
                 }
-
             }
         }
 
         return $this->redirectToRoute('patreon');
-
     }
-
 }

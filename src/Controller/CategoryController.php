@@ -1,31 +1,25 @@
 <?php
+
 // src/Controller/ArticleController.php
+
 namespace App\Controller;
 
 use App\Entity\Category;
+use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-
-use Symfony\Component\HttpClient\HttpClient;
-
-use App\Manager\CacheManager;
-
+use Symfony\Component\HttpFoundation\Response;
 
 class CategoryController extends AbstractController
 {
-
     private $em;
     private $cm;
 
-    public function __construct( CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(CacheManager $cacheManager, EntityManagerInterface $entityManager)
     {
         $this->cm = $cacheManager;
         $this->em = $entityManager;
@@ -33,42 +27,44 @@ class CategoryController extends AbstractController
 
     /**
      * @param Request $request
+     *
      * @Route("/categories", name="categories")
      * @Method("GET")
+     *
      * * @return JsonResponse
      */
     public function getCategories($jsonResponse = true, $cache = false)
     {
-
-        # get doctrine manager
+        // get doctrine manager
         $em = $this->em;
-        # get cache manager
+        // get cache manager
         $cm = $this->cm;
 
-        if($cache){
+        if ($cache) {
             $categories = $cm->getCache('categories', 'all');
 
-            $categories = json_decode($categories,1);
+            $categories = json_decode($categories, 1);
 
-            if($jsonResponse){
-                return new JsonResponse($categories, 200);
+            if ($jsonResponse) {
+                return new JsonResponse($categories, Response::HTTP_OK);
             }
-            return($categories);
+
+            return $categories;
         }
 
         $categories = $em->getRepository(Category::class)
             ->findAll();
 
-        foreach($categories as $category){
+        foreach ($categories as $category) {
             $parent = $category->getParent();
 
-            if(is_null($parent)){
+            if (is_null($parent)) {
                 $data[$category->getId()] = [
                     'id' => $category->getId(),
                     'name' => $category->getName(),
                     'title' => $category->getTitle(),
                     'isSeries' => $category->getIsSeries(),
-                    'subCategories' => []
+                    'subCategories' => [],
                 ];
                 continue;
             }
@@ -78,25 +74,23 @@ class CategoryController extends AbstractController
                 'name' => $category->getName(),
                 'title' => $category->getTitle(),
                 'isSeries' => $category->getIsSeries(),
-                'parentId' => $parent->getId()
+                'parentId' => $parent->getId(),
             ];
         }
 
-        # reset the keys (so that React can properly load them in)
+        // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
         $cm->writeCache('categories', 'all', json_encode($data));
 
-        if($jsonResponse){
-            return new JsonResponse($data, 200);
+        if ($jsonResponse) {
+            return new JsonResponse($data, Response::HTTP_OK);
         }
 
-        return($data);
-
+        return $data;
     }
 
-
-    function getMetaTags($str)
+    public function getMetaTags($str)
     {
         $pattern = '
                       ~<\s*meta\s
@@ -116,10 +110,10 @@ class CategoryController extends AbstractController
                     
                       ~ix';
 
-        if(preg_match_all($pattern, $str, $out))
+        if (preg_match_all($pattern, $str, $out)) {
             return array_combine($out[1], $out[2]);
-        return array();
+        }
+
+        return [];
     }
-
-
 }

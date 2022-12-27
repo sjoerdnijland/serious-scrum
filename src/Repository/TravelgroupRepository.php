@@ -35,5 +35,4 @@ class TravelgroupRepository extends ServiceEntityRepository
             ->getQuery()
             ->getOneOrNullResult();
     }
-
 }

@@ -1,29 +1,21 @@
 <?php
+
 // src/Controller/ArticleController.php
+
 namespace App\Controller;
 
 use App\Entity\Traveler;
 use App\Entity\TravelGroup;
-use App\Entity\Adventure;
+use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-
-use Symfony\Component\HttpClient\HttpClient;
-use Symfony\Contracts\HttpClient\HttpClientInterface;
-
-use Symfony\Component\Validator\Constraints\DateTime;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Validator\Constraints as Assert;
-
-use App\Manager\CacheManager;
-
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class TravelerController extends AbstractController
 {
@@ -37,6 +29,7 @@ class TravelerController extends AbstractController
 
     /**
      * @Assert\DateTime
+     *
      * @var string A "Y-m-d H:i:s" formatted value
      */
     private $createdAt;
@@ -49,38 +42,38 @@ class TravelerController extends AbstractController
     }
 
     /**
-     * @param Request $request
      * @Route("/traveler/new", name="traveler_new")
      * @Method("POST")
+     *
      * @return JsonResponse
      */
     public function newTraveler(Request $request, $response = true)
     {
-        # get doctrine manager test
+        // get doctrine manager test
         $em = $this->em;
 
         $data = $request->getContent();
         $data = json_decode($data, 1);
 
-        if(!$data['firstname']){
-            return new JsonResponse('firstname is required', 400); #bad request
+        if (!$data['firstname']) {
+            return new JsonResponse('firstname is required', Response::HTTP_BAD_REQUEST); // bad request
         }
-        if(!$data['lastname']){
-            return new JsonResponse('lastname is required', 400); #bad request
+        if (!$data['lastname']) {
+            return new JsonResponse('lastname is required', Response::HTTP_BAD_REQUEST); // bad request
         }
-        if(!$data['email']){
-            return new JsonResponse('email is required', 400); #bad request
+        if (!$data['email']) {
+            return new JsonResponse('email is required', Response::HTTP_BAD_REQUEST); // bad request
         }
 
-        if(!$data['terms']){
-            return new JsonResponse('Please agree to the terms of service', 400); #bad request
+        if (!$data['terms']) {
+            return new JsonResponse('Please agree to the terms of service', Response::HTTP_BAD_REQUEST); // bad request
         }
 
         $emailAlreadyExists = $em->getRepository(Traveler::class)
             ->findOneByEmail($data['email']);
 
-        if($emailAlreadyExists){
-            return new JsonResponse('email already submitted', 400); #bad request
+        if ($emailAlreadyExists) {
+            return new JsonResponse('email already submitted', Response::HTTP_BAD_REQUEST); // bad request
         }
 
         $traveler = new Traveler();
@@ -95,7 +88,7 @@ class TravelerController extends AbstractController
         $traveler->setIsContacted(0);
         $traveler->setCreatedAt(new \DateTime());
 
-        if($data['travelgroup']){
+        if ($data['travelgroup']) {
             $travelgroup = $em->getRepository(Travelgroup::class)
                 ->findOneBy([
                     'id' => $data['travelgroup'],
@@ -109,33 +102,31 @@ class TravelerController extends AbstractController
         $em->flush();
 
         return new JsonResponse($data);
-
     }
-
 
     /**
      * @param Request $request
+     *
      * @Method("GET")
+     *
      * * @return JsonResponse
      */
-    #* @Route("/travelers", name="travelers")
+    // * @Route("/travelers", name="travelers")
     public function getTravelers($jsonResponse = true)
     {
-
         $travelers = [];
 
-        # get doctrine manager
+        // get doctrine manager
         $em = $this->em;
 
         $travelers = $em->getRepository(Traveler::class)
-            ->findBy(array(),array('lastname' => 'ASC'));
+            ->findBy([], ['lastname' => 'ASC']);
 
         $data = [];
 
-        foreach($travelers as $traveler){
-
+        foreach ($travelers as $traveler) {
             $adventures = [];
-            foreach($traveler->getAdventures() as $adventure){
+            foreach ($traveler->getAdventures() as $adventure) {
                 $adventures[] = [
                     'id' => $adventure->getId(),
                     'name' => $adventure->getName(),
@@ -144,28 +135,28 @@ class TravelerController extends AbstractController
                     'created_at' => $adventure->getCreatedAt(),
                     'isActive' => $adventure->getIsActive(),
                     'link' => $adventure->getLink(),
-                    'paymentLink' => $adventure->getPaymentLink()
+                    'paymentLink' => $adventure->getPaymentLink(),
                 ];
             }
 
             $travelgroups = [];
-            foreach($traveler->getTravelGroups() as $travelgroup){
+            foreach ($traveler->getTravelGroups() as $travelgroup) {
                 $travelgroups[] = [
                     'id' => $travelgroup->getId(),
                     'groupname' => $travelgroup->getGroupname(),
                     'conferenceLink' => $travelgroup->getConferenceLink(),
                     'launch_at' => $travelgroup->getLaunchAt(),
                     'created_at' => $travelgroup->getCreatedAt(),
-                    'isActive' => $travelgroup->getIsActive()
+                    'isActive' => $travelgroup->getIsActive(),
                 ];
             }
 
             $badges = [];
-            foreach($traveler->getBadges() as $badge){
+            foreach ($traveler->getBadges() as $badge) {
                 $badges[] = [
                     'id' => $badge->getId(),
                     'name' => $badge->getName(),
-                    'image' => $badge->getImage()
+                    'image' => $badge->getImage(),
                 ];
             }
 
@@ -183,21 +174,17 @@ class TravelerController extends AbstractController
                 'created' => $traveler->getCreatedAt(),
                 'travelgroups' => $travelgroups,
                 'adventures' => $adventures,
-                'badges' => $badges
+                'badges' => $badges,
             ];
-
         }
 
-        # reset the keys (so that React can properly load them in)
+        // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
-        if($jsonResponse){
-            return new JsonResponse($data, 200);
+        if ($jsonResponse) {
+            return new JsonResponse($data, Response::HTTP_OK);
         }
 
-        return($data);
-
+        return $data;
     }
-
-
 }

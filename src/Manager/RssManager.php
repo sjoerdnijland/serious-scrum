@@ -3,21 +3,18 @@
  * Created by PhpStorm.
  * User: nijland
  * Date: 06/09/2020
- * Time: 12:09
+ * Time: 12:09.
  */
 
 namespace App\Manager;
 
-use Symfony\Contracts\HttpClient\HttpClientInterface;
 use App\Entity\Article;
 use App\Entity\Category;
 use Doctrine\ORM\EntityManagerInterface;
-use App\Manager\CacheManager;
-
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class RssManager
 {
-
     /**
      * @var ClientInterface
      */
@@ -35,29 +32,27 @@ class RssManager
         $this->client = $client;
         $this->cm = $cacheManager;
         $this->em = $entityManager;
-
     }
 
     public function getRSS($url, $source)
     {
-
         $em = $this->em;
         $cm = $this->cm;
 
-        $xml = simplexml_load_file($url,null, LIBXML_NOCDATA);
+        $xml = simplexml_load_file($url, null, LIBXML_NOCDATA);
 
-        $loaded = array();
+        $loaded = [];
 
-        foreach($xml->channel->item as $item){
+        foreach ($xml->channel->item as $item) {
             $title = $item->title;
-            $url = explode("?source",$item->link)[0];
+            $url = explode('?source', $item->link)[0];
 
-            $parseIntro = explode("medium-feed-snippet\">", $item->description);
-            if(isset($parseIntro[1])){
-                $parseIntro = explode("</p>", $parseIntro[1]);
+            $parseIntro = explode('medium-feed-snippet">', $item->description);
+            if (isset($parseIntro[1])) {
+                $parseIntro = explode('</p>', $parseIntro[1]);
                 $intro = $parseIntro[0];
-            }else{
-                $intro = "";
+            } else {
+                $intro = '';
             }
 
             $children = $item->children('http://purl.org/dc/elements/1.1/');
@@ -82,34 +77,33 @@ class RssManager
             $urlAlreadyExists = $em->getRepository(Article::class)
                 ->findArticleByUrl($url);
 
-            if($urlAlreadyExists){
+            if ($urlAlreadyExists) {
                 continue;
             }
 
-            $parseImage = explode("src=\"", $item->description);
+            $parseImage = explode('src="', $item->description);
 
-            if(!isset($parseImage[1])){
-                $parseImage = explode("src=\"", $item->children("content", true));
+            if (!isset($parseImage[1])) {
+                $parseImage = explode('src="', $item->children('content', true));
             }
 
-            if(isset($parseImage[1])){
-                echo('parsing...');
-                $parseImage = explode("\"", $parseImage[1]);
+            if (isset($parseImage[1])) {
+                echo 'parsing...';
+                $parseImage = explode('"', $parseImage[1]);
                 $thumbnail = $parseImage[0];
 
                 $defaultDir = '';
-                if($source == 'command'){
+                if ($source == 'command') {
                     $defaultDir = 'public/';
                 }
 
                 $thumbnail = $cm->storyImageFromUrl('thumbnails', $thumbnail, $defaultDir);
-                if($source == 'command') {
+                if ($source == 'command') {
                     $thumbnail = substr($thumbnail, 7);
                 }
-
-            }else{
-                echo($item->description);
-                $thumbnail = "";
+            } else {
+                echo $item->description;
+                $thumbnail = '';
             }
 
             $article->setThumbnail($thumbnail);
@@ -120,8 +114,7 @@ class RssManager
 
             $em->flush();
 
-            print($title . "\n");
-
+            echo $title."\n";
         }
 
         return $loaded;
