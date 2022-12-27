@@ -2,67 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/assets.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200503123814.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200503124956.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200503130223.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200510063901.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510063901.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200510070036.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510070036.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200511072710.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511072710.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200511075825.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511075825.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200518182700.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200518182700.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200521063533.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200521063533.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200524173442.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524173442.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200524193228.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524193228.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200607175912.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200607175912.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200906195251.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200906195251.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200907175530.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200907175530.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200916141612.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200916141612.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200920172250.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200920172250.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004103042.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004103042.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004104329.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004104329.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004104631.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004104631.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004110025.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004110025.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004112536.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004112536.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004113044.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004113044.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211004113801.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004113801.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211007115205.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211007115205.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211016132457.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211016132457.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022104714.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022104714.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022105623.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022105623.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022145243.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022145243.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211022152218.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022152218.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211023090110.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211023090110.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211023093643.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211023093643.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211027101611.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211027101611.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20211031071343.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211031071343.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220119105134.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220119105134.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220214075232.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220214075232.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220216095036.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220216095036.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220218075633.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220218075633.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220218075940.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220218075940.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220315085353.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220315085353.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220318133435.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220318133435.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220429065910.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220429065910.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220518085024.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085024.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20220518085115.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085115.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/GoogleAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/GoogleAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/UserProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/prod/ContainerYrMVgPL/getGoogleAuthenticatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/prod/ContainerYrMVgPL/getGoogleAuthenticatorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,7 +34,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="GoogleAuthenticator.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GoogleAuthenticator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -113,8 +54,20 @@
       <file leaf-file-name="Version20200503123814.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="195">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="e#64#96#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -160,15 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
               <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="annotations.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes/annotations.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -279,7 +223,6 @@
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
         <option value="$PROJECT_DIR$/src/Command/PrismicCommand.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/assets/app.js" />
@@ -288,6 +231,7 @@
         <option value="$PROJECT_DIR$/config/routes/annotations.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1677,12 +1621,6 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1881,16 +1819,15 @@
       <workItem from="1664103999946" duration="1186000" />
       <workItem from="1664542939299" duration="3305000" />
       <workItem from="1665743686611" duration="2032000" />
-      <workItem from="1672131500011" duration="23445000" />
+      <workItem from="1672131500011" duration="23857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="934020000" />
+    <option name="totallyTimeSpent" value="934432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="65" width="1211" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5005208" side_tool="true" weight="0.050666668" />
@@ -2133,13 +2070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -2264,13 +2194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2283,6 +2206,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#64#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

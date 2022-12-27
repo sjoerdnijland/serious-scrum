@@ -43,3 +43,4 @@ public/ebook/Kindle.zip
 public/cache/categories/all.json
 /tools/php-cs-fixer/vendor
 /.php-cs-fixer.cache
+.DS_Store
