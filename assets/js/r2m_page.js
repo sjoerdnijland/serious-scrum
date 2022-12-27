@@ -220,7 +220,7 @@ class Page extends React.Component {
                     <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user} scrolled={this.state.scrolled}/>
                     <R2MMobileMenu functions={functions}/>
 
-                   
+
                     <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug} followMeIcon={followMeIcon}/>
                     <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug} r2m={true}/>
                     <PageHero url={thumbnail}/>

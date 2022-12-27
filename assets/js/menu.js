@@ -66,7 +66,7 @@ class Menu extends React.Component {
                     <div className="menuTitle">{menuTitle}</div>
                 </div>
                 <div className="one-half column _pr40">
-                    <MenuItem functions={this.props.functions} filter="Editorial" id="editorial" active={this.props.editorial == "editorial"} type="editorial" hide={hideRightMenu}/>
+
                 </div>
             </div>
 
@@ -77,4 +77,6 @@ window.Menu = Menu;
 
 /*
 <MenuItem functions={this.props.functions} filter="Road to Mastery" id="mastery" active={this.props.editorial == "mastery"} type="editorial" hide={hideRightMenu}/>
+
+  <MenuItem functions={this.props.functions} filter="Editorial" id="editorial" active={this.props.editorial == "editorial"} type="editorial" hide={hideRightMenu}/>
  */

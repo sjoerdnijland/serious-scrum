@@ -33,8 +33,6 @@ class HomeRoad extends React.Component {
                         <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="/r2m" target="_blank">Explore</a></p>
                     </div>
                 </div>
-
-
         );
     }
 }

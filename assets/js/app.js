@@ -47,6 +47,7 @@ import '../js/r2m_II';
 import '../js/editorialHeader';
 import '../js/martyHeader';
 import '../js/homeRoad';
+import '../js/homeJoin';
 import '../js/homeConference';
 import '../js/r2m_coaching';
 import '../js/r2m_selfmanagement';
@@ -466,7 +467,7 @@ class App extends React.Component {
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
-                <HomeConference label={this.state.label}/>
+                <HomeJoin label={this.state.label}/>
 
                 <EditorialHeader label={this.state.label}/>
                 <MartyHeader label={this.state.label}/>
@@ -479,8 +480,6 @@ class App extends React.Component {
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
 
                 <SocialMenu type="footer"/>
-                <Channels/>
-                <Banner bannerText={bannerText2} url={bannerUrl2}/>
                 <Build/>
                 <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />
             </div>
