@@ -10,6 +10,8 @@ class Pages extends React.Component {
 
         const ContainerClassName = this.props.visible+" library row ";
 
+        console.log('count '+this.props.displayArticleCount);
+
         let pageNodes = "loading pages...";
 
         if (typeof this.props.contentPages !== 'undefined' && this.props.contentPages.length > 0) {
