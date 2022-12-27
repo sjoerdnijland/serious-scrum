@@ -2,7 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510063901.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510070036.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511072710.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511075825.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200518182700.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200521063533.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524173442.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524193228.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200607175912.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200906195251.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200907175530.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200916141612.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200920172250.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004103042.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004104329.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004104631.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004110025.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004112536.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004113044.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004113801.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211007115205.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211016132457.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022104714.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022105623.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022145243.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022152218.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211023090110.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211023093643.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211027101611.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211031071343.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220119105134.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220214075232.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220216095036.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220218075633.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220218075940.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220315085353.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220318133435.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220429065910.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085024.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085115.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,78 +67,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Security/UserProvider.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleAuthenticator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Version20200503124956.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php">
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="e#64#96#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version20200503123814.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <element signature="e#64#96#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version20220518085115.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085115.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding>
-                <element signature="e#64#96#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version20200503130223.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-              <folding>
-                <element signature="e#64#96#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -98,8 +97,8 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="109" column="28" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="e#75#104#0#PHP" expanded="true" />
               </folding>
@@ -110,8 +109,29 @@
       <file leaf-file-name="AbstractController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="228" column="68" selection-start-line="228" selection-start-column="38" selection-end-line="228" selection-end-column="68" />
+              <folding>
+                <element signature="e#292#333#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="framework.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App_KernelDevDebugContainer.preload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3795">
+              <caret line="253" column="14" selection-start-line="253" selection-start-column="14" selection-end-line="253" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -127,14 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>joinButton</find>
-      <find>join</find>
-      <find>go</find>
-      <find>goToJoin</find>
-      <find>joinText</find>
-      <find>undefined</find>
-      <find>und</find>
-      <find>head</find>
       <find>title</find>
       <find>hea</find>
       <find>miro</find>
@@ -157,6 +169,14 @@
       <find>secur</find>
       <find>@Rout</find>
       <find>Rout</find>
+      <find>whitelist</find>
+      <find>Symfony\Component\Cache\DoctrineProvider</find>
+      <find>symfony/security-bundle</find>
+      <find>security-bundle</find>
+      <find>security.authorization_checker</find>
+      <find>security</find>
+      <find>Securyt</find>
+      <find>Security</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -170,8 +190,8 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/assets</dir>
       <dir>$PROJECT_DIR$/assets/js</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/assets/css</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -180,22 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/travelgroupSelect.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_mobileMenu.js" />
-        <option value="$PROJECT_DIR$/assets/js/joinButton.js" />
-        <option value="$PROJECT_DIR$/assets/js/article.js" />
-        <option value="$PROJECT_DIR$/assets/js/homeConference.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_backstage.js" />
-        <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
-        <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
-        <option value="$PROJECT_DIR$/assets/js/homeRoad.js" />
-        <option value="$PROJECT_DIR$/assets/js/socialMenu.js" />
-        <option value="$PROJECT_DIR$/assets/js/homeJoin.js" />
-        <option value="$PROJECT_DIR$/assets/js/menu.js" />
         <option value="$PROJECT_DIR$/assets/js/header.js" />
         <option value="$PROJECT_DIR$/assets/js/login.js" />
         <option value="$PROJECT_DIR$/assets/css/menu.scss" />
@@ -218,19 +222,35 @@
         <option value="$PROJECT_DIR$/src/Controller/TravelgroupController.php" />
         <option value="$PROJECT_DIR$/src/Command/RssCommand.php" />
         <option value="$PROJECT_DIR$/src/Command/ReloadCommand.php" />
-        <option value="$PROJECT_DIR$/src/Kernel.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
         <option value="$PROJECT_DIR$/src/Command/PrismicCommand.php" />
-        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/assets/app.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/assets/css/fonts.scss" />
         <option value="$PROJECT_DIR$/config/routes/annotations.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Kernel.php" />
+        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510063901.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510070036.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511072710.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511075825.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200518182700.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200521063533.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524173442.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524193228.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200607175912.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200906195251.php" />
+        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200907175530.php" />
+        <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/security.yml" />
+        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
       </list>
     </option>
   </component>
@@ -1620,6 +1640,18 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1818,12 +1850,12 @@
       <workItem from="1664103999946" duration="1186000" />
       <workItem from="1664542939299" duration="3305000" />
       <workItem from="1665743686611" duration="2032000" />
-      <workItem from="1672131500011" duration="23956000" />
+      <workItem from="1672131500011" duration="27173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="934531000" />
+    <option name="totallyTimeSpent" value="937748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="65" width="1211" height="830" extended-state="0" />
@@ -1868,127 +1900,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/editorial.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-584" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/editorialHeader.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeConference.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#33#111#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.php-cs-fixer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AdventureController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#75#100#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FormatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/JiraController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2147" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="48" column="63" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="63" />
-          <folding>
-            <element signature="e#75#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="249" column="43" lean-forward="true" selection-start-line="249" selection-start-column="43" selection-end-line="249" selection-end-column="43" />
-          <folding>
-            <element signature="e#72#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PatreonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/RssCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-          <folding>
-            <element signature="e#31#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/ReloadCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TravelgroupController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1982">
@@ -2032,13 +1943,6 @@
     <entry file="file://$PROJECT_DIR$/config/packages/knpu_oauth2_client.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -2056,31 +1960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -2123,13 +2006,6 @@
     <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -2147,33 +2023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="109" column="28" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="28" />
-          <folding>
-            <element signature="e#75#104#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#64#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085115.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2184,43 +2033,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="e#64#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Security/UserProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="635">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#23#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/cache.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#64#96#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#64#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200510063901.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200510070036.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200511072710.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200511075825.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200518182700.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200521063533.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200524173442.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200524193228.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200906195251.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="253" column="14" selection-start-line="253" selection-start-column="14" selection-end-line="253" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200907175530.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoctrineMigrations/Version20200607175912.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#75#104#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="228" column="68" selection-start-line="228" selection-start-column="38" selection-end-line="228" selection-end-column="68" />
+          <folding>
+            <element signature="e#292#333#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

@@ -415,9 +415,6 @@
     "symfony/polyfill-php80": {
         "version": "v1.18.1"
     },
-    "symfony/property-access": {
-        "version": "v5.0.8"
-    },
     "symfony/routing": {
         "version": "5.4",
         "recipe": {
@@ -442,18 +439,6 @@
         "files": [
             "config/packages/security.yaml"
         ]
-    },
-    "symfony/security-core": {
-        "version": "v5.0.8"
-    },
-    "symfony/security-csrf": {
-        "version": "v5.0.8"
-    },
-    "symfony/security-guard": {
-        "version": "v5.0.8"
-    },
-    "symfony/security-http": {
-        "version": "v5.0.8"
     },
     "symfony/serializer": {
         "version": "v5.0.11"

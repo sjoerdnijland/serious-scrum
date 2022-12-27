@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Squid\Patreon\Patreon;
+use Symfony\Bundle\SecurityBundle\Security;
 
 
 /**
