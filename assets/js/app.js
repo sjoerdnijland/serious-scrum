@@ -477,7 +477,7 @@ class App extends React.Component {
 
                 <Library visible={libraryVisible} articles={this.state.articles}  category={this.state.category}  categories={this.state.categories}  functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles} reviewForm={this.state.reviewForm}/>
 
-                <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
+                <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles} displayArticleCount={this.state.displayArticleCount}/>
 
                 <SocialMenu type="footer"/>
                 <Build/>
