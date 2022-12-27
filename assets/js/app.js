@@ -136,29 +136,29 @@ class App extends React.Component {
                 'Content-Type': 'application/json',
             }
         })
-        .then(response => {
-            if (!response.ok) {
+            .then(response => {
+                if (!response.ok) {
+                    this.setState({
+                        loadResponse: 'error'
+                    });
+                }else{
+                    this.setState({
+                        loadResponse: 'success'
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                this.setState({
+                    articles: data
+                });
+
+            })
+            .catch((error) => {
                 this.setState({
                     loadResponse: 'error'
                 });
-            }else{
-                this.setState({
-                    loadResponse: 'success'
-                });
-            }
-            return response.json();
-        })
-        .then(data => {
-            this.setState({
-                articles: data
             });
-
-        })
-        .catch((error) => {
-            this.setState({
-                loadResponse: 'error'
-            });
-        });
     }
 
     getCategories(){
@@ -321,43 +321,43 @@ class App extends React.Component {
             },
             body: appData
         })
-        .then(response => {
-            if (!response.ok) {
-                this.setState({
-                    submitResponse: 'error'
-                });
-            }else{
-                this.setState({
-                    submitResponse: 'success'
-                });
-
-                this.getArticles();
-
-                setTimeout(function() { //Start the timer
+            .then(response => {
+                if (!response.ok) {
                     this.setState({
-                        submitForm: false,
-                        submitResponse: false,
-                        submitData: '',
-                        submitUrl: '',
-                        submitCategory: 1,
-                    }) //After 3 second, set render to true
-                }.bind(this), 3000)
-            }
+                        submitResponse: 'error'
+                    });
+                }else{
+                    this.setState({
+                        submitResponse: 'success'
+                    });
 
-            return response.json();
-        })
-        .then(data => {
-            this.setState({
-                submitData: data
-            });
+                    this.getArticles();
 
-        })
-        .catch((error) => {
-            this.setState({
-                submitResponse: 'error',
-                submitData: data
+                    setTimeout(function() { //Start the timer
+                        this.setState({
+                            submitForm: false,
+                            submitResponse: false,
+                            submitData: '',
+                            submitUrl: '',
+                            submitCategory: 1,
+                        }) //After 3 second, set render to true
+                    }.bind(this), 3000)
+                }
+
+                return response.json();
+            })
+            .then(data => {
+                this.setState({
+                    submitData: data
+                });
+
+            })
+            .catch((error) => {
+                this.setState({
+                    submitResponse: 'error',
+                    submitData: data
+                });
             });
-        });
     }
 
     reviewArticle(articleId){

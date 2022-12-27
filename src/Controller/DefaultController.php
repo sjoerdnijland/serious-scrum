@@ -8,13 +8,14 @@ use App\Manager\CacheManager;
 use App\Manager\PrismicManager;
 use App\Manager\RssManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Squid\Patreon\Patreon;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Routing\Annotation\Route;
+use Squid\Patreon\Patreon;
+
 
 /**
  * Improvements
