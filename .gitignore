@@ -12,6 +12,7 @@ public/images/storage/thumbnails
 public/images/storage/
 public/images/storage/thumbnails/
 node_modules/
+/config/secrets/prod/prod.decrypt.private.php
 var/
 vendor/
 ###< symfony/framework-bundle ###
@@ -30,13 +31,10 @@ public/images/storage/
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
-
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
-.env
-.env
 public/video/Ubuntu.mov
 public/ebook/Kindle.zip
 public/cache/categories/all.json

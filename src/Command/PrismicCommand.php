@@ -37,7 +37,7 @@ class PrismicCommand extends Command
 
         $this->prismicManager->getPrismicPages('command');
 
-        return \Symfony\Component\Console\Command\Command::FAILURE;
+        return Command::FAILURE;
 
         // this method must return an integer number with the "exit status code"
         // of the command. You can also use these constants to make code more readable
