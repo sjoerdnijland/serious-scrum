@@ -19,6 +19,11 @@ class R2MBackstage extends React.Component {
                 containerClassName += " hidden";
             }
         }
+
+        if(this.props.label != 'backstage'){
+            containerClassName += " hidden";
+        }
+
         if(this.props.user.username == ""){
             containerClassName += " hidden";
         }
