@@ -7,7 +7,7 @@ class Login extends React.Component {
 
     render() {
 
-        const containerClassName = "loginContainer buttonContainer _mr20";
+        const containerClassName = "loginContainer buttonContainer";
         const loginUrl = "/connect/google";
 
         let loginClassName = "";
@@ -29,8 +29,8 @@ class Login extends React.Component {
 
         return (
             <div className={containerClassName}>
-                <a className="_mr20" href="https://community.seriousscrum.com/sign_up" target="_blank"><div className={communityLoginClass}>Join!</div></a>
-                <a className="_mr20" href={loginUrl} ><div className={editorialLoginClass}>Sign In!</div><img className={avatarClass} referrerPolicy="no-referrer" src={this.props.user.avatar}/></a>
+                <a href="https://community.seriousscrum.com/sign_up" target="_blank"><div className={communityLoginClass}>Join!</div></a>
+                <a href={loginUrl} ><div className={editorialLoginClass}>Sign In!</div><img className={avatarClass} referrerPolicy="no-referrer" src={this.props.user.avatar}/></a>
             </div>
         );
     }

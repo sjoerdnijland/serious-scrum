@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/homeJoin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/homeConference.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/homeConference.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/homeRoad.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/homeRoad.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/socialMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/socialMenu.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +23,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="homeJoin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/homeJoin.js">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="195">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/banner.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="306" selection-start-line="18" selection-start-column="306" selection-end-line="18" selection-end-column="306" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="98" column="17" selection-start-line="98" selection-start-column="3" selection-end-line="98" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -40,82 +67,42 @@
       <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="-22">
+              <caret line="404" selection-start-line="404" selection-end-line="404" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeConference.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/homeConference.scss">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="500">
+              <caret line="133" selection-start-line="133" selection-end-line="133" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+      <file leaf-file-name="menu.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="745" column="160" selection-start-line="745" selection-start-column="130" selection-end-line="745" selection-end-column="160" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="493">
+              <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="80" column="163" selection-start-line="80" selection-start-column="163" selection-end-line="80" selection-end-column="163" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r2m_page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="222" selection-start-line="222" selection-end-line="222" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/pages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-617" />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="socialMenu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
+            <state relative-caret-position="493">
               <caret line="68" column="160" selection-start-line="68" selection-start-column="160" selection-end-line="68" selection-end-column="160" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-932">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-            </state>
-          </provider>
+      <file leaf-file-name="categoryMenu.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/categoryMenu.scss">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -129,8 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>backstageFilter</find>
-      <find>back</find>
       <find>che</find>
       <find>check</find>
       <find>toggle</find>
@@ -159,6 +144,8 @@
       <find>hea</find>
       <find>miro</find>
       <find>homeConference</find>
+      <find>login</find>
+      <find>headerMenuItem</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -171,9 +158,9 @@
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/assets</dir>
-      <dir>$PROJECT_DIR$/assets/css</dir>
       <dir>$PROJECT_DIR$/assets/js</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/assets/css</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -182,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/r2m_format.js" />
         <option value="$PROJECT_DIR$/src/Controller/TravelerController.php" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Badge.php" />
@@ -218,21 +204,22 @@
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroup.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_travelgroups.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_home.js" />
-        <option value="$PROJECT_DIR$/assets/css/header.scss" />
-        <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_backstage.js" />
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_page.js" />
         <option value="$PROJECT_DIR$/assets/js/homeRoad.js" />
-        <option value="$PROJECT_DIR$/assets/js/header.js" />
-        <option value="$PROJECT_DIR$/assets/js/login.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/assets/js/socialMenu.js" />
         <option value="$PROJECT_DIR$/assets/js/homeJoin.js" />
         <option value="$PROJECT_DIR$/assets/css/homeConference.scss" />
         <option value="$PROJECT_DIR$/assets/js/menu.js" />
+        <option value="$PROJECT_DIR$/assets/js/build.js" />
+        <option value="$PROJECT_DIR$/assets/js/header.js" />
+        <option value="$PROJECT_DIR$/assets/js/login.js" />
+        <option value="$PROJECT_DIR$/assets/css/header.scss" />
+        <option value="$PROJECT_DIR$/assets/css/menu.scss" />
       </list>
     </option>
   </component>
@@ -1820,12 +1807,12 @@
       <workItem from="1664103999946" duration="1186000" />
       <workItem from="1664542939299" duration="3305000" />
       <workItem from="1665743686611" duration="2032000" />
-      <workItem from="1672131500011" duration="6873000" />
+      <workItem from="1672131500011" duration="9222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="917448000" />
+    <option name="totallyTimeSpent" value="919797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="104" y="25" width="1211" height="830" extended-state="0" />
@@ -1870,23 +1857,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/joinFirstname.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/joinEmail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/r2mPage.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1975,22 +1945,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/build.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/r2m_page.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
@@ -2035,9 +1991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2073,20 +2026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="92" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -2109,34 +2048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="68" column="160" selection-start-line="68" selection-start-column="160" selection-end-line="68" selection-end-column="160" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/homeRoad.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeConference.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -2150,16 +2065,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/homeJoin.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="630">
+          <caret line="80" column="163" selection-start-line="80" selection-start-column="163" selection-end-line="80" selection-end-column="163" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/homeConference.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
+        <state relative-caret-position="-389">
           <caret line="745" column="160" selection-start-line="745" selection-start-column="130" selection-end-line="745" selection-end-column="160" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -2167,10 +2092,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/menu.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/homeJoin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="80" column="163" selection-start-line="80" selection-start-column="163" selection-end-line="80" selection-end-column="163" />
+        <state relative-caret-position="180">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="306" selection-start-line="18" selection-start-column="306" selection-end-line="18" selection-end-column="306" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/categoryMenu.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="68" column="160" selection-start-line="68" selection-start-column="160" selection-end-line="68" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/banner.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="404" selection-start-line="404" selection-end-line="404" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="133" selection-start-line="133" selection-end-line="133" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="98" column="17" selection-start-line="98" selection-start-column="3" selection-end-line="98" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
         </state>
       </provider>
     </entry>

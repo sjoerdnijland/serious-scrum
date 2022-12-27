@@ -23,7 +23,7 @@ class Header extends React.Component {
                 </div>
                 </a>
                 <div className="headerOptions _pr10 _pt20">
-                    <CategoryMenu functions={functions} expanded={this.props.expanded} site="serious"/>
+                     <CategoryMenu functions={functions} expanded={this.props.expanded} site="serious"/>
                     <Login user={this.props.user} type={'community'}/>
                     <div className={'headerMenuItem'}>
                         <a href={'https://community.seriousscrum.com/sign_in'} target={'_blank'}>Sign In</a>
