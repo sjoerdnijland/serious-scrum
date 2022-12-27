@@ -17,8 +17,11 @@ var/
 vendor/
 ###< symfony/framework-bundle ###
 ###> symfony/phpunit-bridge ###
+
 .phpunit
 phpunit.xml
+.phpunit.result.cache
+/phpunit.xml
 ###< symfony/phpunit-bridge ###
 
 ###> symfony/webpack-encore-bundle ###
