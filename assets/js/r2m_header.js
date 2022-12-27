@@ -33,7 +33,6 @@ class R2MHeader extends React.Component {
                 </div>
 
                 <div className="headerOptions _pr10 _pt20">
-                    <CategoryMenu functions={functions} expanded={this.props.expanded} site="r2m"/>
                     <HeaderMenuItem functions={functions} name="Backstage" target="r2m/backstage" hidden={!backstage}/>
                     <HeaderMenuItem functions={functions} name="Contact" target="page/behind-the-road"/>
                     <JoinButton functions={functions} user={this.props.user}/>
@@ -48,3 +47,6 @@ class R2MHeader extends React.Component {
     }
 }
 window.R2MHeader = R2MHeader;
+/*
+<CategoryMenu functions={functions} expanded={this.props.expanded} site="r2m"/>
+ */

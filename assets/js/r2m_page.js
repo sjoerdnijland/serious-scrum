@@ -41,6 +41,8 @@ class Page extends React.Component {
             categories: this.props.data.categories,
             expandedCategoryMenu: false,
             expanded: false,
+            scrolled: 0,
+            scrolledbar: 0
         };
 
         this.linkResolver = this.linkResolver.bind(this);
@@ -49,11 +51,16 @@ class Page extends React.Component {
         this.toggleCategoryMenu = this.toggleCategoryMenu.bind(this);
         this.setLabel = this.setLabel.bind(this);
         this.goToJoin = this.goToJoin.bind(this);
+        this.onScrollPage = this.onScrollPage.bind(this);
     }
 
     componentDidMount(){
-        //this.getContent();
+        window.addEventListener("scroll", this.onScrollPage);
     }
+    componentWillUnmount(){
+        window.removeEventLister("scroll", this.onScrollPage);
+    }
+
 
     linkResolver(doc) {
         // Define the url depending on the document type
@@ -112,6 +119,20 @@ class Page extends React.Component {
 
             // response is the response object, response.results holds the documents
         }
+    }
+
+    onScrollPage(){
+        const winHeightPx =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        const scrolledPercentage = `${this.state.scrolled / winHeightPx * 100}%`;
+        this.setState({
+            scrolledbar: scrolledPercentage,
+        })
+        console.log(document.documentElement.scrollTop);
+        this.setState({
+            scrolled: document.documentElement.scrollTop,
+        });
     }
 
     render() {
@@ -196,11 +217,10 @@ class Page extends React.Component {
                         <meta property="article:author" content={this.props.data.author} />
                     </MetaTags>
 
-                    <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
+                    <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user} scrolled={this.state.scrolled}/>
                     <R2MMobileMenu functions={functions}/>
 
-                    <R2MCategories functions={functions} expanded={this.state.expandedCategoryMenu} data={this.state.categories} parentCategoryName={'Adventures'}/>
-
+                   
                     <PageMenu functions={functions} pages={this.props.data.pageMenu} expanded={this.state.expanded} slug={this.props.data.slug} followMeIcon={followMeIcon}/>
                     <PageTitle title={this.state.title} introduction={RichText.asText(this.state.doc.data.introduction.value)} series={this.props.data.series} seriesslug={this.props.data.seriesslug} r2m={true}/>
                     <PageHero url={thumbnail}/>
