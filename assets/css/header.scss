@@ -25,10 +25,21 @@
   position: sticky;
   top:0px;
   z-index:3;
+  padding-left: 140px;
+  padding-right: 140px;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.r2m_header_ocean{
+  background-color: $masteryOcean;
 }
 
 .logo{
-  float:left;
+  position: absolute;
   margin: 30px 0px 10px 20px;
   cursor: pointer;
   img{

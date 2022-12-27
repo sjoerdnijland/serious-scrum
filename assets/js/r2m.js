@@ -152,7 +152,9 @@ class R2M extends React.Component {
             reviewCategory: false,
             reviewOption: 'isApproved',
             filters: filters,
-            backstageFilters: backstageFilters
+            backstageFilters: backstageFilters,
+            scrolled: 0,
+            scrolledbar: 0
         };
 
         this.closeMenus = this.closeMenus.bind(this);
@@ -186,8 +188,17 @@ class R2M extends React.Component {
         this.setFilter = this.setFilter.bind(this);
         this.setBackstageFilter = this.setBackstageFilter.bind(this);
         this.goToJoin = this.goToJoin.bind(this);
-
+        this.onScrollPage = this.onScrollPage.bind(this);
     }
+
+    componentDidMount(){
+        window.addEventListener("scroll", this.onScrollPage);
+    }
+    componentWillUnmount(){
+        window.removeEventLister("scroll", this.onScrollPage);
+    }
+
+
 
     closeMenus(){
         if(this.state.editorial){
@@ -673,6 +684,20 @@ class R2M extends React.Component {
         });
     }
 
+    onScrollPage(){
+        const winHeightPx =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        const scrolledPercentage = `${this.state.scrolled / winHeightPx * 100}%`;
+        this.setState({
+            scrolledbar: scrolledPercentage,
+        })
+        console.log(document.documentElement.scrollTop);
+        this.setState({
+            scrolled: document.documentElement.scrollTop,
+        });
+    }
+
     render() {
 
         const functions = {};
@@ -716,10 +741,11 @@ class R2M extends React.Component {
         }
         const bannerUrl2 = "/patreon";
 
+
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
 
-                <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user}/>
+                <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user} scrolled={this.state.scrolled}/>
                 <R2MMobileMenu functions={functions}/>
 
                 <R2MHome label={this.state.label} module={this.state.module}/>

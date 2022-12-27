@@ -30,8 +30,10 @@ class R2MHome extends React.Component {
 
                 <div className={containerClassName}>
                     <div className={bannerClassName}>
-                        <h1>Road to Mastery</h1>
                         <div className="title">
+                            <h1>Road to Mastery</h1>
+                        </div>
+                        <div className="intro">
                             Master Scrum together.
                             <ul>
                                 <li>Go on a learning journey; </li>

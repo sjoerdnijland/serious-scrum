@@ -22,12 +22,16 @@ class R2MHeader extends React.Component {
             backstage = true;
         }
 
+        if(this.props.scrolled >= 80){
+            ContainerClassName += " r2m_header_ocean";
+        }
+
         return (
             <div className={ContainerClassName} >
-                <a href="/r2m"><div className=" logo">
-                    <img src={src}/>
+               <div className=" logo"> <a href="/r2m">
+                    <img src={src}/>  </a>
                 </div>
-                </a>
+
                 <div className="headerOptions _pr10 _pt20">
                     <CategoryMenu functions={functions} expanded={this.props.expanded} site="r2m"/>
                     <HeaderMenuItem functions={functions} name="Backstage" target="r2m/backstage" hidden={!backstage}/>

@@ -17,7 +17,7 @@ class Header extends React.Component {
         const src = "/images/serious-scrum-logo.svg";
 
         return (
-            <div className={ContainerClassName} >
+            <div id={'r2m_header'} className={ContainerClassName} >
                 <a href={"/"}><div className=" logo">
                     <img src={src}/>
                 </div>
