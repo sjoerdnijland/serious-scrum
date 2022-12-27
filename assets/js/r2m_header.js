@@ -33,13 +33,10 @@ class R2MHeader extends React.Component {
                     <HeaderMenuItem functions={functions} name="Backstage" target="r2m/backstage" hidden={!backstage}/>
                     <HeaderMenuItem functions={functions} name="Contact" target="page/behind-the-road"/>
                     <JoinButton functions={functions} user={this.props.user}/>
-                    <HeaderMenuItem functions={functions} name="Playbook" target="r2m/playbook"/>
                     <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials"/>
                     <HeaderMenuItem functions={functions} name="Licenses" target="r2m/chapter/program"/>
-                    <HeaderMenuItem functions={functions} name="E-Books" target="https://road2mastery.gumroad.com/"/>
-                    <HeaderMenuItem functions={functions} name="Hardcopy Books" target="https://www.seriousscrum.com/page/hardcopy-companions-for-guides-adventures-1-4"/>
+                    <HeaderMenuItem functions={functions} name="Shop" target="https://road2mastery.gumroad.com/"/>
                     <HeaderMenuItem functions={functions} name="The Journey" target="page/the-road-to-mastery-r2m"/>
-
                 </div>
             </div>
 

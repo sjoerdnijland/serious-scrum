@@ -48,7 +48,7 @@ class R2MTravelGroups extends React.Component {
 
                 <div className={containerClassName} >
                     <div className={bannerClassName}>
-                        <h1>Travel Groups</h1>
+                        <h1>Join a Travel Group:</h1>
                         <div className="travelgroupContainer">
                             {travelgroups}
                         </div>
