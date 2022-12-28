@@ -750,8 +750,7 @@ class R2M extends React.Component {
                 <a name="ubrs"/>
                 <R2MUBRS label={this.state.label}  module={this.state.module}/>
 
-                <a name="map"/>
-                <R2MMap label={this.state.label}  module={this.state.module}/>
+
 
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
@@ -809,4 +808,6 @@ ReactDOM.render(<R2M data={data} />, root);
 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
 <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
 <R2MCategories functions={functions} expanded={this.state.expanded} data={this.state.categories} parentCategoryName={'Adventures'}/>
+ <a name="map"/>
+                <R2MMap label={this.state.label}  module={this.state.module}/>
 */
