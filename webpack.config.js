@@ -1,5 +1,11 @@
 const Encore = require('@symfony/webpack-encore');
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+/*module.exports = {
+    // Other rules...
+    plugins: [
+        new NodePolyfillPlugin()
+    ]
+};*/
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -106,9 +112,3 @@ Encore
 
 
 module.exports = Encore.getWebpackConfig();
-module.exports = {
-    // Other rules...
-    plugins: [
-        new NodePolyfillPlugin()
-    ]
-};
