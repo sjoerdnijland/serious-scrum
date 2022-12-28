@@ -77,7 +77,7 @@ class PageController extends AbstractController
         $page->getLabels();
         $page->getData();
 
-        $page = $em->getRepository('App:Page')
+        $page = $em->getRepository(Page::class)
             ->findOneBy([
                 'slug' => $slug,
             ]);
@@ -172,7 +172,7 @@ class PageController extends AbstractController
         ];
 
         if ($page->getIsSubscribersOnly() && $user['patreon'] != 'supporter') {
-            $unauthorizedPage = $em->getRepository('App:Page')
+            $unauthorizedPage = $em->getRepository(Page::class)
                 ->findOneBy([
                     'slug' => '401-unauthorized',
                 ]);

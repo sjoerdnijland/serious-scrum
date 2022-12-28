@@ -55,7 +55,7 @@ class Pages extends React.Component {
                 return typeof el.id != 'undefined';
             });
 
-            pageNodes = Object.values(filtered).slice(0, this.props.displayArticleCount).map(function (page) {
+            pageNodes = Object.values(filtered).map(function (page) {
                 if(page.id) {
                     const key = 'page_' + page.id;
 

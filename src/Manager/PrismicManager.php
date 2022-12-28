@@ -126,7 +126,8 @@ class PrismicManager
                     }
                 }
 
-                $page = $em->getRepository('App:Page')
+                $page = $em->getRepository(Page::class)
+
                     ->findOneBy([
                         'prismicId' => $prismicId,
                     ]);
