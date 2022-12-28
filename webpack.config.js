@@ -49,7 +49,7 @@ Encore
     // enables hashed filenames (e.g. app.abc123.css)
     .enableVersioning(Encore.isProduction())
 
-     configure Babel
+     //configure Babel
      .configureBabel((config) => {
          config.plugins.push('@babel/a-babel-plugin');
      })
