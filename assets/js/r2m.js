@@ -77,7 +77,6 @@ import '../js/r2m_testimonials';
 import '../js/r2m_testimonial';
 import '../js/r2m_theory';
 import '../js/r2m_scrumvalues';
-import '../js/r2m_map';
 import '../js/r2m_playbookFilters';
 import '../js/r2m_playbookFilter';
 import '../js/r2m_mountaineering';
