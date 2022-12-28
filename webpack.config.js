@@ -57,24 +57,23 @@ Encore
     //.addPlugin(new NodePolyfillPlugin())
 
     // configure Babel
-     //.configureBabel((config) => {
-      //   config.plugins.push('@babel/a-babel-plugin');
-    //})
+    .configureBabel((config) => {
+         //config.plugins.push('@babel/a-babel-plugin');
+        config.plugins.push('@babel/plugin-proposal-class-properties');
+    })
 
     // enables and configure @babel/preset-env polyfills
     .configureBabelPresetEnv((config) => {
         config.useBuiltIns = 'usage';
-        config.corejs = '3.23';
+        config.corejs = '3';
     })
-
-
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
-    /*
+
     .addLoader({
         test: /\.(png|jpg|svg)$/,
         loader: 'file-loader',
@@ -84,7 +83,7 @@ Encore
             outputPath: 'images'
         }
     })
-    */
+
     .cleanupOutputBeforeBuild()
 
     .enableVersioning()
