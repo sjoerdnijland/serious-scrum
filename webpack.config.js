@@ -62,6 +62,8 @@ Encore
     // enables hashed filenames (e.g. app.abc123.css)
     //.enableVersioning(Encore.isProduction())
 
+    .addPlugin(new NodePolyfillPlugin())
+
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
