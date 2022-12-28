@@ -40,7 +40,7 @@ class PageController extends AbstractController
      *
      * @return Response
      */
-    public function getPage($slug)
+    public function getPage(Request $request, $slug)
     {
         // get doctrine manager
         $em = $this->em;

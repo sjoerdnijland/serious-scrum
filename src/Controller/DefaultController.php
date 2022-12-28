@@ -85,7 +85,7 @@ class DefaultController extends AbstractController
      *
      * @return Response
      */
-    public function index($label = false)
+    public function index(Request $request, $label = false)
     {
         $user['username'] = '';
         $user['fullname'] = '';
@@ -260,7 +260,7 @@ class DefaultController extends AbstractController
      *
      * @return Response
      */
-    public function masteryReload($label = false, $module = false)
+    public function masteryReload(Request $request, $label = false, $module = false)
     {
         $user['username'] = '';
         $user['fullname'] = '';
@@ -375,7 +375,7 @@ class DefaultController extends AbstractController
      *
      * @return Response
      */
-    public function mastery($label = false, $module = false)
+    public function mastery(Request $request, $label = false, $module = false)
     {
         $user['username'] = '';
         $user['fullname'] = '';

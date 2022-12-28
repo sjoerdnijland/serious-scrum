@@ -10,16 +10,17 @@ class Pages extends React.Component {
 
         const ContainerClassName = this.props.visible+" library row ";
 
-        console.log('count '+this.props.displayArticleCount);
-
         let pageNodes = "loading pages...";
+
+        console.log('label: '+this.props.label);
 
         if (typeof this.props.contentPages !== 'undefined' && this.props.contentPages.length > 0) {
 
+
            let contentPages =  JSON.parse(JSON.stringify(this.props.contentPages));
 
-            contentPages.forEach(function(page, index) {
 
+            contentPages.forEach(function(page, index) {
 
                 let labelMatch = false;
                 for (var i = 0; i < page.labels.length + 1; i++) {
@@ -34,10 +35,12 @@ class Pages extends React.Component {
                 }
 
                if(this.search){
+                   console.log("donkey");
                    if( (page.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
                        (page.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
                        (page.author.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)
                    ){
+
                        console.log(index);
                        contentPages[index] = [];
                    }
@@ -52,10 +55,12 @@ class Pages extends React.Component {
            });
 
             let filtered = contentPages.filter(function (el) {
+                console.log(JSON.stringify(el));
                 return typeof el.id != 'undefined';
             });
 
-            pageNodes = Object.values(filtered).map(function (page) {
+            pageNodes = Object.values(filtered).slice(0, 999).map(function (page) {
+                console.log("cow");
                 if(page.id) {
                     const key = 'page_' + page.id;
 
