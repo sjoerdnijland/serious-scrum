@@ -1,4 +1,5 @@
 const Encore = require('@symfony/webpack-encore');
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -27,6 +28,8 @@ Encore
     .addEntry('r2m_page', './assets/js/r2m_page.js')
     .addEntry('patreon', './assets/js/patreon.js')
     .addEntry('r2m', './assets/js/r2m.js')
+
+
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
      // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
@@ -63,6 +66,8 @@ Encore
     //.enableVersioning(Encore.isProduction())
 
     .addPlugin(new NodePolyfillPlugin())
+
+
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
@@ -101,3 +106,9 @@ Encore
 
 
 module.exports = Encore.getWebpackConfig();
+module.exports = {
+    // Other rules...
+    plugins: [
+        new NodePolyfillPlugin()
+    ]
+};
