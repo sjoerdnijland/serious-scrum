@@ -92,7 +92,7 @@ import '../js/r2m_backstageFilter';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BottomScrollListener from 'react-bottom-scroll-listener';
+import {BottomScrollListener} from 'react-bottom-scroll-listener';
 import Prismic from 'prismic-javascript';
 import { Date, Link, RichText } from 'prismic-reactjs';
 

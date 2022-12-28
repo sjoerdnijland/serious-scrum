@@ -57,9 +57,7 @@ import '../js/r2m_game';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BottomScrollListener from 'react-bottom-scroll-listener';
-import Prismic from 'prismic-javascript'
-import { Date, Link, RichText } from 'prismic-reactjs'
+import {BottomScrollListener} from 'react-bottom-scroll-listener';
 
 import 'react-dropdown/style.css';
 
