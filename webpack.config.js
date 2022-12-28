@@ -1,5 +1,5 @@
 const Encore = require('@symfony/webpack-encore');
-const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+//const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 /*module.exports = {
     // Other rules...
     plugins: [
