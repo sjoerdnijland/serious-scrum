@@ -1,6 +1,6 @@
 {
     "engines": {
-        "node": "^16.10"
+        "node": "^16.0"
     },
     "devDependencies": {
         "@babel/core": "^7.17.0",
