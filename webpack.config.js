@@ -55,10 +55,10 @@ Encore
     // })
 
     // enables and configure @babel/preset-env polyfills
-    //.configureBabelPresetEnv((config) => {
-      //  config.useBuiltIns = 'usage';
-        //config.corejs = '3.23';
-    //})
+    .configureBabelPresetEnv((config) => {
+        config.useBuiltIns = 'usage';
+        config.corejs = '3.23';
+    })
     // enables hashed filenames (e.g. app.abc123.css)
     //.enableVersioning(Encore.isProduction())
 
