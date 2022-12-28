@@ -2,55 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503123814.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503124956.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200503130223.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510063901.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510070036.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511072710.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511075825.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200518182700.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200521063533.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524173442.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200524193228.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200607175912.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200906195251.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200907175530.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200916141612.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20200920172250.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004103042.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004104329.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004104631.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004110025.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004112536.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004113044.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211004113801.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211007115205.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211016132457.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022104714.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022105623.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022145243.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211022152218.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211023090110.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211023093643.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211027101611.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20211031071343.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220119105134.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220214075232.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220216095036.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220218075633.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220218075940.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220315085353.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220318133435.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220429065910.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085024.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctrineMigrations/Version20220518085115.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,11 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -130,8 +91,8 @@
       <file leaf-file-name="App_KernelDevDebugContainer.preload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3795">
-              <caret line="253" column="14" selection-start-line="253" selection-start-column="14" selection-end-line="253" selection-end-column="14" />
+            <state relative-caret-position="4365">
+              <caret line="291" column="14" selection-start-line="291" selection-start-column="14" selection-end-line="291" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -226,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/Command/PrismicCommand.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/assets/app.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/assets/css/fonts.scss" />
         <option value="$PROJECT_DIR$/config/routes/annotations.yaml" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -251,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
       </list>
     </option>
   </component>
@@ -1850,12 +1811,12 @@
       <workItem from="1664103999946" duration="1186000" />
       <workItem from="1664542939299" duration="3305000" />
       <workItem from="1665743686611" duration="2032000" />
-      <workItem from="1672131500011" duration="27173000" />
+      <workItem from="1672131500011" duration="27339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="937748000" />
+    <option name="totallyTimeSpent" value="937914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="65" width="1211" height="830" extended-state="0" />
@@ -1985,13 +1946,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/app.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -2160,8 +2114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3795">
-          <caret line="253" column="14" selection-start-line="253" selection-start-column="14" selection-end-line="253" selection-end-column="14" />
+        <state relative-caret-position="4365">
+          <caret line="291" column="14" selection-start-line="291" selection-start-column="14" selection-end-line="291" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -2230,7 +2184,14 @@
     <entry file="file://$PROJECT_DIR$/config/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
         </state>
       </provider>
     </entry>
