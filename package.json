@@ -37,6 +37,7 @@
         "sass-loader": "^13.0",
         "react-bottom-scroll-listener": "5.1.0",
         "uuid": "^9.0.0",
-        "file-loader": "^6.2.0"
+        "file-loader": "^6.2.0",
+        "check-node-version": "^4.2.1"
     }
 }
