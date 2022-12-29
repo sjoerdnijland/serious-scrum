@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Merriweather-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambook-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambook-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambook-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambook-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothambook-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothamlight-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothamlight-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothamlight-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothamlight-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothamlight-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothammedium-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothammedium-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothammedium-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothammedium-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gothammedium-webfont.woff2" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,20 +109,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
+            <state relative-caret-position="1275">
               <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fonts.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fonts.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -112,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="650">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -392,7 +416,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="268" />
+    <option name="x" value="78" />
     <option name="y" value="25" />
     <option name="width" value="1574" />
     <option name="height" value="830" />
@@ -418,30 +442,23 @@
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
@@ -669,16 +686,15 @@
       <workItem from="1672131500011" duration="37866000" />
       <workItem from="1672230947791" duration="1071000" />
       <workItem from="1672240200288" duration="1853000" />
-      <workItem from="1672242786030" duration="13551000" />
+      <workItem from="1672242786030" duration="13739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="964916000" />
+    <option name="totallyTimeSpent" value="965104000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="268" y="25" width="1574" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="78" y="25" width="1574" height="830" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5005208" side_tool="true" weight="0.050666668" />
@@ -980,21 +996,21 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
