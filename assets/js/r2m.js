@@ -88,6 +88,7 @@ import '../js/r2m_backstage';
 import '../js/r2m_traveler';
 import '../js/r2m_backstageFilters';
 import '../js/r2m_backstageFilter';
+import '../js/r2m_play_blanks';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -750,8 +751,6 @@ class R2M extends React.Component {
                 <a name="ubrs"/>
                 <R2MUBRS label={this.state.label}  module={this.state.module}/>
 
-
-
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
 
@@ -773,6 +772,7 @@ class R2M extends React.Component {
                 <a name="backstage"/>
                 <R2MBackstage label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelers} travelgroups={this.state.travelgroups} backstageFilters={this.state.backstageFilters}/>
 
+                <R2MPlayBlanks label={this.state.label}  module={this.state.module}/>
 
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>
                 <R2MTBR label={this.state.label} module={this.state.module}/>
@@ -789,6 +789,8 @@ class R2M extends React.Component {
                 <R2MEvents label={this.state.label} module={this.state.module}/>
 
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
+
+
 
                 <Build/>
                 <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />

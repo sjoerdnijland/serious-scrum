@@ -26,7 +26,7 @@ class R2MJoin extends React.Component {
         if(this.props.label){
             containerClassName += " hidden";
         }else if(this.props.module){
-            if(this.props.module == 'backstage'){
+            if(this.props.module == 'backstage' || this.props.module == 'play_blanks'){
                 containerClassName += " hidden";
             }
         }

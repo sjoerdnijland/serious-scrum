@@ -7,10 +7,12 @@ public/bundles/
 public/public
 public/public/
 public/cache
+public/cache/
 public/images/storage
 public/images/storage/thumbnails
 public/images/storage/
 public/images/storage/thumbnails/
+
 node_modules/
 /config/secrets/prod/prod.decrypt.private.php
 var/
