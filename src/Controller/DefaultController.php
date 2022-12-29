@@ -17,7 +17,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Squid\Patreon\Patreon;
 use Symfony\Bundle\SecurityBundle\Security;
 
-
 /**
  * Improvements
  * - add exception handlers
