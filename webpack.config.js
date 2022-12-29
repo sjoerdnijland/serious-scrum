@@ -74,7 +74,7 @@ Encore
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
 
-    .addLoader({
+    /*.addLoader({
         test: /\.(png|jpg|svg)$/,
         loader: 'file-loader',
         options: {
@@ -83,6 +83,7 @@ Encore
             outputPath: 'images'
         }
     })
+    */
 
     .cleanupOutputBeforeBuild()
 
