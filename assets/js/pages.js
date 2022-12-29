@@ -12,8 +12,6 @@ class Pages extends React.Component {
 
         let pageNodes = "loading pages...";
 
-        console.log('label: '+this.props.label);
-
         if (typeof this.props.contentPages !== 'undefined' && this.props.contentPages.length > 0) {
 
 
@@ -35,13 +33,10 @@ class Pages extends React.Component {
                 }
 
                if(this.search){
-                   console.log("donkey");
                    if( (page.title.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
                        (page.intro.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1) &&
                        (page.author.toString().toLowerCase().indexOf(this.search.toString().toLowerCase()) == -1)
                    ){
-
-                       console.log(index);
                        contentPages[index] = [];
                    }
                }
@@ -55,12 +50,10 @@ class Pages extends React.Component {
            });
 
             let filtered = contentPages.filter(function (el) {
-                console.log(JSON.stringify(el));
                 return typeof el.id != 'undefined';
             });
 
             pageNodes = Object.values(filtered).slice(0, 999).map(function (page) {
-                console.log("cow");
                 if(page.id) {
                     const key = 'page_' + page.id;
 
