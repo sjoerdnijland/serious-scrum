@@ -12,7 +12,7 @@ class R2MHeader extends React.Component {
 
         const functions = this.props.functions;
 
-        let ContainerClassName = "r2m_header row";
+        let containerClassName = "r2m_header row";
 
         const src = "/images/serious-scrum-logo-darkblue-r2m.svg";
 
@@ -23,11 +23,17 @@ class R2MHeader extends React.Component {
         }
 
         if(this.props.scrolled >= 80){
-            ContainerClassName += " r2m_header_ocean";
+            containerClassName += " r2m_header_ocean";
+        }
+
+        if(this.props.module){
+            if(this.props.module == 'play_blanks'){
+                containerClassName += " hidden";
+            }
         }
 
         return (
-            <div className={ContainerClassName} >
+            <div className={containerClassName} >
                <div className=" logo"> <a href="/r2m">
                     <img src={src}/>  </a>
                 </div>

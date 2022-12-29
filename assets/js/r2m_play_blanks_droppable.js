@@ -35,7 +35,7 @@ class Droppable extends React.Component {
 
         const bgcolor = this.props.bgcolor ? this.props.bgcolor : this.state.bgcolor;
 
-        const wordBoxClassName = "wordBox " + bgcolor;
+        let wordBoxClassName = "wordBox " + bgcolor;
 
         return (
 

@@ -5,6 +5,13 @@
   margin:40px;
   .block{
     margin: 1em auto;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .answerBlock{
+    justify-content: center;
+    .instruction{
+      text-align: center;
+    }
   }
   .formRow{
     margin: 0.5em;
@@ -17,17 +24,15 @@
     border-radius: 10px;
   }
   .wordBox{
-    background-color: white;
-    margin: 0.5em;
-    padding: 0.25em 0.5em;
+    margin: 3px;
+    padding: 5px;
     cursor: pointer;
-    min-width: 1em;
-    border-bottom: 1px solid black;
   }
   .wordWrapper{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding:20px;
   }
   .primaryButton{
     background-color: gold;
@@ -39,12 +44,23 @@
     cursor: pointer;
   }
   .white{
-    background-color: $white !important;
+    border: 1px dashed black;
+    min-width: 40px;
   }
   .red{
     background-color: $masterySalmon !important;
+    border: 1px dashed black;
+    min-width: 40px;
   }
   .green{
     background-color: $masteryGreen !important;
+    border: 1px dashed black;
+    min-width: 40px;
   }
+  .answer{
+    background-color: white !important;
+    border: 1px dashed black;
+    min-width: 40px;
+  }
+
 }

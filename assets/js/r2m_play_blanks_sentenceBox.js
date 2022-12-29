@@ -11,7 +11,6 @@ class SentenceBox extends React.Component {
         this.props.onDrop(e, id);
     }
 
-
     render() {
         let mySentence = this.props.sentence.map((word, i) => {
             if (word.type === "word") {

@@ -743,7 +743,7 @@ class R2M extends React.Component {
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
 
-                <R2MHeader functions={functions} search={this.state.search} expanded={this.state.expanded} user={this.state.user} scrolled={this.state.scrolled}/>
+                <R2MHeader functions={functions} module={this.state.module} search={this.state.search} expanded={this.state.expanded} user={this.state.user} scrolled={this.state.scrolled}/>
                 <R2MMobileMenu functions={functions}/>
 
                 <R2MHome label={this.state.label} module={this.state.module}/>
@@ -789,8 +789,6 @@ class R2M extends React.Component {
                 <R2MEvents label={this.state.label} module={this.state.module}/>
 
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
-
-
 
                 <Build/>
                 <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />

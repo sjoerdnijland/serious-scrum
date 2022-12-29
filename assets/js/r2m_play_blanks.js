@@ -110,7 +110,7 @@ class R2MPlayBlanks extends React.Component {
                         />
                         <AnswerBox answers={this.state.answers} />
                         <div>
-                            <div className={'primaryButton'} onClick={this.test}>Check result</div>
+                            <div className={'primaryButton'} onClick={this.test}>toggle result</div>
                         </div>
                     </div>
                 </div>

@@ -13,17 +13,16 @@ class AnswerBox extends React.Component {
         }
     }
 
-
     render() {
 
         return (
 
-            <div className={"block"}>
-                Drag answers below to correct place
+            <div className={"answerBlock"}>
+                <div className={"instruction"}>Drag answers below to correct place</div>
                 <div className={"wordWrapper"}>
                     {this.props.answers.map(a => (
                         <Draggable
-                            bgcolor="rgba(255,255,255,0)"
+                            bgcolor="answer"
                             key={a}
                             name={a}
                             onDragStart={this.onDragStart}
