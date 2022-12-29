@@ -1,0 +1,50 @@
+.playBlanksContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:40px;
+  .block{
+    margin: 1em auto;
+  }
+  .formRow{
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .formInput{
+    margin: 0.5em;
+    padding: 5px;
+    line-height: 1.5em;
+    border-radius: 10px;
+  }
+  .wordBox{
+    background-color: white;
+    margin: 0.5em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    min-width: 1em;
+    border-bottom: 1px solid black;
+  }
+  .wordWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .primaryButton{
+    background-color: gold;
+    border-radius: 5px;
+    border-color: #5b5;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    line-height: 1.5em;
+    cursor: pointer;
+  }
+  .white{
+    background-color: $white !important;
+  }
+  .red{
+    background-color: $masterySalmon !important;
+  }
+  .green{
+    background-color: $masteryGreen !important;
+  }
+}

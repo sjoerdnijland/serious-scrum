@@ -1,13 +1,15 @@
 import React from 'react';
 import "../js/r2m_play_blanks_sentenceBox";
+import "../js/r2m_play_blanks_answerBox";
 
 class R2MPlayBlanks extends React.Component {
     constructor(props) {
         super(props);
 
-        const text = "The <pink> and <blue> fox <jumped> over the <dog>";
+        const text = "Scrum is a <lightweight> framework that helps people, teams and organizations generate <value> through <adaptive> solutions for <complex> problems.";
         const textSentence = this.getSentence(text);
-        const answers = this.getAnswers(text);
+        let answers = this.getAnswers(text);
+        answers = this.shuffleArray(answers);
 
         this.state = {
             showResults: false,
@@ -19,6 +21,7 @@ class R2MPlayBlanks extends React.Component {
         this.getAnswers = this.getAnswers.bind(this);
         this.onDrop = this.onDrop.bind(this);
         this.test = this.test.bind(this);
+        this.shuffleArray = this.shuffleArray.bind(this);
     }
 
     getSentence(text){
@@ -43,33 +46,45 @@ class R2MPlayBlanks extends React.Component {
         }, []);
     }
 
-    onDrop(e){
+    onDrop(e, id){
         const text = e.dataTransfer.getData("text/plain");
 
         const sentence = this.state.sentence.map(word => {
-            if (word.id === dropId) {
+            if (word.id === id) {
+                console.log(word.id+'match');
                 return { ...word, placed: true, displayed: text };
             }
+            console.log(word.id+'not match');
             return word;
         });
+        console.log(sentence);
+
         this.setState({
-            sentence: sentence,
+            sentence: sentence
         });
     }
 
     test(){
         this.setState({
-            showResults: !state.showResults,
+            showResults: !this.state.showResults,
         });
     }
+
+    /* Randomize array in-place using Durstenfeld shuffle algorithm */
+    shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return(array);
+    }
+
 
     render() {
 
         const showResults = this.state.showResults;
 
-
-
-        let containerClassName = "homeR2M row travelgroups";
+        let containerClassName = "homeR2M row playBlanks";
 
         if(this.props.label || !this.props.module){
             containerClassName += " hidden";
@@ -86,12 +101,18 @@ class R2MPlayBlanks extends React.Component {
 
             <div className={containerClassName} >
                 <div className={bannerClassName}>
-                    <h1 >Fill in the Blanks!</h1>
-                    <SentenceBox
-                        marked={showResults}
-                        onDrop={this.onDrop}
-                        sentence={this.state.sentence}
-                    />
+                    <div className={"playBlanksContainer"}>
+                        <h1>Fill in the Blanks!</h1>
+                        <SentenceBox
+                            marked={showResults}
+                            onDrop={this.onDrop}
+                            sentence={this.state.sentence}
+                        />
+                        <AnswerBox answers={this.state.answers} />
+                        <div>
+                            <div className={'primaryButton'} onClick={this.test}>Check result</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -6,41 +6,47 @@ class Droppable extends React.Component {
         this.state = {
             bgcolor: "white"
         }
+        this.handleDrop = this.handleDrop.bind(this);
+        this.handleDragOver = this.handleDragOver.bind(this);
+        this.handleDragLeave = this.handleDragLeave.bind(this);
+    }
+
+    handleDrop(e) {
+        this.props.onDrop(e, this.props.groupName);
+        this.setState({
+            bgcolor: "white"
+        });
+    }
+
+    handleDragOver(e) {
+        e.preventDefault();
+        this.setState({
+            bgcolor: "yellow",
+        });
+    }
+    handleDragLeave(e) {
+        e.preventDefault();
+        this.setState({
+            bgcolor: "white",
+        });
     }
 
     render() {
-        //turn these into functions?
-        const _handleDrop = e => {
-            this.props.onDrop(e, this.props.groupName);
-            this.setState({
-                bgcolor: "white",
-            });
-        };
-        //turn these into functions?
-        const _handleDragOver = e => {
-            e.preventDefault();
-            this.setState({
-                bgcolor: "yellow",
-            });
-        };
-        //turn these into functions?
-        const _handleDragLeave = e => {
-            e.preventDefault();
-            this.setState({
-                bgcolor: "white",
-            });
-        };
+
+        const bgcolor = this.props.bgcolor ? this.props.bgcolor : this.state.bgcolor;
+
+        const wordBoxClassName = "wordBox " + bgcolor;
 
         return (
 
-            <div className={"wordBox"}>
-                bgcolor={this.props.bgcolor ? this.props.bgcolor : this.state.bgcolor}
+            <div className={wordBoxClassName}
+                bgcolor={bgcolor}
                 data-testid={`droppable${this.props.ndx}`}
-                onDragLeave={_handleDragLeave}
-                onDragOver={_handleDragOver}
-                onDrop={_handleDrop}
+                onDragLeave={this.handleDragLeave}
+                onDragOver={this.handleDragOver}
+                onDrop={this.handleDrop}
             >
-                {this.state.children}
+                {this.props.children}
             </div>
 
         );

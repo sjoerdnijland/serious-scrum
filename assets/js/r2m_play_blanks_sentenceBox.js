@@ -5,26 +5,27 @@ class SentenceBox extends React.Component {
     constructor(props) {
         super(props);
         this.handleDrop = this.handleDrop.bind(this);
-        this.renderSentence = this.renderSentence.bind(this);
     }
 
     handleDrop(e, id) {
         this.props.onDrop(e, id);
     }
 
-    renderSentence(){
-        this.props.sentence.map((word, i) => {
+
+    render() {
+        let mySentence = this.props.sentence.map((word, i) => {
             if (word.type === "word") {
+
                 return (
                     <div className={"wordBox"} data-testid={"word"} key={i}>
                         {word.text}
                     </div>
                 );
             }
-            let bgcolor;
+            let bgcolor = "white";
 
             if (this.props.marked) {
-                bgcolor = word.text === word.displayed ? "lightgreen" : "#F77";
+                bgcolor = word.text === word.displayed ? "green" : "red";
             }
 
             return (
@@ -39,15 +40,10 @@ class SentenceBox extends React.Component {
                 </Droppable>
             );
         });
-    }
-
-
-    render() {
-
         return (
 
-            <div>
-                <div>{this.renderSentence()}</div>
+            <div className={"block"}>
+                <div className={"wordWrapper"}>{mySentence}</div>
             </div>
 
         );
