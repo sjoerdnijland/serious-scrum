@@ -93,8 +93,6 @@ import '../js/r2m_play_blanks';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BottomScrollListener} from 'react-bottom-scroll-listener';
-import Prismic from 'prismic-javascript';
-import { Date, Link, RichText } from 'prismic-reactjs';
 
 import 'react-dropdown/style.css';
 
