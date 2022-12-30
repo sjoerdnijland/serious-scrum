@@ -20,6 +20,7 @@ class AnswerBox extends React.Component {
 
             <div className={"answerBlock"}>
                 <div className={"instruction"}>Drag answers below to correct place</div>
+                <div className={"mobileInstruction"}>(press for two seconds before dragging)</div>
                 <div className={"wordWrapper"}>
                     {this.props.answers.map(a => (
                         <Draggable
@@ -31,6 +32,7 @@ class AnswerBox extends React.Component {
                         />
                     ))}
                 </div>
+
             </div>
 
         );

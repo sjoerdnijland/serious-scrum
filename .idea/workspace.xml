@@ -4,9 +4,6 @@
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/css/playBlanks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/playBlanks.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/r2m_play_blanks_answerBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_play_blanks_answerBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_play_blanks_draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_play_blanks_draggable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_play_blanks_droppable.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_play_blanks_droppable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_play_blanks_sentenceBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_play_blanks_sentenceBox.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +35,38 @@
       <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
+            <state relative-caret-position="-392">
               <caret line="745" column="75" selection-start-line="745" selection-start-column="75" selection-end-line="745" selection-end-column="75" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeR2M.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4829">
+              <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeRoad.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -56,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_play_blanks_answerBox.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r2m_play_blanks_answerBox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_answerBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="330">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -68,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r2m_play_blanks_draggable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_draggable.js">
+      <file leaf-file-name="playBlanks.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/playBlanks.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            <state relative-caret-position="511">
+              <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -125,8 +149,8 @@
       <find>wordB</find>
       <find>test</find>
       <find>travelgroups</find>
-      <find>dropId</find>
       <find>groupName</find>
+      <find>dropId</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -198,11 +222,11 @@
         <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_header.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_play_blanks.js" />
-        <option value="$PROJECT_DIR$/assets/css/playBlanks.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_play_blanks_draggable.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_play_blanks_sentenceBox.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_play_blanks_droppable.js" />
         <option value="$PROJECT_DIR$/assets/js/r2m_play_blanks_answerBox.js" />
+        <option value="$PROJECT_DIR$/assets/css/playBlanks.scss" />
       </list>
     </option>
   </component>
@@ -611,12 +635,12 @@
       <workItem from="1672131500011" duration="37866000" />
       <workItem from="1672230947791" duration="1071000" />
       <workItem from="1672240200288" duration="1853000" />
-      <workItem from="1672242786030" duration="35591000" />
+      <workItem from="1672242786030" duration="36144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="986956000" />
+    <option name="totallyTimeSpent" value="987509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="830" extended-state="6" />
@@ -661,21 +685,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Repository/PageRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#34#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Manager/RssManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1084" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Manager/CacheManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-141" />
@@ -911,13 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -942,23 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="745" column="75" selection-start-line="745" selection-start-column="75" selection-end-line="745" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
@@ -966,10 +951,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/playBlanks.scss">
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_draggable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        <state relative-caret-position="360">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -983,10 +968,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_draggable.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_sentenceBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/r2mPage.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="745" column="75" selection-start-line="745" selection-start-column="75" selection-end-line="745" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/r2m.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/homeR2M.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4829">
+          <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_answerBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/homeRoad.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -997,20 +1026,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_sentenceBox.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/playBlanks.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_play_blanks_answerBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="511">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
         </state>
       </provider>
     </entry>

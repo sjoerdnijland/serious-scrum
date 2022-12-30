@@ -66,4 +66,13 @@
     touch-action: none;
   }
 
+
+}
+
+@media  (min-device-width : 780px) {
+  .playBlanksContainer {
+    .mobileInstruction {
+      display: none;
+    }
+  }
 }
