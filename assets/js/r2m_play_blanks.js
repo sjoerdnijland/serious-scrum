@@ -16,6 +16,9 @@ class R2MPlayBlanks extends React.Component {
         //const text =  "Scrum is a <lightweight> framework that helps people, teams and organizations generate <value> through <adaptive> solutions for <complex> problems.";
         const textSentence = this.getSentence(text);
         let answers = this.getAnswers(text);
+
+        answers= answers.concat(config['traps']);
+
         answers = this.shuffleArray(answers);
 
         this.state = {
