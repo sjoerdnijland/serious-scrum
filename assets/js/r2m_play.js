@@ -17,7 +17,7 @@ class R2m_play extends React.Component {
     render() {
 
         const appContainerClassName = "appContainer";
-        const contentClassName = "pageContent ";
+        console.log(this.state.play)
 
         return (
             <div className={appContainerClassName}>

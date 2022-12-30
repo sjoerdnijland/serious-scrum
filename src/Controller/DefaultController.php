@@ -369,6 +369,32 @@ class DefaultController extends AbstractController
      * @param Request
      * @param Config
      *
+     * @Route("/r2m/play", name="road-to-mastery-play")
+     * @Route("/r2m/play/{play}", name="road-to-mastery-play-module")
+     *
+     * @return Response
+     */
+    public function play(Request $request, $label = false, $play = false)
+    {
+
+        $title = "Let's PLay!";
+
+        $data['play'] = $play;
+
+        $output['data'] = $data;
+        $output['title'] = $title;
+        $output['url'] = 'https://www.seriousscrum.com/r2m/play';
+        $output['author'] = 'Sjoerd Nijland';
+        $output['app'] = 'app';
+
+        // return new JsonResponse($output);
+        return $this->render('r2m_play.html.twig', $output);
+    }
+
+    /**
+     * @param Request
+     * @param Config
+     *
      * @Route("/r2m", name="road-to-mastery")
      * @Route("/r2m/{module}", name="road-to-mastery-module")
      *
@@ -445,6 +471,8 @@ class DefaultController extends AbstractController
         // return new JsonResponse($output);
         return $this->render('r2m.html.twig', $output);
     }
+
+
 
     /**
      * @param Request

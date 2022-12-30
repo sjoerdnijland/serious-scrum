@@ -24,6 +24,7 @@ Encore
 
     .addEntry('app', './assets/js/app.js')
     .addEntry('page', './assets/js/page.js')
+    .addEntry('r2m_play', './assets/js/r2m_play.js')
     .addEntry('r2m_page', './assets/js/r2m_page.js')
     .addEntry('patreon', './assets/js/patreon.js')
     .addEntry('r2m', './assets/js/r2m.js')

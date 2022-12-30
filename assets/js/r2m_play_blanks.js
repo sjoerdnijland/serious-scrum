@@ -51,13 +51,10 @@ class R2MPlayBlanks extends React.Component {
 
         const sentence = this.state.sentence.map(word => {
             if (word.id === id) {
-                console.log(word.id+'match');
                 return { ...word, placed: true, displayed: text };
             }
-            console.log(word.id+'not match');
             return word;
         });
-        console.log(sentence);
 
         this.setState({
             sentence: sentence
