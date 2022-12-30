@@ -8,6 +8,7 @@ class SentenceBox extends React.Component {
     }
 
     handleDrop(e, id) {
+        e.preventDefault();
         this.props.onDrop(e, id);
     }
 
@@ -34,6 +35,7 @@ class SentenceBox extends React.Component {
                     key={i}
                     ndx={i}
                     onDrop={this.handleDrop}
+
                 >
                     {word.placed ? word.displayed : " "}
                 </Droppable>

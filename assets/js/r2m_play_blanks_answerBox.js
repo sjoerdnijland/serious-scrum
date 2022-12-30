@@ -8,6 +8,7 @@ class AnswerBox extends React.Component {
     }
 
     onDragStart(e, id) {
+        //e.preventDefault();
         if (e.dataTransfer) {
             e.dataTransfer.setData("text/plain", id);
         }
@@ -26,6 +27,7 @@ class AnswerBox extends React.Component {
                             key={a}
                             name={a}
                             onDragStart={this.onDragStart}
+                            onTouchStart={this.onDragStart}
                         />
                     ))}
                 </div>

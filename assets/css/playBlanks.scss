@@ -8,6 +8,7 @@
     background-color: rgba(255, 255, 255, 0.8);
   }
   .answerBlock{
+    touch-action: none;
     justify-content: center;
     .instruction{
       text-align: center;
@@ -27,6 +28,7 @@
     margin: 3px;
     padding: 5px;
     cursor: pointer;
+    touch-action: none;
   }
   .wordWrapper{
     display: flex;
@@ -61,6 +63,7 @@
     background-color: white !important;
     border: 1px dashed black;
     min-width: 40px;
+    touch-action: none;
   }
 
 }

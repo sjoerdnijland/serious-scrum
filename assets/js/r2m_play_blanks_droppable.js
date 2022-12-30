@@ -12,6 +12,7 @@ class Droppable extends React.Component {
     }
 
     handleDrop(e) {
+        e.preventDefault();
         this.props.onDrop(e, this.props.groupName);
         this.setState({
             bgcolor: "white"
@@ -40,11 +41,12 @@ class Droppable extends React.Component {
         return (
 
             <div className={wordBoxClassName}
-                bgcolor={bgcolor}
-                data-testid={`droppable${this.props.ndx}`}
-                onDragLeave={this.handleDragLeave}
-                onDragOver={this.handleDragOver}
-                onDrop={this.handleDrop}
+                 bgcolor={bgcolor}
+                 data-testid={`droppable${this.props.ndx}`}
+                 onDragLeave={this.handleDragLeave}
+                 onDragOver={this.handleDragOver}
+                 onDrop={this.handleDrop}
+                 onTouchEnd={this.handleDragLeave}
             >
                 {this.props.children}
             </div>

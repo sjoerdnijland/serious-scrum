@@ -18,10 +18,11 @@ class Draggable extends React.Component {
         return (
 
             <div className={"wordBox answer"}
-                bgcolor={this.props.bgcolor}
-                data-testid="answer"
-                draggable="true"
-                onDragStart={this.handleDragStart}
+                 bgcolor={this.props.bgcolor}
+                 data-testid="answer"
+                 draggable="true"
+                 onDragStart={this.handleDragStart}
+                 onTouchStart={this.handleDragStart}
             >
                 {this.props.name}
             </div>
