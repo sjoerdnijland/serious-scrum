@@ -3,6 +3,7 @@ import '../js/r2m_play_blanks';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import playConfig from "../json/play_config.json";
 
 class R2m_play extends React.Component {
 
@@ -10,18 +11,27 @@ class R2m_play extends React.Component {
         super(props);
 
         this.state = {
-            play: this.props.data.play
+            play: this.props.data.play,
+            playId: this.props.data.playId
         };
     }
 
     render() {
+        let config = playConfig;
+
+        if(this.state.playId && this.state.play){
+            config = playConfig[this.state.play][this.state.playId];
+        }else if(this.state.play){
+            config = playConfig[this.state.play];
+        }else{
+            //no play set
+        }
 
         const appContainerClassName = "appContainer";
-        console.log(this.state.play)
 
         return (
             <div className={appContainerClassName}>
-                <R2MPlayBlanks module={this.state.play}/>
+                <R2MPlayBlanks play={this.state.play} playId={this.state.playId} config={config}/>
             </div>
         )
     }

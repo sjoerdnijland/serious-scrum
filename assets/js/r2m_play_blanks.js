@@ -2,11 +2,18 @@ import React from 'react';
 import "../js/r2m_play_blanks_sentenceBox";
 import "../js/r2m_play_blanks_answerBox";
 
+
 class R2MPlayBlanks extends React.Component {
     constructor(props) {
         super(props);
 
-        const text = "Scrum is a <lightweight> framework that helps people, teams and organizations generate <value> through <adaptive> solutions for <complex> problems.";
+        let config = this.props.config;
+
+        if (config['guide-1'] !== undefined){
+            config = this.props.config['guide-1'];
+        }
+        const text = config['sentence'];
+        //const text =  "Scrum is a <lightweight> framework that helps people, teams and organizations generate <value> through <adaptive> solutions for <complex> problems.";
         const textSentence = this.getSentence(text);
         let answers = this.getAnswers(text);
         answers = this.shuffleArray(answers);
@@ -15,7 +22,8 @@ class R2MPlayBlanks extends React.Component {
             showResults: false,
             question: "",
             answers: answers,
-            sentence: textSentence
+            sentence: textSentence,
+            title: config['title']
         }
         this.getSentence = this.getSentence.bind(this);
         this.getAnswers = this.getAnswers.bind(this);
@@ -79,20 +87,25 @@ class R2MPlayBlanks extends React.Component {
 
     render() {
 
+        //console.log(this.state.config['sentence']);
+
         const showResults = this.state.showResults;
 
         let containerClassName = "homeR2M row playBlanks";
 
-        if(this.props.label || !this.props.module){
+        if(this.props.label || !this.props.play){
             containerClassName += " hidden";
         }
-        if(this.props.module){
-            if(this.props.module != 'play_blanks'){
+        if(this.props.play){
+            if(this.props.play != 'play_blanks' && this.props.play != 'blanks' ){
                 containerClassName += " hidden";
             }
         }
 
+
+
         const bannerClassName = "homeBanner";
+
 
         return (
 
@@ -100,6 +113,7 @@ class R2MPlayBlanks extends React.Component {
                 <div className={bannerClassName}>
                     <div className={"playBlanksContainer"}>
                         <h1>Fill in the Blanks!</h1>
+                        <h2>{this.state.title}</h2>
                         <SentenceBox
                             marked={showResults}
                             onDrop={this.onDrop}

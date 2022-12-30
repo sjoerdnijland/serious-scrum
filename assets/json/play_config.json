@@ -1,0 +1,12 @@
+{
+  "blanks": {
+    "guide-1": {
+      "title": "Scrum Guide | 01",
+      "sentence": "Scrum is a <lightweight> framework that helps people, teams and organizations generate <value> through <adaptive> solutions for <complex> problems."
+    },
+    "guide-2": {
+      "title": "Scrum Guide | 02",
+      "sentence": "The Scrum framework is purposefully <incomplete> . Rather than provide people with detailed <instructions>, the rules of Scrum <guide> their relationships and interactions."
+    }
+  }
+}

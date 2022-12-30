@@ -371,15 +371,17 @@ class DefaultController extends AbstractController
      *
      * @Route("/r2m/play", name="road-to-mastery-play")
      * @Route("/r2m/play/{play}", name="road-to-mastery-play-module")
+     * @Route("/r2m/play/{play}/{playId}", name="road-to-mastery-play-module-id")
      *
      * @return Response
      */
-    public function play(Request $request, $label = false, $play = false)
+    public function play(Request $request, $play = false, $playId = false)
     {
 
         $title = "Let's PLay!";
 
         $data['play'] = $play;
+        $data['playId'] = $playId;
 
         $output['data'] = $data;
         $output['title'] = $title;
