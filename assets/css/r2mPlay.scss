@@ -1,0 +1,140 @@
+.playR2M{
+  text-align: center;
+  padding-top:60px;
+  margin-top: -80px;
+  .playBanner{
+    margin-left:5%;
+    height:100%;
+    .title{
+      margin-left: -20px;
+      margin-top: 20px;
+    }
+    h1{
+      font-family: 'Permanent Marker', cursive;
+      color: $seriousblue;
+      font-size: 54px;
+      text-align: left;
+      padding: 0px 40px 0px 40px;
+    }
+
+    div{
+      text-align: left;
+      font-size: 20px;
+      color: $seriousblue;
+    }
+    .intro{
+      max-width: 600px;
+    }
+  }
+
+  .inputContainer div{
+    float: left;
+  }
+  .inputContainer .label{
+    min-width: 100px;
+  }
+
+  .errorMessage{
+    color: $red !important;
+    font-family: 'Gotham Bold', serif;
+  }
+  ul{
+    font-size:18px;
+    list-style-position: outside;
+    margin-top:20px;
+    li {
+      list-style-type: circle;
+    }
+
+  }
+
+}
+
+.playBlanks{
+  background: url(../images/definition.webp) !important;
+  background-color: #e9fbfc !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: right !important;
+  height: auto !important;
+  padding-bottom: 100px;
+
+}
+
+@media  (max-width : 1024px) and (min-device-width : 780px) {
+  .playR2M{
+    text-align: right;
+    h1{
+      line-height: 50px;
+      font-size: 28px;
+      padding: 50px 50px 10px 40px !important;
+      background-color: transparent;
+    }
+
+  }
+}
+
+
+@media (max-width: 1320px) {
+  .playR2M {
+    .playBanner {
+      div{
+        font-size: 14px !important;
+      }
+    }
+    h1{line-height: 50px;
+      font-size: 28px;
+      padding: 50px 50px 10px 40px !important;
+      background-color: transparent;
+    }
+  }
+
+}
+
+
+/* for width less than 1000: */
+@media only screen and (max-width: 1100px) {
+  .playBanner div {
+    font-size: 12px !important;
+  }
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  /* Styles */
+  .playBanner div {
+    font-size: 12px !important;
+  }
+  .playBanner h1 {
+    font-size: 28px !important;
+    padding: 0px 50px 10px 20px !important;
+  }
+
+  .playBanner .title {
+    max-width: 300px !important;
+  }
+
+  .playR2M ul{
+    font-size: 12px !important;
+
+  }
+
+}
+
+
+
+/* for width more than 1920: */
+@media only screen and (min-width: 1920px) {
+  .playR2M {
+    h1 {
+      line-height: 140px !important;
+      font-size: 76px !important;
+      padding: 60px 50px 10px 40px !important;
+    }
+  }
+}
+

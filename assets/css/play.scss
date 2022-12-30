@@ -1,0 +1,65 @@
+@import 'swatches';
+@import 'fonts';
+@import 'normalize';
+@import 'skeleton';
+@import 'simple';
+
+@import 'r2m';
+@import 'r2mPlay';
+@import 'playBlanks';
+
+
+/* for mobile #mobilefirst */
+body{
+  font-family: 'Gotham Light', serif;
+  background-color: $seriousblue;
+}
+
+/* select */
+input:focus{
+  border: 1px solid $grey !important;
+}
+
+
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+
+.error p{
+  color: $red;
+}
+.success p{
+  color: $turquoise;
+}
+
+ol{
+  margin-left: 40px;
+  list-style-type: decimal;
+  list-style-position: outside;
+  li{
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-bottom:20px;
+  }
+  li:last-child {
+    padding-bottom:0px;
+  }
+}
+
+/* for desktop: */
+@media only screen and (min-device-width : 780px) {
+
+  .pBoxDark{
+    padding: 20px;
+  }
+
+  ol {
+    margin-left: 20px;
+  }
+}
+

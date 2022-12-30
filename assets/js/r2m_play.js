@@ -1,4 +1,4 @@
-import '../css/app.scss';
+import '../css/play.scss';
 import '../js/r2m_play_blanks';
 
 import React from 'react';
