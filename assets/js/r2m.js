@@ -770,8 +770,6 @@ class R2M extends React.Component {
                 <a name="backstage"/>
                 <R2MBackstage label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelers} travelgroups={this.state.travelgroups} backstageFilters={this.state.backstageFilters}/>
 
-                <R2MPlayBlanks label={this.state.label}  play={this.state.module}/>
-
                 <R2MBasecamp label={this.state.label} module={this.state.module}/>
                 <R2MTBR label={this.state.label} module={this.state.module}/>
                 <R2MAgile label={this.state.label} module={this.state.module}/>
