@@ -58,9 +58,9 @@ class Traveler
     private $adventures;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Badge", mappedBy="travelers")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Certificate", mappedBy="travelers")
      */
-    private $badges;
+    private $certificates;
 
     /**
      * @ORM\Column(type="boolean")
@@ -259,28 +259,28 @@ class Traveler
     }
 
     /**
-     * @return Collection|badges[]
+     * @return Collection|certificates[]
      */
-    public function getBadges(): Collection
+    public function getCertificates(): Collection
     {
-        return $this->badges;
+        return $this->certificates;
     }
 
-    public function addBadge(Adventure $badge): self
+    public function addCertificate(Adventure $certificate): self
     {
-        if (!$this->badges->contains($badge)) {
-            $this->badges[] = $badge;
-            $badge->addTraveler($this);
+        if (!$this->certificates->contains($certificate)) {
+            $this->certificates[] = $certificate;
+            $certificate->addTraveler($this);
         }
 
         return $this;
     }
 
-    public function removeBadge(TravelGroup $badge): self
+    public function removeCertificate(TravelGroup $certificate): self
     {
-        if ($this->badges->contains($badge)) {
-            $this->badges->removeElement($badge);
-            $badge->removeTraveler($this);
+        if ($this->certificates->contains($certificate)) {
+            $this->certificates->removeElement($certificate);
+            $certificate->removeTraveler($this);
         }
 
         return $this;
