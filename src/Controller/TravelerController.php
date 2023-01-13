@@ -151,12 +151,12 @@ class TravelerController extends AbstractController
                 ];
             }
 
-            $badges = [];
-            foreach ($traveler->getBadges() as $badge) {
-                $badges[] = [
-                    'id' => $badge->getId(),
-                    'name' => $badge->getName(),
-                    'image' => $badge->getImage(),
+            $certificates = [];
+            foreach ($traveler->getCertificates() as $certificate) {
+                $certificates[] = [
+                    'id' => $certificate->getId(),
+                    'name' => $certificate->getName(),
+                    'image' => $certificate->getImage(),
                 ];
             }
 
@@ -174,7 +174,7 @@ class TravelerController extends AbstractController
                 'created' => $traveler->getCreatedAt(),
                 'travelgroups' => $travelgroups,
                 'adventures' => $adventures,
-                'badges' => $badges,
+                'certificates' => $certificates,
             ];
         }
 

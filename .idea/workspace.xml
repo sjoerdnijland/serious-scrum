@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/r2m_backstage.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m_backstage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Badge.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Certificate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Traveler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Traveler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/r2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/r2m.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/cache/articles/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/cache/articles/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rector.php" beforeDir="false" afterPath="$PROJECT_DIR$/rector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TravelerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TravelerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/CacheManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/CacheManager.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,14 +25,223 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Certificate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Certificate.php">
+      <file leaf-file-name="page.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="r2m.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/r2m.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/ArticleRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-812">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="480">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/CategoryRepository.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="AdventureRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/AdventureRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelerRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/TravelerRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelerController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/TravelerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
               <folding>
-                <element signature="e#53#101#0#PHP" expanded="true" />
+                <element signature="e#1293#3209#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r2m.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1652">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="e#2863#6591#0" />
+                <element signature="e#3245#4719#0" />
+                <element signature="e#6616#6685#0" />
+                <element signature="e#6712#6782#0" />
+                <element signature="e#6802#6929#0" />
+                <element signature="e#6836#6923#0" />
+                <element signature="e#6864#6912#0" />
+                <element signature="e#6948#6986#0" />
+                <element signature="e#7005#7802#0" />
+                <element signature="e#7059#7232#0" />
+                <element signature="e#7109#7222#0" />
+                <element signature="e#7260#7562#0" />
+                <element signature="e#7292#7401#0" />
+                <element signature="e#7324#7385#0" />
+                <element signature="e#7405#7516#0" />
+                <element signature="e#7437#7500#0" />
+                <element signature="e#7586#7673#0" />
+                <element signature="e#7614#7660#0" />
+                <element signature="e#7701#7794#0" />
+                <element signature="e#7729#7782#0" />
+                <element signature="e#7823#8712#0" />
+                <element signature="e#7879#8052#0" />
+                <element signature="e#7929#8042#0" />
+                <element signature="e#8084#8430#0" />
+                <element signature="e#8120#8245#0" />
+                <element signature="e#8156#8225#0" />
+                <element signature="e#8249#8376#0" />
+                <element signature="e#8285#8356#0" />
+                <element signature="e#8458#8563#0" />
+                <element signature="e#8490#8546#0" />
+                <element signature="e#8595#8704#0" />
+                <element signature="e#8627#8688#0" />
+                <element signature="e#8735#9628#0" />
+                <element signature="e#8793#8966#0" />
+                <element signature="e#8843#8956#0" />
+                <element signature="e#8998#9344#0" />
+                <element signature="e#9034#9159#0" />
+                <element signature="e#9070#9139#0" />
+                <element signature="e#9163#9290#0" />
+                <element signature="e#9199#9270#0" />
+                <element signature="e#9372#9479#0" />
+                <element signature="e#9404#9462#0" />
+                <element signature="e#9511#9620#0" />
+                <element signature="e#9543#9604#0" />
+                <element signature="e#9655#9772#0" />
+                <element signature="e#9710#9764#0" />
+                <element signature="e#9800#10081#0" />
+                <element signature="e#9824#10073#0" />
+                <element signature="e#10103#10312#0" />
+                <element signature="e#10127#10276#0" />
+                <element signature="e#10335#10553#0" />
+                <element signature="e#10359#10545#0" />
+                <element signature="e#10578#10668#0" />
+                <element signature="e#10602#10660#0" />
+                <element signature="e#10702#10868#0" />
+                <element signature="e#10750#10792#0" />
+                <element signature="e#10815#10860#0" />
+                <element signature="e#10898#10974#0" />
+                <element signature="e#10922#10966#0" />
+                <element signature="e#11014#11100#0" />
+                <element signature="e#11038#11092#0" />
+                <element signature="e#11140#11226#0" />
+                <element signature="e#11164#11218#0" />
+                <element signature="e#11260#11340#0" />
+                <element signature="e#11284#11332#0" />
+                <element signature="e#11376#11458#0" />
+                <element signature="e#11400#11450#0" />
+                <element signature="e#11488#11564#0" />
+                <element signature="e#11512#11556#0" />
+                <element signature="e#11592#11666#0" />
+                <element signature="e#11616#11658#0" />
+                <element signature="e#11694#11768#0" />
+                <element signature="e#11718#11760#0" />
+                <element signature="e#11790#11858#0" />
+                <element signature="e#11814#11850#0" />
+                <element signature="e#11878#11958#0" />
+                <element signature="e#11902#11950#0" />
+                <element signature="e#11993#12073#0" />
+                <element signature="e#12017#12065#0" />
+                <element signature="e#12108#12262#0" />
+                <element signature="e#12214#12254#0" />
+                <element signature="e#12316#12525#0" />
+                <element signature="e#12459#12517#0" />
+                <element signature="e#12549#12949#0" />
+                <element signature="e#12623#12824#0" />
+                <element signature="e#12669#12716#0" />
+                <element signature="e#12743#12792#0" />
+                <element signature="e#12847#12941#0" />
+                <element signature="e#12980#13335#0" />
+                <element signature="e#13016#13172#0" />
+                <element signature="e#13044#13160#0" />
+                <element signature="e#13176#13329#0" />
+                <element signature="e#13204#13317#0" />
+                <element signature="e#13356#15080#0" />
+                <element signature="e#13687#13756#0" />
+                <element signature="e#13826#14027#0" />
+                <element signature="e#13877#13990#0" />
+                <element signature="e#14055#14802#0" />
+                <element signature="e#14087#14198#0" />
+                <element signature="e#14119#14182#0" />
+                <element signature="e#14202#14755#0" />
+                <element signature="e#14234#14299#0" />
+                <element signature="e#14378#14723#0" />
+                <element signature="e#14432#14667#0" />
+                <element signature="e#14826#14915#0" />
+                <element signature="e#14854#14902#0" />
+                <element signature="e#14943#15072#0" />
+                <element signature="e#14971#15060#0" />
+                <element signature="e#15110#16631#0" />
+                <element signature="e#15396#15597#0" />
+                <element signature="e#15447#15560#0" />
+                <element signature="e#15629#16309#0" />
+                <element signature="e#15665#15792#0" />
+                <element signature="e#15701#15772#0" />
+                <element signature="e#15796#16255#0" />
+                <element signature="e#15832#15905#0" />
+                <element signature="e#15983#16235#0" />
+                <element signature="e#16337#16442#0" />
+                <element signature="e#16369#16425#0" />
+                <element signature="e#16474#16623#0" />
+                <element signature="e#16506#16607#0" />
+                <element signature="e#16643#18051#0" />
+                <element signature="e#17097#17298#0" />
+                <element signature="e#17148#17261#0" />
+                <element signature="e#17330#17729#0" />
+                <element signature="e#17366#17493#0" />
+                <element signature="e#17402#17473#0" />
+                <element signature="e#17497#17674#0" />
+                <element signature="e#17533#17606#0" />
+                <element signature="e#17757#17862#0" />
+                <element signature="e#17789#17845#0" />
+                <element signature="e#17894#18043#0" />
+                <element signature="e#17926#18027#0" />
+                <element signature="e#18075#18444#0" />
+                <element signature="e#18292#18347#0" />
+                <element signature="e#18351#18437#0" />
+                <element signature="e#18466#18635#0" />
+                <element signature="e#18487#18552#0" />
+                <element signature="e#18557#18629#0" />
+                <element signature="e#18651#18832#0" />
+                <element signature="e#18715#18824#0" />
+                <element signature="e#18852#19303#0" />
+                <element signature="e#19089#19145#0" />
+                <element signature="e#19226#19295#0" />
+                <element signature="e#19318#24837#0" />
+                <element signature="e#21137#21227#0" />
+                <element signature="e#21298#24821#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rector.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rector.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -38,26 +249,8 @@
       <file leaf-file-name="Traveler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Traveler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
+            <state relative-caret-position="875">
               <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-              <folding>
-                <element signature="e#75#104#0#PHP" expanded="true" />
-                <element signature="e#3109#5431#0#PHP" />
-                <element signature="e#5576#6814#0#PHP" />
-                <element signature="e#6967#7214#0#PHP" />
-                <element signature="e#7363#7606#0#PHP" />
-                <element signature="e#7755#7862#0#PHP" />
-                <element signature="e#8025#11392#0#PHP" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -73,10 +266,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contentPages</find>
-      <find>label</find>
-      <find>die</find>
-      <find>labl</find>
       <find>map</find>
       <find>el</find>
       <find>/fonts</find>
@@ -103,6 +292,10 @@
       <find>travel</find>
       <find>playB</find>
       <find>badge</find>
+      <find>$travelgroupController</find>
+      <find>travelgroupController</find>
+      <find>fs</find>
+      <find>Guide</find>
     </findStrings>
     <replaceStrings>
       <replace>editorContainer</replace>
@@ -113,6 +306,8 @@
       <replace>Role</replace>
       <replace>Page</replace>
       <replace>/assets/fonts</replace>
+      <replace>$travelGroupController</replace>
+      <replace>travelGroupController</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/assets</dir>
@@ -128,9 +323,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510063901.php" />
-        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200510070036.php" />
-        <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511072710.php" />
         <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200511075825.php" />
         <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200518182700.php" />
         <option value="$PROJECT_DIR$/src/DoctrineMigrations/Version20200521063533.php" />
@@ -165,7 +357,6 @@
         <option value="$PROJECT_DIR$/assets/js/play.js" />
         <option value="$PROJECT_DIR$/templates/play.html.twig" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/assets/json/play_config.json" />
         <option value="$PROJECT_DIR$/assets/js/r2m_play_blanks.js" />
         <option value="$PROJECT_DIR$/assets/css/app.scss" />
@@ -173,12 +364,16 @@
         <option value="$PROJECT_DIR$/assets/css/play.scss" />
         <option value="$PROJECT_DIR$/assets/css/homeR2M.scss" />
         <option value="$PROJECT_DIR$/assets/css/r2mPlay.scss" />
-        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
         <option value="$PROJECT_DIR$/assets/css/homeConference.scss" />
         <option value="$PROJECT_DIR$/assets/js/r2m_backstage.js" />
         <option value="$PROJECT_DIR$/assets/js/build.js" />
         <option value="$PROJECT_DIR$/src/Entity/Certificate.php" />
         <option value="$PROJECT_DIR$/src/Entity/Traveler.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Manager/CacheManager.php" />
+        <option value="$PROJECT_DIR$/assets/js/r2m.js" />
+        <option value="$PROJECT_DIR$/rector.php" />
+        <option value="$PROJECT_DIR$/src/Controller/TravelerController.php" />
       </list>
     </option>
   </component>
@@ -332,9 +527,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="y" value="39" />
+    <option name="width" value="1920" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -353,6 +548,72 @@
               <item name="serious" type="b2602c69:ProjectViewProjectNode" />
               <item name="serious" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serious" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serious" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -546,15 +807,16 @@
       <workItem from="1672131500011" duration="37866000" />
       <workItem from="1672230947791" duration="1071000" />
       <workItem from="1672240200288" duration="1853000" />
-      <workItem from="1672242786030" duration="48485000" />
+      <workItem from="1672242786030" duration="54058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="999850000" />
+    <option name="totallyTimeSpent" value="1005423000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="29" width="1920" height="1010" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5005208" side_tool="true" weight="0.050666668" />
@@ -591,61 +853,10 @@
           <url>file://$PROJECT_DIR$/assets/js/scrumbut.js</url>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m_join.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/socialMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/training.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/travelgroupSelect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="31" selection-start-line="12" selection-start-column="21" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/publishButton.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/joinEmail.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/formInputLink.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/joinFirstname.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/joinSubmitButton.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -703,12 +914,6 @@
           <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="61" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/r2m_play.html.twig">
       <provider selected="true" editor-type-id="text-editor">
@@ -815,16 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="772" column="25" selection-start-line="772" selection-start-column="25" selection-end-line="772" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/r2m_play.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -894,25 +1089,246 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Traveler.php">
+    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+        <state relative-caret-position="315">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Manager/CacheManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+        <state relative-caret-position="-11">
+          <caret line="270" column="77" lean-forward="true" selection-start-line="270" selection-start-column="77" selection-end-line="270" selection-end-column="77" />
           <folding>
-            <element signature="e#75#104#0#PHP" expanded="true" />
-            <element signature="e#3109#5431#0#PHP" />
-            <element signature="e#5576#6814#0#PHP" />
-            <element signature="e#6967#7214#0#PHP" />
-            <element signature="e#7363#7606#0#PHP" />
-            <element signature="e#7755#7862#0#PHP" />
-            <element signature="e#8025#11392#0#PHP" />
+            <element signature="e#12416#14564#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/r2m.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/ArticleRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/AdventureRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/TravelerRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/r2m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1652">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#2863#6591#0" />
+            <element signature="e#3245#4719#0" />
+            <element signature="e#6616#6685#0" />
+            <element signature="e#6712#6782#0" />
+            <element signature="e#6802#6929#0" />
+            <element signature="e#6836#6923#0" />
+            <element signature="e#6864#6912#0" />
+            <element signature="e#6948#6986#0" />
+            <element signature="e#7005#7802#0" />
+            <element signature="e#7059#7232#0" />
+            <element signature="e#7109#7222#0" />
+            <element signature="e#7260#7562#0" />
+            <element signature="e#7292#7401#0" />
+            <element signature="e#7324#7385#0" />
+            <element signature="e#7405#7516#0" />
+            <element signature="e#7437#7500#0" />
+            <element signature="e#7586#7673#0" />
+            <element signature="e#7614#7660#0" />
+            <element signature="e#7701#7794#0" />
+            <element signature="e#7729#7782#0" />
+            <element signature="e#7823#8712#0" />
+            <element signature="e#7879#8052#0" />
+            <element signature="e#7929#8042#0" />
+            <element signature="e#8084#8430#0" />
+            <element signature="e#8120#8245#0" />
+            <element signature="e#8156#8225#0" />
+            <element signature="e#8249#8376#0" />
+            <element signature="e#8285#8356#0" />
+            <element signature="e#8458#8563#0" />
+            <element signature="e#8490#8546#0" />
+            <element signature="e#8595#8704#0" />
+            <element signature="e#8627#8688#0" />
+            <element signature="e#8735#9628#0" />
+            <element signature="e#8793#8966#0" />
+            <element signature="e#8843#8956#0" />
+            <element signature="e#8998#9344#0" />
+            <element signature="e#9034#9159#0" />
+            <element signature="e#9070#9139#0" />
+            <element signature="e#9163#9290#0" />
+            <element signature="e#9199#9270#0" />
+            <element signature="e#9372#9479#0" />
+            <element signature="e#9404#9462#0" />
+            <element signature="e#9511#9620#0" />
+            <element signature="e#9543#9604#0" />
+            <element signature="e#9655#9772#0" />
+            <element signature="e#9710#9764#0" />
+            <element signature="e#9800#10081#0" />
+            <element signature="e#9824#10073#0" />
+            <element signature="e#10103#10312#0" />
+            <element signature="e#10127#10276#0" />
+            <element signature="e#10335#10553#0" />
+            <element signature="e#10359#10545#0" />
+            <element signature="e#10578#10668#0" />
+            <element signature="e#10602#10660#0" />
+            <element signature="e#10702#10868#0" />
+            <element signature="e#10750#10792#0" />
+            <element signature="e#10815#10860#0" />
+            <element signature="e#10898#10974#0" />
+            <element signature="e#10922#10966#0" />
+            <element signature="e#11014#11100#0" />
+            <element signature="e#11038#11092#0" />
+            <element signature="e#11140#11226#0" />
+            <element signature="e#11164#11218#0" />
+            <element signature="e#11260#11340#0" />
+            <element signature="e#11284#11332#0" />
+            <element signature="e#11376#11458#0" />
+            <element signature="e#11400#11450#0" />
+            <element signature="e#11488#11564#0" />
+            <element signature="e#11512#11556#0" />
+            <element signature="e#11592#11666#0" />
+            <element signature="e#11616#11658#0" />
+            <element signature="e#11694#11768#0" />
+            <element signature="e#11718#11760#0" />
+            <element signature="e#11790#11858#0" />
+            <element signature="e#11814#11850#0" />
+            <element signature="e#11878#11958#0" />
+            <element signature="e#11902#11950#0" />
+            <element signature="e#11993#12073#0" />
+            <element signature="e#12017#12065#0" />
+            <element signature="e#12108#12262#0" />
+            <element signature="e#12214#12254#0" />
+            <element signature="e#12316#12525#0" />
+            <element signature="e#12459#12517#0" />
+            <element signature="e#12549#12949#0" />
+            <element signature="e#12623#12824#0" />
+            <element signature="e#12669#12716#0" />
+            <element signature="e#12743#12792#0" />
+            <element signature="e#12847#12941#0" />
+            <element signature="e#12980#13335#0" />
+            <element signature="e#13016#13172#0" />
+            <element signature="e#13044#13160#0" />
+            <element signature="e#13176#13329#0" />
+            <element signature="e#13204#13317#0" />
+            <element signature="e#13356#15080#0" />
+            <element signature="e#13687#13756#0" />
+            <element signature="e#13826#14027#0" />
+            <element signature="e#13877#13990#0" />
+            <element signature="e#14055#14802#0" />
+            <element signature="e#14087#14198#0" />
+            <element signature="e#14119#14182#0" />
+            <element signature="e#14202#14755#0" />
+            <element signature="e#14234#14299#0" />
+            <element signature="e#14378#14723#0" />
+            <element signature="e#14432#14667#0" />
+            <element signature="e#14826#14915#0" />
+            <element signature="e#14854#14902#0" />
+            <element signature="e#14943#15072#0" />
+            <element signature="e#14971#15060#0" />
+            <element signature="e#15110#16631#0" />
+            <element signature="e#15396#15597#0" />
+            <element signature="e#15447#15560#0" />
+            <element signature="e#15629#16309#0" />
+            <element signature="e#15665#15792#0" />
+            <element signature="e#15701#15772#0" />
+            <element signature="e#15796#16255#0" />
+            <element signature="e#15832#15905#0" />
+            <element signature="e#15983#16235#0" />
+            <element signature="e#16337#16442#0" />
+            <element signature="e#16369#16425#0" />
+            <element signature="e#16474#16623#0" />
+            <element signature="e#16506#16607#0" />
+            <element signature="e#16643#18051#0" />
+            <element signature="e#17097#17298#0" />
+            <element signature="e#17148#17261#0" />
+            <element signature="e#17330#17729#0" />
+            <element signature="e#17366#17493#0" />
+            <element signature="e#17402#17473#0" />
+            <element signature="e#17497#17674#0" />
+            <element signature="e#17533#17606#0" />
+            <element signature="e#17757#17862#0" />
+            <element signature="e#17789#17845#0" />
+            <element signature="e#17894#18043#0" />
+            <element signature="e#17926#18027#0" />
+            <element signature="e#18075#18444#0" />
+            <element signature="e#18292#18347#0" />
+            <element signature="e#18351#18437#0" />
+            <element signature="e#18466#18635#0" />
+            <element signature="e#18487#18552#0" />
+            <element signature="e#18557#18629#0" />
+            <element signature="e#18651#18832#0" />
+            <element signature="e#18715#18824#0" />
+            <element signature="e#18852#19303#0" />
+            <element signature="e#19089#19145#0" />
+            <element signature="e#19226#19295#0" />
+            <element signature="e#19318#24837#0" />
+            <element signature="e#21137#21227#0" />
+            <element signature="e#21298#24821#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Traveler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TravelerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+          <folding>
+            <element signature="e#1293#3209#0#PHP" />
           </folding>
         </state>
       </provider>

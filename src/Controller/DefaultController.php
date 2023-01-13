@@ -18,22 +18,13 @@ use Squid\Patreon\Patreon;
 use Symfony\Bundle\SecurityBundle\Security;
 
 /**
- * Improvements
- * - add exception handlers
- * - distinct null from 0 SP (story points not set vs set as 0)
- * - decrease cyclomatic complexity of mapping and story point summing
- * - get backlog data
- * - get refinement data.
- */
-
-/**
  * Class DefaultController.
  */
 class DefaultController extends AbstractController
 {
     private $articleController;
     private $travelerController;
-    private $travelgroupController;
+    private $travelGroupController;
     private $adventureController;
     private $formatController;
     private $testimonialController;
@@ -48,7 +39,7 @@ class DefaultController extends AbstractController
     public function __construct(EntityManagerInterface $entityManager,
                                 ArticleController $articleController,
                                 TravelerController $travelerController,
-                                TravelgroupController $travelgroupController,
+                                TravelgroupController $travelGroupController,
                                 AdventureController $adventureController,
                                 PageController $pageController,
                                 CategoryController $categoryController,
@@ -63,7 +54,7 @@ class DefaultController extends AbstractController
         $this->em = $entityManager;
         $this->articleController = $articleController;
         $this->travelerController = $travelerController;
-        $this->travelgroupController = $travelgroupController;
+        $this->travelGroupController = $travelGroupController;
         $this->adventureController = $adventureController;
         $this->categoryController = $categoryController;
         $this->formatController = $formatController;
@@ -77,14 +68,11 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
-     *
      * @Route("/", name="index")
      *
      * @return Response
      */
-    public function index(Request $request, $label = false)
+    public function index($label = null)
     {
         $user['username'] = '';
         $user['fullname'] = '';
@@ -115,27 +103,17 @@ class DefaultController extends AbstractController
 
         $pages = $this->pageController->getPages(false, false);
 
-        if ($label == 'Marty') {
-            $pages = array_reverse($pages);
-        }
-
         $categories = $this->categoryController->getCategories(false, true);
 
         $contentPages = 'hidden';
-        $library = ' ';
+        $library = null;
 
         if ($label) {
-            $contentPages = '';
+            $contentPages = null;
             $library = 'hidden';
         }
 
-        $title = 'Serious Scrum';
-        $image = 'images/serious-scrum.png';
-
-        if ($label) {
-            $title = 'Serious Scrum: '.ucwords(str_replace('-', ' ', $label));
-            $image = 'images/'.$label.'.jpg';
-        }
+        $output = $this->getIndexMetaData($label);
 
         // sets everything we want to output to the UX
         $output['data'] = [
@@ -148,21 +126,27 @@ class DefaultController extends AbstractController
             'categories' => $categories,
         ];
 
-        $output['title'] = $title;
-        $output['url'] = 'https://www.seriousscrum.com';
-        $output['image'] = $image;
-        $output['author'] = 'Sjoerd Nijland';
-        $output['description'] = 'We are an open global Scrum Community of 5K Scrum Professionals';
         $output['app'] = 'app';
 
-        // return new JsonResponse($output);
         return $this->render('home.html.twig', $output);
     }
 
+    private function getIndexMetaData($label){
+        $meta['title'] = 'Serious Scrum';
+        $meta['image'] = 'images/serious-scrum.png';
+
+        if ($label) {
+            $meta[ 'title']= 'Serious Scrum: '.ucwords(str_replace('-', ' ', $label));
+            $meta['image'] = 'images/'.$label.'.jpg';
+        }
+
+        $meta['url'] = 'https://www.seriousscrum.com';
+        $meta['author'] = 'Sjoerd Nijland';
+        $meta['description'] = 'We are an open global Scrum Community of 5K Scrum Professionals';
+        return($meta);
+    }
+
     /**
-     * @param Request
-     * @param Config
-     *
      * @Route("/patreon", name="patreon")
      *
      * @return Response
@@ -203,8 +187,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/success", name="successCallback")
      *
@@ -221,8 +203,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/error", name="errorCallback")
      *
@@ -239,8 +219,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/editorial", name="editorial")
      *
@@ -252,8 +230,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/r2m/reload", name="road-to-mastery-reload")
      *
@@ -303,7 +279,7 @@ class DefaultController extends AbstractController
             }
         }
 
-        $travelgroups = $this->travelgroupController->getTravelgroups(false);
+        $travelgroups = $this->travelGroupController->getTravelgroups(false);
 
         foreach ($travelgroups as $i => $travelgroup) {
             unset($travelgroups[$i]['travelers']);
@@ -366,8 +342,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/r2m/play", name="road-to-mastery-play")
      * @Route("/r2m/play/{play}", name="road-to-mastery-play-module")
@@ -394,19 +368,16 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
-     *
      * @Route("/r2m", name="road-to-mastery")
      * @Route("/r2m/{module}", name="road-to-mastery-module")
      *
      * @return Response
      */
-    public function mastery(Request $request, $label = false, $module = false)
+    public function mastery($label = null, $module = null)
     {
-        $user['username'] = '';
-        $user['fullname'] = '';
-        $user['avatar'] = '';
+        $user['username'] = null;
+        $user['fullname'] = null;
+        $user['avatar'] = null;
         $user['roles'] = ['ROLE_GUEST'];
         $user['patreon'] = false;
 
@@ -424,10 +395,7 @@ class DefaultController extends AbstractController
             }
         }
 
-        // get cache manager
-        $cm = $this->cm;
-
-        $data = $cm->getCache('r2m', 'all');
+        $data = $this->cm->getCache('r2m', 'all');
 
         $data = json_decode($data, 1);
 
@@ -474,24 +442,7 @@ class DefaultController extends AbstractController
         return $this->render('r2m.html.twig', $output);
     }
 
-
-
     /**
-     * @param Request
-     * @param Config
-     *
-     * @Route("/marty", name="marty")
-     *
-     * @return Response
-     */
-    public function marty(Request $request)
-    {
-        return $this->index($request, 'Marty');
-    }
-
-    /**
-     * @param Request
-     * @param Config
      *
      * @Route("/r2m/chapter/{label}", name="r2m")
      *
@@ -503,8 +454,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/prismic/sync", name="prismicSync")
      *
@@ -519,8 +468,6 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @param Request
-     * @param Config
      *
      * @Route("/rss/sync", name="rss_sync")
      *

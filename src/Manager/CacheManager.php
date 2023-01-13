@@ -12,18 +12,18 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class CacheManager
 {
-    private $fs;
+    private $fileSystem;
     private $cacheDir = 'cache/';
     private $imgDir = 'images/storage/';
 
-    public function __construct(Filesystem $filesystem)
+    public function __construct(Filesystem $fileSystem)
     {
-        $this->fs = $filesystem;
+        $this->fileSystem = $fileSystem;
     }
 
     public function writeCache($service, $file, $data = null, $defaultDir = '')
     {
-        $fs = $this->fs;
+        $this->fileSystem;
 
         if (is_array($data)) {
             $data = json_encode($data);
@@ -31,13 +31,13 @@ class CacheManager
 
         $cacheDir = $defaultDir.$this->cacheDir.$service;
 
-        if (!$fs->exists($cacheDir)) {
-            $fs->mkdir($cacheDir);
+        if (!$this->fileSystem->exists($cacheDir)) {
+            $this->fileSystem->mkdir($cacheDir);
         }
 
         $cacheLocation = $cacheDir.'/'.$file.'.json';
 
-        $fs->dumpFile($cacheLocation, $data);
+        $this->fileSystem->dumpFile($cacheLocation, $data);
 
         return true;
     }
@@ -47,25 +47,23 @@ class CacheManager
         $cacheLocation = $defaultDir.$this->cacheDir.$service.'/'.$file.'.json';
         if ($data = @file_get_contents($cacheLocation, true)) {
             return $data;
-        } else {
-            $output['error']['message'] = 'failed get data from '.$cacheLocation.' in getCache';
-            $output['error']['code'] = '500';
-
-            return $output;
         }
+        $output['error']['message'] = 'failed get data from '.$cacheLocation.' in getCache';
+        $output['error']['code'] = '500';
+
+        return $output;
     }
 
     public function storyImageFromUrl($service, $url, $defaultDir = '', $id = 'thumb')
     {
-        $fs = $this->fs;
-
         $imgDir = $defaultDir.$this->imgDir.$service;
 
-        if (!$fs->exists($imgDir)) {
-            $fs->mkdir($imgDir);
+        if (!$this->fileSystem->exists($imgDir)) {
+            $this->fileSystem->mkdir($imgDir);
         }
 
         $file = file_get_contents($url); // to get file
+
         $fileName = $id.'_'.basename($url); // to get file name
 
         $fileName = explode('?', $fileName);
@@ -86,8 +84,8 @@ class CacheManager
 
         $fileLocation = $imgDir.'/'.$fileName.$ext;
 
-        if (!$fs->exists($fileLocation)) {
-            $fs->dumpFile($fileLocation, $file);
+        if (!$this->fileSystem->exists($fileLocation)) {
+            $this->fileSystem->dumpFile($fileLocation, $file);
         }
 
         return $fileLocation;

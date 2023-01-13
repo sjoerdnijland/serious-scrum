@@ -192,11 +192,10 @@ class R2M extends React.Component {
     componentDidMount(){
         window.addEventListener("scroll", this.onScrollPage);
     }
+
     componentWillUnmount(){
         window.removeEventLister("scroll", this.onScrollPage);
     }
-
-
 
     closeMenus(){
         if(this.state.editorial){
@@ -798,12 +797,3 @@ const root = document.getElementById('root');
 const data =  JSON.parse(root.dataset.preload);
 
 ReactDOM.render(<R2M data={data} />, root);
-/*
-<Banner bannerText={bannerText1}/>
-<Search functions={functions} value={this.state.search}  type="mobile"/>
-<Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
-<Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
-<R2MCategories functions={functions} expanded={this.state.expanded} data={this.state.categories} parentCategoryName={'Adventures'}/>
- <a name="map"/>
-                <R2MMap label={this.state.label}  module={this.state.module}/>
-*/
