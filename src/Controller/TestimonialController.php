@@ -22,14 +22,9 @@ class TestimonialController extends AbstractController
      */
     private $client;
 
-    private $em;
-    private $cm;
-
-    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(HttpClientInterface $client, private CacheManager $cm, private EntityManagerInterface $em)
     {
         $this->client = $client;
-        $this->cm = $cacheManager;
-        $this->em = $entityManager;
     }
 
     /**

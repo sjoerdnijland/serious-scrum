@@ -58,7 +58,6 @@ import '../js/r2m_guides';
 import '../js/r2m_travelgroups';
 import '../js/r2m_guideItem';
 import '../js/r2m_travelgroup';
-import '../js/r2m_adventure';
 import '../js/r2m_join';
 import '../js/joinFirstname';
 import '../js/joinLastname';
@@ -70,7 +69,6 @@ import '../js/travelgroupSelect';
 import '../js/r2m_usps';
 import '../js/r2m_ubrs';
 import '../js/r2m_subCategory';
-import '../js/r2m_adventures';
 import '../js/r2m_playbook';
 import '../js/r2m_format';
 import '../js/r2m_testimonials';
@@ -131,7 +129,6 @@ class R2M extends React.Component {
             articles: this.props.data.articles,
             categories: this.props.data.categories,
             guides: this.props.data.guides,
-            adventures: this.props.data.adventures,
             travelgroups: this.props.data.travelgroups,
             travelers: this.props.data.travelers,
             formats: this.props.data.formats,
@@ -784,6 +781,8 @@ class R2M extends React.Component {
                 <R2MEvents label={this.state.label} module={this.state.module}/>
 
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
+
+                <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
 
                 <Build/>
                 <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />

@@ -11,19 +11,16 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class GoogleController extends AbstractController
 {
-    private $session;
-
-    public function __construct(SessionInterface $session)
+    public function __construct(private SessionInterface $session)
     {
-        $this->session = $session;
     }
 
     /**
      * Link to this controller to start the "connect" process.
      *
-     * @Route("/connect/google", name="connect_google")
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
+    #[Route(path: '/connect/google', name: 'connect_google')]
     public function connectAction(ClientRegistry $clientRegistry)
     {
         return $clientRegistry
@@ -36,23 +33,14 @@ class GoogleController extends AbstractController
     /**
      * Google redirects to back here afterwards.
      *
-     * @Route("/connect/google/check", name="connect_google_check")
-     *
      * @param Request $request
-     *
-     * @return JsonResponse|\Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function connectCheckAction()
+    #[Route(path: '/connect/google/check', name: 'connect_google_check')]
+    public function connectCheckAction(): JsonResponse|\Symfony\Component\HttpFoundation\RedirectResponse
     {
         if (!$this->getUser()) {
             return new JsonResponse(['status' => false, 'message' => 'User not found!']);
         } else {
-            if ($this->session->get('patreonLogin')) {
-                $this->session->set('patreonLogin', false);
-
-                return $this->redirectToRoute('patreon');
-            }
-
             return $this->redirectToRoute('index');
         }
     }

@@ -16,13 +16,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CategoryController extends AbstractController
 {
-    private $em;
-    private $cm;
-
-    public function __construct(CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(private CacheManager $cm, private EntityManagerInterface $em)
     {
-        $this->cm = $cacheManager;
-        $this->em = $entityManager;
     }
 
     /**
@@ -35,6 +30,7 @@ class CategoryController extends AbstractController
      */
     public function getCategories($jsonResponse = true, $cache = false)
     {
+        $data = [];
         // get doctrine manager
         $em = $this->em;
         // get cache manager
@@ -43,7 +39,7 @@ class CategoryController extends AbstractController
         if ($cache) {
             $categories = $cm->getCache('categories', 'all');
 
-            $categories = json_decode($categories, 1);
+            $categories = json_decode($categories, 1, 512, JSON_THROW_ON_ERROR);
 
             if ($jsonResponse) {
                 return new JsonResponse($categories, Response::HTTP_OK);
@@ -81,7 +77,7 @@ class CategoryController extends AbstractController
         // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
-        $cm->writeCache('categories', 'all', json_encode($data));
+        $cm->writeCache('categories', 'all', json_encode($data, JSON_THROW_ON_ERROR));
 
         if ($jsonResponse) {
             return new JsonResponse($data, Response::HTTP_OK);

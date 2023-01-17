@@ -2,8 +2,6 @@
 
 namespace App\Entity;
 
-namespace App\Entity;
-
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -23,35 +21,28 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $email;
+    private ?string $email = null;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $fullname;
+    private ?string $fullname = null;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Assert\Url(
-     *    message = "The avatar '{{ value }}' is not a valid url",
-     * )
      */
-    private $avatar;
+    #[Assert\Url(message: "The avatar '{{ value }}' is not a valid url")]
+    private ?string $avatar = null;
 
     /**
      * @ORM\Column(type="json")
      */
-    private $roles = [];
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $isPatreon = false;
+    private array $roles = [];
 
     /**
      * @ORM\Column(type="datetime")
      */
-    private $created_at;
+    private ?\DateTimeInterface $created_at = null;
 
     public function getId(): ?int
     {
@@ -170,21 +161,5 @@ class User implements UserInterface
     public function eraseCredentials()
     {
         return null;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIsPatreon()
-    {
-        return $this->isPatreon;
-    }
-
-    /**
-     * @param mixed $isPatreon
-     */
-    public function setIsPatreon($isPatreon): void
-    {
-        $this->isPatreon = $isPatreon;
     }
 }

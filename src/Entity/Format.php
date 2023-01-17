@@ -19,7 +19,7 @@ class Format
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $name;
+    private ?string $name = null;
 
     /**
      * @ORM\Column(type="string", length=125, nullable=true)
@@ -77,10 +77,7 @@ class Format
         return $this->description;
     }
 
-    /**
-     * @param mixed $description
-     */
-    public function setDescription($description): void
+    public function setDescription(mixed $description): void
     {
         $this->description = $description;
     }
@@ -93,10 +90,7 @@ class Format
         return $this->type;
     }
 
-    /**
-     * @param mixed $type
-     */
-    public function setType($type): void
+    public function setType(mixed $type): void
     {
         $this->type = $type;
     }
@@ -109,10 +103,7 @@ class Format
         return $this->c;
     }
 
-    /**
-     * @param mixed $c
-     */
-    public function setC($c): void
+    public function setC(mixed $c): void
     {
         $this->c = $c;
     }
@@ -125,10 +116,7 @@ class Format
         return $this->activity;
     }
 
-    /**
-     * @param mixed $activity
-     */
-    public function setActivity($activity): void
+    public function setActivity(mixed $activity): void
     {
         $this->activity = $activity;
     }
@@ -151,10 +139,7 @@ class Format
         return $this->icon;
     }
 
-    /**
-     * @param mixed $icon
-     */
-    public function setIcon($icon): void
+    public function setIcon(mixed $icon): void
     {
         $this->icon = $icon;
     }

@@ -12,13 +12,11 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class CacheManager
 {
-    private $fileSystem;
-    private $cacheDir = 'cache/';
-    private $imgDir = 'images/storage/';
+    private string $cacheDir = 'cache/';
+    private string $imgDir = 'images/storage/';
 
-    public function __construct(Filesystem $fileSystem)
+    public function __construct(private Filesystem $fileSystem)
     {
-        $this->fileSystem = $fileSystem;
     }
 
     public function writeCache($service, $file, $data = null, $defaultDir = '')
@@ -26,7 +24,7 @@ class CacheManager
         $this->fileSystem;
 
         if (is_array($data)) {
-            $data = json_encode($data);
+            $data = json_encode($data, JSON_THROW_ON_ERROR);
         }
 
         $cacheDir = $defaultDir.$this->cacheDir.$service;
@@ -44,6 +42,7 @@ class CacheManager
 
     public function getCache($service, $file, $defaultDir = '')
     {
+        $output = [];
         $cacheLocation = $defaultDir.$this->cacheDir.$service.'/'.$file.'.json';
         if ($data = @file_get_contents($cacheLocation, true)) {
             return $data;

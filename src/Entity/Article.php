@@ -19,34 +19,30 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Assert\Url(
-     *    message = "The url '{{ value }}' is not a valid url",
-     * )
      */
-    private $url;
+    #[Assert\Url(message: "The url '{{ value }}' is not a valid url")]
+    private ?string $url = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\Url(
-     *    message = "The thumbnail url '{{ value }}' is not a valid url",
-     * )
      */
-    private $thumbnail;
+    #[Assert\Url(message: "The thumbnail url '{{ value }}' is not a valid url")]
+    private ?string $thumbnail = null;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $title;
+    private ?string $title = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $intro;
+    private ?string $intro = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $author;
+    private ?string $author = null;
 
     /**
      * @ORM\Column(type="boolean")
@@ -67,7 +63,7 @@ class Article
     /**
      * @ORM\Column(name="submittedAt", type="datetime", options={"default": "CURRENT_TIMESTAMP"})
      */
-    private $submittedAt;
+    private \DateTime $submittedAt;
 
     public function __construct()
     {
@@ -177,10 +173,7 @@ class Article
         return $this->submittedAt;
     }
 
-    /**
-     * @param mixed $submittedAt
-     */
-    public function setSubmittedAt($submittedAt)
+    public function setSubmittedAt(mixed $submittedAt)
     {
         $this->submittedAt = $submittedAt;
     }

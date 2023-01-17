@@ -19,21 +19,9 @@ class PrismicManager
      */
     private $client;
 
-    /**
-     * @var EntityManagerInterface
-     */
-    private $em;
-
-    /**
-     * @var CacheManager
-     */
-    private $cm;
-
-    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(HttpClientInterface $client, private CacheManager $cm, private EntityManagerInterface $em)
     {
         $this->client = $client;
-        $this->em = $entityManager;
-        $this->cm = $cacheManager;
     }
 
     public function getPrismicPages($source)// gets last 20 Prismic Pages
@@ -56,7 +44,7 @@ class PrismicManager
         }
 
         $jsonContent = $response->getContent();
-        $content = json_decode($jsonContent, 1);
+        $content = json_decode($jsonContent, 1, 512, JSON_THROW_ON_ERROR);
 
         $ref = false;
 
@@ -90,7 +78,7 @@ class PrismicManager
             }
 
             $jsonContent = $response->getContent();
-            $content = json_decode($jsonContent, 1);
+            $content = json_decode($jsonContent, 1, 512, JSON_THROW_ON_ERROR);
 
             if (!isset($content['results'])) {
                 echo 'no results...';
@@ -104,8 +92,8 @@ class PrismicManager
                 // check if new or existing
                 $prismicId = $result['id'];
                 $slug = $result['slugs'][0];
-                $labels = json_encode($result['tags']);
-                $data = json_encode($result['data']);
+                $labels = json_encode($result['tags'], JSON_THROW_ON_ERROR);
+                $data = json_encode($result['data'], JSON_THROW_ON_ERROR);
                 $author = '';
 
                 if (isset($result['data']['chapter']['author']['value'][0]['text'])) {

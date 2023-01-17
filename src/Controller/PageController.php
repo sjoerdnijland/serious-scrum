@@ -17,19 +17,8 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class PageController extends AbstractController
 {
-    private $em;
-    private $cm;
-    private $pm;
-    private $session;
-    private $categoryController;
-
-    public function __construct(CacheManager $cacheManager, EntityManagerInterface $entityManager, PrismicManager $prismicManager, SessionInterface $session, CategoryController $categoryController)
+    public function __construct(private CacheManager $cm, private EntityManagerInterface $em, private PrismicManager $pm, private SessionInterface $session, private CategoryController $categoryController)
     {
-        $this->cm = $cacheManager;
-        $this->em = $entityManager;
-        $this->pm = $prismicManager;
-        $this->session = $session;
-        $this->categoryController = $categoryController;
     }
 
     /**
@@ -42,6 +31,8 @@ class PageController extends AbstractController
      */
     public function getPage(Request $request, $slug)
     {
+        $user = [];
+        $output = [];
         // get doctrine manager
         $em = $this->em;
 
@@ -56,20 +47,12 @@ class PageController extends AbstractController
         $user['fullname'] = '';
         $user['avatar'] = '';
         $user['roles'] = ['ROLE_GUEST'];
-        $user['patreon'] = false;
-
-        if ($this->session->get('patreonToken')) {
-            $user['patreon'] = 'member';
-        }
 
         if ($this->isGranted('ROLE_USER')) {
             $user['username'] = $this->getUser()->getUsername();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();
-            if ($this->getUser()->getIsPatreon()) {
-                $user['patreon'] = 'supporter';
-            }
         }
 
         $page = new Page();
@@ -88,7 +71,7 @@ class PageController extends AbstractController
 
         // sets everything we want to output to the UX
 
-        $data = json_decode($page->getData(), 1);
+        $data = json_decode($page->getData(), 1, 512, JSON_THROW_ON_ERROR);
 
         // resolving a link issue bug with Prismic #todo to a function
         foreach ($data['chapter']['content'] as $i => $contentBlocks) {
@@ -126,9 +109,9 @@ class PageController extends AbstractController
         }
 
         $pages = $cm->getCache('pages', 'all');
-        $pages = json_decode($pages, 1);
+        $pages = json_decode($pages, 1, 512, JSON_THROW_ON_ERROR);
 
-        $labels = json_decode($page->getLabels(), 1);
+        $labels = json_decode($page->getLabels(), 1, 512, JSON_THROW_ON_ERROR);
 
         $pageMenu = [];
 
@@ -171,15 +154,6 @@ class PageController extends AbstractController
             'title' => $data['chapter']['title']['value'][0]['text'],
         ];
 
-        if ($page->getIsSubscribersOnly() && $user['patreon'] != 'supporter') {
-            $unauthorizedPage = $em->getRepository(Page::class)
-                ->findOneBy([
-                    'slug' => '401-unauthorized',
-                ]);
-
-            $output['data']['data'] = json_decode($unauthorizedPage->getData(), 1)['chapter'];
-        }
-
         $output['title'] = $output['data']['title'];
         $output['image'] = $page->getThumbnail();
         $output['author'] = $output['data']['author'];
@@ -199,12 +173,10 @@ class PageController extends AbstractController
         // get cache manager
         $cm = $this->cm;
 
-        $pages = [];
-
         if ($cache) {
             $pages = $cm->getCache('pages', 'all');
 
-            $pages = json_decode($pages, 1);
+            $pages = json_decode($pages, 1, 512, JSON_THROW_ON_ERROR);
 
             if ($jsonResponse) {
                 return new JsonResponse($pages, Response::HTTP_OK);
@@ -222,7 +194,7 @@ class PageController extends AbstractController
         $data = [];
 
         foreach ($pages as $page) {
-            $pageData = json_decode($page->getData(), 1);
+            $pageData = json_decode($page->getData(), 1, 512, JSON_THROW_ON_ERROR);
 
             $hero = '';
 
@@ -230,7 +202,7 @@ class PageController extends AbstractController
                 'id' => $page->getId(),
                 'prismicId' => $page->getPrismicId(),
                 'slug' => $page->getSlug(),
-                'labels' => json_decode($page->getLabels(), 1),
+                'labels' => json_decode($page->getLabels(), 1, 512, JSON_THROW_ON_ERROR),
                 'author' => $page->getAuthor(),
                 'title' => $pageData['chapter']['title']['value'][0]['text'],
                 'intro' => $pageData['chapter']['introduction']['value'][0]['text'],
@@ -244,7 +216,7 @@ class PageController extends AbstractController
         // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
-        $cm->writeCache('pages', 'all', json_encode($data));
+        $cm->writeCache('pages', 'all', json_encode($data, JSON_THROW_ON_ERROR));
 
         if ($jsonResponse) {
             return new JsonResponse($data, Response::HTTP_OK);

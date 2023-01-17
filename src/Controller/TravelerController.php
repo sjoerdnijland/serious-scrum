@@ -1,7 +1,5 @@
 <?php
 
-// src/Controller/ArticleController.php
-
 namespace App\Controller;
 
 use App\Entity\Traveler;
@@ -24,21 +22,15 @@ class TravelerController extends AbstractController
      */
     private $client;
 
-    private $em;
-    private $cm;
-
     /**
-     * @Assert\DateTime
-     *
      * @var string A "Y-m-d H:i:s" formatted value
      */
+    #[Assert\DateTime]
     private $createdAt;
 
-    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(HttpClientInterface $client, private CacheManager $cm, private EntityManagerInterface $em)
     {
         $this->client = $client;
-        $this->cm = $cacheManager;
-        $this->em = $entityManager;
     }
 
     /**
@@ -53,7 +45,8 @@ class TravelerController extends AbstractController
         $em = $this->em;
 
         $data = $request->getContent();
-        $data = json_decode($data, 1);
+
+        $data = json_decode($data, 1, 512, JSON_THROW_ON_ERROR);
 
         if (!$data['firstname']) {
             return new JsonResponse('firstname is required', Response::HTTP_BAD_REQUEST); // bad request
@@ -93,7 +86,6 @@ class TravelerController extends AbstractController
                 ->findOneBy([
                     'id' => $data['travelgroup'],
                 ]);
-
             $traveler->addTravelgroup($travelgroup);
         }
 
@@ -125,19 +117,6 @@ class TravelerController extends AbstractController
         $data = [];
 
         foreach ($travelers as $traveler) {
-            $adventures = [];
-            foreach ($traveler->getAdventures() as $adventure) {
-                $adventures[] = [
-                    'id' => $adventure->getId(),
-                    'name' => $adventure->getName(),
-                    'description' => $adventure->getDescription(),
-                    'price' => $adventure->getPrice(),
-                    'created_at' => $adventure->getCreatedAt(),
-                    'isActive' => $adventure->getIsActive(),
-                    'link' => $adventure->getLink(),
-                    'paymentLink' => $adventure->getPaymentLink(),
-                ];
-            }
 
             $travelgroups = [];
             foreach ($traveler->getTravelGroups() as $travelgroup) {
@@ -148,15 +127,6 @@ class TravelerController extends AbstractController
                     'launch_at' => $travelgroup->getLaunchAt(),
                     'created_at' => $travelgroup->getCreatedAt(),
                     'isActive' => $travelgroup->getIsActive(),
-                ];
-            }
-
-            $certificates = [];
-            foreach ($traveler->getCertificates() as $certificate) {
-                $certificates[] = [
-                    'id' => $certificate->getId(),
-                    'name' => $certificate->getName(),
-                    'image' => $certificate->getImage(),
                 ];
             }
 
@@ -172,9 +142,7 @@ class TravelerController extends AbstractController
                 'isGuide' => $traveler->getIsGuide(),
                 'isContacted' => $traveler->getIsContacted(),
                 'created' => $traveler->getCreatedAt(),
-                'travelgroups' => $travelgroups,
-                'adventures' => $adventures,
-                'certificates' => $certificates,
+                'travelgroups' => $travelgroups
             ];
         }
 

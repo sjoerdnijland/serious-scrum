@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -20,12 +22,12 @@ class Page
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $prismicId;
+    private ?string $prismicId = null;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $slug;
+    private ?string $slug = null;
 
     /**
      * @ORM\Column(type="json")
@@ -35,15 +37,13 @@ class Page
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $author;
+    private ?string $author = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\Url(
-     *    message = "The thumbnail url '{{ value }}' is not a valid url",
-     * )
      */
-    private $thumbnail;
+    #[Assert\Url(message: "The thumbnail url '{{ value }}' is not a valid url")]
+    private ?string $thumbnail = null;
 
     /**
      * @ORM\Column(type="json")
@@ -63,9 +63,9 @@ class Page
      *     orphanRemoval=true,
      *     cascade={"persist"}
      * )
-     * @Assert\Valid()
      */
-    private $formats;
+    #[Assert\Valid]
+    private $formats = null;
 
     public function __construct()
     {
@@ -101,18 +101,12 @@ class Page
         return $this;
     }
 
-    /**
-     * @return mixed
-     */
     public function getLabels()
     {
         return $this->labels;
     }
 
-    /**
-     * @param mixed $labels
-     */
-    public function setLabels($labels): void
+    public function setLabels(mixed $labels): void
     {
         $this->labels = $labels;
     }
@@ -125,10 +119,7 @@ class Page
         return $this->data;
     }
 
-    /**
-     * @param mixed $data
-     */
-    public function setData($data): void
+    public function setData(mixed $data): void
     {
         $this->data = $data;
     }

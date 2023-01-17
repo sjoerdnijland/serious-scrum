@@ -14,15 +14,8 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 class GoogleAuthenticator extends SocialAuthenticator
 {
-    private $clientRegistry;
-    private $em;
-    private $router;
-
-    public function __construct(ClientRegistry $clientRegistry, EntityManagerInterface $em, RouterInterface $router)
+    public function __construct(private ClientRegistry $clientRegistry, private EntityManagerInterface $em, private RouterInterface $router)
     {
-        $this->clientRegistry = $clientRegistry;
-        $this->em = $em;
-        $this->router = $router;
     }
 
     public function supports(Request $request)

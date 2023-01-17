@@ -21,12 +21,12 @@ class TravelGroup
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $groupname;
+    private ?string $groupname = null;
 
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isActive = false;
+    private bool $isActive = false;
 
     /**
      * @ORM\Column(type="boolean")
@@ -36,22 +36,22 @@ class TravelGroup
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isWaitingList = false;
+    private bool $isWaitingList = false;
 
     /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
      */
-    private $created_at;
+    private ?\DateTimeInterface $created_at = null;
 
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private $launch_at;
+    private ?\DateTimeInterface $launch_at = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $conferenceLink;
+    private ?string $conferenceLink = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -120,6 +120,7 @@ class TravelGroup
         $this->travelers = new ArrayCollection();
     }
 
+
     public function getId(): ?int
     {
         return $this->id;
@@ -169,10 +170,7 @@ class TravelGroup
         return $this->isActive;
     }
 
-    /**
-     * @param mixed $isActive
-     */
-    public function setIsActive($isActive): void
+    public function setIsActive(mixed $isActive): void
     {
         $this->isActive = $isActive;
     }
@@ -211,7 +209,6 @@ class TravelGroup
     {
         if ($this->travelers->contains($traveler)) {
             $this->travelers->removeElement($traveler);
-            $traveler->removeAdventure($this);
         }
 
         return $this;
@@ -225,10 +222,7 @@ class TravelGroup
         return $this->priceTotal;
     }
 
-    /**
-     * @param mixed $priceTotal
-     */
-    public function setPriceTotal($priceTotal): void
+    public function setPriceTotal(mixed $priceTotal): void
     {
         $this->priceTotal = $priceTotal;
     }
@@ -241,10 +235,7 @@ class TravelGroup
         return $this->pricePerMonth;
     }
 
-    /**
-     * @param mixed $pricePerMonth
-     */
-    public function setPricePerMonth($pricePerMonth): void
+    public function setPricePerMonth(mixed $pricePerMonth): void
     {
         $this->pricePerMonth = $pricePerMonth;
     }
@@ -257,10 +248,7 @@ class TravelGroup
         return $this->isWaitingList;
     }
 
-    /**
-     * @param mixed $isWaitingList
-     */
-    public function setIsWaitingList($isWaitingList): void
+    public function setIsWaitingList(mixed $isWaitingList): void
     {
         $this->isWaitingList = $isWaitingList;
     }
@@ -289,10 +277,7 @@ class TravelGroup
         return $this->region;
     }
 
-    /**
-     * @param mixed $region
-     */
-    public function setRegion($region): void
+    public function setRegion(mixed $region): void
     {
         $this->region = $region;
     }
@@ -305,10 +290,7 @@ class TravelGroup
         return $this->registrationLink;
     }
 
-    /**
-     * @param mixed $registrationLink
-     */
-    public function setRegistrationLink($registrationLink): void
+    public function setRegistrationLink(mixed $registrationLink): void
     {
         $this->registrationLink = $registrationLink;
     }
@@ -321,10 +303,7 @@ class TravelGroup
         return $this->code;
     }
 
-    /**
-     * @param mixed $code
-     */
-    public function setCode($code): void
+    public function setCode(mixed $code): void
     {
         $this->code = $code;
     }
@@ -337,10 +316,7 @@ class TravelGroup
         return $this->description;
     }
 
-    /**
-     * @param mixed $description
-     */
-    public function setDescription($description): void
+    public function setDescription(mixed $description): void
     {
         $this->description = $description;
     }
@@ -353,10 +329,7 @@ class TravelGroup
         return $this->sessions;
     }
 
-    /**
-     * @param mixed $sessions
-     */
-    public function setSessions($sessions): void
+    public function setSessions(mixed $sessions): void
     {
         $this->sessions = $sessions;
     }
@@ -369,10 +342,7 @@ class TravelGroup
         return $this->duration;
     }
 
-    /**
-     * @param mixed $duration
-     */
-    public function setDuration($duration): void
+    public function setDuration(mixed $duration): void
     {
         $this->duration = $duration;
     }
@@ -385,10 +355,7 @@ class TravelGroup
         return $this->interval;
     }
 
-    /**
-     * @param mixed $interval
-     */
-    public function setInterval($interval): void
+    public function setInterval(mixed $interval): void
     {
         $this->interval = $interval;
     }
@@ -401,10 +368,7 @@ class TravelGroup
         return $this->host;
     }
 
-    /**
-     * @param mixed $host
-     */
-    public function setHost($host): void
+    public function setHost(mixed $host): void
     {
         $this->host = $host;
     }
@@ -417,10 +381,7 @@ class TravelGroup
         return $this->overwriteTravelerCount;
     }
 
-    /**
-     * @param mixed $overwriteTravelerCount
-     */
-    public function setOverwriteTravelerCount($overwriteTravelerCount): void
+    public function setOverwriteTravelerCount(mixed $overwriteTravelerCount): void
     {
         $this->overwriteTravelerCount = $overwriteTravelerCount;
     }

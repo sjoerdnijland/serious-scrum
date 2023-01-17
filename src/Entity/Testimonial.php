@@ -2,8 +2,6 @@
 
 namespace App\Entity;
 
-namespace App\Entity;
-
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -41,10 +39,7 @@ class Testimonial
         return $this->id;
     }
 
-    /**
-     * @param mixed $id
-     */
-    public function setId($id): void
+    public function setId(mixed $id): void
     {
         $this->id = $id;
     }
@@ -57,10 +52,7 @@ class Testimonial
         return $this->name;
     }
 
-    /**
-     * @param mixed $name
-     */
-    public function setName($name): void
+    public function setName(mixed $name): void
     {
         $this->name = $name;
     }
@@ -73,10 +65,7 @@ class Testimonial
         return $this->testimonial;
     }
 
-    /**
-     * @param mixed $testimonial
-     */
-    public function setTestimonial($testimonial): void
+    public function setTestimonial(mixed $testimonial): void
     {
         $this->testimonial = $testimonial;
     }
@@ -89,10 +78,7 @@ class Testimonial
         return $this->icon;
     }
 
-    /**
-     * @param mixed $icon
-     */
-    public function setIcon($icon): void
+    public function setIcon(mixed $icon): void
     {
         $this->icon = $icon;
     }

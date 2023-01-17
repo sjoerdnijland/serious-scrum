@@ -21,71 +21,57 @@ class Traveler
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $email;
+    private ?string $email = null;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $firstname;
+    private ?string $firstname = null;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $lastname;
+    private ?string $lastname = null;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $fullname;
+    private ?string $fullname = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $link;
+    private ?string $link = null;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\TravelGroup", mappedBy="travelers")
-     *
-     * @var Collection
      */
     private $travelgroups;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Adventure", mappedBy="travelers")
-     *
-     * @var Collection
+     * @ORM\Column(type="boolean")
      */
-    private $adventures;
-
-    /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Certificate", mappedBy="travelers")
-     */
-    private $certificates;
+    private bool $isActive = false;
 
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isActive = false;
+    private bool $isGuide = false;
 
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isGuide = false;
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $isContacted = false;
+    private bool $isContacted = false;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $program = false;
+    private bool $program = false;
 
     /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
      */
-    private $created_at;
+    private ?\DateTimeInterface $created_at = null;
 
     public function __construct()
     {
@@ -178,10 +164,7 @@ class Traveler
         return $this->isActive;
     }
 
-    /**
-     * @param mixed $isActive
-     */
-    public function setIsActive($isActive): void
+    public function setIsActive(mixed $isActive): void
     {
         $this->isActive = $isActive;
     }
@@ -194,10 +177,7 @@ class Traveler
         return $this->isGuide;
     }
 
-    /**
-     * @param mixed $isGuide
-     */
-    public function setIsGuide($isGuide): void
+    public function setIsGuide(mixed $isGuide): void
     {
         $this->isGuide = $isGuide;
     }
@@ -231,62 +211,6 @@ class Traveler
     }
 
     /**
-     * @return Collection|adventures[]
-     */
-    public function getAdventures(): Collection
-    {
-        return $this->adventures;
-    }
-
-    public function addAdventure(Adventure $adventure): self
-    {
-        if (!$this->adventures->contains($adventure)) {
-            $this->adventures[] = $adventure;
-            $adventure->addTraveler($this);
-        }
-
-        return $this;
-    }
-
-    public function removeAdventure(TravelGroup $adventure): self
-    {
-        if ($this->adventures->contains($adventure)) {
-            $this->adventures->removeElement($adventure);
-            $adventure->removeTraveler($this);
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|certificates[]
-     */
-    public function getCertificates(): Collection
-    {
-        return $this->certificates;
-    }
-
-    public function addCertificate(Adventure $certificate): self
-    {
-        if (!$this->certificates->contains($certificate)) {
-            $this->certificates[] = $certificate;
-            $certificate->addTraveler($this);
-        }
-
-        return $this;
-    }
-
-    public function removeCertificate(TravelGroup $certificate): self
-    {
-        if ($this->certificates->contains($certificate)) {
-            $this->certificates->removeElement($certificate);
-            $certificate->removeTraveler($this);
-        }
-
-        return $this;
-    }
-
-    /**
      * @return mixed
      */
     public function getisContacted()
@@ -294,10 +218,7 @@ class Traveler
         return $this->isContacted;
     }
 
-    /**
-     * @param mixed $isContacted
-     */
-    public function setIsContacted($isContacted): void
+    public function setIsContacted(mixed $isContacted): void
     {
         $this->isContacted = $isContacted;
     }
@@ -310,10 +231,7 @@ class Traveler
         return $this->program;
     }
 
-    /**
-     * @param mixed $program
-     */
-    public function setProgram($program): void
+    public function setProgram(mixed $program): void
     {
         $this->program = $program;
     }

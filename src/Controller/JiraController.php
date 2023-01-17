@@ -20,6 +20,7 @@ class JiraController
 
     public function getIssuesFromJira($team)
     {
+        $jql = [];
         $issues = [];
         $startAt = 0;
         $maxResults = 50;
@@ -48,7 +49,7 @@ class JiraController
                 ]
             );
 
-            $loadIssues = json_decode($res->getContent(), 1);
+            $loadIssues = json_decode($res->getContent(), 1, 512, JSON_THROW_ON_ERROR);
 
             // geef jira resultaten weer
             // echo('<pre>'); print_r($loadIssues); echo('</pre>');
@@ -125,7 +126,7 @@ class JiraController
                 ]
             );
 
-            $loadIssues = json_decode($res->getContent(), 1);
+            $loadIssues = json_decode($res->getContent(), 1, 512, JSON_THROW_ON_ERROR);
 
             // geef jira resultaten weer
             // echo('<pre>'); print_r($loadIssues); echo('</pre>'); die();

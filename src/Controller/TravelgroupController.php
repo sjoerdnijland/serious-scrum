@@ -23,14 +23,9 @@ class TravelgroupController extends AbstractController
      */
     private $client;
 
-    private $em;
-    private $cm;
-
-    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(HttpClientInterface $client, private CacheManager $cm, private EntityManagerInterface $em)
     {
         $this->client = $client;
-        $this->cm = $cacheManager;
-        $this->em = $entityManager;
     }
 
     /**
@@ -45,7 +40,7 @@ class TravelgroupController extends AbstractController
         $em = $this->em;
 
         $data = $request->getContent();
-        $data = json_decode($data, 1);
+        $data = json_decode($data, 1, 512, JSON_THROW_ON_ERROR);
 
         if (!$data['groupname']) {
             return new JsonResponse('groupname is required', Response::HTTP_BAD_REQUEST); // bad request

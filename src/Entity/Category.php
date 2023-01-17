@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
@@ -20,7 +22,7 @@ class Category
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $name;
+    private ?string $name = null;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -41,8 +43,8 @@ class Category
      *     orphanRemoval=true,
      *     cascade={"persist"}
      * )
-     * @Assert\Valid()
      */
+    #[Assert\Valid]
     private $subCategories;
 
     /**
@@ -58,8 +60,8 @@ class Category
      *     orphanRemoval=true,
      *     cascade={"persist"}
      * )
-     * @Assert\Valid()
      */
+    #[Assert\Valid]
     private $articles;
 
     public function getId(): ?int
@@ -90,7 +92,7 @@ class Category
     }
 
     /**
-     * @return ArrayCollection|$subCategory[]
+     * @return $subCategory[]
      */
     public function getSubCategories()
     {
@@ -120,7 +122,7 @@ class Category
     }
 
     /**
-     * @return ArrayCollection|$articles[]
+     * @return $articles[]
      */
     public function getArticles()
     {
@@ -167,10 +169,7 @@ class Category
         return $this->title;
     }
 
-    /**
-     * @param mixed $title
-     */
-    public function setTitle($title): void
+    public function setTitle(mixed $title): void
     {
         $this->title = $title;
     }

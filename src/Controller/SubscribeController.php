@@ -66,7 +66,7 @@ class SubscribeController extends AbstractController
 
         // exec
         $replyRaw = curl_exec($ch);
-        $reply = json_decode($replyRaw, true);
+        $reply = json_decode($replyRaw, true, 512, JSON_THROW_ON_ERROR);
 
         $response = new Response();
         $response->setContent($replyRaw);

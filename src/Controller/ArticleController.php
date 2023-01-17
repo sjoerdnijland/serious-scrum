@@ -25,14 +25,9 @@ class ArticleController extends AbstractController
      */
     private $client;
 
-    private $em;
-    private $cm;
-
-    public function __construct(HttpClientInterface $client, CacheManager $cacheManager, EntityManagerInterface $entityManager)
+    public function __construct(HttpClientInterface $client, private CacheManager $cm, private EntityManagerInterface $em)
     {
         $this->client = $client;
-        $this->cm = $cacheManager;
-        $this->em = $entityManager;
     }
 
     /**
@@ -50,7 +45,7 @@ class ArticleController extends AbstractController
         $cm = $this->cm;
 
         $data = $request->getContent();
-        $data = json_decode($data, 1);
+        $data = json_decode($data, 1, 512, JSON_THROW_ON_ERROR);
 
         if (!isset($data['url']) || !isset($data['url'])) {
             return new JsonResponse('url not submitted!', Response::HTTP_BAD_REQUEST); // bad request
@@ -127,7 +122,7 @@ class ArticleController extends AbstractController
         }
 
         // get author name from LinkedIn
-        if ($data['author'] == '' && strpos($content, 'View profile for') !== false) {
+        if ($data['author'] == '' && str_contains($content, 'View profile for')) {
             $parseAuthor = explode('View profile for', $content);
 
             if (isset($parseAuthor[1])) {
@@ -137,7 +132,7 @@ class ArticleController extends AbstractController
         }
 
         // get author name from Scrum.org
-        if ($data['author'] == '' && strpos($content, 'fa-user') !== false) {
+        if ($data['author'] == '' && str_contains($content, 'fa-user')) {
             $parseAuthor = explode('fa-user"></i> ', $content);
 
             if (isset($parseAuthor[1])) {
@@ -180,10 +175,10 @@ class ArticleController extends AbstractController
     /**
      * @Route("/article/review", name="article_review")
      * @Method("POST")
-     * @IsGranted("ROLE_EDITOR")
      *
      * @return JsonResponse
      */
+    #[IsGranted('ROLE_EDITOR')]
     public function reviewArticle(Request $request, $response = true)
     {
         //
@@ -191,7 +186,7 @@ class ArticleController extends AbstractController
         $em = $this->em;
 
         $data = $request->getContent();
-        $data = json_decode($data, 1);
+        $data = json_decode($data, 1, 512, JSON_THROW_ON_ERROR);
 
         if (!isset($data['id']) || !isset($data['category']) || !isset($data['option'])) {
             return new JsonResponse('did not receive required formdata!', Response::HTTP_BAD_REQUEST); // bad request
@@ -270,7 +265,7 @@ class ArticleController extends AbstractController
                 $articles = $cm->getCache('articles', 'active');
             }
 
-            $articles = json_decode($articles, 1);
+            $articles = json_decode($articles, 1, 512, JSON_THROW_ON_ERROR);
 
             if ($jsonResponse) {
                 return new JsonResponse($articles, Response::HTTP_OK);
@@ -299,16 +294,16 @@ class ArticleController extends AbstractController
         foreach ($articles as $article) {
             $src = '';
             $url = $article->getUrl();
-            if (strpos($url, 'www.scrum.org') !== false) {
+            if (str_contains($url, 'www.scrum.org')) {
                 $src = 'scrumorg';
             }
-            if (strpos($url, 'seriousscrum.com') !== false) {
+            if (str_contains($url, 'seriousscrum.com')) {
                 $src = 'seriousscrum';
             }
-            if (strpos($url, 'medium.com') !== false) {
+            if (str_contains($url, 'medium.com')) {
                 $src = 'medium';
             }
-            if (strpos($url, 'www.linkedin.com') !== false) {
+            if (str_contains($url, 'www.linkedin.com')) {
                 $src = 'linkedin';
             }
 
@@ -333,7 +328,7 @@ class ArticleController extends AbstractController
         // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
-        $cm->writeCache('articles', $returnType, json_encode($data));
+        $cm->writeCache('articles', $returnType, json_encode($data, JSON_THROW_ON_ERROR));
 
         if ($jsonResponse) {
             return new JsonResponse($data, Response::HTTP_OK);
@@ -376,7 +371,7 @@ class ArticleController extends AbstractController
         // reset the keys (so that React can properly load them in)
         $data = array_values($data);
 
-        $cm->writeCache('articles', 'active', json_encode($data), 'public/');
+        $cm->writeCache('articles', 'active', json_encode($data, JSON_THROW_ON_ERROR), 'public/');
 
         return true;
     }
@@ -386,10 +381,10 @@ class ArticleController extends AbstractController
      *
      * @Route("/articles/images", name="article_images")
      * @Method("POST")
-     * @IsGranted("ROLE_ADMIN")
      *
      * @return JsonResponse
      */
+    #[IsGranted('ROLE_ADMIN')]
     public function replaceImages($jsonResponse = true)
     {
         // get managers
