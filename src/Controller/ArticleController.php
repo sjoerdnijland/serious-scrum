@@ -482,8 +482,16 @@ class ArticleController extends AbstractController
             // $article->getId(),
             $response = $this->client->request('GET', $article->getUrl());
 
-            $statusCode = $response->getStatusCode();
+            if(!$response){
+                continue;
+            }
 
+            try {
+                $statusCode = $response->getStatusCode();
+            }
+            catch (\Exception $e) {
+                continue;
+            }
             if (!$response || $statusCode != 200) {
                 continue;
             }
