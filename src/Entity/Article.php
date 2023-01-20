@@ -5,64 +5,42 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\ArticleRepository")]
 class Article
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255)]
     #[Assert\Url(message: "The url '{{ value }}' is not a valid url")]
     private ?string $url = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable: true)]
     #[Assert\Url(message: "The thumbnail url '{{ value }}' is not a valid url")]
     private ?string $thumbnail = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable: true)]
     private ?string $title = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable: true)]
     private ?string $intro = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable: true)]
     private ?string $author = null;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private $isCurated = false;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private $isApproved = false;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
-     * @ORM\JoinColumn(name="category", referencedColumnName="id")
-     */
+    #[ORM\ManyToOne(targetEntity:"Category", inversedBy:"articles")]
+    #[ORM\JoinColumn(name:"category", referencedColumnName:"id")]
     private $category;
 
-    /**
-     * @ORM\Column(name="submittedAt", type="datetime", options={"default": "CURRENT_TIMESTAMP"})
-     */
+    #[ORM\Column(name:"submittedAt", type:"datetime", options: ["default" => "CURRENT_TIMESTAMP"])]
     private \DateTime $submittedAt;
 
     public function __construct()

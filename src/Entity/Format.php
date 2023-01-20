@@ -4,52 +4,34 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\FormatRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\FormatRepository")]
 class Format
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $name = null;
 
-    /**
-     * @ORM\Column(type="string", length=125, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $description;
 
-    /**
-     * @ORM\Column(type="string", length=100, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:100, nullable:true)]
     private $icon;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $type;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $c;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $activity;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Page", inversedBy="formats")
-     * @ORM\JoinColumn(name="page", referencedColumnName="id")
-     */
+    #[ORM\ManyToOne(targetEntity:"Page", inversedBy:"formats")]
+    #[ORM\JoinColumn(name:"page", referencedColumnName:"id")]
     private $page;
 
     public function getId(): ?int

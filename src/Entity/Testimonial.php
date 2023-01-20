@@ -4,31 +4,21 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\TestimonialRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\TestimonialRepository")]
 class Testimonial
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255)]
     private $name;
 
-    /**
-     * @ORM\Column(type="string", length=512)
-     */
+    #[ORM\Column(type:"string", length:512)]
     private $testimonial;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255)]
     private $icon;
 
     /**

@@ -6,113 +6,72 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\TravelgroupRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\TravelgroupRepository")]
 class TravelGroup
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $groupname = null;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private bool $isActive = false;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private $isSoldOut = false;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private bool $isWaitingList = false;
 
-    /**
-     * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
-     */
+    #[ORM\Column(type:"datetime", options: ["default" => "CURRENT_TIMESTAMP"])]
     private ?\DateTimeInterface $created_at = null;
 
-    /**
-     * @ORM\Column(type="datetime", nullable=true)
-     */
+    #[ORM\Column(type:"datetime", nullable:true)]
     private ?\DateTimeInterface $launch_at = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $conferenceLink = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $registrationLink;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $code;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $description;
 
-    /**
-     * @ORM\Column(type="integer", length=4, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $sessions;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $duration;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $host;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $interval;
 
-    /**
-     * @ORM\Column(type="integer", length=4, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $overwriteTravelerCount;
 
+    #[ORM\ManyToMany(targetEntity:"App\Entity\Traveler", inversedBy:"travelgroups")]
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Traveler", inversedBy="travelgroups")
-     *
      * @var Collection
      */
     private $travelers;
 
-    /**
-     * @ORM\Column(type="integer", length=8)
-     */
+    #[ORM\Column(type:"integer", length:8)]
     private $priceTotal;
 
-    /**
-     * @ORM\Column(type="integer", length=8)
-     */
+    #[ORM\Column(type:"integer", length:8)]
     private $pricePerMonth;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $region;
 
     public function __construct()

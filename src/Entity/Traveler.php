@@ -6,71 +6,45 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\TravelerRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\TravelerRepository")]
 class Traveler
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $email = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $firstname = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $lastname = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $fullname = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $link = null;
 
-    /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\TravelGroup", mappedBy="travelers")
-     */
+    #[ORM\ManyToMany(targetEntity:"App\Entity\TravelGroup", mappedBy:"travelers")]
     private $travelgroups;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private bool $isActive = false;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private bool $isGuide = false;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private bool $isContacted = false;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private bool $program = false;
 
-    /**
-     * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
-     */
+    #[ORM\Column(type:"datetime", options: ["default" => "CURRENT_TIMESTAMP"])]
     private ?\DateTimeInterface $created_at = null;
 
     public function __construct()

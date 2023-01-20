@@ -292,6 +292,7 @@ class DefaultController extends AbstractController
         $data = $this->cm->getCache('r2m', 'all');
 
         $data = json_decode($data, 1, 512, JSON_THROW_ON_ERROR);
+        
 
         if ($this->isGranted('ROLE_ADMIN')) {
             $travelers = $this->travelerController->getTravelers(false);

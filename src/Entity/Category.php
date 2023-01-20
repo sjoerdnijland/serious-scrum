@@ -7,60 +7,33 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\CategoryRepository")]
 class Category
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $name = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private $title;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Category", inversedBy="subCategories")
-     * @ORM\JoinColumn(name="parent", referencedColumnName="id")
-     */
+    #[ORM\ManyToOne(targetEntity:"Category", inversedBy:"subCategories")]
+    #[ORM\JoinColumn(name:"parent", referencedColumnName:"id")]
     private $parent;
 
-    /**
-     * @ORM\OneToMany(
-     *     targetEntity="Category",
-     *     mappedBy="parent",
-     *     fetch="EXTRA_LAZY",
-     *     orphanRemoval=true,
-     *     cascade={"persist"}
-     * )
-     */
+    #[ORM\OneToMany(targetEntity:"Category", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
     #[Assert\Valid]
     private $subCategories;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private $isSeries = false;
 
-    /**
-     * @ORM\OneToMany(
-     *     targetEntity="Article",
-     *     mappedBy="category",
-     *     fetch="EXTRA_LAZY",
-     *     orphanRemoval=true,
-     *     cascade={"persist"}
-     * )
-     */
+    #[ORM\OneToMany(targetEntity:"Article", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
+
     #[Assert\Valid]
     private $articles;
 

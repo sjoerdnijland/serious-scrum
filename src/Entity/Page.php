@@ -7,63 +7,38 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\PageRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\PageRepository")]
 class Page
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $prismicId = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $slug = null;
 
-    /**
-     * @ORM\Column(type="json")
-     */
+    #[ORM\Column(type:"json")]
     private $labels = [];
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $author = null;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     #[Assert\Url(message: "The thumbnail url '{{ value }}' is not a valid url")]
     private ?string $thumbnail = null;
 
-    /**
-     * @ORM\Column(type="json")
-     */
+    #[ORM\Column(type:"json")]
     private $data = [];
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
+    #[ORM\Column(type:"boolean")]
     private $isSubscribersOnly = false;
 
-    /**
-     * @ORM\OneToMany(
-     *     targetEntity="Format",
-     *     mappedBy="page",
-     *     fetch="EXTRA_LAZY",
-     *     orphanRemoval=true,
-     *     cascade={"persist"}
-     * )
-     */
+    #[ORM\OneToMany(targetEntity:"Format", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
+
     #[Assert\Valid]
     private $formats = null;
 

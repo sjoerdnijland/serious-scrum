@@ -6,42 +6,28 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
- */
+#[ORM\Entity(repositoryClass:"App\Repository\UserRepository")]
 class User implements UserInterface
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id()]
+    #[ORM\GeneratedValue()]
+    #[ORM\Column(type:"integer")]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $email = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     private ?string $fullname = null;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type:"string", length:255, nullable:true)]
     #[Assert\Url(message: "The avatar '{{ value }}' is not a valid url")]
     private ?string $avatar = null;
 
-    /**
-     * @ORM\Column(type="json")
-     */
+    #[ORM\Column(type:"json")]
     private array $roles = [];
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    #[ORM\Column(type:"datetime")]
     private ?\DateTimeInterface $created_at = null;
 
     public function getId(): ?int

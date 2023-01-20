@@ -492,7 +492,7 @@ class ArticleController extends AbstractController
             catch (\Exception $e) {
                 continue;
             }
-            if (!$response || $statusCode != 200) {
+            if ($statusCode != 200) {
                 continue;
             }
 
