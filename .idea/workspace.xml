@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6845d9-94d2-4b9d-996d-e0e120ba491a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Format.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Format.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Testimonial.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Testimonial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/TravelGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/TravelGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Traveler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Traveler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -571,7 +564,7 @@
       <workItem from="1673863434770" duration="4894000" />
       <workItem from="1673885853552" duration="233000" />
       <workItem from="1673886138470" duration="169000" />
-      <workItem from="1673887134647" duration="18270000" />
+      <workItem from="1673887134647" duration="18496000" />
     </task>
     <servers />
   </component>

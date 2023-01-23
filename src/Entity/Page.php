@@ -32,7 +32,7 @@ class Page
     private ?string $thumbnail = null;
 
     #[ORM\Column(type:"json")]
-    private array $data = [];
+    private $data = [];
 
     #[ORM\Column()]
     private bool $isSubscribersOnly = false;
