@@ -11,16 +11,16 @@ class User implements UserInterface
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $email = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $fullname = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     #[Assert\Url(message: "The avatar '{{ value }}' is not a valid url")]
     private ?string $avatar = null;
 

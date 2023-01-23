@@ -12,33 +12,32 @@ class Page
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $prismicId = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $slug = null;
 
     #[ORM\Column(type:"json")]
     private $labels = [];
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $author = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     #[Assert\Url(message: "The thumbnail url '{{ value }}' is not a valid url")]
     private ?string $thumbnail = null;
 
     #[ORM\Column(type:"json")]
-    private $data = [];
+    private array $data = [];
 
-    #[ORM\Column(type:"boolean")]
-    private $isSubscribersOnly = false;
+    #[ORM\Column()]
+    private bool $isSubscribersOnly = false;
 
     #[ORM\OneToMany(targetEntity:"Format", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
-
     #[Assert\Valid]
     private $formats = null;
 

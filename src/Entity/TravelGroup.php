@@ -11,19 +11,19 @@ class TravelGroup
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $groupname = null;
 
-    #[ORM\Column(type:"boolean")]
+    #[ORM\Column()]
     private bool $isActive = false;
 
-    #[ORM\Column(type:"boolean")]
-    private $isSoldOut = false;
+    #[ORM\Column()]
+    private bool $isSoldOut = false;
 
-    #[ORM\Column(type:"boolean")]
+    #[ORM\Column()]
     private bool $isWaitingList = false;
 
     #[ORM\Column(type:"datetime", options: ["default" => "CURRENT_TIMESTAMP"])]
@@ -32,32 +32,32 @@ class TravelGroup
     #[ORM\Column(type:"datetime", nullable:true)]
     private ?\DateTimeInterface $launch_at = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $conferenceLink = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $registrationLink;
+    #[ORM\Column(nullable:true)]
+    private ?string $registrationLink = null;
+
+    #[ORM\Column(nullable:true)]
+    private ?string $code = null;
+
+    #[ORM\Column(nullable:true)]
+    private ?string $description = null;
 
     #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $code;
+    private ?string $sessions = null;
 
     #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $description;
+    private ?string $duration = null;
 
     #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $sessions;
+    private ?string $host = null;
 
     #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $duration;
+    private ?string $interval = null;
 
     #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $host;
-
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $interval;
-
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $overwriteTravelerCount;
+    private ?string $overwriteTravelerCount = null;
 
     #[ORM\ManyToMany(targetEntity:"App\Entity\Traveler", inversedBy:"travelgroups")]
     /**

@@ -12,30 +12,29 @@ class Category
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $name = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $title;
+    #[ORM\Column(nullable:true)]
+    private ?string $title = null;
 
-    #[ORM\ManyToOne(targetEntity:"Category", inversedBy:"subCategories")]
+    #[ORM\ManyToOne(inversedBy:"subCategories")]
     #[ORM\JoinColumn(name:"parent", referencedColumnName:"id")]
-    private $parent;
+    private ?Category $parent = null;
 
     #[ORM\OneToMany(targetEntity:"Category", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
     #[Assert\Valid]
-    private $subCategories;
+    private Collection $subCategories;
 
-    #[ORM\Column(type:"boolean")]
-    private $isSeries = false;
+    #[ORM\Column()]
+    private bool $isSeries = false;
 
     #[ORM\OneToMany(targetEntity:"Article", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
-
     #[Assert\Valid]
-    private $articles;
+    private Collection $articles;
 
     public function getId(): ?int
     {

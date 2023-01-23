@@ -9,30 +9,30 @@ class Format
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $name = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $description;
+    #[ORM\Column(nullable:true)]
+    private ?string $description = null;
 
-    #[ORM\Column(type:"string", length:100, nullable:true)]
-    private $icon;
+    #[ORM\Column(length:100, nullable:true)]
+    private ?string $icon = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $type;
+    #[ORM\Column(nullable:true)]
+    private ?string $type = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $c;
+    #[ORM\Column(nullable:true)]
+    private ?string $c = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private $activity;
+    #[ORM\Column(nullable:true)]
+    private ?string $activity = null;
 
-    #[ORM\ManyToOne(targetEntity:"Page", inversedBy:"formats")]
+    #[ORM\ManyToOne(inversedBy:"formats")]
     #[ORM\JoinColumn(name:"page", referencedColumnName:"id")]
-    private $page;
+    private ?Page $page = null;
 
     public function getId(): ?int
     {

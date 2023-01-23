@@ -9,17 +9,17 @@ class Testimonial
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255)]
-    private $name;
+    #[ORM\Column()]
+    private string $name;
 
-    #[ORM\Column(type:"string", length:512)]
-    private $testimonial;
+    #[ORM\Column(length:512)]
+    private string $testimonial;
 
-    #[ORM\Column(type:"string", length:255)]
-    private $icon;
+    #[ORM\Column()]
+    private string $icon;
 
     /**
      * @return mixed

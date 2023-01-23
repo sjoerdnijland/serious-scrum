@@ -11,38 +11,38 @@ class Traveler
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
-    #[ORM\Column(type:"integer")]
-    private $id;
+    #[ORM\Column()]
+    private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $email = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $firstname = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $lastname = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $fullname = null;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
+    #[ORM\Column(nullable:true)]
     private ?string $link = null;
 
     #[ORM\ManyToMany(targetEntity:"App\Entity\TravelGroup", mappedBy:"travelers")]
-    private $travelgroups;
+    private Collection $travelgroups;
 
-    #[ORM\Column(type:"boolean")]
+    #[ORM\Column()]
     private bool $isActive = false;
 
-    #[ORM\Column(type:"boolean")]
+    #[ORM\Column()]
     private bool $isGuide = false;
 
-    #[ORM\Column(type:"boolean")]
+    #[ORM\Column()]
     private bool $isContacted = false;
 
-    #[ORM\Column(type:"string", length:255, nullable:true)]
-    private bool $program = false;
+    #[ORM\Column(nullable:true)]
+    private ?string $program = null;
 
     #[ORM\Column(type:"datetime", options: ["default" => "CURRENT_TIMESTAMP"])]
     private ?\DateTimeInterface $created_at = null;
