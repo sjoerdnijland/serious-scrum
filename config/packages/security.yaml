@@ -21,9 +21,8 @@ security:
             logout:
                 path: /logout
                 target: /login
-            guard:
-                authenticators:
-                    - App\Security\GoogleAuthenticator
+            custom_authenticator:
+                - App\Security\GoogleAuthenticator
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
 

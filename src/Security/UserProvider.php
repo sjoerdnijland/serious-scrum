@@ -36,11 +36,11 @@ class UserProvider implements UserProviderInterface
      *
      * @throws \Doctrine\ORM\NonUniqueResultException
      */
-    public function loadUserByUsername($username)
+    public function loadUserByIdentifier(string $identifier) : UserInterface
     {
         return $this->entityManager->createQueryBuilder('u')
             ->where('u.email = :email')
-            ->setParameter('email', $username)
+            ->setParameter('email', $identifier)
             ->getQuery()
             ->getOneOrNullResult();
     }
@@ -55,7 +55,7 @@ class UserProvider implements UserProviderInterface
      *
      * @return UserInterface
      */
-    public function refreshUser(UserInterface $user)
+    public function refreshUser(UserInterface $user): \Symfony\Component\Security\Core\User\UserInterface
     {
         if (!$user instanceof User) {
             throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', $user::class));
@@ -71,7 +71,7 @@ class UserProvider implements UserProviderInterface
      *
      * @return bool
      */
-    public function supportsClass($class)
+    public function supportsClass($class): bool
     {
         return $class === 'App\Security\User';
     }

@@ -5,27 +5,69 @@ namespace App\Security;
 use App\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
-use KnpU\OAuth2ClientBundle\Security\Authenticator\SocialAuthenticator;
+use KnpU\OAuth2ClientBundle\Security\Authenticator\OAuth2Authenticator;
 use League\OAuth2\Client\Provider\GoogleUser;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\RouterInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
+use Symfony\Component\Security\Http\Authenticator\Passport\Passport;
+use Symfony\Component\Security\Http\Authenticator\Passport\SelfValidatingPassport;
+use Symfony\Component\Security\Http\Authenticator\Passport\Badge\UserBadge;
+use Symfony\Component\Security\Http\EntryPoint\AuthenticationEntryPointInterface;
 
-class GoogleAuthenticator extends SocialAuthenticator
+
+class GoogleAuthenticator extends OAuth2Authenticator implements AuthenticationEntrypointInterface
 {
     public function __construct(private ClientRegistry $clientRegistry, private EntityManagerInterface $em, private RouterInterface $router)
     {
     }
 
-    public function supports(Request $request)
+    public function supports(Request $request):bool
     {
         return $request->getPathInfo() == '/connect/google/check' && $request->isMethod('GET');
     }
 
+
+
     public function getCredentials(Request $request)
     {
         return $this->fetchAccessToken($this->getGoogleClient());
+    }
+
+    public function authenticate(Request $request): Passport
+    {
+        $client = $this->getGoogleClient();
+        $accessToken =$this->fetchAccessToken($client);
+
+        return new SelfValidatingPassport(
+            new UserBadge($accessToken->getToken(), function() use ($accessToken, $client) {
+                /** @var GoogleUser $googleUser */
+                $googleUser = $this->getGoogleClient()
+                    ->fetchUserFromToken($accessToken);
+
+                $email = $googleUser->getEmail();
+
+                $existingUser = $this->em->getRepository(User::class)
+                    ->findOneByEmail($email);
+
+                if ($existingUser) {
+                    return $existingUser;
+                }
+
+                $user = new User();
+                $user->setEmail($googleUser->getEmail());
+                $user->setFullname($googleUser->getName());
+                $user->setAvatar($googleUser->getAvatar());
+                $user->setCreatedAt(new \DateTime(date('Y-m-d H:i:s')));
+                $this->em->persist($user);
+                $this->em->flush();
+
+                return $user;
+            })
+        );
     }
 
     public function getUser($credentials, UserProviderInterface $userProvider)
@@ -53,7 +95,7 @@ class GoogleAuthenticator extends SocialAuthenticator
     }
 
     /**
-     * @return \KnpU\OAuth2ClientBundle\Client\OAuth2Client
+     * @return \KnpU\OAuth2ClientBundle\Client\OAuth2ClientInterface
      */
     private function getGoogleClient()
     {
@@ -75,11 +117,11 @@ class GoogleAuthenticator extends SocialAuthenticator
      *      return new Response('Auth header required', 401);
      *
      * @param Request                                                            $request       The request that resulted in an AuthenticationException
-     * @param \Symfony\Component\Security\Core\Exception\AuthenticationException $authException The exception that started the authentication process
+     * @param AuthenticationException $authException The exception that started the authentication process
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function start(Request $request, \Symfony\Component\Security\Core\Exception\AuthenticationException $authException = null)
+    public function start(Request $request, AuthenticationException $authException = null): \Symfony\Component\HttpFoundation\Response
     {
         return new RedirectResponse('/login');
     }
@@ -95,9 +137,9 @@ class GoogleAuthenticator extends SocialAuthenticator
      *
      * @return \Symfony\Component\HttpFoundation\Response|null
      */
-    public function onAuthenticationFailure(Request $request, \Symfony\Component\Security\Core\Exception\AuthenticationException $exception)
+    public function onAuthenticationFailure(Request $request, AuthenticationException $exception): Response
     {
-        // TODO: Implement onAuthenticationFailure() method.
+        return new RedirectResponse('/error');
     }
 
     /**
@@ -113,8 +155,8 @@ class GoogleAuthenticator extends SocialAuthenticator
      *
      * @return void
      */
-    public function onAuthenticationSuccess(Request $request, \Symfony\Component\Security\Core\Authentication\Token\TokenInterface $token, $providerKey)
+    public function onAuthenticationSuccess(Request $request, \Symfony\Component\Security\Core\Authentication\Token\TokenInterface $token, string $firewallName):  ?Response
     {
-        // TODO: Implement onAuthenticationSuccess() method.
+        return new RedirectResponse('/');
     }
 }

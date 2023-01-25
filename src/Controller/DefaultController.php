@@ -12,7 +12,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -28,7 +27,6 @@ class DefaultController extends AbstractController
                                 private CategoryController $categoryController,
                                 private FormatController $formatController,
                                 private TestimonialController $testimonialController,
-                                private SessionInterface $session,
                                 private PrismicManager $prismicManager,
                                 private RssManager $rssManager,
                                 private CacheManager $cm)
@@ -40,7 +38,7 @@ class DefaultController extends AbstractController
      * @return Response
      */
     #[Route(path: '/', name: 'index')]
-    public function index($label = null)
+    public function index($label = null): \Symfony\Component\HttpFoundation\Response
     {
         $user = [];
         $user['username'] = '';
@@ -49,7 +47,7 @@ class DefaultController extends AbstractController
         $user['roles'] = ['ROLE_GUEST'];
 
         if ($this->isGranted('ROLE_USER')) {
-            $user['username'] = $this->getUser()->getUsername();
+            $user['username'] = $this->getUser()->getUserIdentifier();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();
@@ -151,7 +149,7 @@ class DefaultController extends AbstractController
      * @return Response
      */
     #[Route(path: '/r2m/reload', name: 'road-to-mastery-reload')]
-    public function masteryReload(Request $request, $label = false, $module = false)
+    public function masteryReload($label = false, $module = false): \Symfony\Component\HttpFoundation\Response
     {
         $user = [];
         $output = [];
@@ -161,7 +159,7 @@ class DefaultController extends AbstractController
         $user['roles'] = ['ROLE_GUEST'];
 
         if ($this->isGranted('ROLE_USER')) {
-            $user['username'] = $this->getUser()->getUsername();
+            $user['username'] = $this->getUser()->getUserIdentifier();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();
@@ -249,7 +247,7 @@ class DefaultController extends AbstractController
     #[Route(path: '/r2m/play', name: 'road-to-mastery-play')]
     #[Route(path: '/r2m/play/{play}', name: 'road-to-mastery-play-module')]
     #[Route(path: '/r2m/play/{play}/{playId}', name: 'road-to-mastery-play-module-id')]
-    public function play(Request $request, $play = false, $playId = false)
+    public function play($play = false, $playId = false): \Symfony\Component\HttpFoundation\Response
     {
         $data = [];
         $output = [];
@@ -273,7 +271,7 @@ class DefaultController extends AbstractController
      */
     #[Route(path: '/r2m', name: 'road-to-mastery')]
     #[Route(path: '/r2m/{module}', name: 'road-to-mastery-module')]
-    public function mastery($label = null, $module = null)
+    public function mastery($label = null, $module = null): \Symfony\Component\HttpFoundation\Response
     {
         $user = [];
         $output = [];
@@ -283,7 +281,7 @@ class DefaultController extends AbstractController
         $user['roles'] = ['ROLE_GUEST'];
 
         if ($this->isGranted('ROLE_USER')) {
-            $user['username'] = $this->getUser()->getUsername();
+            $user['username'] = $this->getUser()->getUserIdentifier();
             $user['fullname'] = $this->getUser()->getFullname();
             $user['avatar'] = $this->getUser()->getAvatar();
             $user['roles'] = $this->getUser()->getRoles();

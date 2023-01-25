@@ -37,7 +37,7 @@ class Page
     #[ORM\Column()]
     private bool $isSubscribersOnly = false;
 
-    #[ORM\OneToMany(targetEntity:"Format", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
+    #[ORM\OneToMany(targetEntity:"Format", mappedBy:"page", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
     #[Assert\Valid]
     private $formats = null;
 

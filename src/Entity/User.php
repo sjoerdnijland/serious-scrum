@@ -5,9 +5,10 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 
 #[ORM\Entity(repositoryClass:"App\Repository\UserRepository")]
-class User implements UserInterface
+class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id()]
     #[ORM\GeneratedValue()]
@@ -86,7 +87,7 @@ class User implements UserInterface
     /**
      * @return (Role|string)[] The user roles
      */
-    public function getRoles()
+    public function getRoles(): array
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
@@ -104,31 +105,6 @@ class User implements UserInterface
     }
 
     /**
-     * Returns the password used to authenticate the user.
-     *
-     * This should be the encoded password. On authentication, a plain-text
-     * password will be salted, encoded, and then compared to this value.
-     *
-     * @return string The password
-     */
-    public function getPassword()
-    {
-        return null;
-    }
-
-    /**
-     * Returns the salt that was originally used to encode the password.
-     *
-     * This can return null if the password was not encoded using a salt.
-     *
-     * @return string|null The salt
-     */
-    public function getSalt()
-    {
-        return null;
-    }
-
-    /**
      * Returns the username used to authenticate the user.
      *
      * @return string The username
@@ -139,13 +115,33 @@ class User implements UserInterface
     }
 
     /**
-     * Removes sensitive data from the user.
+     * Returns the identifier used to authenticate the user.
      *
-     * This is important if, at any given point, sensitive information like
-     * the plain-text password is stored on this object.
+     * @return string The identifier
      */
+    public function getUserIdentifier()
+    {
+        return $this->email;
+    }
+
     public function eraseCredentials()
     {
+        // TODO: Implement eraseCredentials() method.
+    }
+
+    public function getSalt(): ?string
+    {
+        // TODO: Implement getSalt() method.
         return null;
     }
+
+    public function getPassword(): ?string
+    {
+        // TODO: Implement getPassword() method.
+        return null;
+    }
+
+
+
+
 }

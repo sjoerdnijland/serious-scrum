@@ -32,7 +32,7 @@ class Category
     #[ORM\Column()]
     private bool $isSeries = false;
 
-    #[ORM\OneToMany(targetEntity:"Article", mappedBy:"parent", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
+    #[ORM\OneToMany(targetEntity:"Article", mappedBy:"category", fetch:"EXTRA_LAZY", orphanRemoval:true, cascade:["persist"])]
     #[Assert\Valid]
     private Collection $articles;
 
