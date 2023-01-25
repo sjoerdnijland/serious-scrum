@@ -8,11 +8,12 @@ use App\Entity\Page;
 use App\Manager\CacheManager;
 use App\Manager\PrismicManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class PageController extends AbstractController
 {
@@ -20,15 +21,8 @@ class PageController extends AbstractController
     {
     }
 
-    /**
-     * @param Request
-     * @param Config
-     *
-     * @Route("/page/{slug}", name="page")
-     *
-     * @return Response
-     */
-    public function getPage(Request $request, $slug)
+    #[Route(path: '/page/{slug}', name: 'page', methods: ["GET"])]
+    public function getPage(Request $request, $slug): Response
     {
         $user = [];
         $output = [];

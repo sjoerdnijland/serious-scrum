@@ -2,24 +2,16 @@
 
 namespace App\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
-// use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
-// use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 class SubscribeController extends AbstractController
 {
-    /**
-     * @param Request
-     * @param EngineInterface
-     *
-     * @Route("/slack", name="slack_subscribe")
-     * @Method("GET")
-     */
+    #[Route(path: '/slack', name: 'slack_subscribe', methods: ["GET"])]
     public function inviteToSlack(Request $request)
     {
         $email = $request->query->get('email');

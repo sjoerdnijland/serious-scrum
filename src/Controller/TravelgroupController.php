@@ -7,8 +7,7 @@ namespace App\Controller;
 use App\Entity\TravelGroup;
 use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -28,13 +27,8 @@ class TravelgroupController extends AbstractController
         $this->client = $client;
     }
 
-    /**
-     * @Route("/travelgroup/new", name="travelgroup_new")
-     * @Method("POST")
-     *
-     * @return JsonResponse
-     */
-    public function newTravelgroup(Request $request, $response = true)
+    #[Route(path: '/travelgroup/new', name: 'travelgroup_new', methods: ["POST"])]
+    public function newTravelgroup(Request $request, $response = true): JsonResponse
     {
         // get doctrine manager test
         $em = $this->em;
@@ -79,14 +73,7 @@ class TravelgroupController extends AbstractController
         return new JsonResponse($data);
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Method("GET")
-     *
-     * * @return JsonResponse
-     */
-    // * @Route("/travelgroups", name="travelgroups")
+
     public function getTravelgroups($jsonResponse = true)
     {
         // get doctrine manager

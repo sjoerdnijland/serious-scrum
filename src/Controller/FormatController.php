@@ -7,13 +7,13 @@ namespace App\Controller;
 use App\Entity\Format;
 use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Symfony\Component\Routing\Annotation\Route;
 
 class FormatController extends AbstractController
 {
@@ -27,15 +27,9 @@ class FormatController extends AbstractController
         $this->client = $client;
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Route("/formats", name="formats")
-     * @Method("GET")
-     *
-     * * @return JsonResponse
-     */
-    public function getFormats($jsonResponse = true)
+
+    #[Route(path: '/formats', name: 'formats', methods: ["GET"])]
+    public function getFormats($jsonResponse = true): JsonResponse
     {
         $formats = [];
 

@@ -7,13 +7,12 @@ namespace App\Controller;
 use App\Entity\Testimonial;
 use App\Manager\CacheManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Symfony\Component\Routing\Annotation\Route;
 
 class TestimonialController extends AbstractController
 {
@@ -27,15 +26,9 @@ class TestimonialController extends AbstractController
         $this->client = $client;
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Route("api/testimonials", name="testimonials")
-     * @Method("GET")
-     *
-     * * @return JsonResponse
-     */
-    public function getTestimonials($jsonResponse = true)
+
+    #[Route(path: 'api/testimonials', name: 'testimonials', methods: ["GET"])]
+    public function getTestimonials($jsonResponse = true): JsonResponse
     {
         // get doctrine manager
         $em = $this->em;

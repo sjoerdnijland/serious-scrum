@@ -14,7 +14,7 @@ use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
@@ -30,13 +30,8 @@ class ArticleController extends AbstractController
         $this->client = $client;
     }
 
-    /**
-     * @Route("/article/new", name="article_new")
-     * @Method("POST")
-     *
-     * @return JsonResponse
-     */
-    public function newArticle(Request $request, $response = true)
+    #[Route(path: '/article/new', name: 'article_new', methods: ["POST"])]
+    public function newArticle(Request $request, $response = true): JsonResponse
     {
         // get doctrine manager test
         $em = $this->em;
@@ -172,14 +167,9 @@ class ArticleController extends AbstractController
         return new JsonResponse($data);
     }
 
-    /**
-     * @Route("/article/review", name="article_review")
-     * @Method("POST")
-     *
-     * @return JsonResponse
-     */
     #[IsGranted('ROLE_EDITOR')]
-    public function reviewArticle(Request $request, $response = true)
+    #[Route(path: '/article/review', name: 'article_review', methods: ["POST"])]
+    public function reviewArticle(Request $request, $response = true): JsonResponse
     {
         //
         // get doctrine manager
@@ -228,30 +218,16 @@ class ArticleController extends AbstractController
         return new JsonResponse($data);
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Route("/articles/reload", name="reload_articles")
-     * @Method("GET")
-     *
-     * * @return JsonResponse
-     */
-    public function reloadArticles()
+    #[Route(path: '/article/reload', name: 'reload_articles', methods: ["GET"])]
+    public function reloadArticles(): JsonResponse
     {
         $articles = $this->getArticles(false, false);
 
         return new JsonResponse($articles, Response::HTTP_OK);
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Route("/articles", name="articles")
-     * @Method("GET")
-     *
-     * * @return JsonResponse
-     */
-    public function getArticles($jsonResponse = true, $cache = false)
+    #[Route(path: '/articles', name: 'articles', methods: ["GET"])]
+    public function getArticles($jsonResponse = true, $cache = false): JsonResponse
     {
         // get cache manager
         $cm = $this->cm;
@@ -376,16 +352,9 @@ class ArticleController extends AbstractController
         return true;
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Route("/articles/images", name="article_images")
-     * @Method("POST")
-     *
-     * @return JsonResponse
-     */
+    #[Route(path: '/articles/images', name: 'article_images', methods: ["POST"])]
     #[IsGranted('ROLE_ADMIN')]
-    public function replaceImages($jsonResponse = true)
+    public function replaceImages($jsonResponse = true): JsonResponse
     {
         // get managers
         $em = $this->em;
@@ -444,15 +413,8 @@ class ArticleController extends AbstractController
         return [];
     }
 
-    /**
-     * @param Request $request
-     *
-     * @Route("/reloadThumbnails/{startAt}", name="reloadThumbnails")
-     * @Method("GET")
-     *
-     * @return JsonResponse
-     */
-    public function reloadThumbnails($startAt)
+    #[Route(path: '/reloadThumbnails/{startAt}', name: 'reloadThumbnails', methods: ["GET"])]
+    public function reloadThumbnails($startAt): JsonResponse
     {
         // get cache manager
         $cm = $this->cm;
