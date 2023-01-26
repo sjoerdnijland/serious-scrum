@@ -28,7 +28,7 @@ class TestimonialController extends AbstractController
 
 
     #[Route(path: 'api/testimonials', name: 'testimonials', methods: ["GET"])]
-    public function getTestimonials($jsonResponse = true): JsonResponse
+    public function getTestimonials($jsonResponse = true)
     {
         // get doctrine manager
         $em = $this->em;
