@@ -29,7 +29,7 @@ class FormatController extends AbstractController
 
 
     #[Route(path: '/formats', name: 'formats', methods: ["GET"])]
-    public function getFormats($jsonResponse = true): JsonResponse
+    public function getFormats($jsonResponse = true)
     {
         $formats = [];
 
