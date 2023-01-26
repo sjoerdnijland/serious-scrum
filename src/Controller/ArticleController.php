@@ -227,7 +227,7 @@ class ArticleController extends AbstractController
     }
 
     #[Route(path: '/articles', name: 'articles', methods: ["GET"])]
-    public function getArticles($jsonResponse = true, $cache = false): JsonResponse
+    public function getArticles($jsonResponse = true, $cache = false)
     {
         // get cache manager
         $cm = $this->cm;

@@ -21,7 +21,7 @@ class CategoryController extends AbstractController
 
 
     #[Route(path: '/categories', name: 'categories', methods: ["GET"])]
-    public function getCategories($jsonResponse = true, $cache = false): JsonResponse
+    public function getCategories($jsonResponse = true, $cache = false)
     {
         $data = [];
         // get doctrine manager
