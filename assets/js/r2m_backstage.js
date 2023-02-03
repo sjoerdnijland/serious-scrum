@@ -13,12 +13,8 @@ class R2MBackstage extends React.Component {
         let containerClassName = "homeR2M row backstage";
 
 
-        if(this.props.modulebuikd != 'backstage'){
+        if(this.props.module != 'backstage'){
             containerClassName += " hidden";
-        }
-
-        if(this.props.user.username == ""){
-            //containerClassName += " hidden";
         }
 
         const bannerClassName = "homeBanner";

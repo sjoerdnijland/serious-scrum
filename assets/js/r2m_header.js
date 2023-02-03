@@ -18,7 +18,7 @@ class R2MHeader extends React.Component {
 
         let backstage = false;
 
-        if(this.props.user.username != null){
+        if(this.props.user.username != null && this.props.user.username != "" ){
             backstage = true;
         }
 
