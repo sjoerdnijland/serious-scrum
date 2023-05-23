@@ -178,7 +178,7 @@ class R2M extends React.Component {
         this.toggleTerms = this.toggleTerms.bind(this);
         this.join = this.join.bind(this);
         this.joinTravelgroup = this.joinTravelgroup.bind(this);
-        this.loadMore = this.loadMore.bind(this);
+
         this.setR2MMenu = this.setR2MMenu.bind(this);
         this.setFilter = this.setFilter.bind(this);
         this.setBackstageFilter = this.setBackstageFilter.bind(this);
@@ -668,14 +668,6 @@ class R2M extends React.Component {
         }
     }
 
-    loadMore(){
-        console.log('loading more...');
-        this.setState({
-            displayArticleCount: this.state.displayArticleCount + 20,
-            expanded: false
-        });
-    }
-
     onScrollPage(){
         const winHeightPx =
             document.documentElement.scrollHeight -
@@ -723,16 +715,7 @@ class R2M extends React.Component {
         functions['goToJoin'] = this.goToJoin;
 
         const appContainerClassName = "appContainer r2mContainer";
-
-        const bannerText1 = "Community by and for Scrum Practitioners";
-
-
-        let bannerText2 = "We seriously need your help! please support us on Patreon!";
-        if(this.state.user.patreon =="supporter"){
-            bannerText2 = "Yes, you're Serious! Thank you for supporting us!";
-        }
-        const bannerUrl2 = "/patreon";
-
+        
 
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
@@ -742,14 +725,8 @@ class R2M extends React.Component {
 
                 <R2MHome label={this.state.label} module={this.state.module}/>
 
-                <a name="ubrs"/>
-                <R2MUBRS label={this.state.label}  module={this.state.module}/>
-
                 <a name="travelgroups"/>
                 <R2MTravelGroups label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelgroups}/>
-
-                <a name="usps"/>
-                <R2MUSPS label={this.state.label}  module={this.state.module}/>
 
                 <a name="guides"/>
                 <R2MGuides label={this.state.label} module={this.state.module} guides={this.state.guides}/>
@@ -783,7 +760,7 @@ class R2M extends React.Component {
                 <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
 
                 <Build/>
-                <BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />
+
             </div>
         )
     }
@@ -795,7 +772,16 @@ const data =  JSON.parse(root.dataset.preload);
 
 ReactDOM.render(<R2M data={data} />, root);
 /*
+
+<a name="usps"/>
+                <R2MUSPS label={this.state.label}  module={this.state.module}/>
+
+<a name="ubrs"/>
+                <R2MUBRS label={this.state.label}  module={this.state.module}/>
+
 <a name="join"/>
 <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
+
+<BottomScrollListener onBottom={this.loadMore} offset={450} debounce={200} />
 
  */
