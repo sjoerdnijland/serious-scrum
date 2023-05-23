@@ -43,7 +43,8 @@ class R2MHeader extends React.Component {
                     <HeaderMenuItem functions={functions} name="Contact" target="page/behind-the-road"/>
                     <JoinButton functions={functions} user={this.props.user}/>
                     <HeaderMenuItem functions={functions} name="Testimonials" target="r2m/testimonials"/>
-                    <HeaderMenuItem functions={functions} name="Licenses" target="r2m/chapter/program"/>
+                    <HeaderMenuItem functions={functions} name="Photos" target="https://photos.app.goo.gl/aJk9hso1Cuh1AoVMA" />
+                    <HeaderMenuItem functions={functions} name="Playbook" target="https://xebia-academy.myshopify.com/products/scrum-master-playbook"/>
                     <HeaderMenuItem functions={functions} name="Shop" target="https://road2mastery.gumroad.com/"/>
                     <HeaderMenuItem functions={functions} name="The Journey" target="page/the-road-to-mastery-r2m"/>
                 </div>
