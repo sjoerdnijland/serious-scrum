@@ -760,8 +760,6 @@ class R2M extends React.Component {
                 <a name="testimonials"/>
                 <R2MTestimonials data={this.state.testimonials} label={this.state.label}  module={this.state.module}/>
 
-                <a name="join"/>
-                <R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
 
                 <a name="backstage"/>
                 <R2MBackstage label={this.state.label} module={this.state.module} functions={functions} user={this.state.user} data={this.state.travelers} travelgroups={this.state.travelgroups} backstageFilters={this.state.backstageFilters}/>
@@ -796,3 +794,8 @@ const root = document.getElementById('root');
 const data =  JSON.parse(root.dataset.preload);
 
 ReactDOM.render(<R2M data={data} />, root);
+/*
+<a name="join"/>
+<R2MJoin functions={functions} label={this.state.label} module={this.state.module} groupId={""} firstname={this.state.firstname} lastname={this.state.lastname} linkedIn={this.state.linkedIn}  email={this.state.email} travelgroups={this.state.travelgroups} travelgroup={this.state.travelgroup} submitResponse={this.state.submitResponse} terms={this.state.terms} submitData={this.state.submitData}/>
+
+ */
