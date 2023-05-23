@@ -715,7 +715,7 @@ class R2M extends React.Component {
         functions['goToJoin'] = this.goToJoin;
 
         const appContainerClassName = "appContainer r2mContainer";
-        
+
 
         return (
             <div className={appContainerClassName} onClick={this.closeMenus}>
@@ -756,8 +756,6 @@ class R2M extends React.Component {
                 <R2MEvents label={this.state.label} module={this.state.module}/>
 
                 <Pages contentPages={this.state.pages} visible={this.state.contentPages} functions={functions} active={this.state.active} label={this.state.label} search={this.state.search} roles={this.state.user.roles}/>
-
-                <Library articles={this.state.articles} visible={this.state.library} displayArticleCount={this.state.displayArticleCount} functions={functions} active={this.state.active} category={this.state.category} categories={this.state.categories} search={this.state.search} reviewForm={this.state.reviewForm} roles={this.state.user.roles}/>
 
                 <Build/>
 
