@@ -24,9 +24,8 @@ class Header extends React.Component {
                 </a>
                 <div className="headerOptions _pr10 _pt20">
                      <CategoryMenu functions={functions} expanded={this.props.expanded} site="serious"/>
-                    <Login user={this.props.user} type={'community'}/>
                     <div className={'headerMenuItem'}>
-                        <a href={'https://community.seriousscrum.com/sign_in'} target={'_blank'}>Sign In</a>
+                        <a href={'https://join.slack.com/t/serious-scrum/shared_invite/zt-tpyfeaty-~lkfHitvhGtn9fo~1HnwMQ'} target={'_blank'}>Sign In</a>
                     </div>
                     <Search functions={functions} value={this.props.search} type="desktop"/>
                     <SocialMenu type="header"/>
@@ -47,4 +46,5 @@ window.Header = Header;
 <div className={'headerMenuItem'}>
     <a href={'https://scrumfeedback.com'} target={'_blank'}>Scrum Guide Feedback</a>
 </div>
+<Login user={this.props.user} type={'community'}/>
 */

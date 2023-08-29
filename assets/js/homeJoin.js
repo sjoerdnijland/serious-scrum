@@ -25,10 +25,9 @@ class HomeJoin extends React.Component {
                     <div className={bannerClassName}>
                         <h1>Join the Community</h1>
                         <div>
-                           Get access to content for professionals and connect with peers.
-
+                           Share your experience and connect with peers.
                         </div>
-                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="https://community.seriousscrum.com/sign_up" target="_blank">Join now!</a></p>
+                        <p className="_pt20 _pl40 buttonContainer"><a className="button" id="requestInvite_button" href="https://join.slack.com/t/serious-scrum/shared_invite/zt-tpyfeaty-~lkfHitvhGtn9fo~1HnwMQ" target="_blank">Join now!</a></p>
                     </div>
                 </div>
 
