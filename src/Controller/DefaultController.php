@@ -273,6 +273,8 @@ class DefaultController extends AbstractController
     #[Route(path: '/r2m/{module}', name: 'road-to-mastery-module')]
     public function mastery($label = null, $module = null): \Symfony\Component\HttpFoundation\Response
     {
+        $url = 'https://www.road2mastery.com';
+        return $this->redirect($url);
         $user = [];
         $output = [];
         $user['username'] = null;
