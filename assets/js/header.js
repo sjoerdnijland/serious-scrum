@@ -29,7 +29,7 @@ class Header extends React.Component {
 
                     <PublishButton functions={functions} user={this.props.user}/>
                     <div className={'headerMenuItem'}>
-                        <a href={'https://www.road2mastery.com'} target={'_blank'}>Road to Mastery</a>
+                        <a href={'https://www.road2mastery.com'} target={'_blank'}>learning journey</a>
                     </div>
 
                 </div>
