@@ -30,15 +30,8 @@ class Mastery extends React.Component {
         return (
             <div className={containerClassName}>
                 <div className={titleClassname}>Road to Mastery</div>
-                <a href="https://www.seriousscrum.com/r2m/" target="_blank"><div className={itemClassName}>Road to Mastery Website</div></a>
-                <a href="https://www.seriousscrum.com/page/the-road-to-mastery-r2m" target="_blank"><div className={itemClassName}>About the Road to Mastery</div></a>
-                <a href="https://www.seriousscrum.com/r2m/playbook" target="_blank"><div className={itemClassName}>Playbook</div></a>
-                <a href="https://www.seriousscrum.com/r2m/testimonials" target="_blank"><div className={itemClassName}>Testimonials</div></a>
-                <a href="https://www.seriousscrum.com/r2m/join" target="_blank"><div className={itemClassName}>Join</div></a>
-
-                <a href="/page/the-catalog"  target="_blank"><div className={itemClassName}>R2M Catalog</div></a>
-
-            </div>
+                <a href="https://www.rooad2mastery.com/" target="_blank"><div className={itemClassName}>Road to Mastery Website</div></a>
+               </div>
 
         );
     }
