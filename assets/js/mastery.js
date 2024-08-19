@@ -30,7 +30,7 @@ class Mastery extends React.Component {
         return (
             <div className={containerClassName}>
                 <div className={titleClassname}>Road to Mastery</div>
-                <a href="https://www.rooad2mastery.com/" target="_blank"><div className={itemClassName}>Road to Mastery Website</div></a>
+                <a href="https://www.road2mastery.com/" target="_blank"><div className={itemClassName}>Road to Mastery Website</div></a>
                </div>
 
         );
