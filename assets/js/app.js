@@ -465,8 +465,6 @@ class App extends React.Component {
                 <Editorial active={this.state.editorial == "editorial"} expanded={this.state.expanded} />
                 <Mastery functions={functions} active={this.state.editorial == "mastery"} expanded={this.state.expanded}/>
 
-                <HomeJoin label={this.state.label}/>
-
                 <EditorialHeader label={this.state.label}/>
                 <MartyHeader label={this.state.label}/>
 
